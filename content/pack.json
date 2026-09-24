@@ -1,0 +1,1093 @@
+{
+  "id": "software-designer-exam-pilot",
+  "version": "2.0.0",
+  "title": "软件设计师 · 考试专题试点",
+  "scope": "依据公开历年题型校准的原创练习，不是历年原题或完整模考",
+  "review": {
+    "method": "真题题干抽样、作者自审、计算与代码验证",
+    "date": "2026-09-24",
+    "user_trial": "根据过于简单的反馈重设，等待新版试用"
+  },
+  "sources": [
+    {
+      "id": "EXAM-22-AM",
+      "title": "2022 下半年综合知识题干（第三方转录）",
+      "url": "https://www.cnitpm.com/pm1/140332.html",
+      "locator": "第 5—6、51—65 题；只用来对照考查方式",
+      "accessed_on": "2026-09-24"
+    },
+    {
+      "id": "EXAM-22-PM",
+      "title": "2022 下半年应用技术题干（第三方转录）",
+      "url": "https://www.cnitpm.com/pm1/140456.html",
+      "locator": "试题二、四；转录答案存在错字，不作为标准答案",
+      "accessed_on": "2026-09-24"
+    },
+    {
+      "id": "EXAM-23-DB",
+      "title": "2023 上半年数据库案例题干（第三方转录）",
+      "url": "https://www.cnitpm.com/pm1/147958du2jp3exca.html",
+      "locator": "试题二，业务联系与关系模式",
+      "accessed_on": "2026-09-24"
+    },
+    {
+      "id": "TUP-SYSTEM",
+      "title": "清华大学出版社：计算机系统考点目录",
+      "url": "https://www.tup.tsinghua.edu.cn/booksCenter/bookcatalog?id=03337001",
+      "locator": "2.4.3—2.4.5、2.5.1；范围依据",
+      "accessed_on": "2026-09-24"
+    },
+    {
+      "id": "MIT-ALGO",
+      "title": "MIT 6.006：算法课程讲义入口",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/lecture-notes/",
+      "locator": "算法分析、搜索、动态规划；延伸学习",
+      "accessed_on": "2026-09-24"
+    },
+    {
+      "id": "DB-BOOK",
+      "title": "Database System Concepts：作者课件入口",
+      "url": "https://www.db-book.com/slides-dir/index.html",
+      "locator": "第 6、7 章，E-R 与关系设计；延伸学习",
+      "accessed_on": "2026-09-24"
+    },
+    {
+      "id": "PG-KEY",
+      "title": "PostgreSQL 官方文档：键与约束",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "locator": "Primary Keys / Foreign Keys",
+      "accessed_on": "2026-09-24"
+    },
+    {
+      "id": "PG-JOIN",
+      "title": "PostgreSQL 官方教程：连接查询",
+      "url": "https://www.postgresql.org/docs/current/tutorial-join.html",
+      "locator": "JOIN / LEFT OUTER JOIN",
+      "accessed_on": "2026-09-24"
+    }
+  ],
+  "units": [
+    {
+      "id": "SE-01",
+      "title": "计算机系统与性能计算",
+      "subtitle": "从补码和浮点，到 Cache、流水线与整体加速。",
+      "tag": "综合知识 · 计算",
+      "objectives": [
+        "按位宽解释补码并判断溢出",
+        "分清浮点范围与精度",
+        "计算存储容量、Cache 和流水线时间"
+      ],
+      "section_minutes": [
+        6,
+        6,
+        8,
+        8
+      ],
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "version": "2.0.0",
+      "prerequisite_ids": [],
+      "checkpoint_question_ids": [
+        "SE-01-Q03",
+        "SE-01-Q06",
+        "SE-01-Q08"
+      ],
+      "lesson_path": "lessons/SE-01.md",
+      "review_status": "reviewed",
+      "availability": "active"
+    },
+    {
+      "id": "SE-02",
+      "title": "数据结构与算法分析",
+      "subtitle": "推导复杂度、跟踪结构，补全 C 语言算法。",
+      "tag": "综合 + 算法案例",
+      "objectives": [
+        "推导循环次数与额外空间",
+        "判断栈序列、重建二叉树",
+        "补全二分和动态规划并解释边界"
+      ],
+      "section_minutes": [
+        6,
+        7,
+        8,
+        10
+      ],
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "version": "2.0.0",
+      "prerequisite_ids": [],
+      "checkpoint_question_ids": [
+        "SE-02-Q03",
+        "SE-02-Q06",
+        "SE-02-Q08"
+      ],
+      "lesson_path": "lessons/SE-02.md",
+      "review_status": "reviewed",
+      "availability": "active"
+    },
+    {
+      "id": "SE-03",
+      "title": "数据库与关系建模",
+      "subtitle": "从业务约束推导键、范式、关系模式与 SQL。",
+      "tag": "综合 + 数据库案例",
+      "objectives": [
+        "从约束确定候选键和外键",
+        "求闭包并判断范式与分解",
+        "建立多对多关系并编写聚合查询"
+      ],
+      "section_minutes": [
+        6,
+        7,
+        8,
+        10
+      ],
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "version": "2.0.0",
+      "prerequisite_ids": [],
+      "checkpoint_question_ids": [
+        "SE-03-Q03",
+        "SE-03-Q06",
+        "SE-03-Q08"
+      ],
+      "lesson_path": "lessons/SE-03.md",
+      "review_status": "reviewed",
+      "availability": "active"
+    }
+  ],
+  "questions": [
+    {
+      "id": "SE-01-Q01",
+      "unit_id": "SE-01",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "同一位串的两种解释",
+      "prompt": "8 位位串 1110 1000，分别按无符号整数和补码有符号整数解释，得到哪一组？",
+      "section_index": 0,
+      "minutes": 2,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "objective": "同一位串的两种解释",
+      "exam_anchor": "对标综合知识：条件判断与多步计算",
+      "options": {
+        "A": "232 与 −24",
+        "B": "232 与 −104",
+        "C": "104 与 −24",
+        "D": "−24 与 232"
+      },
+      "answer": "A",
+      "option_explanations": {
+        "A": "无符号值为 128+64+32+8=232；补码为 232−256=−24。",
+        "B": "−104 是误将最高位独立当符号的结果。",
+        "C": "无符号解释必须计入最高位 128。",
+        "D": "无符号整数不能为负，顺序颠倒了。"
+      },
+      "explanation": "无符号值为 128+64+32+8=232；补码为 232−256=−24。"
+    },
+    {
+      "id": "SE-01-Q02",
+      "unit_id": "SE-01",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "进位不等于有符号溢出",
+      "prompt": "在 8 位补码加法中，只保留低 8 位。哪一项运算发生有符号溢出？",
+      "section_index": 0,
+      "minutes": 2,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "objective": "进位不等于有符号溢出",
+      "exam_anchor": "对标综合知识：条件判断与多步计算",
+      "options": {
+        "A": "−1 + 1",
+        "B": "−70 + 20",
+        "C": "70 + 80",
+        "D": "−100 + 100"
+      },
+      "answer": "C",
+      "option_explanations": {
+        "A": "结果 0 在范围内，最高位进位不能直接当有符号溢出。",
+        "B": "结果 −50 在 −128 至 127 内。",
+        "C": "数学结果 150 超过 127；低 8 位为 10010110，被解释为 −106。",
+        "D": "异号相加得到 0，没有溢出。"
+      },
+      "explanation": "数学结果 150 超过 127；低 8 位为 10010110，被解释为 −106。"
+    },
+    {
+      "id": "SE-01-Q03",
+      "unit_id": "SE-01",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "改变浮点位分配",
+      "prompt": "两种同总位数浮点格式，其余规则相同。把部分尾数位改作阶码位，通常会怎样？",
+      "section_index": 1,
+      "minutes": 2,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "objective": "改变浮点位分配",
+      "exam_anchor": "对标综合知识：条件判断与多步计算",
+      "options": {
+        "A": "范围缩小、精度提高",
+        "B": "范围扩大、精度降低",
+        "C": "范围与精度同时提高",
+        "D": "仅影响符号，不影响范围"
+      },
+      "answer": "B",
+      "option_explanations": {
+        "A": "阶码增加通常扩大范围，尾数减少降低精度。",
+        "B": "阶码决定量级范围，尾数决定可分辨精度；位数固定时二者存在分配取舍。",
+        "C": "总位数固定，增加阶码意味着减少尾数，不能同时增加二者的位数。",
+        "D": "符号规则未改，变化在指数范围和有效数字。"
+      },
+      "explanation": "阶码决定量级范围，尾数决定可分辨精度；位数固定时二者存在分配取舍。"
+    },
+    {
+      "id": "SE-01-Q04",
+      "unit_id": "SE-01",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "Cache 未命中时间的含义",
+      "prompt": "先查 Cache 耗时 5ns；未命中再额外访问主存 80ns。命中率 90%，忽略其他开销，平均访问时间为？",
+      "section_index": 2,
+      "minutes": 2,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "objective": "Cache 未命中时间的含义",
+      "exam_anchor": "对标综合知识：条件判断与多步计算",
+      "options": {
+        "A": "8ns",
+        "B": "12.5ns",
+        "C": "85ns",
+        "D": "13ns"
+      },
+      "answer": "D",
+      "option_explanations": {
+        "A": "只算了未命中的额外代价，漏掉每次都发生的 5ns。",
+        "B": "误把 80ns 当成未命中的总时间；题干说额外。",
+        "C": "这是一次未命中的耗时，不是平均值。",
+        "D": "T=5+0.1×80=13ns；命中耗时5，未命中耗时85。"
+      },
+      "explanation": "T=5+0.1×80=13ns；命中耗时5，未命中耗时85。"
+    },
+    {
+      "id": "SE-01-Q05",
+      "unit_id": "SE-01",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "存储器字数与位宽扩展",
+      "prompt": "用 32K×8 bit 芯片组成 128K×32 bit 存储器，需要多少片？K=1024。",
+      "section_index": 2,
+      "minutes": 2,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "objective": "存储器字数与位宽扩展",
+      "exam_anchor": "对标综合知识：条件判断与多步计算",
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "16",
+        "D": "32"
+      },
+      "answer": "C",
+      "option_explanations": {
+        "A": "只完成字数扩展，还差 4 倍位宽。",
+        "B": "两个方向分别为 4 倍，不能相加。",
+        "C": "(128K/32K)×(32/8)=4×4=16。",
+        "D": "扩展倍数相乘为 16，32 是目标位宽，不是片数。"
+      },
+      "explanation": "(128K/32K)×(32/8)=4×4=16。"
+    },
+    {
+      "id": "SE-01-Q06",
+      "unit_id": "SE-01",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "流水线第一条与后续间隔",
+      "prompt": "三段时间为 3、2、4ns。题设规定第一条延迟为各段之和，其后每隔最长段时间完成一条，无冲突和额外开销。执行 12 条指令需多少时间？",
+      "section_index": 3,
+      "minutes": 3,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "objective": "流水线第一条与后续间隔",
+      "exam_anchor": "对标综合知识：条件判断与多步计算",
+      "options": {
+        "A": "48ns",
+        "B": "53ns",
+        "C": "56ns",
+        "D": "108ns"
+      },
+      "answer": "B",
+      "option_explanations": {
+        "A": "12×4 漏掉了第一条的完整进入过程。",
+        "B": "9+(12−1)×4=53ns；首条与后续十一条分开计算。",
+        "C": "这是将首条也按统一4ns时钟的三级模型计算，和本题设不同。",
+        "D": "108ns 是完全串行的时间。"
+      },
+      "explanation": "9+(12−1)×4=53ns；首条与后续十一条分开计算。"
+    },
+    {
+      "id": "SE-01-Q07",
+      "unit_id": "SE-01",
+      "version": "2.0.0",
+      "type": "short_answer",
+      "title": "直接映射的地址字段",
+      "prompt": "按字节编址，主存地址 32 位，直接映射 Cache 的数据区为 8KiB，每块 32B。求块内偏移、行号、标记的位数，并说明推导。",
+      "section_index": 2,
+      "minutes": 5,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "objective": "直接映射的地址字段",
+      "exam_anchor": "对标综合知识：条件判断与多步计算",
+      "answer": "偏移 5 位；行号 8 位；标记 19 位。32B=2^5B；8192/32=256 行=2^8；32−5−8=19。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "块内偏移为 5 位，依据 32B=2^5B"
+        },
+        {
+          "id": "R2",
+          "text": "行号为 8 位，先算出 256 行"
+        },
+        {
+          "id": "R3",
+          "text": "标记为 19 位，明确从总地址中扣除前两部分"
+        }
+      ],
+      "explanation": "容量指数据区，不计标记和有效位开销；单位是字节。只报三个数字而无过程时，可将相关要点评为部分满足。"
+    },
+    {
+      "id": "SE-01-Q08",
+      "unit_id": "SE-01",
+      "version": "2.0.0",
+      "type": "short_answer",
+      "title": "优化一部分后整体快多少",
+      "prompt": "某任务原耗时 120s，其中可优化部分占 75%。将该部分加速 3 倍，其他部分不变。求新耗时、整体加速比；若该部分无限快，整体加速上限是多少？",
+      "section_index": 3,
+      "minutes": 5,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "TUP-SYSTEM"
+      ],
+      "objective": "优化一部分后整体快多少",
+      "exam_anchor": "对标综合知识：条件判断与多步计算",
+      "answer": "原可优化部分 90s，固定部分 30s；新耗时 30+90/3=60s；整体加速 120/60=2 倍；上限 120/30=4 倍。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "拆出固定 30s 与可优化 90s，得到新耗时 60s"
+        },
+        {
+          "id": "R2",
+          "text": "整体加速比为 2 倍，使用总时间之比"
+        },
+        {
+          "id": "R3",
+          "text": "无限加速后仍有 30s，整体上限为 4 倍"
+        }
+      ],
+      "explanation": "局部3倍不等于整体3倍；若只把90除以3而遗漏固定部分，就会高估收益。"
+    },
+    {
+      "id": "SE-02-Q01",
+      "unit_id": "SE-02",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "嵌套循环也可能不是平方阶",
+      "prompt": "n≥2，忽略整数溢出，每次 count++ 耗时常数。以下代码时间复杂度的紧确阶为？",
+      "section_index": 0,
+      "minutes": 3,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "objective": "嵌套循环也可能不是平方阶",
+      "exam_anchor": "对标综合知识与算法案例：推导、填空、边界",
+      "options": {
+        "A": "Θ(n)",
+        "B": "Θ(log n)",
+        "C": "Θ(n log n)",
+        "D": "Θ(n²)"
+      },
+      "answer": "C",
+      "option_explanations": {
+        "A": "内层n次之外，外层还执行约log₂n轮。",
+        "B": "这只计算了外层轮数。",
+        "C": "外层翻倍，共Θ(log n)轮；每轮内层n次，因此Θ(n log n)。",
+        "D": "外层不是n次，不能仅凭两层循环判断平方阶。"
+      },
+      "explanation": "外层翻倍，共Θ(log n)轮；每轮内层n次，因此Θ(n log n)。",
+      "code": "for (int i = 1; i < n; i *= 2)\n    for (int j = 0; j < n; j++)\n        count++;"
+    },
+    {
+      "id": "SE-02-Q02",
+      "unit_id": "SE-02",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "判断不可能的出栈序列",
+      "prompt": "空栈依次压入 1、2、3、4，允许压入与弹出交错。哪个输出序列不可能得到？",
+      "section_index": 1,
+      "minutes": 2,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "objective": "判断不可能的出栈序列",
+      "exam_anchor": "对标综合知识与算法案例：推导、填空、边界",
+      "options": {
+        "A": "2, 1, 4, 3",
+        "B": "3, 2, 1, 4",
+        "C": "4, 3, 2, 1",
+        "D": "3, 1, 2, 4"
+      },
+      "answer": "D",
+      "option_explanations": {
+        "A": "可先压1、2弹2、1，再压3、4弹4、3。",
+        "B": "可压到3，弹3、2、1，最后压弹4。",
+        "C": "全部压入后逐个弹出即可。",
+        "D": "弹3后栈顶是2，无法跳过2先弹1。"
+      },
+      "explanation": "弹3后栈顶是2，无法跳过2先弹1。"
+    },
+    {
+      "id": "SE-02-Q03",
+      "unit_id": "SE-02",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "由两种遍历推导第三种",
+      "prompt": "结点标签互异，二叉树先序为 A B D C E F，中序为 D B A E C F。后序是哪一个？",
+      "section_index": 1,
+      "minutes": 3,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "objective": "由两种遍历推导第三种",
+      "exam_anchor": "对标综合知识与算法案例：推导、填空、边界",
+      "options": {
+        "A": "D B E F C A",
+        "B": "D B F E C A",
+        "C": "B D E F C A",
+        "D": "D E B F C A"
+      },
+      "answer": "A",
+      "option_explanations": {
+        "A": "根A；左子树为B且左孩子D；右子树根C、左右孩子E和F，后序DBEFCA。",
+        "B": "交换了C的左右子树遍历次序。",
+        "C": "左子树后序应先D后B。",
+        "D": "把属于右子树的E插进了左子树。"
+      },
+      "explanation": "根A；左子树为B且左孩子D；右子树根C、左右孩子E和F，后序DBEFCA。"
+    },
+    {
+      "id": "SE-02-Q04",
+      "unit_id": "SE-02",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "二分查找成功平均比较次数",
+      "prompt": "有序数组有 7 个互异元素。闭区间二分，mid 向下取整；查找每个元素概率相同，每检查一个中间元素计一次比较。成功查找平均次数为？",
+      "section_index": 2,
+      "minutes": 3,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "objective": "二分查找成功平均比较次数",
+      "exam_anchor": "对标综合知识与算法案例：推导、填空、边界",
+      "options": {
+        "A": "3",
+        "B": "12/7",
+        "C": "17/7",
+        "D": "7/2"
+      },
+      "answer": "C",
+      "option_explanations": {
+        "A": "3是最坏次数，不是平均值。",
+        "B": "漏掉第一层或第二层的比较。",
+        "C": "判定树三层分别有1、2、4个元素，平均为(1+4+12)/7=17/7。",
+        "D": "不能按顺序查找的直觉求二分平均值。"
+      },
+      "explanation": "判定树三层分别有1、2、4个元素，平均为(1+4+12)/7=17/7。"
+    },
+    {
+      "id": "SE-02-Q05",
+      "unit_id": "SE-02",
+      "version": "2.0.0",
+      "type": "short_answer",
+      "title": "解释时间与额外空间",
+      "prompt": "比较两个二分实现：A 用 while 循环和 low/high/mid；B 每次递归调用一半区间，直到结束，且环境不消除递归栈。给出最坏时间与额外空间，并说明依据。",
+      "section_index": 2,
+      "minutes": 5,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "objective": "解释时间与额外空间",
+      "exam_anchor": "对标综合知识与算法案例：推导、填空、边界",
+      "answer": "两者最坏时间均 O(log n)。A 只有常数个辅助变量，额外空间 O(1)；B 递归深度 O(log n)，每层常数空间，所以额外空间 O(log n)。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "两者时间均 O(log n)，解释每次规模约减半"
+        },
+        {
+          "id": "R2",
+          "text": "迭代版额外空间 O(1)，不把输入数组算入辅助空间"
+        },
+        {
+          "id": "R3",
+          "text": "递归版额外空间 O(log n)，说明调用栈及无尾调用优化前提"
+        }
+      ],
+      "explanation": "时间同阶不意味着额外空间相同；本题要求的是最坏情况和额外空间。"
+    },
+    {
+      "id": "SE-02-Q06",
+      "unit_id": "SE-02",
+      "version": "2.0.0",
+      "type": "short_answer",
+      "title": "用全负输入检查动态规划初值",
+      "prompt": "求非空连续子数组最大和时，有人把 ending 和 best 都初始化为 0，再从首元素开始更新。用 [−6,−3,−8] 说明风险，并写出正确的初值、转移和答案。",
+      "section_index": 3,
+      "minutes": 5,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "objective": "用全负输入检查动态规划初值",
+      "exam_anchor": "对标综合知识与算法案例：推导、填空、边界",
+      "answer": "若 best 初值为0且只在更大时更新，结果会错误保留0，等价于允许空数组。应令 ending=best=a[0]，从i=1开始；ending=max(a[i],ending+a[i])，best=max(best,ending)，本例答案−3。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "指出0代表空选择，不满足非空要求；正确答案为−3"
+        },
+        {
+          "id": "R2",
+          "text": "初始 ending 和 best 均为 a[0]，从下标1开始"
+        },
+        {
+          "id": "R3",
+          "text": "写出 ending 与 best 的两条更新，并区分局部结尾状态与全局最优"
+        }
+      ],
+      "explanation": "动态规划题常在初值、状态定义和边界上区分理解程度；仅写“使用动态规划”不足以完成本题。"
+    },
+    {
+      "id": "SE-02-Q07",
+      "unit_id": "SE-02",
+      "version": "2.0.0",
+      "type": "code_fill",
+      "title": "补全二分的区间收缩",
+      "prompt": "数组递增，区间为闭区间。依次填写①②两处（用分号分隔）；写出查找 18 时的返回值与 mid 顺序，并解释边界为何加减 1。",
+      "section_index": 2,
+      "minutes": 6,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "objective": "补全二分的区间收缩",
+      "exam_anchor": "对标综合知识与算法案例：推导、填空、边界",
+      "answer": "①mid + 1；②mid - 1。mid依次为2、3，返回3。mid已经比较并排除，更新后必须使候选区间严格缩小。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "依次填写 mid+1 与 mid−1，不能把左右更新颠倒"
+        },
+        {
+          "id": "R2",
+          "text": "mid顺序2、3，返回下标3"
+        },
+        {
+          "id": "R3",
+          "text": "说明mid被排除、区间严格缩小，避免停滞"
+        }
+      ],
+      "explanation": "数组下标从0开始；目标18对应下标3。闭区间只剩一个元素时仍应进入循环。",
+      "code": "int a[] = {2, 7, 12, 18, 25};\nint low = 0, high = 4, target = 18;\nwhile (low <= high) {\n    int mid = low + (high - low) / 2;\n    if (a[mid] == target) return mid;\n    if (a[mid] < target) low = /* ① */;\n    else high = /* ② */;\n}\nreturn -1;",
+      "reference_fill": "mid + 1; mid - 1",
+      "language": "c"
+    },
+    {
+      "id": "SE-02-Q08",
+      "unit_id": "SE-02",
+      "version": "2.0.0",
+      "type": "code_fill",
+      "title": "补全连续子数组状态更新",
+      "prompt": "a 非空，中间和不超出 int 范围。补全空白条件（C 表达式），使 ending 表示当前位置结尾的最大连续和；写出返回值，以及时间和额外空间复杂度。",
+      "section_index": 3,
+      "minutes": 7,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-22-PM",
+        "MIT-ALGO"
+      ],
+      "objective": "补全连续子数组状态更新",
+      "exam_anchor": "对标综合知识与算法案例：推导、填空、边界",
+      "answer": "填 joined > a[i]（也可 >=）；返回8，对应连续子数组[5,−1,4]。时间O(n)，额外空间O(1)。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "条件为 joined>a[i] 或 joined>=a[i]，表示两种选择取较大"
+        },
+        {
+          "id": "R2",
+          "text": "结果8，并指出[5,−1,4]的连续区间"
+        },
+        {
+          "id": "R3",
+          "text": "时间O(n)、额外空间O(1)，分别解释一次遍历与常数变量"
+        }
+      ],
+      "explanation": "ending仅是以当前位置结尾的最优值，best才保留全局答案；不是累加所有正数。",
+      "code": "int a[] = {-4, 5, -1, 4, -7};\nint n = 5, ending = a[0], best = a[0];\nfor (int i = 1; i < n; i++) {\n    int joined = ending + a[i];\n    ending = ____ ? joined : a[i];\n    if (ending > best) best = ending;\n}\nreturn best;",
+      "reference_fill": "joined > a[i]",
+      "language": "c"
+    },
+    {
+      "id": "SE-03-Q01",
+      "unit_id": "SE-03",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "复合键的最小性",
+      "prompt": "每位读者可借多种图书，同一读者对同一图书允许多次借阅。每次借阅有全局唯一 loan_id，并记录 reader_id、book_id、borrowed_at；未承诺时间戳唯一。哪个集合可确定为候选键？",
+      "section_index": 0,
+      "minutes": 2,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "objective": "复合键的最小性",
+      "exam_anchor": "对标综合知识与数据库案例：约束、模式、查询",
+      "options": {
+        "A": "reader_id",
+        "B": "(reader_id, book_id)",
+        "C": "borrowed_at",
+        "D": "loan_id"
+      },
+      "answer": "D",
+      "option_explanations": {
+        "A": "一位读者可有多次借阅。",
+        "B": "同一读者可多次借同一本书，二列组合不再唯一。",
+        "C": "题目未承诺时间戳唯一，不能自行补条件。",
+        "D": "loan_id由题干明确全局唯一，且为单属性最小键。"
+      },
+      "explanation": "loan_id由题干明确全局唯一，且为单属性最小键。"
+    },
+    {
+      "id": "SE-03-Q02",
+      "unit_id": "SE-03",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "求闭包找候选键",
+      "prompt": "R(A,B,C,D) 仅给定函数依赖 A→B、B→C、AC→D。候选键为？",
+      "section_index": 1,
+      "minutes": 3,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "objective": "求闭包找候选键",
+      "exam_anchor": "对标综合知识与数据库案例：约束、模式、查询",
+      "options": {
+        "A": "AC",
+        "B": "A",
+        "C": "AB",
+        "D": "B"
+      },
+      "answer": "B",
+      "option_explanations": {
+        "A": "AC是超键，但A本身已能决定全部，C多余。",
+        "B": "A⁺先得B，再得C，最后利用AC→D得全部；A是最小的。",
+        "C": "AB包含多余B，不能称候选键。",
+        "D": "B只能推出C，推不出A和D。"
+      },
+      "explanation": "A⁺先得B，再得C，最后利用AC→D得全部；A是最小的。"
+    },
+    {
+      "id": "SE-03-Q03",
+      "unit_id": "SE-03",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "部分依赖与最高范式",
+      "prompt": "R(S,C,SName,CName,Score) 已满足 1NF，仅有 S→SName、C→CName、SC→Score 及其逻辑推论，唯一候选键 SC。它最高满足？",
+      "section_index": 2,
+      "minutes": 3,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "objective": "部分依赖与最高范式",
+      "exam_anchor": "对标综合知识与数据库案例：约束、模式、查询",
+      "options": {
+        "A": "1NF",
+        "B": "2NF",
+        "C": "3NF",
+        "D": "BCNF"
+      },
+      "answer": "A",
+      "option_explanations": {
+        "A": "SName和CName分别依赖复合键的一部分，违反2NF，因此最高1NF。",
+        "B": "非主属性存在部分依赖，尚未达到2NF。",
+        "C": "连2NF都未满足，不能达到3NF。",
+        "D": "S和C都不是超键，却决定非主属性，不满足BCNF。"
+      },
+      "explanation": "SName和CName分别依赖复合键的一部分，违反2NF，因此最高1NF。"
+    },
+    {
+      "id": "SE-03-Q04",
+      "unit_id": "SE-03",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "单属性主键仍可能需要分解",
+      "prompt": "Employee(E,D,DName) 满足 1NF，仅有 E→D、D→DName 及推论；唯一候选键 E。最高范式为？",
+      "section_index": 2,
+      "minutes": 3,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "objective": "单属性主键仍可能需要分解",
+      "exam_anchor": "对标综合知识与数据库案例：约束、模式、查询",
+      "options": {
+        "A": "1NF",
+        "B": "3NF",
+        "C": "2NF",
+        "D": "BCNF"
+      },
+      "answer": "C",
+      "option_explanations": {
+        "A": "单属性候选键没有非主属性对其真子集的部分依赖，此处满足2NF。",
+        "B": "D不是超键且DName是非主属性，D→DName违反3NF。",
+        "C": "满足2NF，但E→D→DName形成经由非键的传递依赖，不满足3NF。",
+        "D": "D→DName的左侧不是超键，BCNF也不满足。"
+      },
+      "explanation": "满足2NF，但E→D→DName形成经由非键的传递依赖，不满足3NF。"
+    },
+    {
+      "id": "SE-03-Q05",
+      "unit_id": "SE-03",
+      "version": "2.0.0",
+      "type": "single_choice",
+      "title": "LEFT JOIN 后的零记录计数",
+      "prompt": "Student 中有学生3，Enrollment 中没有该学生的记录。将 Student LEFT JOIN Enrollment 后按学生分组，应使用哪个表达式正确得到学生3的选课数0？Enrollment.course_id 非空。",
+      "section_index": 3,
+      "minutes": 3,
+      "difficulty": "考点应用",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "objective": "LEFT JOIN 后的零记录计数",
+      "exam_anchor": "对标综合知识与数据库案例：约束、模式、查询",
+      "options": {
+        "A": "COUNT(*)",
+        "B": "COUNT(e.course_id)",
+        "C": "SUM(s.student_id)",
+        "D": "COUNT(s.student_id)"
+      },
+      "answer": "B",
+      "option_explanations": {
+        "A": "LEFT JOIN会为无匹配学生保留一行，COUNT(*)得到1。",
+        "B": "右表无匹配时e.course_id为NULL，COUNT(该列)忽略NULL，得到0。",
+        "C": "学生编号求和与选课数没有关系。",
+        "D": "左侧学生编号在保留行中非空，因此计数为1。"
+      },
+      "explanation": "右表无匹配时e.course_id为NULL，COUNT(该列)忽略NULL，得到0。"
+    },
+    {
+      "id": "SE-03-Q06",
+      "unit_id": "SE-03",
+      "version": "2.0.0",
+      "type": "short_answer",
+      "title": "多对多建模与业务变化",
+      "prompt": "书店有会员 Member(member_id,name) 和活动 Event(event_id,title)。会员可参加多个活动、活动有多个会员；每对会员—活动只登记一次，需记录报名时间和是否到场。设计报名关系，标明主键与两个外键；若同一活动允许多次签到，签到记录应怎样调整？",
+      "section_index": 3,
+      "minutes": 7,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "objective": "多对多建模与业务变化",
+      "exam_anchor": "对标综合知识与数据库案例：约束、模式、查询",
+      "answer": "Registration(member_id,event_id,registered_at,attended)，主键(member_id,event_id)，两列分别引用Member和Event。多次签到另设CheckIn(checkin_id,member_id,event_id,checked_at)，checkin_id唯一，(member_id,event_id)引用Registration；也可采用明确能唯一标识签到事件的等价设计。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "报名表包含两实体编号、报名时间及到场属性，复合主键为二编号"
+        },
+        {
+          "id": "R2",
+          "text": "明确两个外键分别引用Member、Event的主键"
+        },
+        {
+          "id": "R3",
+          "text": "多次签到独立成事件记录，给出唯一事件标识和指向报名的关联，不覆写全部历史"
+        }
+      ],
+      "explanation": "评估业务约束是否表达完整，不要求表名完全相同。不能把“多对多关联的键”和“多次发生的事件键”混为一谈。"
+    },
+    {
+      "id": "SE-03-Q07",
+      "unit_id": "SE-03",
+      "version": "2.0.0",
+      "type": "short_answer",
+      "title": "分解会不会凭空产生组合",
+      "prompt": "R(A,B,C) 只有 AB→C。现拆为 R1(A,B)、R2(B,C)。说明能否保证无损连接，并用合法实例 (1,x,p)、(2,x,q) 展示原因。",
+      "section_index": 2,
+      "minutes": 6,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "objective": "分解会不会凭空产生组合",
+      "exam_anchor": "对标综合知识与数据库案例：约束、模式、查询",
+      "answer": "不能保证无损。R1有(1,x),(2,x)，R2有(x,p),(x,q)，按B连接得到四行，增加(1,x,q)、(2,x,p)。公共属性B既不能决定A也不能决定C，不能决定任一子表全部属性。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "明确不能保证无损，不能仅凭字段总集合不变判断"
+        },
+        {
+          "id": "R2",
+          "text": "列出两个额外组合，说明原2行变为4行"
+        },
+        {
+          "id": "R3",
+          "text": "指出公共B不是任一子模式的键，原依赖AB→C不能推出B→A或B→C"
+        }
+      ],
+      "explanation": "题目给的原两行满足AB→C；连接产生伪元组，说明该分解缺乏无损保证。"
+    },
+    {
+      "id": "SE-03-Q08",
+      "unit_id": "SE-03",
+      "version": "2.0.0",
+      "type": "code_fill",
+      "title": "补全分组筛选并推导结果",
+      "prompt": "Enrollment(student_id,course_id,score) 每对学生—课程至多一行。记录为(1,A,80)、(2,A,70)、(1,B,90)、(3,C,60)。补全空白，选出至少2人选修的课程；写出输出及 WHERE 与此处条件的区别。",
+      "section_index": 3,
+      "minutes": 6,
+      "difficulty": "综合推导",
+      "origin_kind": "original",
+      "review_status": "reviewed",
+      "availability": "active",
+      "source_ids": [
+        "EXAM-22-AM",
+        "EXAM-23-DB",
+        "PG-KEY",
+        "PG-JOIN",
+        "DB-BOOK"
+      ],
+      "objective": "补全分组筛选并推导结果",
+      "exam_anchor": "对标综合知识与数据库案例：约束、模式、查询",
+      "answer": "填 HAVING COUNT(*) >= 2。输出(A,2)。WHERE过滤分组前的单行；HAVING按聚合后的组判断人数。",
+      "rubric": [
+        {
+          "id": "R1",
+          "text": "填 HAVING COUNT(*)>=2，或等价的HAVING COUNT(student_id)>=2（student_id非空）"
+        },
+        {
+          "id": "R2",
+          "text": "输出只有课程A及人数2"
+        },
+        {
+          "id": "R3",
+          "text": "说明WHERE过滤行、HAVING过滤组；依据每对学生—课程一行计算人数"
+        }
+      ],
+      "explanation": "不能用WHERE COUNT(*)>=2放在此位置。题设保证无重复选课，COUNT(*)才直接对应人数。",
+      "code": "SELECT course_id, COUNT(*) AS learner_count\nFROM Enrollment\nGROUP BY course_id\n____\nORDER BY course_id;",
+      "reference_fill": "HAVING COUNT(*) >= 2",
+      "language": "sql"
+    }
+  ],
+  "roadmap": [
+    {
+      "number": 4,
+      "title": "操作系统与同步",
+      "status": "planned"
+    },
+    {
+      "number": 5,
+      "title": "程序语言与编译",
+      "status": "planned"
+    },
+    {
+      "number": 6,
+      "title": "算法进阶：堆、图与设计策略",
+      "status": "planned"
+    },
+    {
+      "number": 7,
+      "title": "软件工程与测试",
+      "status": "planned"
+    },
+    {
+      "number": 8,
+      "title": "结构化分析与 DFD",
+      "status": "planned"
+    },
+    {
+      "number": 9,
+      "title": "面向对象与 UML",
+      "status": "planned"
+    },
+    {
+      "number": 10,
+      "title": "设计模式与 Java/C++ 选考",
+      "status": "planned"
+    },
+    {
+      "number": 11,
+      "title": "网络与信息安全",
+      "status": "planned"
+    },
+    {
+      "number": 12,
+      "title": "标准、知识产权、英语与模考",
+      "status": "planned"
+    }
+  ]
+}

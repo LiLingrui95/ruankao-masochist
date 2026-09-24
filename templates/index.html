@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#162b3b">
+  <title>软考虐待狂 · 软件设计师学习台</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#today" aria-label="软考虐待狂首页"><span class="brand-mark">虐</span><span>软考虐待狂<small>软件设计师学习台</small></span></a>
+    <div class="nav-label">我的学习空间</div>
+    <nav aria-label="主导航">
+      <a href="#today" data-nav="today"><span class="nav-icon">◷</span>今日学习</a>
+      <a href="#learn" data-nav="learn"><span class="nav-icon">▤</span>知识单元</a>
+      <a href="#practice" data-nav="practice"><span class="nav-icon">✎</span>练习</a>
+      <a href="#review" data-nav="review"><span class="nav-icon">↺</span>学习回顾</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="edition">考试专题 <span>01 — 03</span></div><p>计算、算法、建模。向真题要求靠近。</p><button class="feedback-link" id="open-feedback">留下试用反馈 <span>↗</span></button><div class="save-state" id="save-state" role="status">本机记录</div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span id="breadcrumb">考试专题 / 第一阶段</span><span class="topbar-right">个人学习空间 <span class="avatar">我</span></span></header>
+    <main id="main" tabindex="-1"><div class="loading">正在打开你的学习空间…</div></main>
+    <footer class="page-footer">软考虐待狂 / 从理解开始 <span>三大专题 · 24 道原创对标练习</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <dialog id="feedback-dialog">
+    <form id="feedback-form"><div class="dialog-head"><h2>这一段学得怎么样？</h2><button type="button" class="icon-button" id="close-feedback" aria-label="关闭">×</button></div><p class="muted">可以记下难懂的句子、题目问题，或不顺手的操作。反馈保存在本机，可在回顾页导出后发给我。</p><label for="feedback-text">你的反馈</label><textarea id="feedback-text" rows="6" placeholder="例如：第 2 单元的循环例子看懂了，但第 4 题仍有点困惑…" required maxlength="15000"></textarea><button class="button primary" type="submit">保存反馈</button></form>
+  </dialog>
+</body>
+</html>
