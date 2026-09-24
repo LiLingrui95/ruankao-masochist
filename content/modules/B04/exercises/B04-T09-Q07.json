@@ -1,0 +1,37 @@
+{
+  "id": "B04-T09-Q07",
+  "title": "NoSQL与事务",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T09"
+  ],
+  "unit_id": "B04-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "判断“所有非关系型数据库都没有事务能力，因此跨记录更新一定无法保证原子性”，并说明选型需要检查什么。",
+  "answer": "判断错误。事务能力依产品、版本、部署方式和操作范围而定，需要核实原子边界、一致性和故障行为。",
+  "explanation": "数据模型并不能单独决定事务能力；不能以SQL/NoSQL标签替代产品文档。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "否定所有产品都无事务的全称判断"
+    },
+    {
+      "id": "r2",
+      "text": "列出版本、原子边界及部署条件"
+    }
+  ],
+  "source_ids": [
+    "B04-S07"
+  ],
+  "answer_source_ids": [
+    "B04-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "主任务按接口语法与业务时间语义独立审校；概念题，未声称实际部署运行。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

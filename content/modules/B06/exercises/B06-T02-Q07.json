@@ -1,0 +1,41 @@
+{
+  "id": "B06-T02-Q07",
+  "title": "共享环诊断",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T02"
+  ],
+  "unit_id": "B06-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "Node 用 shared_ptr<Node> 同时保存 parent 与 child。根节点外部引用释放后仍未析构。给出原因和最小修正。",
+  "answer": "parent 与 child 形成强引用环，引用计数都不归零。保留 child 为 shared_ptr 表示父拥有子，把 parent 改为 weak_ptr<Node> 表示非拥有回链；访问 parent 时先 lock 并检查结果。",
+  "explanation": "parent 与 child 形成强引用环，引用计数都不归零。保留 child 为 shared_ptr 表示父拥有子，把 parent 改为 weak_ptr<Node> 表示非拥有回链；访问 parent 时先 lock 并检查结果。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "指出 shared_ptr 强引用环导致计数不归零"
+    },
+    {
+      "id": "r2",
+      "text": "把 parent 改为 weak_ptr"
+    },
+    {
+      "id": "r3",
+      "text": "说明 lock 后检查生命周期"
+    }
+  ],
+  "source_ids": [
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B01-T04-Q06",
+  "title": "Cache与存储层次练习 6",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T04"
+  ],
+  "unit_id": "B01-T04",
+  "section_index": 0,
+  "prompt": "16K×8 bit 芯片组成 64K×32 bit 存储器需多少片？",
+  "explanation": "字数方向 64K/16K=4 组，位宽方向 32/8=4 片并联，共 4×4=16。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：字数方向 64K/16K=4 组，位宽方向 32/8=4 片并联，共 4×4=16。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "16 片。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：16 片。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：字数方向 64K/16K=4 组，位宽方向 32/8=4 片并联，共 4×4=16。"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B05-T11-Q09",
+  "title": "DFD综合练习9",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T11"
+  ],
+  "unit_id": "B05-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "数据字典中订单流缺少客户标识，会造成什么问题？",
+  "answer": "下游无法把订单关联到客户，且与需要按客户通知/授权的加工说明不一致；应补客户标识或明确可由订单号唯一查询。",
+  "explanation": "必须说明下游关联缺口及两种修正方式。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：下游无法把订单关联到客户，且与需要按客户通知/授权的加工说明不一致；应补客户标识或明确可由订单号唯一查询。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：下游无法把订单关联到客户，且与需要按客户通知/授权的加工说明不一致；应补客户标识或明确可由订单号唯一查询。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须说明下游关联缺口及两种修正方式。"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "B03-T11",
+  "module_id": "B03",
+  "unit_id": "B03-U04",
+  "title": "动态规划",
+  "aliases": [
+    "状态、转移、初值、顺序与空间优化"
+  ],
+  "objectives": [
+    "解释状态、转移、初值、顺序与空间优化",
+    "完成动态规划的过程跟踪与复杂度分析"
+  ],
+  "prerequisite_ids": [
+    "B03-T10"
+  ],
+  "syllabus_refs": [
+    "数据结构",
+    "算法设计与分析"
+  ],
+  "body_path": "modules/B03/topics/B03-T11.md",
+  "source_ids": [
+    "B03-S01",
+    "B03-S02",
+    "B03-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "该考点包含概念、过程、边界与复杂度，设置多种推理任务。",
+  "question_ids": [
+    "B03-T11-Q01",
+    "B03-T11-Q02",
+    "B03-T11-Q03",
+    "B03-T11-Q04",
+    "B03-T11-Q05",
+    "B03-T11-Q06",
+    "B03-T11-Q07",
+    "B03-T11-Q08"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B07-T01-Q02",
+  "title": "网络分层、介质与交换练习2",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T01"
+  ],
+  "unit_id": "B07-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "长度为1000 B的帧通过两条10 Mbit/s链路和一台存储转发交换机，忽略传播与处理时延，端到端时延是多少？",
+  "answer": "D",
+  "explanation": "每条链路发送时延为1000×8/10^7=0.8 ms，存储转发需两次，共1.6 ms。",
+  "source_ids": [
+    "B07-S01"
+  ],
+  "answer_source_ids": [
+    "B07-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "0.8 ms",
+    "B": "8 ms",
+    "C": "16 ms",
+    "D": "1.6 ms"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“0.8 ms”。本题适用的关系是：每条链路发送时延为1000×8/10^7=0.8 ms，存储转发需两次，共1.6 ms。",
+    "B": "错误：该选项断言“8 ms”。本题适用的关系是：每条链路发送时延为1000×8/10^7=0.8 ms，存储转发需两次，共1.6 ms。",
+    "C": "错误：该选项断言“16 ms”。本题适用的关系是：每条链路发送时延为1000×8/10^7=0.8 ms，存储转发需两次，共1.6 ms。",
+    "D": "每条链路发送时延为1000×8/10^7=0.8 ms，存储转发需两次，共1.6 ms。"
+  }
+}

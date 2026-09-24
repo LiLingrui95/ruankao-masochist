@@ -1,0 +1,37 @@
+{
+  "id": "B05-T10-Q04",
+  "title": "估算与进度练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T10"
+  ],
+  "unit_id": "B05-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "A3天后并行B4天和C6天，再汇合D2天。求关键路径与B时差。",
+  "answer": "A-B-D=9，A-C-D=11；关键路径A-C-D，B总时差2天。",
+  "explanation": "必须列两条路径长度、关键路径和B时差2天。",
+  "source_ids": [
+    "B05-S03"
+  ],
+  "answer_source_ids": [
+    "B05-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A-B-D=9，A-C-D=11；关键路径A-C-D，B总时差2天。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：A-B-D=9，A-C-D=11；关键路径A-C-D，B总时差2天。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须列两条路径长度、关键路径和B时差2天。"
+    }
+  ]
+}

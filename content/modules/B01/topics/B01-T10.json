@@ -1,0 +1,51 @@
+{
+  "id": "B01-T10",
+  "module_id": "B01",
+  "unit_id": "B01-U04",
+  "title": "文件、磁盘与设备管理",
+  "aliases": [
+    "file system",
+    "disk scheduling",
+    "I/O",
+    "RAID",
+    "SAN",
+    "NAS"
+  ],
+  "objectives": [
+    "计算文件索引容量和磁盘调度移动量",
+    "计算 RAID 0/1/5/6/10 容量与容错，并区分 NAS 文件访问和 SAN 块访问"
+  ],
+  "prerequisite_ids": [
+    "B01-T09"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T10.md",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 12,
+  "exercise_rationale": "复杂：配置 12 道覆盖文件分配、磁盘调度、I/O、RAID 与 SAN/NAS。",
+  "question_ids": [
+    "B01-T10-Q01",
+    "B01-T10-Q02",
+    "B01-T10-Q03",
+    "B01-T10-Q04",
+    "B01-T10-Q05",
+    "B01-T10-Q06",
+    "B01-T10-Q07",
+    "B01-T10-Q08",
+    "B01-T10-Q09",
+    "B01-T10-Q10",
+    "B01-T10-Q11",
+    "B01-T10-Q12"
+  ]
+}

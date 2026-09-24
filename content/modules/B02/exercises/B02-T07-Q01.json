@@ -1,0 +1,39 @@
+{
+  "id": "B02-T07-Q01",
+  "title": "三地址码",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T07"
+  ],
+  "unit_id": "B02-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "`a+b*c` 的合理三地址码顺序是？",
+  "answer": "B",
+  "explanation": "AST 中乘法子树先产生临时值，再与 a 相加。",
+  "source_ids": [
+    "B02-S04"
+  ],
+  "answer_source_ids": [
+    "B02-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：AST 中乘法子树先产生临时值，再与 a 相加。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "t1=a+b; t2=t1*c",
+    "B": "t1=b*c; t2=a+t1",
+    "C": "t1=a*b; t2=t1+c",
+    "D": "t1=a+b+c"
+  },
+  "option_explanations": {
+    "A": "这会把树解析成(a+b)*c。",
+    "B": "先计算乘法子树，再与a相加。",
+    "C": "该顺序对应a*b+c。",
+    "D": "一条含两个运算不符合本题三地址形式。"
+  }
+}

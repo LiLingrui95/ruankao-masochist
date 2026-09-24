@@ -1,0 +1,37 @@
+{
+  "id": "B04-T05-Q03",
+  "title": "弱实体转换",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T05"
+  ],
+  "unit_id": "B04-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "订单项由 order_id 与订单内 seq_no 标识，如何建键？",
+  "answer": "OrderItem(order_id FK, seq_no, ..., PRIMARY KEY(order_id,seq_no))。",
+  "explanation": "seq_no 只是部分键，需与拥有者 Order 的键共同标识弱实体。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：OrderItem(order_id FK, seq_no, ..., PRIMARY KEY(order_id,seq_no))。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：seq_no 只是部分键，需与拥有者 Order 的键共同标识弱实体。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：seq_no 只是部分键，需与拥有者 Order 的键共同标识弱实体。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

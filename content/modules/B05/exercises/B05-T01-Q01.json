@@ -1,0 +1,39 @@
+{
+  "id": "B05-T01-Q01",
+  "title": "软件过程练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T01"
+  ],
+  "unit_id": "B05-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "需求稳定且强阶段审计，最合适的主导模型是？",
+  "answer": "A",
+  "explanation": "阶段交付物与评审点匹配稳定需求和严格审计。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "瀑布模型",
+    "B": "纯探索原型",
+    "C": "无计划编码",
+    "D": "仅运维"
+  },
+  "option_explanations": {
+    "A": "A 项“瀑布模型”正确：阶段交付物与评审点匹配稳定需求和严格审计。",
+    "B": "B 项“纯探索原型”错误：探索原型适合需求不清时澄清需求，不能提供题干要求的稳定阶段基线。",
+    "C": "C 项“无计划编码”错误：无计划编码缺少审计所需的阶段产物和评审点。",
+    "D": "D 项“仅运维”错误：运维发生在交付后，不能替代开发过程。"
+  }
+}

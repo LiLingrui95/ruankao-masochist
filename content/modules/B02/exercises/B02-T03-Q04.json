@@ -1,0 +1,37 @@
+{
+  "id": "B02-T03-Q04",
+  "title": "交换机制",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T03"
+  ],
+  "unit_id": "B02-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为何 `swap(&x,&y)` 能修改 x、y，却仍属于值传递？",
+  "answer": "形参得到地址值的副本；解引用副本访问的仍是调用者的 x、y 对象。",
+  "explanation": "应同时指出指针本身被复制和间接访问原对象。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：应同时指出指针本身被复制和间接访问原对象。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "指出形参获得&a和&b地址值的副本。"
+    },
+    {
+      "id": "r2",
+      "text": "说明解引用这些副本访问并修改调用者原对象。"
+    }
+  ]
+}

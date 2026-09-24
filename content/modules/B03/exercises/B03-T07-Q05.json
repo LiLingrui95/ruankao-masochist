@@ -1,0 +1,37 @@
+{
+  "id": "B03-T07-Q05",
+  "title": "最短路径与最小生成树复杂度审计",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T07"
+  ],
+  "unit_id": "B03-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "分别说明“松弛、Dijkstra、Bellman-Ford、Floyd、Prim 与 Kruskal”中主要操作的时间复杂度、额外空间复杂度，以及复杂度成立的前提。",
+  "answer": "最短路最小化指定端点间路径权重；最小生成树连接所有顶点并最小化总边权。Dijkstra 要求可达边权非负，Bellman-Ford 可处理负边并检测可达负环；Floyd 用三重循环求全源最短路。 时间界取决于文中所述操作和输入结构；额外空间还需计辅助数组、队列、栈或递归深度。",
+  "explanation": "复杂度必须绑定明确操作和输入模型，不能只写一个孤立的 O 记号。",
+  "source_ids": [
+    "B03-S04"
+  ],
+  "answer_source_ids": [
+    "B03-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "分别写出主要操作的时间复杂度与额外空间复杂度。"
+    },
+    {
+      "id": "r2",
+      "text": "明确复杂度对应的输入规模、数据结构和成立前提。"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B02-T06-Q02",
+  "title": "LL方向",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T06"
+  ],
+  "unit_id": "B02-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "LL 解析的典型含义是？",
+  "answer": "B",
+  "explanation": "两个 L 分别对应 left-to-right scan 和 leftmost derivation。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：两个 L 分别对应 left-to-right scan 和 leftmost derivation。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "从右读并最右推导",
+    "B": "从左读并构造最左推导",
+    "C": "只处理正则语言",
+    "D": "不使用文法"
+  },
+  "option_explanations": {
+    "A": "LL从左向右读输入。",
+    "B": "LL构造最左推导。",
+    "C": "LL可解析一类上下文无关文法。",
+    "D": "LL以文法和分析表/过程为依据。"
+  }
+}

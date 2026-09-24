@@ -1,0 +1,55 @@
+{
+  "id": "B06-T10-Q07",
+  "title": "设备告警模型",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T10"
+  ],
+  "unit_id": "B06-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "Normal--thresholdExceeded→Warning；Normal/Warning--selfTestFailed→Fault；Fault--reset [maintenanceConfirmed]→Normal。通知次序用顺序图：Sensor→AlarmService publish(level)，AlarmService→Dashboard update(level)；状态机本身不擅长表达跨对象消息全序。",
+  "explanation": "Normal--thresholdExceeded→Warning；Normal/Warning--selfTestFailed→Fault；Fault--reset [maintenanceConfirmed]→Normal。通知次序用顺序图：Sensor→AlarmService publish(level)，AlarmService→Dashboard update(level)；状态机本身不擅长表达跨对象消息全序。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "三组迁移与来源状态明确"
+    },
+    {
+      "id": "r2",
+      "text": "reset 守卫明确"
+    },
+    {
+      "id": "r3",
+      "text": "选择顺序图并给出两条消息"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "Sensor 在 Normal、Warning、Fault 三态；thresholdExceeded 进入 Warning，selfTestFailed 进入 Fault，reset 仅在维修确认后回 Normal；Dashboard 接收告警。",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "写状态迁移与 reset 守卫。",
+      "points": 5
+    },
+    {
+      "id": "s2",
+      "prompt": "选择表达 Dashboard 通知次序的图并给消息。",
+      "points": 5
+    }
+  ],
+  "assets": []
+}

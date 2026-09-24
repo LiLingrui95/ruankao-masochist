@@ -1,0 +1,37 @@
+{
+  "id": "B05-T02-Q06",
+  "title": "需求工程练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T02"
+  ],
+  "unit_id": "B05-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "解释双向需求跟踪。",
+  "answer": "既能从需求追到设计、代码和测试，也能从实现或测试反查其需求来源。",
+  "explanation": "答案需明确正向与反向两条链。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：既能从需求追到设计、代码和测试，也能从实现或测试反查其需求来源。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：既能从需求追到设计、代码和测试，也能从实现或测试反查其需求来源。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：答案需明确正向与反向两条链。"
+    }
+  ]
+}

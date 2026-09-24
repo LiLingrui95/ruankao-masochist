@@ -1,0 +1,39 @@
+{
+  "id": "B06-T01-Q01",
+  "title": "依赖倒置",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T01"
+  ],
+  "unit_id": "B06-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "结算流程应允许替换折扣算法，且高层流程不引用具体折扣类。哪项设计最合适？",
+  "options": {
+    "A": "Checkout 依赖 DiscountPolicy 接口",
+    "B": "Checkout 用会员类型字符串分支",
+    "C": "每个折扣类复制结算流程",
+    "D": "把折扣变量设为全局变量"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "高层流程依赖抽象，具体策略实现该抽象。",
+    "B": "新增类型仍需修改高层分支，违反 OCP。",
+    "C": "复制流程产生多个变化原因和重复。",
+    "D": "全局状态没有建立抽象依赖，且增加耦合。"
+  },
+  "explanation": "正确选项为 A。高层流程依赖抽象，具体策略实现该抽象。",
+  "source_ids": [
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

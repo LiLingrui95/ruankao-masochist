@@ -1,0 +1,37 @@
+{
+  "id": "B03-T02-Q04",
+  "title": "线性表、栈与队列反例分析",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T02"
+  ],
+  "unit_id": "B03-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "解释下列提醒为何成立，并给出触发错误的具体输入：链表 O(1) 插入要求已持有正确前驱；只有目标值仍需先查找。循环队列若不保留空位，必须另设 size 或标志区分满和空。",
+  "answer": "链表 O(1) 插入要求已持有正确前驱；只有目标值仍需先查找。循环队列若不保留空位，必须另设 size 或标志区分满和空。",
+  "explanation": "反例必须违反被误用算法的关键前提，同时说明错误输出或错误复杂度从何产生。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出一个满足题干限制的具体最小输入。"
+    },
+    {
+      "id": "r2",
+      "text": "指出该输入违反的前提，并说明错误结果或复杂度如何产生。"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B07-T06-Q05",
+  "title": "DNS、HTTP与应用协议练习5",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T06"
+  ],
+  "unit_id": "B07-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "描述无缓存时解析www.example.com的典型DNS迭代链。",
+  "answer": "递归解析器先问根获.com转介，再问.com权威获example.com权威转介，最后问example.com权威取得A/AAAA，并按TTL缓存后回复客户端。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "answer_source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "顺序包含根、TLD、域权威服务器"
+    },
+    {
+      "id": "r2",
+      "text": "说明递归解析器代表客户端查询并按TTL缓存"
+    }
+  ]
+}

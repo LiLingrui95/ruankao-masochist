@@ -1,0 +1,39 @@
+{
+  "id": "B05-T05-Q05",
+  "title": "软件架构练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T05"
+  ],
+  "unit_id": "B05-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "共享数据库模式成为所有组件共同依赖点，首先暴露哪种风险？",
+  "answer": "A",
+  "explanation": "共享模式修改会影响多个组件。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "模式变化传播",
+    "B": "无路径覆盖",
+    "C": "需求不可验证",
+    "D": "测试无边界"
+  },
+  "option_explanations": {
+    "A": "A 项“模式变化传播”正确：共享模式修改会影响多个组件。",
+    "B": "B 项“无路径覆盖”错误：路径覆盖是测试充分性问题，不是共享模式带来的首要依赖风险。",
+    "C": "C 项“需求不可验证”错误：共享数据库可能有清晰需求，题干风险是模式变更传播。",
+    "D": "D 项“测试无边界”错误：测试边界可单独定义，不由共享数据库结构直接决定。"
+  }
+}

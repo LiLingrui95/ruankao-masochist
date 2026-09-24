@@ -1,0 +1,36 @@
+{
+  "id": "B08-T08",
+  "module_id": "B08",
+  "unit_id": "B08-U03",
+  "title": "专业英语：软件工程与数据库",
+  "aliases": [
+    "需求术语",
+    "事务语义",
+    "上下文推断"
+  ],
+  "objectives": [
+    "掌握专业英语：软件工程与数据库的核心概念",
+    "独立完成专业英语：软件工程与数据库的典型推导"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "数学与综合基础"
+  ],
+  "body_path": "modules/B08/topics/B08-T08.md",
+  "source_ids": [
+    "B08-S11",
+    "B08-S03"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 5,
+  "exercise_rationale": "按复杂度配置混合题型，覆盖概念、计算和边界判断。",
+  "question_ids": [
+    "B08-T08-Q01",
+    "B08-T08-Q02",
+    "B08-T08-Q03",
+    "B08-T08-Q04",
+    "B08-T08-Q05"
+  ]
+}

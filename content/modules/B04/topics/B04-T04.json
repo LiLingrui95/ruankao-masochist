@@ -1,0 +1,42 @@
+{
+  "id": "B04-T04",
+  "module_id": "B04",
+  "unit_id": "B04-U02",
+  "title": "范式与关系分解",
+  "aliases": [
+    "2NF",
+    "3NF",
+    "BCNF",
+    "无损连接"
+  ],
+  "objectives": [
+    "解释并应用范式与关系分解的核心条件",
+    "独立推导范式与关系分解问题并用反例检查边界"
+  ],
+  "prerequisite_ids": [
+    "B04-T03"
+  ],
+  "syllabus_refs": [
+    "数据库系统知识",
+    "数据库设计与实现"
+  ],
+  "body_path": "modules/B04/topics/B04-T04.md",
+  "source_ids": [
+    "B04-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂：需要多步推导与边界验证，配置 8 道。",
+  "question_ids": [
+    "B04-T04-Q01",
+    "B04-T04-Q02",
+    "B04-T04-Q03",
+    "B04-T04-Q04",
+    "B04-T04-Q05",
+    "B04-T04-Q06",
+    "B04-T04-Q07",
+    "B04-T04-Q08"
+  ]
+}

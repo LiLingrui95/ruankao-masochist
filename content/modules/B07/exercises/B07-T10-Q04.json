@@ -1,0 +1,41 @@
+{
+  "id": "B07-T10-Q04",
+  "title": "访问控制、攻击与安全防护练习4",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T10"
+  ],
+  "unit_id": "B07-T10",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "默认拒绝策略的含义是？",
+  "answer": "B",
+  "explanation": "显式许可、其余拒绝可缩小攻击面。",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "只按源端口信任用户",
+    "B": "未被明确允许的流量或操作应拒绝",
+    "C": "所有内部流量永远允许",
+    "D": "出现告警后关闭日志"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“只按源端口信任用户”。本题适用的关系是：显式许可、其余拒绝可缩小攻击面。",
+    "B": "显式许可、其余拒绝可缩小攻击面。",
+    "C": "错误：该选项断言“所有内部流量永远允许”。本题适用的关系是：显式许可、其余拒绝可缩小攻击面。",
+    "D": "错误：该选项断言“出现告警后关闭日志”。本题适用的关系是：显式许可、其余拒绝可缩小攻击面。"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "B07-T02-Q02",
+  "title": "以太网与链路层练习2",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T02"
+  ],
+  "unit_id": "B07-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "现代全双工交换式以太网链路上，关于CSMA/CD的正确说法是？",
+  "answer": "D",
+  "explanation": "全双工点到点链路收发通道独立，不存在共享介质碰撞。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S02"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "每帧必须先制造碰撞",
+    "B": "只有IPv6帧执行",
+    "C": "由路由器执行退避",
+    "D": "没有碰撞，通常不执行CSMA/CD退避"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“每帧必须先制造碰撞”。本题适用的关系是：全双工点到点链路收发通道独立，不存在共享介质碰撞。",
+    "B": "错误：该选项断言“只有IPv6帧执行”。本题适用的关系是：全双工点到点链路收发通道独立，不存在共享介质碰撞。",
+    "C": "错误：该选项断言“由路由器执行退避”。本题适用的关系是：全双工点到点链路收发通道独立，不存在共享介质碰撞。",
+    "D": "全双工点到点链路收发通道独立，不存在共享介质碰撞。"
+  }
+}

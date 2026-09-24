@@ -1,0 +1,59 @@
+{
+  "id": "B04-T10-Q03",
+  "title": "仓储履约设计案例",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享业务材料，完成全部子问题。",
+  "answer": "Inventory(warehouse_id FK,product_id FK,on_hand CHECK(on_hand>=0),PK(warehouse_id,product_id)); OrderLine(order_id FK,line_no,product_id FK,ordered_qty,PK(order_id,line_no)); Shipment(shipment_id PK,warehouse_id FK,shipped_at); Fulfillment(shipment_id FK,order_id,line_no,shipped_qty CHECK(shipped_qty>0),PK(shipment_id,order_id,line_no)，并以复合外键(order_id,line_no)引用 OrderLine。Inventory 和 Fulfillment 分别表达仓库—商品、出库—订单行的组合事实。创建 Fulfillment 与扣减 Inventory 必须在同一事务，条件更新 `... SET on_hand=on_hand-:q WHERE ... AND on_hand>=:q`，检查影响行数后提交，失败则回滚。",
+  "explanation": "四个核心模式及约束 5 点；识别组合事实 2 点；原子事务、条件更新和失败回滚 3 点。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "四个核心模式及约束 5 点"
+    },
+    {
+      "id": "r2",
+      "text": "识别组合事实 2 点"
+    },
+    {
+      "id": "r3",
+      "text": "原子事务、条件更新和失败回滚 3 点。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐条将参考模式、键、基数、约束和事务方案回代共享业务条件；未使用题干未授权的唯一性假设。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 15,
+  "case_material": "商品 product_id 唯一；仓库 warehouse_id 唯一；每个仓库对每种商品保存现存量，组合唯一。订单 order_id 唯一并包含多个行项目，行号只在订单内唯一。每次出库 shipment_id 唯一；一次出库可履约多个订单行，一个订单行也可分多次出库，需记录本次 shipped_qty。库存不得为负。",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "给出库存、订单行、出库及履约关系模式。",
+      "points": 5
+    },
+    {
+      "id": "b",
+      "prompt": "指出两个 M:N/复合键设计。",
+      "points": 2
+    },
+    {
+      "id": "c",
+      "prompt": "说明扣库存与记录履约的事务处理。",
+      "points": 3
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "B03-T09-Q08",
+  "title": "服务器容量二分案例",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T09"
+  ],
+  "unit_id": "B03-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料，回答三个子问题。",
+  "answer": "a. feasible(C) 线性扫描并统计所需服务器数，数量≤2则真；区间 [max(task)=10,sum=32]。b. mid21可行（14|18），区间[10,21]；mid15不可行（需3台），[16,21]；mid18可行（14|18），[16,18]；mid17不可行，[18,18]，答案18。c. 每次判定 O(n)，二分次数 O(log(sum-max+1))，总 O(n log sum)，空间 O(1)；mid=lo+(hi-lo)//2。",
+  "explanation": "参考答案按三个子问分别给出算法或状态、不省略的中间结果，以及复杂度和适用边界。共享材料只给输入与约束，不含待求结果。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "verify.py 对本案例的最终数值、状态表或组合集合运行独立模型复算，并校验共享材料不含答案措辞。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "判定函数按顺序贪心装载，以服务器数≤2为可行；初始区间[10,32]。"
+    },
+    {
+      "id": "r2",
+      "text": "列出21真、15假、18真、17假，得到最小容量18。"
+    },
+    {
+      "id": "r3",
+      "text": "给出 O(n log sum)、O(1) 与安全中点公式。"
+    }
+  ],
+  "case_material": "5 个任务工作量为 [7,2,5,10,8]，必须保持顺序分配给至多2台服务器，每台承担连续的一段任务。给定容量 C，可从左到右装载；若累计超过 C 就启用下一台。求能完成分配的最小整数容量。",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "定义单调判定函数 feasible(C)，并给出初始答案区间。",
+      "points": 3
+    },
+    {
+      "id": "b",
+      "prompt": "列出二分检查的容量及判定，求最小容量。",
+      "points": 5
+    },
+    {
+      "id": "c",
+      "prompt": "给出复杂度和中点计算的溢出安全写法。",
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B05-T11-Q06",
+  "title": "DFD综合练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T11"
+  ],
+  "unit_id": "B05-T11",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "父图输出Y在子图改名Z且无字典等价说明，应判为？",
+  "answer": "C",
+  "explanation": "名称变化需数据字典证明语义等价。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "自动等价",
+    "B": "内部流",
+    "C": "潜在不平衡",
+    "D": "只影响排版"
+  },
+  "option_explanations": {
+    "A": "A 项“自动等价”错误：没有数据字典等价证据时，不能仅凭位置自动认定Y与Z相同。",
+    "B": "B 项“内部流”错误：Z跨越子图边界就不是纯内部流，必须与父输出对应。",
+    "C": "C 项“潜在不平衡”正确：名称变化需数据字典证明语义等价。",
+    "D": "D 项“只影响排版”错误：名称变化可能改变数据语义，不只是排版。"
+  }
+}

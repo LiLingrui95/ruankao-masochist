@@ -1,0 +1,59 @@
+{
+  "id": "B03-T10-Q08",
+  "title": "会议室活动选择案例",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T10"
+  ],
+  "unit_id": "B03-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料，回答三个子问题。",
+  "answer": "a. 按结束时间升序，每次选与上次兼容者：A[1,4)、D[5,7)、H[8,11)、K[12,16)，共4个。b. 任一最优解首项若不是最早结束的 A，可用 A 替换它；A 结束不晚，故其后原可选活动仍可选。对剩余区间重复该论证。c. 排序 O(n log n)，扫描 O(n)，总 O(n log n)；若原地排序额外空间依实现为 O(1) 至 O(log n)，输出列表 O(n)。",
+  "explanation": "参考答案按三个子问分别给出算法或状态、不省略的中间结果，以及复杂度和适用边界。共享材料只给输入与约束，不含待求结果。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "verify.py 对本案例的最终数值、状态表或组合集合运行独立模型复算，并校验共享材料不含答案措辞。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "按最早结束规则选出 A、D、H、K，共4项。"
+    },
+    {
+      "id": "r2",
+      "text": "交换论证包含“替换首项且后续可行集不缩小”，并递归到余下区间。"
+    },
+    {
+      "id": "r3",
+      "text": "写出排序加扫描的 O(n log n) 时间，并交代排序/输出空间。"
+    }
+  ],
+  "case_material": "候选活动为 A[1,4)、B[3,5)、C[0,6)、D[5,7)、E[3,9)、F[5,9)、G[6,10)、H[8,11)、I[8,12)、J[2,14)、K[12,16)。同一房间内活动不得重叠，端点相接允许。",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "给出选择规则，并按规则列出所选活动。",
+      "points": 4
+    },
+    {
+      "id": "b",
+      "prompt": "用交换论证说明该规则为何不会减少最优活动数。",
+      "points": 4
+    },
+    {
+      "id": "c",
+      "prompt": "给出排序实现的时间、额外空间复杂度。",
+      "points": 2
+    }
+  ]
+}

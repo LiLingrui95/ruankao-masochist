@@ -1,0 +1,42 @@
+{
+  "id": "B07-T09",
+  "module_id": "B07",
+  "unit_id": "B07-U03",
+  "title": "散列、签名、证书与认证",
+  "aliases": [
+    "消息摘要",
+    "数字签名",
+    "PKI与身份认证"
+  ],
+  "objectives": [
+    "区分散列、MAC、签名和加密安全性质",
+    "按正确顺序完成签名与验签",
+    "验证证书链、身份绑定和认证因子"
+  ],
+  "prerequisite_ids": [
+    "B07-T08"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T09.md",
+  "source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "签名认证易混且边界关键，8题覆盖算法流程、证书链和认证。",
+  "question_ids": [
+    "B07-T09-Q01",
+    "B07-T09-Q02",
+    "B07-T09-Q03",
+    "B07-T09-Q04",
+    "B07-T09-Q05",
+    "B07-T09-Q06",
+    "B07-T09-Q07",
+    "B07-T09-Q08"
+  ]
+}

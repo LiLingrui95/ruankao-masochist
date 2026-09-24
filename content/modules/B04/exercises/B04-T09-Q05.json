@@ -1,0 +1,37 @@
+{
+  "id": "B04-T09-Q05",
+  "title": "副本延迟",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T09"
+  ],
+  "unit_id": "B04-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "用户刚写主库后立即读异步只读副本，可能发生什么？",
+  "answer": "可能读到旧值或找不到刚写记录。",
+  "explanation": "异步复制有传播延迟；需主库读、会话粘滞或一致性等待满足读己之写。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：可能读到旧值或找不到刚写记录。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：异步复制有传播延迟。"
+    }
+  ],
+  "source_ids": [
+    "B04-S05"
+  ],
+  "answer_source_ids": [
+    "B04-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：异步复制有传播延迟；需主库读、会话粘滞或一致性等待满足读己之写。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

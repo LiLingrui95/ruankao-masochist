@@ -1,0 +1,37 @@
+{
+  "id": "B01-T08-Q05",
+  "title": "死锁与资源分配练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T08"
+  ],
+  "unit_id": "B01-T08",
+  "section_index": 0,
+  "prompt": "为何 unsafe state 不等于当前 deadlock？",
+  "explanation": "deadlock 是已经形成无法推进的等待集合，unsafe 是风险性质。",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "answer_source_ids": [
+    "B01-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：deadlock 是已经形成无法推进的等待集合，unsafe 是风险性质。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "unsafe 仅表示无法保证所有未来最大需求都可满足；当前进程仍可能按较小实际需求完成。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：unsafe 仅表示无法保证所有未来最大需求都可满足；当前进程仍可能按较小实际需求完成。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：deadlock 是已经形成无法推进的等待集合，unsafe 是风险性质。"
+    }
+  ]
+}

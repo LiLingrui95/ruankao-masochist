@@ -1,0 +1,37 @@
+{
+  "id": "B04-T03-Q03",
+  "title": "多个候选键",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T03"
+  ],
+  "unit_id": "B04-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(A,B,C)，F={A→B,B→A,B→C}，列出候选键。",
+  "answer": "A 和 B。",
+  "explanation": "A⁺ 经 B 得 C；B⁺ 经 A 并直接得 C。二者均为最小单属性键。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：A 和 B。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：A⁺ 经 B 得 C。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：A⁺ 经 B 得 C；B⁺ 经 A 并直接得 C。二者均为最小单属性键。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B03-T11-Q05",
+  "title": "动态规划复杂度审计",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T11"
+  ],
+  "unit_id": "B03-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "分别说明“状态、转移、初值、顺序与空间优化”中主要操作的时间复杂度、额外空间复杂度，以及复杂度成立的前提。",
+  "answer": "动态规划适合重叠子问题和最优子结构。设计时先定义状态含义，再写转移、初值、计算顺序和答案位置。滚动数组只能在确认依赖方向后使用。 时间界取决于文中所述操作和输入结构；额外空间还需计辅助数组、队列、栈或递归深度。",
+  "explanation": "复杂度必须绑定明确操作和输入模型，不能只写一个孤立的 O 记号。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "分别写出主要操作的时间复杂度与额外空间复杂度。"
+    },
+    {
+      "id": "r2",
+      "text": "明确复杂度对应的输入规模、数据结构和成立前提。"
+    }
+  ]
+}

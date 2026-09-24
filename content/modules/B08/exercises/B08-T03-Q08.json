@@ -1,0 +1,37 @@
+{
+  "id": "B08-T03-Q08",
+  "title": "整数约束",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T03"
+  ],
+  "unit_id": "B08-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "连续线性规划最优解x=2.6，且x必须是非负整数，为什么不能直接取2.6？",
+  "answer": "2.6不在整数可行域；须检查满足全部约束的邻近整数候选，不能只机械四舍五入。",
+  "explanation": "解题依据与结果：2.6不在整数可行域；须检查满足全部约束的邻近整数候选，不能只机械四舍五入。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“2.6不在整数可行域”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“须检查满足全部约束的邻近整数候选，不能只机械四舍五入”给出题设对应的计算、文本证据或适用边界，不能只写题名“整数约束”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

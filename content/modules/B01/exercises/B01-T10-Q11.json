@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q11",
+  "title": "文件、磁盘与设备管理练习 11",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "4 块 2 TB 磁盘组成 RAID 10，理论可用容量是多少？能否保证容忍任意两盘失效？",
+  "explanation": "RAID 10 容量 nS/2=4 TB；容错取决于失效分布，每个镜像对至少需一盘存活。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：RAID 10 容量 nS/2=4 TB；容错取决于失效分布，每个镜像对至少需一盘存活。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "容量 4 TB；不能保证容忍任意两盘，若同一镜像对两盘均失效则阵列失败。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：容量 4 TB；不能保证容忍任意两盘，若同一镜像对两盘均失效则阵列失败。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：RAID 10 容量 nS/2=4 TB；容错取决于失效分布，每个镜像对至少需一盘存活。"
+    }
+  ]
+}

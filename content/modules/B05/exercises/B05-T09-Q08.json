@@ -1,0 +1,41 @@
+{
+  "id": "B05-T09-Q08",
+  "title": "补充范围练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T09"
+  ],
+  "unit_id": "B05-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "比较直接、并行、分阶段转换的风险与成本。",
+  "answer": "直接转换切换快、运行成本低，但失败影响集中且回退困难；并行转换可核对输出和回退，但双录、同步与双系统运维成本高；分阶段转换把风险限制在模块或范围内，但新旧系统共存接口和数据一致性复杂。",
+  "explanation": "按题干对象、版本与约束逐点作答。",
+  "source_ids": [
+    "B05-S13"
+  ],
+  "answer_source_ids": [
+    "B05-S13"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S13核对术语与版本边界，并逐项匹配rubric。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 7,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "评分点：直接转换写出低成本与高切换风险"
+    },
+    {
+      "id": "r2",
+      "text": "并行写出可回退/核对与双系统成本"
+    },
+    {
+      "id": "r3",
+      "text": "分阶段写出局部风险与中间态接口一致性。"
+    }
+  ]
+}

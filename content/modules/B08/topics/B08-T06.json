@@ -1,0 +1,38 @@
+{
+  "id": "B08-T06",
+  "module_id": "B08",
+  "unit_id": "B08-U02",
+  "title": "知识产权与软件保护",
+  "aliases": [
+    "著作权",
+    "软件保护",
+    "个人信息保护"
+  ],
+  "objectives": [
+    "掌握知识产权与软件保护的核心概念",
+    "独立完成知识产权与软件保护的典型推导"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "数学与综合基础"
+  ],
+  "body_path": "modules/B08/topics/B08-T06.md",
+  "source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 6,
+  "exercise_rationale": "按复杂度配置混合题型，覆盖概念、计算和边界判断。",
+  "question_ids": [
+    "B08-T06-Q01",
+    "B08-T06-Q02",
+    "B08-T06-Q03",
+    "B08-T06-Q04",
+    "B08-T06-Q05",
+    "B08-T06-Q06"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B03-T12-Q04",
+  "title": "回溯与算法综合案例反例分析",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T12"
+  ],
+  "unit_id": "B03-T12",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "解释下列提醒为何成立，并给出触发错误的具体输入：撤销状态遗漏会污染兄弟分支。基于“当前和已超目标”的剪枝仅在后续元素非负时安全；若允许负数，超出后仍可能被拉回。去重还需排序并在同层跳过相同选择。",
+  "answer": "撤销状态遗漏会污染兄弟分支。基于“当前和已超目标”的剪枝仅在后续元素非负时安全；若允许负数，超出后仍可能被拉回。去重还需排序并在同层跳过相同选择。",
+  "explanation": "反例必须违反被误用算法的关键前提，同时说明错误输出或错误复杂度从何产生。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出一个满足题干限制的具体最小输入。"
+    },
+    {
+      "id": "r2",
+      "text": "指出该输入违反的前提，并说明错误结果或复杂度如何产生。"
+    }
+  ]
+}

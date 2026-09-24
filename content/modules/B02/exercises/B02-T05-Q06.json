@@ -1,0 +1,37 @@
+{
+  "id": "B02-T05-Q06",
+  "title": "阶段输出",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T05"
+  ],
+  "unit_id": "B02-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "简述语法分析与语义分析的输入输出差别。",
+  "answer": "语法分析读取 token 流并按文法建立语法树/AST；语义分析读取 AST 与符号信息，完成绑定、类型等检查并产生带注解的表示。",
+  "explanation": "二者职责可在实现中交织，但概念输出不同。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：二者职责可在实现中交织，但概念输出不同。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "语法分析：token流到语法树/AST。"
+    },
+    {
+      "id": "r2",
+      "text": "语义分析：使用AST和符号信息完成绑定/类型检查并注解表示。"
+    }
+  ]
+}

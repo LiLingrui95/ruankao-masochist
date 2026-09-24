@@ -1,0 +1,37 @@
+{
+  "id": "B03-T11-Q07",
+  "title": "动态规划方案比较",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T11"
+  ],
+  "unit_id": "B03-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为同一问题比较两种可行方法，说明选择依据、最坏时间和一个会改变选择的输入特征。",
+  "answer": "应从状态、转移、初值、顺序与空间优化中选两种方法，按输入规模、结构前提、时间上界和空间代价比较；输入有序性、稠密度、边权或容量等特征可改变选择。",
+  "explanation": "方法选择必须由约束驱动，平均性能不能替代题目要求的最坏保证。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出两种确实可解题的方法及各自最坏时间和空间复杂度。"
+    },
+    {
+      "id": "r2",
+      "text": "指出一个具体输入特征，并解释它为何使其中一种方法更合适。"
+    }
+  ]
+}

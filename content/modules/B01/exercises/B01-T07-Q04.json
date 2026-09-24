@@ -1,0 +1,37 @@
+{
+  "id": "B01-T07-Q04",
+  "title": "PV同步与互斥练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T07"
+  ],
+  "unit_id": "B01-T07",
+  "section_index": 0,
+  "prompt": "仅要求 A 完成后 B 执行，如何设置 semaphore？",
+  "explanation": "B 先到会因零许可阻塞；A 发出一个许可后 B 才能通过。",
+  "source_ids": [
+    "B01-S04"
+  ],
+  "answer_source_ids": [
+    "B01-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：B 先到会因零许可阻塞；A 发出一个许可后 B 才能通过。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "设 S=0；A 完成后 V(S)，B 开始前 P(S)。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：设 S=0；A 完成后 V(S)，B 开始前 P(S)。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：B 先到会因零许可阻塞；A 发出一个许可后 B 才能通过。"
+    }
+  ]
+}

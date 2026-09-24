@@ -1,0 +1,41 @@
+{
+  "id": "B06-T02-Q01",
+  "title": "构造顺序",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T02"
+  ],
+  "unit_id": "B06-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "类 D : B 声明成员 x 后 y，初始化列表写 y(2), x(1)。实际初始化顺序是？",
+  "options": {
+    "A": "B、x、y、D 构造体",
+    "B": "B、y、x、D 构造体",
+    "C": "x、y、B、D 构造体",
+    "D": "由编译器任选"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "直接基类先于成员，成员按声明次序，最后执行构造体。",
+    "B": "初始化列表书写次序不控制成员顺序。",
+    "C": "基类必须先于派生类成员。",
+    "D": "该初始化顺序由 C++ 标准确定，不可任选。"
+  },
+  "explanation": "正确选项为 A。直接基类先于成员，成员按声明次序，最后执行构造体。",
+  "source_ids": [
+    "B06-S02",
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

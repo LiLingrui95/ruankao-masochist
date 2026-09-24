@@ -1,0 +1,37 @@
+{
+  "id": "B05-T07-Q06",
+  "title": "黑盒测试练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T07"
+  ],
+  "unit_id": "B05-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "等价类为何要求不重叠且非空？",
+  "answer": "不重叠避免一个输入归属冲突，非空保证每个分区存在可选代表值。",
+  "explanation": "评分点绑定归属冲突与代表值存在性。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：不重叠避免一个输入归属冲突，非空保证每个分区存在可选代表值。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：不重叠避免一个输入归属冲突，非空保证每个分区存在可选代表值。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：评分点绑定归属冲突与代表值存在性。"
+    }
+  ]
+}

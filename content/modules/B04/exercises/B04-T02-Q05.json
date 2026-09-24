@@ -1,0 +1,37 @@
+{
+  "id": "B04-T02-Q05",
+  "title": "对所有课程",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T02"
+  ],
+  "unit_id": "B04-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "Enroll(S,C) 除以 Required(C) 表达什么？",
+  "answer": "选修了 Required 中每一门课程的学生 S。",
+  "explanation": "除法返回与除数中所有 C 组合均在被除关系出现的 S。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：选修了 Required 中每一门课程的学生 S。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：除法返回与除数中所有 C 组合均在被除关系出现的 S。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：除法返回与除数中所有 C 组合均在被除关系出现的 S。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

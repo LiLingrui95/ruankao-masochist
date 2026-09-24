@@ -1,0 +1,37 @@
+{
+  "id": "B02-T05-Q04",
+  "title": "token 序列",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T05"
+  ],
+  "unit_id": "B02-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "把 `sum = n + 12;` 写成带类别的 token 序列。",
+  "answer": "IDENT(sum), ASSIGN, IDENT(n), PLUS, INT_LITERAL(12), SEMI。",
+  "explanation": "空白不产生普通语法 token，标识符和字面量携带属性。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：空白不产生普通语法 token，标识符和字面量携带属性。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "依序写出IDENT(sum)、ASSIGN、IDENT(n)。"
+    },
+    {
+      "id": "r2",
+      "text": "继续写出PLUS、INT_LITERAL(12)、SEMI且不把空白列为普通token。"
+    }
+  ]
+}

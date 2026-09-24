@@ -1,0 +1,37 @@
+{
+  "id": "B04-T10-Q06",
+  "title": "联系方式多值属性",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "客户可有任意多个电话且每个电话有类型。设计关系。",
+  "answer": "CustomerPhone(customer_id FK, phone, type, PRIMARY KEY(customer_id,phone))，必要时另设 phone_id 并对业务组合唯一。",
+  "explanation": "拆表保留一行一个电话，避免 phone1/phone2 上限和逗号字符串。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：CustomerPhone(customer_id FK, phone, type, PRIMARY KEY(customer_id,phone))，必要时另设 phone_id 并对业务组合唯一。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：拆表保留一行一个电话，避免 phone1/phone2 上限和逗号字符串。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：拆表保留一行一个电话，避免 phone1/phone2 上限和逗号字符串。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

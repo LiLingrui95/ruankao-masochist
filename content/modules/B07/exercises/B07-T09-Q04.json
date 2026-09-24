@@ -1,0 +1,41 @@
+{
+  "id": "B07-T09-Q04",
+  "title": "散列、签名、证书与认证练习4",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T09"
+  ],
+  "unit_id": "B07-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "验证HTTPS服务器证书时，除链到受信根外还应检查？",
+  "answer": "B",
+  "explanation": "信任链只是证书验证的一部分，身份名称和约束必须匹配。",
+  "source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "比较服务器MAC地址",
+    "B": "目标名称、有效期、用途及适用的撤销状态",
+    "C": "只看文件大小",
+    "D": "要求证书包含私钥"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“比较服务器MAC地址”。本题适用的关系是：信任链只是证书验证的一部分，身份名称和约束必须匹配。",
+    "B": "信任链只是证书验证的一部分，身份名称和约束必须匹配。",
+    "C": "错误：该选项断言“只看文件大小”。本题适用的关系是：信任链只是证书验证的一部分，身份名称和约束必须匹配。",
+    "D": "错误：该选项断言“要求证书包含私钥”。本题适用的关系是：信任链只是证书验证的一部分，身份名称和约束必须匹配。"
+  }
+}

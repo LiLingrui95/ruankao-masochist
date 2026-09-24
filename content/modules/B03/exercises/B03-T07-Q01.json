@@ -1,0 +1,39 @@
+{
+  "id": "B03-T07-Q01",
+  "title": "最短路径与最小生成树概念判断1",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T07"
+  ],
+  "unit_id": "B03-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "Dijkstra 的经典适用前提是？",
+  "options": {
+    "A": "图必须无向",
+    "B": "所有可达边权非负",
+    "C": "图必须是树",
+    "D": "边权均相等"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "有向图也可运行。",
+    "B": "非负权保证已确定的最短距离不会被后来降低。",
+    "C": "一般非负图不必是树。",
+    "D": "等权只是更强的非必要限制。"
+  },
+  "explanation": "答案 B：非负权保证已确定的最短距离不会被后来降低。",
+  "source_ids": [
+    "B03-S04"
+  ],
+  "answer_source_ids": [
+    "B03-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按定义逐项代入题干条件排除，并用 verify.py 校验四项齐全、答案落在选项中且每项解析均点明本项文本与正确项。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

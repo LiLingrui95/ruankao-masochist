@@ -1,0 +1,39 @@
+{
+  "id": "B06-T05-Q03",
+  "title": "多重性",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T05"
+  ],
+  "unit_id": "B06-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "每个订单至少一条明细，每条明细只属于一个订单。订单端/明细端如何标？",
+  "options": {
+    "A": "订单端 1，明细端 1..*",
+    "B": "订单端 0..*，明细端 0..1",
+    "C": "两端均 *",
+    "D": "两端均 1"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "从明细看恰有一个订单；从订单看有一到多条明细。",
+    "B": "允许无订单明细及空订单，与约束相反。",
+    "C": "允许明细属于多个订单。",
+    "D": "禁止一个订单有多条明细。"
+  },
+  "explanation": "正确选项为 A。从明细看恰有一个订单；从订单看有一到多条明细。",
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3
+}

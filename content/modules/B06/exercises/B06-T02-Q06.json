@@ -1,0 +1,41 @@
+{
+  "id": "B06-T02-Q06",
+  "title": "析构顺序推演",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T02"
+  ],
+  "unit_id": "B06-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "B 含成员 b，D:B 含成员 d；各构造体、析构体和成员析构均输出自己的名字。写出 D x 离开作用域时的析构次序。",
+  "answer": "D 的析构函数体先执行，然后成员 d 析构，再执行 B 的析构函数体，最后成员 b 析构。派生部分先销毁，成员相对构造顺序逆序。",
+  "explanation": "D 的析构函数体先执行，然后成员 d 析构，再执行 B 的析构函数体，最后成员 b 析构。派生部分先销毁，成员相对构造顺序逆序。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确 D 析构体在 d 之前"
+    },
+    {
+      "id": "r2",
+      "text": "明确 d 在 B 析构体之前"
+    },
+    {
+      "id": "r3",
+      "text": "明确 b 最后销毁"
+    }
+  ],
+  "source_ids": [
+    "B06-S02"
+  ],
+  "answer_source_ids": [
+    "B06-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

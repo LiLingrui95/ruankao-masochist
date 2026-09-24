@@ -1,0 +1,43 @@
+{
+  "id": "B06-T02-Q08",
+  "title": "异常与局部对象",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T02"
+  ],
+  "unit_id": "B06-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "函数依次构造 Guard a、Guard b，随后抛异常；外层捕获。哪些对象析构，顺序如何？",
+  "answer": "a 与 b 均已完整构造，栈展开时按构造逆序先析构 b、再析构 a，然后进入匹配的外层处理器。若某对象构造函数自身抛出，该对象析构函数不执行，但其已构造子对象会清理。",
+  "explanation": "a 与 b 均已完整构造，栈展开时按构造逆序先析构 b、再析构 a，然后进入匹配的外层处理器。若某对象构造函数自身抛出，该对象析构函数不执行，但其已构造子对象会清理。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "写出 b 后 a 的顺序"
+    },
+    {
+      "id": "r2",
+      "text": "说明发生于进入外层处理器之前"
+    },
+    {
+      "id": "r3",
+      "text": "区分构造未完成对象"
+    }
+  ],
+  "source_ids": [
+    "B06-S03",
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S03",
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

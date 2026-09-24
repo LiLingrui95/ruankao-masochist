@@ -1,0 +1,43 @@
+{
+  "id": "B05-T03",
+  "module_id": "B05",
+  "unit_id": "B05-U01",
+  "title": "DFD、数据字典与加工逻辑",
+  "aliases": [
+    "数据流图",
+    "上下文图",
+    "分层平衡",
+    "数据字典",
+    "加工说明"
+  ],
+  "objectives": [
+    "掌握DFD、数据字典与加工逻辑的核心术语与适用条件",
+    "能用给定材料完成判断、计算或模型校验"
+  ],
+  "prerequisite_ids": [
+    "B05-T02"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：DFD、数据字典与加工逻辑"
+  ],
+  "body_path": "modules/B05/topics/B05-T03.md",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "含计算、模型或综合分析，需多种推理路径覆盖",
+  "question_ids": [
+    "B05-T03-Q01",
+    "B05-T03-Q02",
+    "B05-T03-Q03",
+    "B05-T03-Q04",
+    "B05-T03-Q05",
+    "B05-T03-Q06",
+    "B05-T03-Q07",
+    "B05-T03-Q08"
+  ]
+}
+

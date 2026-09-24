@@ -1,0 +1,39 @@
+{
+  "id": "B05-T06-Q07",
+  "title": "白盒测试练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T06"
+  ],
+  "unit_id": "B05-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "有循环的程序通常为何不能穷尽路径？",
+  "answer": "C",
+  "explanation": "不同迭代次数可产生无限多路径。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "没有语句",
+    "B": "分支不执行",
+    "C": "循环次数使路径可能无穷",
+    "D": "圈复杂度恒为0"
+  },
+  "option_explanations": {
+    "A": "A 项“没有语句”错误：循环程序仍含可执行语句，语句存在与路径数量无关。",
+    "B": "B 项“分支不执行”错误：循环条件本身形成分支，不能说分支不执行。",
+    "C": "C 项“循环次数使路径可能无穷”正确：不同迭代次数可产生无限多路径。",
+    "D": "D 项“圈复杂度恒为0”错误：圈复杂度至少为1，且循环通常增加判定节点。"
+  }
+}

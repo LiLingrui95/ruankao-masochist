@@ -1,0 +1,37 @@
+{
+  "id": "B01-T09-Q07",
+  "title": "分页、地址转换与置换练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T09"
+  ],
+  "unit_id": "B01-T09",
+  "section_index": 0,
+  "prompt": "3 个 frame，引用串 1,2,3,1,4，用 FIFO 有几次缺页？",
+  "explanation": "前三次装满；再次访问 1 命中；访问 4 淘汰最早装入的 1，产生第 4 次缺页。",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "answer_source_ids": [
+    "B01-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：前三次装满；再次访问 1 命中；访问 4 淘汰最早装入的 1，产生第 4 次缺页。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "4 次。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：4 次。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：前三次装满；再次访问 1 命中；访问 4 淘汰最早装入的 1，产生第 4 次缺页。"
+    }
+  ]
+}

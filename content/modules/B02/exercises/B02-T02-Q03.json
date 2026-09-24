@@ -1,0 +1,39 @@
+{
+  "id": "B02-T02-Q03",
+  "title": "字符串容量",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T02"
+  ],
+  "unit_id": "B02-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "存放字符串 `cat`（含终止符）的最小 `char` 数组长度是？",
+  "answer": "B",
+  "explanation": "三个可见字符后还需一个 `\\0`。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：三个可见字符后还需一个 `\\0`。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "取决于int大小"
+  },
+  "option_explanations": {
+    "A": "3只能放可见字符，放不下终止符。",
+    "B": "c、a、t、\\0共四个char。",
+    "C": "第五个元素并非必需。",
+    "D": "char数组容量与int大小无关。"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B04-T06-Q03",
+  "title": "连接倍增",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T06"
+  ],
+  "unit_id": "B04-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "OrderHeader 与 OrderItem 是 1:N。直接连接后 COUNT(*) 统计什么？",
+  "answer": "统计连接后的订单项行数，不是订单数。",
+  "explanation": "每个订单按其明细数重复；订单数应按需求 COUNT(DISTINCT order_id) 或从头表计数。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：统计连接后的订单项行数，不是订单数。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：每个订单按其明细数重复。"
+    }
+  ],
+  "source_ids": [
+    "B04-S03"
+  ],
+  "answer_source_ids": [
+    "B04-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：每个订单按其明细数重复；订单数应按需求 COUNT(DISTINCT order_id) 或从头表计数。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

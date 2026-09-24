@@ -1,0 +1,41 @@
+{
+  "id": "B06-T04-Q01",
+  "title": "异常捕获顺序",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T04"
+  ],
+  "unit_id": "B06-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "DerivedError 继承 std::exception。哪种 catch 顺序可保留派生处理？",
+  "options": {
+    "A": "先 catch(const DerivedError&) 再 catch(const std::exception&)",
+    "B": "先 catch(const std::exception&) 再派生",
+    "C": "全部按值捕获",
+    "D": "两个顺序完全等价"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "处理器自上而下匹配，具体类型应在通用基类前。",
+    "B": "基类引用会先匹配并遮蔽后续派生处理器。",
+    "C": "按值可能复制并切片。",
+    "D": "顺序直接影响首次匹配。"
+  },
+  "explanation": "正确选项为 A。处理器自上而下匹配，具体类型应在通用基类前。",
+  "source_ids": [
+    "B06-S03",
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S03",
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

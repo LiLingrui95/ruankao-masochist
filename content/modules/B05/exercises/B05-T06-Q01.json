@@ -1,0 +1,39 @@
+{
+  "id": "B05-T06-Q01",
+  "title": "白盒测试练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T06"
+  ],
+  "unit_id": "B05-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "分支覆盖是否必然蕴含语句覆盖（可达代码）？",
+  "answer": "A",
+  "explanation": "每个分支结果均执行通常会经过分支内可达语句；这里限定可达代码与正常控制流。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "是",
+    "B": "否",
+    "C": "仅循环中否",
+    "D": "仅异常中否"
+  },
+  "option_explanations": {
+    "A": "A 项“是”正确：每个分支结果均执行通常会经过分支内可达语句；这里限定可达代码与正常控制流。",
+    "B": "B 项“否”错误：对可达正常控制流，每个分支结果均执行会经过各分支中的可达语句。",
+    "C": "C 项“仅循环中否”错误：循环不会使分支覆盖失去对循环体可达语句的包含关系。",
+    "D": "D 项“仅异常中否”错误：题干已限定可达代码，异常并非推翻该一般蕴含的条件。"
+  }
+}

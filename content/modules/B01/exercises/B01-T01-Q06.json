@@ -1,0 +1,37 @@
+{
+  "id": "B01-T01-Q06",
+  "title": "数制、编码与补码练习 6",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T01"
+  ],
+  "unit_id": "B01-T01",
+  "section_index": 0,
+  "prompt": "把 8 位补码 10010110 符号扩展到 16 位。",
+  "explanation": "符号扩展复制原最高位 1 到新增高位，数值仍为 150-256=-106。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：符号扩展复制原最高位 1 到新增高位，数值仍为 150-256=-106。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "11111111 10010110。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：11111111 10010110。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：符号扩展复制原最高位 1 到新增高位，数值仍为 150-256=-106。"
+    }
+  ]
+}

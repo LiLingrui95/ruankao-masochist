@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q04",
+  "title": "文件、磁盘与设备管理练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "同一请求集按 SSTF 的顺序和移动量是什么？",
+  "explanation": "从 50 最近为 55，继而 40、10、90；距离 5+15+30+80=130。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：从 50 最近为 55，继而 40、10、90；距离 5+15+30+80=130。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "55,40,10,90；总移动 130。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：55,40,10,90；总移动 130。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：从 50 最近为 55，继而 40、10、90；距离 5+15+30+80=130。"
+    }
+  ]
+}

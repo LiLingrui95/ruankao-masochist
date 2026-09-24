@@ -1,0 +1,37 @@
+{
+  "id": "B05-T04-Q02",
+  "title": "结构化设计练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T04"
+  ],
+  "unit_id": "B05-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "process(flag,data)按flag打印或退款，判断内聚并改进。",
+  "answer": "这是逻辑内聚；拆为printReceipt和refund，由上层选择调用。",
+  "explanation": "必须写出逻辑内聚和两个职责拆分。",
+  "source_ids": [
+    "B05-S04"
+  ],
+  "answer_source_ids": [
+    "B05-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：这是逻辑内聚；拆为printReceipt和refund，由上层选择调用。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：这是逻辑内聚；拆为printReceipt和refund，由上层选择调用。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须写出逻辑内聚和两个职责拆分。"
+    }
+  ]
+}

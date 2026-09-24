@@ -1,0 +1,37 @@
+{
+  "id": "B04-T04-Q08",
+  "title": "两个目标的区别",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T04"
+  ],
+  "unit_id": "B04-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "无损连接与依赖保持是否同一性质？",
+  "answer": "不是。",
+  "explanation": "无损关心重建是否产生/丢失元组；依赖保持关心约束能否在子关系局部检查。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：不是。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：无损关心重建是否产生/丢失元组。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：无损关心重建是否产生/丢失元组；依赖保持关心约束能否在子关系局部检查。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

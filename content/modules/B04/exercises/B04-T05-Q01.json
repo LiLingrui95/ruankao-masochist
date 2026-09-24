@@ -1,0 +1,37 @@
+{
+  "id": "B04-T05-Q01",
+  "title": "多对多转换",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T05"
+  ],
+  "unit_id": "B04-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "学生与社团是 M:N，加入日期属于这次加入。给出关系模式。",
+  "answer": "Student(student_id PK)，Club(club_id PK)，Membership(student_id FK, club_id FK, joined_on, PK(student_id,club_id))。",
+  "explanation": "联系表承载两端键和联系属性；组合键表达每对只加入一次。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：Student(student_id PK)，Club(club_id PK)，Membership(student_id FK, club_id FK, joined_on, PK(student_id,club_id))。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：联系表承载两端键和联系属性。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：联系表承载两端键和联系属性；组合键表达每对只加入一次。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

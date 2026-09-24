@@ -1,0 +1,41 @@
+{
+  "id": "B08-T09-Q01",
+  "title": "服务模型",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T09"
+  ],
+  "unit_id": "B08-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "用户上传应用但不管理操作系统，最符合？",
+  "options": {
+    "A": "IaaS",
+    "B": "PaaS",
+    "C": "SaaS终端用户",
+    "D": "社区云"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "错误。IaaS用户通常能管理操作系统；题设明确不能。",
+    "B": "正确。用户部署应用而提供方管理操作系统和底层基础设施，符合PaaS控制边界。",
+    "C": "错误。SaaS终端用户使用提供方应用，通常不负责上传和部署自己的应用包。",
+    "D": "错误。社区云是部署模型，不能回答题目所问的服务模型。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。用户部署应用而提供方管理操作系统和底层基础设施，符合PaaS控制边界。",
+  "source_ids": [
+    "B08-S08",
+    "B08-S09"
+  ],
+  "answer_source_ids": [
+    "B08-S08",
+    "B08-S09"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

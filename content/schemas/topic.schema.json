@@ -1,0 +1,117 @@
+{
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "module_id": {
+      "title": "Module Id",
+      "type": "string"
+    },
+    "unit_id": {
+      "title": "Unit Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "aliases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "objectives": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Objectives",
+      "type": "array"
+    },
+    "prerequisite_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Prerequisite Ids",
+      "type": "array"
+    },
+    "syllabus_refs": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Syllabus Refs",
+      "type": "array"
+    },
+    "body_path": {
+      "title": "Body Path",
+      "type": "string"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "review_status": {
+      "enum": [
+        "reviewed",
+        "pending"
+      ],
+      "title": "Review Status",
+      "type": "string"
+    },
+    "minutes": {
+      "maximum": 45,
+      "minimum": 1,
+      "title": "Minutes",
+      "type": "integer"
+    },
+    "exercise_target": {
+      "minimum": 1,
+      "title": "Exercise Target",
+      "type": "integer"
+    },
+    "exercise_rationale": {
+      "title": "Exercise Rationale",
+      "type": "string"
+    },
+    "question_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Question Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "module_id",
+    "unit_id",
+    "title",
+    "aliases",
+    "objectives",
+    "prerequisite_ids",
+    "syllabus_refs",
+    "body_path",
+    "source_ids",
+    "version",
+    "review_status",
+    "minutes",
+    "exercise_target",
+    "exercise_rationale",
+    "question_ids"
+  ],
+  "title": "Topic",
+  "type": "object"
+}

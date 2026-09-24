@@ -1,0 +1,41 @@
+{
+  "id": "B08-T09-Q02",
+  "title": "云特征",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T09"
+  ],
+  "unit_id": "B08-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "下列哪项本身不足以证明是完整云服务？",
+  "options": {
+    "A": "具备虚拟机",
+    "B": "按需自助",
+    "C": "快速弹性",
+    "D": "可计量服务"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "正确。虚拟机只是实现手段；缺少按需自助、弹性等特征时不能仅凭VM判定为云。",
+    "B": "错误。按需自助是NIST五项基本特征之一，属于直接证据。",
+    "C": "错误。快速弹性是NIST五项基本特征之一。",
+    "D": "错误。可计量服务是NIST五项基本特征之一。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。虚拟机只是实现手段；缺少按需自助、弹性等特征时不能仅凭VM判定为云。",
+  "source_ids": [
+    "B08-S08",
+    "B08-S09"
+  ],
+  "answer_source_ids": [
+    "B08-S08",
+    "B08-S09"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

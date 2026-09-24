@@ -1,0 +1,37 @@
+{
+  "id": "B04-T01-Q05",
+  "title": "跨行上限约束",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T01"
+  ],
+  "unit_id": "B04-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "规则“每位读者最多同时借 10 册”能否由 Loan 单行 CHECK 完整保证？说明原因。",
+  "answer": "不能。需要查看同一读者的多行聚合，应用事务、触发器或专门计数方案维护。",
+  "explanation": "普通 CHECK 针对当前行表达式，无法稳定约束跨行计数。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：不能。需要查看同一读者的多行聚合，应用事务、触发器或专门计数方案维护。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：普通 CHECK 针对当前行表达式，无法稳定约束跨行计数。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：普通 CHECK 针对当前行表达式，无法稳定约束跨行计数。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

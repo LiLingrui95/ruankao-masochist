@@ -1,0 +1,39 @@
+{
+  "id": "B07-T03-Q04",
+  "title": "IPv4子网与CIDR练习4",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T03"
+  ],
+  "unit_id": "B07-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "关于/31与/32的说法，哪项符合现行协议边界？",
+  "answer": "B",
+  "explanation": "传统减2公式并非对所有前缀和链路类型普遍成立。",
+  "source_ids": [
+    "B07-S03"
+  ],
+  "answer_source_ids": [
+    "B07-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "/32可以容纳两台普通广播主机",
+    "B": "/31可用于特定点到点链路，/32可表示单一主机路由",
+    "C": "二者永远没有任何用途",
+    "D": "都必须套用2^h-2后得到负数"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“/32可以容纳两台普通广播主机”。本题适用的关系是：传统减2公式并非对所有前缀和链路类型普遍成立。",
+    "B": "传统减2公式并非对所有前缀和链路类型普遍成立。",
+    "C": "错误：该选项断言“二者永远没有任何用途”。本题适用的关系是：传统减2公式并非对所有前缀和链路类型普遍成立。",
+    "D": "错误：该选项断言“都必须套用2^h-2后得到负数”。本题适用的关系是：传统减2公式并非对所有前缀和链路类型普遍成立。"
+  }
+}

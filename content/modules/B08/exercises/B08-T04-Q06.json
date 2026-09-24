@@ -1,0 +1,37 @@
+{
+  "id": "B08-T04-Q06",
+  "title": "压缩辨析",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T04"
+  ],
+  "unit_id": "B08-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "原始20 MB，压缩后5 MB，写出原始:压缩后和压缩后占比。",
+  "answer": "压缩比4:1；压缩后占原始25%。",
+  "explanation": "解题依据与结果：压缩比4:1；压缩后占原始25%。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“压缩比4:1”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“压缩后占原始25%”给出题设对应的计算、文本证据或适用边界，不能只写题名“压缩辨析”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S03"
+  ],
+  "answer_source_ids": [
+    "B08-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

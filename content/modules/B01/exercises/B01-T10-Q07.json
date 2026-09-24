@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q07",
+  "title": "文件、磁盘与设备管理练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "4 块 3 TB 等容量磁盘组成 RAID 0，理论可用容量和容错能力是多少？",
+  "explanation": "RAID 0 只做 striping，容量为 nS=4×3=12 TB；没有 mirror 或 parity，任一盘失效都会破坏阵列。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：RAID 0 只做 striping，容量为 nS=4×3=12 TB；没有 mirror 或 parity，任一盘失效都会破坏阵列。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "12 TB；不能容忍任何一块磁盘失效。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：12 TB；不能容忍任何一块磁盘失效。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：RAID 0 只做 striping，容量为 nS=4×3=12 TB；没有 mirror 或 parity，任一盘失效都会破坏阵列。"
+    }
+  ]
+}

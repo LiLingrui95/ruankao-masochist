@@ -1,0 +1,39 @@
+{
+  "id": "B02-T03-Q01",
+  "title": "参数机制",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T03"
+  ],
+  "unit_id": "B02-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "C 函数调用中参数传递的准确表述是？",
+  "answer": "C",
+  "explanation": "包括指针在内的形参都由实参值初始化。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：包括指针在内的形参都由实参值初始化。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "所有参数引用传递",
+    "B": "标量值传递、指针引用传递",
+    "C": "所有参数都按值传递，指针参数复制地址值",
+    "D": "由编译器自由选择"
+  },
+  "option_explanations": {
+    "A": "C没有把所有形参定义为引用传递。",
+    "B": "指针也按值复制，不是另一种参数机制。",
+    "C": "形参一律由实参值初始化。",
+    "D": "参数语义由语言标准规定。"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B02-T06-Q06",
+  "title": "FIRST选择",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T06"
+  ],
+  "unit_id": "B02-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "给定 `S→aA|bB`，向前看一个 token 为 b 时，LL(1) 选择哪条产生式？为何？",
+  "answer": "选择 `S→bB`，因为两个候选 FIRST 集分别含 a 与 b，向前看 b 唯一匹配第二项。",
+  "explanation": "条件中 FIRST 集不冲突，因此一个 token 足以决定。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：条件中 FIRST 集不冲突，因此一个 token 足以决定。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "计算/指出两候选FIRST分别为{a}和{b}。"
+    },
+    {
+      "id": "r2",
+      "text": "lookahead为b时唯一选择S→bB。"
+    }
+  ]
+}

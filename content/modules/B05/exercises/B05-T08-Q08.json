@@ -1,0 +1,41 @@
+{
+  "id": "B05-T08-Q08",
+  "title": "补充范围练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T08"
+  ],
+  "unit_id": "B05-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "比较ISO/IEC 9126-1与ISO/IEC 25010:2023的版本地位和顶层特性数量。",
+  "answer": "ISO/IEC 9126-1:2001已撤销，历史模型通常按六个顶层产品质量特性教学；ISO/IEC 25010:2023是当前第二版产品质量模型，官方摘要说明有九个顶层特性。答题必须服从题干版本，不能混表。",
+  "explanation": "按题干对象、版本与约束逐点作答。",
+  "source_ids": [
+    "B05-S11"
+  ],
+  "answer_source_ids": [
+    "B05-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S11核对术语与版本边界，并逐项匹配rubric。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 7,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "评分点：指出9126-1已撤销且六特性"
+    },
+    {
+      "id": "r2",
+      "text": "指出25010:2023为第二版且九特性"
+    },
+    {
+      "id": "r3",
+      "text": "明确不可跨版本混用。"
+    }
+  ]
+}

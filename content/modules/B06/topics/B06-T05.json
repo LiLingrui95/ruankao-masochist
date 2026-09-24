@@ -1,0 +1,41 @@
+{
+  "id": "B06-T05",
+  "module_id": "B06",
+  "unit_id": "B06-U02",
+  "title": "UML结构图与关系",
+  "aliases": [
+    "类图",
+    "组合",
+    "聚合",
+    "依赖"
+  ],
+  "objectives": [
+    "解释UML结构图与关系的核心规则与适用条件",
+    "用确定材料完成UML结构图与关系的推导与设计判断"
+  ],
+  "prerequisite_ids": [
+    "B06-T01"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：UML结构图与关系"
+  ],
+  "body_path": "modules/B06/topics/B06-T05.md",
+  "source_ids": [
+    "B06-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂综合考点配置 8 道不同推理任务；常规应用配置 5—8 道；稳定概念配置 4 道。",
+  "question_ids": [
+    "B06-T05-Q01",
+    "B06-T05-Q02",
+    "B06-T05-Q03",
+    "B06-T05-Q04",
+    "B06-T05-Q05",
+    "B06-T05-Q06",
+    "B06-T05-Q07",
+    "B06-T05-Q08"
+  ]
+}

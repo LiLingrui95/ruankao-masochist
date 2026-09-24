@@ -1,0 +1,37 @@
+{
+  "id": "B01-T03-Q05",
+  "title": "CPU、指令与寻址练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T03"
+  ],
+  "unit_id": "B01-T03",
+  "section_index": 0,
+  "prompt": "条件转移被采用时 PC 如何变化？",
+  "explanation": "控制器先形成目标有效地址，再更新 PC；未采用时保持顺序更新结果。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：控制器先形成目标有效地址，再更新 PC；未采用时保持顺序更新结果。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "按指令语义装入目标地址，而不是继续采用顺序下一地址。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：按指令语义装入目标地址，而不是继续采用顺序下一地址。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：控制器先形成目标有效地址，再更新 PC；未采用时保持顺序更新结果。"
+    }
+  ]
+}

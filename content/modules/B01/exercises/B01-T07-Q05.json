@@ -1,0 +1,37 @@
+{
+  "id": "B01-T07-Q05",
+  "title": "PV同步与互斥练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T07"
+  ],
+  "unit_id": "B01-T07",
+  "section_index": 0,
+  "prompt": "要求 A 和 B 都完成后 C 执行，给出简单方案。",
+  "explanation": "C 必须分别消费两个完成事件，避免一个生产者的信号替代另一个。",
+  "source_ids": [
+    "B01-S04"
+  ],
+  "answer_source_ids": [
+    "B01-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：C 必须分别消费两个完成事件，避免一个生产者的信号替代另一个。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "设 SA=SB=0；A 后 V(SA)，B 后 V(SB)，C 前 P(SA)、P(SB)。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：设 SA=SB=0；A 后 V(SA)，B 后 V(SB)，C 前 P(SA)、P(SB)。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：C 必须分别消费两个完成事件，避免一个生产者的信号替代另一个。"
+    }
+  ]
+}

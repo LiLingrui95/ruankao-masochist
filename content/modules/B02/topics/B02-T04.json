@@ -1,0 +1,41 @@
+{
+  "id": "B02-T04",
+  "module_id": "B02",
+  "unit_id": "B02-U02",
+  "title": "结构体、内存与程序安全",
+  "aliases": [
+    "结构体布局",
+    "动态存储期",
+    "未定义行为"
+  ],
+  "objectives": [
+    "区分成员大小与结构体总大小",
+    "匹配分配和释放的生命周期",
+    "识别越界、悬空与无效释放"
+  ],
+  "prerequisite_ids": [
+    "B02-T01"
+  ],
+  "syllabus_refs": [
+    "程序语言基础知识",
+    "C 程序设计基础"
+  ],
+  "body_path": "modules/B02/topics/B02-T04.md",
+  "source_ids": [
+    "B02-S01",
+    "B02-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 7,
+  "exercise_target": 6,
+  "exercise_rationale": "该考点包含概念、边界与推导三类能力，配置 6 道不同推理任务覆盖基础、应用和综合层级。",
+  "question_ids": [
+    "B02-T04-Q01",
+    "B02-T04-Q02",
+    "B02-T04-Q03",
+    "B02-T04-Q04",
+    "B02-T04-Q05",
+    "B02-T04-Q06"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B08-T02-Q03",
+  "title": "期望计算",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T02"
+  ],
+  "unit_id": "B08-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "收益100的概率0.3，收益-20的概率0.7，期望收益是多少？",
+  "answer": "100×0.3-20×0.7=16。",
+  "explanation": "解题依据与结果：100×0.3-20×0.7=16。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“100×0.3-20×0.7=16”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“100×0.3-20×0.7=16”给出题设对应的计算、文本证据或适用边界，不能只写题名“期望计算”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

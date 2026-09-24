@@ -1,0 +1,39 @@
+{
+  "id": "B05-T06-Q03",
+  "title": "白盒测试练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T06"
+  ],
+  "unit_id": "B05-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "单入口单出口图E=12,N=10，圈复杂度是？",
+  "answer": "D",
+  "explanation": "V=E-N+2=12-10+2=4。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：D",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4"
+  },
+  "option_explanations": {
+    "A": "A 项“1”错误：1忽略了图中的独立控制路径，代入公式不成立。",
+    "B": "B 项“2”错误：2等于E-N，漏加单连通图常数2。",
+    "C": "C 项“3”错误：3比E-N+2少1，不能由给定E、N得到。",
+    "D": "D 项“4”正确：V=E-N+2=12-10+2=4。"
+  }
+}

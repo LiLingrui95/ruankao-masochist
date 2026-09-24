@@ -23,17 +23,18 @@ def submit(client, qid="SE-01-Q01", answer=None, key=None):
 
 
 def test_content_integrity_and_code_results():
-    assert len(study.ACTIVE_UNITS) == 3 and len(study.ACTIVE_QUESTIONS) == 24
+    assert len(study.BASE_PACK['units']) == 3 and len(study.BASE_PACK['questions']) == 24
     assert len(study.ARCHIVE["questions"]) == 18
     sources = {s["id"] for s in study.PACK["sources"] + study.ARCHIVE["sources"]}
-    for uid, unit in study.UNITS.items():
-        assert len(study.SECTIONS[uid]) == (4 if uid in study.ACTIVE_UNITS else 3)
+    legacy_units = {u['id']: u for u in study.BASE_PACK['units'] + study.ARCHIVE['units']}
+    for uid, unit in legacy_units.items():
+        assert len(study.SECTIONS[uid]) == (4 if uid.startswith('SE-') else 3)
         assert set(unit["prerequisite_ids"]) <= set(study.UNITS)
         assert set(unit["checkpoint_question_ids"]) <= set(study.QUESTIONS)
         questions = [q for q in study.QUESTIONS.values() if q["unit_id"] == uid]
-        assert len(questions) == (8 if uid in study.ACTIVE_UNITS else 6)
+        assert len(questions) == (8 if uid.startswith('SE-') else 6)
         assert all(0 <= q.get("section_index", 0) < len(study.SECTIONS[uid]) for q in questions)
-    for q in study.QUESTIONS.values():
+    for q in study.BASE_PACK['questions'] + study.ARCHIVE['questions']:
         assert q["review_status"] == "reviewed" and q["origin_kind"] == "original"
         assert set(q["source_ids"]) <= sources and q["explanation"]
         if q["type"] == "single_choice":

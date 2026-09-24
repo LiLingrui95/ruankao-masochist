@@ -1,0 +1,37 @@
+{
+  "id": "B04-T06-Q01",
+  "title": "保留零计数课程",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T06"
+  ],
+  "unit_id": "B04-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "PostgreSQL 18：Course(course_id) 与 Enrollment(student_id,course_id)。列出所有课程及人数，包括 0。",
+  "answer": "SELECT c.course_id, COUNT(e.student_id) AS n FROM course c LEFT JOIN enrollment e ON e.course_id=c.course_id GROUP BY c.course_id ORDER BY c.course_id;",
+  "explanation": "LEFT JOIN 保留课程；COUNT(e.student_id) 忽略补出的 NULL，未选课程计 0。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：SELECT c.course_id, COUNT(e.student_id) AS n FROM course c LEFT JOIN enrollment e ON e.course_id=c.course_id GROUP BY c.course_id ORDER BY c.course_id;。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：LEFT JOIN 保留课程。"
+    }
+  ],
+  "source_ids": [
+    "B04-S03"
+  ],
+  "answer_source_ids": [
+    "B04-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：LEFT JOIN 保留课程；COUNT(e.student_id) 忽略补出的 NULL，未选课程计 0。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

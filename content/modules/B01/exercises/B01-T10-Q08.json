@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q08",
+  "title": "文件、磁盘与设备管理练习 8",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "两块 3 TB 等容量磁盘组成 RAID 1，理论可用容量和容错能力是多少？",
+  "explanation": "两盘保存相同数据，可用容量等于单盘 3 TB；只要至少一份镜像存活即可恢复访问。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：两盘保存相同数据，可用容量等于单盘 3 TB；只要至少一份镜像存活即可恢复访问。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "3 TB；可容忍镜像中的任意一块磁盘失效。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：3 TB；可容忍镜像中的任意一块磁盘失效。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：两盘保存相同数据，可用容量等于单盘 3 TB；只要至少一份镜像存活即可恢复访问。"
+    }
+  ]
+}

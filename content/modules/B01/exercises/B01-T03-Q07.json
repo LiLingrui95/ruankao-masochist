@@ -1,0 +1,39 @@
+{
+  "id": "B01-T03-Q07",
+  "title": "CPU、指令与寻址练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T03"
+  ],
+  "unit_id": "B01-T03",
+  "section_index": 0,
+  "prompt": "一个处理器以同一条指令同时处理 16 个像素，按 Flynn 分类属于哪类？",
+  "explanation": "一条 instruction stream 同时作用于多份 data stream，符合 SIMD。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：一条 instruction stream 同时作用于多份 data stream，符合 SIMD。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "single_choice",
+  "options": {
+    "A": "SISD",
+    "B": "MISD",
+    "C": "MIMD",
+    "D": "SIMD"
+  },
+  "answer": "D",
+  "option_explanations": {
+    "A": "SISD 只有单一数据流，不并行处理 16 份数据。",
+    "B": "MISD 是多指令流作用于单数据流。",
+    "C": "MIMD 的各处理器执行各自指令流。",
+    "D": "同一指令同时作用于多份像素数据。"
+  }
+}

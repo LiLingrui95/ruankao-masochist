@@ -1,0 +1,59 @@
+{
+  "id": "B03-T11-Q08",
+  "title": "预算选择动态规划案例",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T11"
+  ],
+  "unit_id": "B03-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料，回答三个子问题。",
+  "answer": "a. dp[c] 表示已处理项目中成本不超过c的最大收益；`for(int c=7;c>=w;--c) dp[c]=max(dp[c],dp[c-w]+v);`，逆序确保读取上一层。b. 初始 00000000；P1后 01111111；P2后 01145555；P3后 01145669；P4后 01145789。最大收益9，选P2+P3，成本7。c. 时间 O(nC)，空间 O(C)。容量2、唯一物品(1,1)若正序会先得dp[1]=1再得dp[2]=2，非法重复同一物品。",
+  "explanation": "参考答案按三个子问分别给出算法或状态、不省略的中间结果，以及复杂度和适用边界。共享材料只给输入与约束，不含待求结果。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "verify.py 对本案例的最终数值、状态表或组合集合运行独立模型复算，并校验共享材料不含答案措辞。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "准确写出 dp[c] 含义、c从7递减到w及 max 转移。"
+    },
+    {
+      "id": "r2",
+      "text": "五行状态表最终为 01145789，答案9且选择P2+P3。"
+    },
+    {
+      "id": "r3",
+      "text": "给出 O(nC)/O(C)，并用容量2、物品(1,1)说明正序非法复用。"
+    }
+  ],
+  "case_material": "项目预算上限为 7。四个不可重复选择的项目 (成本,收益) 依次为 P1(1,1)、P2(3,4)、P3(4,5)、P4(5,7)。下面代码缺少循环方向和转移：\n```cpp\nvector<int> dp(8, 0);\nfor (auto [w,v] : items) {\n    for (int c = /* start */; /* condition */; /* step */) {\n        /* update */\n    }\n}\n```",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "定义 dp[c]，补全循环和转移，并解释遍历方向。",
+      "points": 4
+    },
+    {
+      "id": "b",
+      "prompt": "写出处理每个项目后的 dp[0..7] 表，给出最大收益和所选项目。",
+      "points": 4
+    },
+    {
+      "id": "c",
+      "prompt": "给出时间、空间复杂度，并构造正序遍历导致错误复用的最小例子。",
+      "points": 2
+    }
+  ]
+}

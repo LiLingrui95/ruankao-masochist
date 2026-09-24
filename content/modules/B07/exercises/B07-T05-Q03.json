@@ -1,0 +1,41 @@
+{
+  "id": "B07-T05-Q03",
+  "title": "TCP、UDP与可靠传输练习3",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T05"
+  ],
+  "unit_id": "B07-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "已连续收到至1399，又先收到1800—1999，而1400—1799缺失，累计ACK通常为？",
+  "answer": "C",
+  "explanation": "累计确认不能跨越缺口；SACK如启用可另行表达乱序块。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S05"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "2000",
+    "B": "1399",
+    "C": "1400",
+    "D": "1800"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“2000”。本题适用的关系是：累计确认不能跨越缺口；SACK如启用可另行表达乱序块。",
+    "B": "错误：该选项断言“1399”。本题适用的关系是：累计确认不能跨越缺口；SACK如启用可另行表达乱序块。",
+    "C": "累计确认不能跨越缺口；SACK如启用可另行表达乱序块。",
+    "D": "错误：该选项断言“1800”。本题适用的关系是：累计确认不能跨越缺口；SACK如启用可另行表达乱序块。"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "B02-T02-Q05",
+  "title": "字符串终止",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T02"
+  ],
+  "unit_id": "B02-T02",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "补全：`char s[4]={'o','k',____};`，使 `s` 成为内容为 `ok` 的字符串，其余元素按初始化规则置零。",
+  "answer": "'\\0'",
+  "explanation": "第三个元素显式为空字符，第四个未列出元素也被零初始化。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：第三个元素显式为空字符，第四个未列出元素也被零初始化。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "填入字符常量'\\0'。"
+    },
+    {
+      "id": "r2",
+      "text": "说明余下未显式初始化元素也会零初始化。"
+    }
+  ],
+  "code": "补全：`char s[4]={'o','k',____};`，使 `s` 成为内容为 `ok` 的字符串，其余元素按初始化规则置零。",
+  "language": "c",
+  "reference_fill": "'\\0'"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B02-T08-Q02",
+  "title": "活动记录",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T08"
+  ],
+  "unit_id": "B02-T08",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "递归调用通常为何需要多个活动记录？",
+  "answer": "A",
+  "explanation": "同时活跃的各层调用状态不同。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：同时活跃的各层调用状态不同。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "每次调用有独立参数、局部变量和返回位置",
+    "B": "编译器不能识别递归",
+    "C": "所有变量都是全局的",
+    "D": "避免语法分析"
+  },
+  "option_explanations": {
+    "A": "各递归层必须保存各自状态。",
+    "B": "编译器能识别递归但仍需运行时状态。",
+    "C": "递归局部变量并非全局共享。",
+    "D": "活动记录属于运行机制，不是解析规避手段。"
+  }
+}

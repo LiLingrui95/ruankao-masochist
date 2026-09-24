@@ -1,0 +1,45 @@
+{
+  "id": "B01-T10-Q09",
+  "title": "文件、磁盘与设备管理练习 9",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "6 块 2 TB 等容量磁盘组成 RAID 5，理论可用容量和任意磁盘容错数是多少？",
+  "explanation": "RAID 5 容量为 (n-1)S=(6-1)×2=10 TB，分布式 parity 可恢复任意单盘失效。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：RAID 5 容量为 (n-1)S=(6-1)×2=10 TB，分布式 parity 可恢复任意单盘失效。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "single_choice",
+  "options": {
+    "A": "12 TB，容忍 0 盘",
+    "B": "8 TB，容忍任意 2 盘",
+    "C": "10 TB，容忍任意 1 盘",
+    "D": "6 TB，容忍任意 1 盘"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "这是 RAID 0 的容量和容错。",
+    "B": "这是 RAID 6 的容量和容错。",
+    "C": "RAID 5 使用一盘等效 parity 容量。",
+    "D": "把 RAID 5 错按 50% 镜像容量计算。"
+  }
+}

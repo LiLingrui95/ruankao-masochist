@@ -1,0 +1,60 @@
+{
+  "id": "B06-T11-Q03",
+  "title": "编辑器命令撤销",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T11"
+  ],
+  "unit_id": "B06-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "三空为：① virtual ~ICommand() = default; ② cmd->execute(); ③ history_.push_back(std::move(cmd));。完整 invoker 为：\n```cpp\nstruct ICommand { virtual ~ICommand()=default; virtual void execute()=0; virtual void undo()=0; };\nclass Editor {\n    std::vector<std::unique_ptr<ICommand>> history_;\npublic:\n    void run(std::unique_ptr<ICommand> cmd) { cmd->execute(); history_.push_back(std::move(cmd)); }\n    void undoLast() { if(history_.empty()) return; history_.back()->undo(); history_.pop_back(); }\n};\n```\nDocument 是 Receiver；InsertCommand 是 ConcreteCommand，保存 Document&、位置和文本；Editor 是 Invoker。初始 `ab`，Insert(2,`X`) 成功后文本为 `abX`、历史数为 1；undoLast 调用同一命令 undo，文本恢复 `ab`、历史数为 0。若 Insert(9,`Y`) 的 execute 在范围检查时抛 out_of_range，语句③尚未执行，history 仍为 0，Document 仍为 `ab`。异常继续传播给 Editor 的调用者，由应用边界决定显示错误。",
+  "explanation": "执行成功是进入历史栈的提交点：②可能抛异常，只有返回后才执行③。把 push 放在 execute 前会把失败命令伪装成可撤销成功操作。unique_ptr 使历史栈独占命令，虚析构保证 pop 或 Editor 销毁时正确释放具体命令。 本题排除分配失败；一般实现还需考虑 execute 成功后 vector::push_back 抛出 bad_alloc 的情形，可事先确保历史容量或设计回滚，不能宣称当前片段对一切异常提供强保证。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "三空写出虚析构、execute 调用和成功后的 move 入栈"
+    },
+    {
+      "id": "r2",
+      "text": "准确映射 Editor、ICommand、InsertCommand、Document 四类角色"
+    },
+    {
+      "id": "r3",
+      "text": "分别推出成功、撤销和越界异常后三组文本与 history 数量"
+    }
+  ],
+  "source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按 C++17 顺序执行、move 所有权和异常传播手工推演；verify.py 用独立 Document/History 状态机模拟成功、撤销与越界失败，核对失败前不提交历史。本机无 C++ 编译器，未声称编译运行。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "Document 初始文本为 `ab`。InsertCommand 保存 Document 引用、位置与文本；位置超过当前长度时 execute 抛出 std::out_of_range，且在插入前完成检查。Editor 只记录成功命令。Document 的寿命覆盖所有命令；本题只分析位置越界异常，假设分配及历史栈扩容成功。补全三个空，先执行 Insert(2,`X`) 并撤销，再执行 Insert(9,`Y`)。\n```cpp\n#include <memory>\n#include <string>\n#include <utility>\n#include <vector>\n#include <stdexcept>\nstruct Document { std::string text = \"ab\"; };\nstruct ICommand {\n    /* ① */\n    virtual void execute() = 0;\n    virtual void undo() = 0;\n};\nstruct InsertCommand : ICommand {\n    Document& document;\n    std::size_t position;\n    std::string inserted;\n    InsertCommand(Document& d, std::size_t p, std::string value)\n        : document(d), position(p), inserted(std::move(value)) {}\n    void execute() override {\n        if (position > document.text.size()) throw std::out_of_range(\"position\");\n        document.text.insert(position, inserted);\n    }\n    void undo() override { document.text.erase(position, inserted.size()); }\n};\nclass Editor {\n    std::vector<std::unique_ptr<ICommand>> history_;\npublic:\n    void run(std::unique_ptr<ICommand> cmd) {\n        /* ② */\n        /* ③ */\n    }\n    void undoLast() {\n        if (history_.empty()) return;\n        history_.back()->undo();\n        history_.pop_back();\n    }\n};\n```",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "填写 ①—③并映射 Invoker、Command、ConcreteCommand、Receiver。",
+      "points": 6
+    },
+    {
+      "id": "s2",
+      "prompt": "写出成功插入、撤销、越界失败后的文本和历史栈大小，并说明异常边界。",
+      "points": 6
+    }
+  ]
+}

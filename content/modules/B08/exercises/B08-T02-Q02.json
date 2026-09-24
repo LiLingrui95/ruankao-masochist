@@ -1,0 +1,41 @@
+{
+  "id": "B08-T02-Q02",
+  "title": "稳健统计量",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T02"
+  ],
+  "unit_id": "B08-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "含极端大值的数据中，哪个位置统计量通常更稳健？",
+  "options": {
+    "A": "均值",
+    "B": "中位数",
+    "C": "极差",
+    "D": "方差"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "错误。均值会被极端大值明显拉高。",
+    "B": "正确。中位数由排序后的中间位置决定，对少量极端值通常更稳健。",
+    "C": "错误。极差直接等于最大值减最小值，对极端值很敏感。",
+    "D": "错误。方差使用平方离差，极端值会产生更大影响。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。中位数由排序后的中间位置决定，对少量极端值通常更稳健。",
+  "source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

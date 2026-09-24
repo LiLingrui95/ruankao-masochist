@@ -1,0 +1,37 @@
+{
+  "id": "B01-T08-Q08",
+  "title": "死锁与资源分配练习 8",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T08"
+  ],
+  "unit_id": "B01-T08",
+  "section_index": 0,
+  "prompt": "死锁恢复中终止进程与资源抢占各有什么代价？",
+  "explanation": "恢复不是无成本，应依据优先级、已运行时间、资源量和回滚能力选择。",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "answer_source_ids": [
+    "B01-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：恢复不是无成本，应依据优先级、已运行时间、资源量和回滚能力选择。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "终止会丢失工作；抢占需选择牺牲者并可能回滚，还要防止同一进程反复被牺牲。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：终止会丢失工作；抢占需选择牺牲者并可能回滚，还要防止同一进程反复被牺牲。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：恢复不是无成本，应依据优先级、已运行时间、资源量和回滚能力选择。"
+    }
+  ]
+}

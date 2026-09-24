@@ -1,0 +1,41 @@
+{
+  "id": "B07-T02-Q03",
+  "title": "以太网与链路层练习3",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T02"
+  ],
+  "unit_id": "B07-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "802.1Q VLAN的主要作用是？",
+  "answer": "C",
+  "explanation": "VLAN提供逻辑二层隔离；跨VLAN仍需三层转发。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S02"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "替代IP路由协议",
+    "B": "把MAC地址扩展为128位",
+    "C": "在二层划分广播域并在中继上传递VLAN标识",
+    "D": "加密所有帧载荷"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“替代IP路由协议”。本题适用的关系是：VLAN提供逻辑二层隔离；跨VLAN仍需三层转发。",
+    "B": "错误：该选项断言“把MAC地址扩展为128位”。本题适用的关系是：VLAN提供逻辑二层隔离；跨VLAN仍需三层转发。",
+    "C": "VLAN提供逻辑二层隔离；跨VLAN仍需三层转发。",
+    "D": "错误：该选项断言“加密所有帧载荷”。本题适用的关系是：VLAN提供逻辑二层隔离；跨VLAN仍需三层转发。"
+  }
+}

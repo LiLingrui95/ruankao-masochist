@@ -1,0 +1,42 @@
+{
+  "id": "B07-T10",
+  "module_id": "B07",
+  "unit_id": "B07-U04",
+  "title": "访问控制、攻击与安全防护",
+  "aliases": [
+    "访问控制",
+    "网络攻击",
+    "防火墙与入侵检测"
+  ],
+  "objectives": [
+    "依据主体、客体和策略判断授权",
+    "按资产—威胁—脆弱性—影响计算风险边界",
+    "选择防火墙、IDS/IPS、隔离和响应措施"
+  ],
+  "prerequisite_ids": [
+    "B07-T09"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T10.md",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "安全防护为综合考点，8题覆盖访问控制、攻击面、边界和风险计算。",
+  "question_ids": [
+    "B07-T10-Q01",
+    "B07-T10-Q02",
+    "B07-T10-Q03",
+    "B07-T10-Q04",
+    "B07-T10-Q05",
+    "B07-T10-Q06",
+    "B07-T10-Q07",
+    "B07-T10-Q08"
+  ]
+}

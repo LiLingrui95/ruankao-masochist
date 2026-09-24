@@ -1,0 +1,39 @@
+{
+  "id": "B06-T07",
+  "module_id": "B06",
+  "unit_id": "B06-U03",
+  "title": "创建型设计模式",
+  "aliases": [
+    "工厂方法",
+    "抽象工厂",
+    "生成器",
+    "单例"
+  ],
+  "objectives": [
+    "解释创建型设计模式的核心规则与适用条件",
+    "用确定材料完成创建型设计模式的推导与设计判断"
+  ],
+  "prerequisite_ids": [
+    "B06-T06"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：创建型设计模式"
+  ],
+  "body_path": "modules/B06/topics/B06-T07.md",
+  "source_ids": [
+    "B06-S06",
+    "B06-S04"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 5,
+  "exercise_rationale": "复杂综合考点配置 8 道不同推理任务；常规应用配置 5—8 道；稳定概念配置 4 道。",
+  "question_ids": [
+    "B06-T07-Q01",
+    "B06-T07-Q02",
+    "B06-T07-Q03",
+    "B06-T07-Q04",
+    "B06-T07-Q05"
+  ]
+}

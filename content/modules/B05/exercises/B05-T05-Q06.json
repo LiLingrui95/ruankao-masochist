@@ -1,0 +1,37 @@
+{
+  "id": "B05-T05-Q06",
+  "title": "软件架构练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T05"
+  ],
+  "unit_id": "B05-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "何时不应为开闭原则增加插件框架？",
+  "answer": "只有单一稳定实现、无合理变化场景且框架成本高于预期收益时。",
+  "explanation": "须同时指出变化证据不足和引入成本。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：只有单一稳定实现、无合理变化场景且框架成本高于预期收益时。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：只有单一稳定实现、无合理变化场景且框架成本高于预期收益时。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：须同时指出变化证据不足和引入成本。"
+    }
+  ]
+}

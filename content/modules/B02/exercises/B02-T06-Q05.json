@@ -1,0 +1,40 @@
+{
+  "id": "B02-T06-Q05",
+  "title": "消除直接左递归",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T06"
+  ],
+  "unit_id": "B02-T06",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "补全 `E→E+T|T` 的等价形式：`E→TE'`，`E'→+TE' | ____`。",
+  "answer": "ε",
+  "explanation": "辅助非终结符用 ε 表示零次后续加法。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：辅助非终结符用 ε 表示零次后续加法。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "填入ε，表示不再出现后续+T。"
+    },
+    {
+      "id": "r2",
+      "text": "说明改写后递归位于产生式右端，避免直接左递归。"
+    }
+  ],
+  "code": "补全 `E→E+T|T` 的等价形式：`E→TE'`，`E'→+TE' | ____`。",
+  "language": "text",
+  "reference_fill": "ε"
+}

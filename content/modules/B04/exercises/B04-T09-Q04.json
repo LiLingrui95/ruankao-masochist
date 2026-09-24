@@ -1,0 +1,37 @@
+{
+  "id": "B04-T09-Q04",
+  "title": "分片与复制",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T09"
+  ],
+  "unit_id": "B04-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "分片和复制分别主要解决什么？",
+  "answer": "分片把不同数据分散以扩展容量/吞吐；复制保存同一数据副本以提高可用性和读能力。",
+  "explanation": "二者数据布局目标不同，可组合使用。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：分片把不同数据分散以扩展容量/吞吐。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：二者数据布局目标不同，可组合使用。"
+    }
+  ],
+  "source_ids": [
+    "B04-S05"
+  ],
+  "answer_source_ids": [
+    "B04-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：二者数据布局目标不同，可组合使用。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

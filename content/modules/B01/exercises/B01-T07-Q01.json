@@ -1,0 +1,39 @@
+{
+  "id": "B01-T07-Q01",
+  "title": "PV同步与互斥练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T07"
+  ],
+  "unit_id": "B01-T07",
+  "section_index": 0,
+  "prompt": "容量 4 的缓冲区初值 empty、full、mutex 应为何？",
+  "explanation": "开始有 4 个空槽、0 个产品、互斥许可 1 个。",
+  "source_ids": [
+    "B01-S04"
+  ],
+  "answer_source_ids": [
+    "B01-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：开始有 4 个空槽、0 个产品、互斥许可 1 个。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "0、4、1",
+    "B": "4、0、0",
+    "C": "4、0、1",
+    "D": "4、1、1"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "把 empty 与 full 初值互换，等价于缓冲区已满。",
+    "B": "mutex=0 会让首次访问即阻塞。",
+    "C": "四个空槽、零个产品、一个互斥许可。",
+    "D": "凭空增加一个不存在的产品。"
+  }
+}

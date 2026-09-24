@@ -1,0 +1,37 @@
+{
+  "id": "B02-T02-Q06",
+  "title": "非字符串反例",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T02"
+  ],
+  "unit_id": "B02-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为什么 `char s[3]={'a','b','c'}; strlen(s)` 没有可靠结果？",
+  "answer": "数组内没有终止空字符，strlen 会继续越过对象寻找空字符，导致越界访问风险和未定义行为。",
+  "explanation": "`strlen` 的前提是参数指向以空字符终止的字符串；该数组不满足前提。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：`strlen` 的前提是参数指向以空字符终止的字符串；该数组不满足前提。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "指出数组三个元素中没有终止空字符。"
+    },
+    {
+      "id": "r2",
+      "text": "说明strlen继续读取越过对象边界，前提不成立。"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "B05-T05",
+  "module_id": "B05",
+  "unit_id": "B05-U02",
+  "title": "软件架构与设计原则",
+  "aliases": [
+    "架构视图",
+    "分层",
+    "仓库",
+    "管道过滤器",
+    "信息隐藏",
+    "依赖倒置"
+  ],
+  "objectives": [
+    "掌握软件架构与设计原则的核心术语与适用条件",
+    "能用给定材料完成判断、计算或模型校验"
+  ],
+  "prerequisite_ids": [
+    "B05-T04"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：软件架构与设计原则"
+  ],
+  "body_path": "modules/B05/topics/B05-T05.md",
+  "source_ids": [
+    "B05-S01",
+    "B05-S10"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "扩展范围后以8题覆盖定义、版本边界、情境选择和反例推导",
+  "question_ids": [
+    "B05-T05-Q01",
+    "B05-T05-Q02",
+    "B05-T05-Q03",
+    "B05-T05-Q04",
+    "B05-T05-Q05",
+    "B05-T05-Q06",
+    "B05-T05-Q07",
+    "B05-T05-Q08"
+  ]
+}

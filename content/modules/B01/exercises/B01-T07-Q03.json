@@ -1,0 +1,37 @@
+{
+  "id": "B01-T07-Q03",
+  "title": "PV同步与互斥练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T07"
+  ],
+  "unit_id": "B01-T07",
+  "section_index": 0,
+  "prompt": "为何生产者不能先 P(mutex) 再 P(empty)？",
+  "explanation": "资源计数应先于临界区锁获取，使无资源者不占住保护缓冲区的锁。",
+  "source_ids": [
+    "B01-S04"
+  ],
+  "answer_source_ids": [
+    "B01-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：资源计数应先于临界区锁获取，使无资源者不占住保护缓冲区的锁。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "缓冲区满时会持有 mutex 阻塞，消费者无法取得 mutex 释放空槽，导致死锁。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：缓冲区满时会持有 mutex 阻塞，消费者无法取得 mutex 释放空槽，导致死锁。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：资源计数应先于临界区锁获取，使无资源者不占住保护缓冲区的锁。"
+    }
+  ]
+}

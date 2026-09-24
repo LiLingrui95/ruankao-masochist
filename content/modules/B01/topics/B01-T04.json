@@ -1,0 +1,41 @@
+{
+  "id": "B01-T04",
+  "module_id": "B01",
+  "unit_id": "B01-U02",
+  "title": "Cache与存储层次",
+  "aliases": [
+    "Cache",
+    "locality",
+    "mapping"
+  ],
+  "objectives": [
+    "由容量、块大小和相联度拆分 tag/index/offset",
+    "按题设 miss 时间定义计算 AMAT，并分析冲突与写策略"
+  ],
+  "prerequisite_ids": [
+    "B01-T03"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T04.md",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂：配置 8 道覆盖容量、映射、地址划分、命中率、替换和写策略。",
+  "question_ids": [
+    "B01-T04-Q01",
+    "B01-T04-Q02",
+    "B01-T04-Q03",
+    "B01-T04-Q04",
+    "B01-T04-Q05",
+    "B01-T04-Q06",
+    "B01-T04-Q07",
+    "B01-T04-Q08"
+  ]
+}

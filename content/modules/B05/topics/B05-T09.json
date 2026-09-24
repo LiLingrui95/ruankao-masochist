@@ -1,0 +1,46 @@
+{
+  "id": "B05-T09",
+  "module_id": "B05",
+  "unit_id": "B05-U03",
+  "title": "配置管理、维护与逆向工程",
+  "aliases": [
+    "配置项",
+    "基线",
+    "变更控制",
+    "状态报告",
+    "配置审计",
+    "维护类型",
+    "逆向工程"
+  ],
+  "objectives": [
+    "掌握配置管理、维护与逆向工程的核心术语与适用条件",
+    "能用给定材料完成判断、计算或模型校验"
+  ],
+  "prerequisite_ids": [
+    "B05-T08"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：配置管理、维护与逆向工程"
+  ],
+  "body_path": "modules/B05/topics/B05-T09.md",
+  "source_ids": [
+    "B05-S01",
+    "B05-S12",
+    "B05-S13"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "扩展范围后以8题覆盖定义、版本边界、情境选择和反例推导",
+  "question_ids": [
+    "B05-T09-Q01",
+    "B05-T09-Q02",
+    "B05-T09-Q03",
+    "B05-T09-Q04",
+    "B05-T09-Q05",
+    "B05-T09-Q06",
+    "B05-T09-Q07",
+    "B05-T09-Q08"
+  ]
+}

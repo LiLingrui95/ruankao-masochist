@@ -1,0 +1,37 @@
+{
+  "id": "B01-T05-Q03",
+  "title": "流水线、性能与可靠性练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T05"
+  ],
+  "unit_id": "B01-T05",
+  "section_index": 0,
+  "prompt": "4 段流水执行 10 条，每条因相关平均停顿 0.5 拍，基础周期 3 ns；按总额外 5 拍求时间。",
+  "explanation": "理想拍数 4+10-1=13，加 5 停顿为 18 拍，18×3=54 ns。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：理想拍数 4+10-1=13，加 5 停顿为 18 拍，18×3=54 ns。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "54 ns。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：54 ns。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：理想拍数 4+10-1=13，加 5 停顿为 18 拍，18×3=54 ns。"
+    }
+  ]
+}

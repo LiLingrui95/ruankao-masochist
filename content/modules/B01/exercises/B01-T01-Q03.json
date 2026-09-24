@@ -1,0 +1,37 @@
+{
+  "id": "B01-T01-Q03",
+  "title": "数制、编码与补码练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T01"
+  ],
+  "unit_id": "B01-T01",
+  "section_index": 0,
+  "prompt": "写出 -37 的 8 位补码。",
+  "explanation": "+37 为 00100101，取反 11011010，再加 1 得 11011011。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：+37 为 00100101，取反 11011010，再加 1 得 11011011。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "11011011。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：11011011。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：+37 为 00100101，取反 11011010，再加 1 得 11011011。"
+    }
+  ]
+}

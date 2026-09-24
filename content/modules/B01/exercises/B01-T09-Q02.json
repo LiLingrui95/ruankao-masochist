@@ -1,0 +1,37 @@
+{
+  "id": "B01-T09-Q02",
+  "title": "分页、地址转换与置换练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T09"
+  ],
+  "unit_id": "B01-T09",
+  "section_index": 0,
+  "prompt": "虚拟地址 0x2C3A、页 1 KiB，求 VPN 和 offset。",
+  "explanation": "0x2C3A=11322；除以 1024 的商 11、余数 58。",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "answer_source_ids": [
+    "B01-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：0x2C3A=11322；除以 1024 的商 11、余数 58。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "short_answer",
+  "answer": "VPN=11，offset=58。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：VPN=11，offset=58。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：0x2C3A=11322；除以 1024 的商 11、余数 58。"
+    }
+  ]
+}

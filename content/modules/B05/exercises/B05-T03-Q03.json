@@ -1,0 +1,39 @@
+{
+  "id": "B05-T03-Q03",
+  "title": "DFD基础练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T03"
+  ],
+  "unit_id": "B05-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "DFD中的加工通常用什么命名？",
+  "answer": "B",
+  "explanation": "加工表示变换，应使用动宾短语。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "纯名词",
+    "B": "动宾短语",
+    "C": "数据库表名",
+    "D": "时间顺序号"
+  },
+  "option_explanations": {
+    "A": "A 项“纯名词”错误：纯名词适合数据流或数据存储，加工应说明动作。",
+    "B": "B 项“动宾短语”正确：加工表示变换，应使用动宾短语。",
+    "C": "C 项“数据库表名”错误：数据库表名表示存储对象，不能表达数据变换。",
+    "D": "D 项“时间顺序号”错误：编号只用于层次标识，且DFD不表达时间顺序。"
+  }
+}

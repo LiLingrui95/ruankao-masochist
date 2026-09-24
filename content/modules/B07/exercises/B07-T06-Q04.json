@@ -1,0 +1,41 @@
+{
+  "id": "B07-T06-Q04",
+  "title": "DNS、HTTP与应用协议练习4",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T06"
+  ],
+  "unit_id": "B07-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "关于HTTP版本与传输，哪项准确？",
+  "answer": "B",
+  "explanation": "RFC 9110抽象共享语义；线上表达和传输可因版本变化。",
+  "source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "answer_source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "HTTP/3就是DNS",
+    "B": "HTTP核心语义跨版本共享，HTTP/3可运行在QUIC之上",
+    "C": "所有HTTP版本只能用TCP",
+    "D": "HTTP/2取消状态码"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“HTTP/3就是DNS”。本题适用的关系是：RFC 9110抽象共享语义；线上表达和传输可因版本变化。",
+    "B": "RFC 9110抽象共享语义；线上表达和传输可因版本变化。",
+    "C": "错误：该选项断言“所有HTTP版本只能用TCP”。本题适用的关系是：RFC 9110抽象共享语义；线上表达和传输可因版本变化。",
+    "D": "错误：该选项断言“HTTP/2取消状态码”。本题适用的关系是：RFC 9110抽象共享语义；线上表达和传输可因版本变化。"
+  }
+}

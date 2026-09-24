@@ -1,0 +1,37 @@
+{
+  "id": "B02-T06-Q04",
+  "title": "最左推导",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T06"
+  ],
+  "unit_id": "B02-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "用 `E→TE'，E'→+TE'|ε，T→id` 给出 `id+id` 的最左推导。",
+  "answer": "E⇒TE'⇒idE'⇒id+TE'⇒id+idE'⇒id+id。",
+  "explanation": "每一步替换当前最左非终结符，最后 E' 取 ε。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：每一步替换当前最左非终结符，最后 E' 取 ε。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "写出E⇒TE'⇒idE'，保持每步替换最左非终结符。"
+    },
+    {
+      "id": "r2",
+      "text": "继续推出id+TE'⇒id+idE'⇒id+id（E'取ε）。"
+    }
+  ]
+}

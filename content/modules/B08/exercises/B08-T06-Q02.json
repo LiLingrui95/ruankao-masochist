@@ -1,0 +1,43 @@
+{
+  "id": "B08-T06-Q02",
+  "title": "合法性基础",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T06"
+  ],
+  "unit_id": "B08-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "个人信息处理的合法性基础是否只有同意？",
+  "options": {
+    "A": "是",
+    "B": "否，法律还规定其他基础",
+    "C": "只对境外不是",
+    "D": "只对敏感信息是"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "错误。个保法第十三条除同意外还列明订立履行合同、履行法定职责等基础。",
+    "B": "正确。同意是多种合法性基础之一，具体处理须匹配第十三条规定。",
+    "C": "错误。境内处理同样存在多种合法性基础，不能用境内外作此划分。",
+    "D": "错误。敏感信息通常要求单独同意，但处理仍需先具备合法性基础且满足专门规则。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。同意是多种合法性基础之一，具体处理须匹配第十三条规定。",
+  "source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "answer_source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

@@ -1,0 +1,41 @@
+{
+  "id": "B07-T07-Q03",
+  "title": "网络规划与性能练习3",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T07"
+  ],
+  "unit_id": "B07-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "SNMP代理主动向管理站报告事件通常使用？",
+  "answer": "C",
+  "explanation": "通知是代理主动报告事件的机制，但仍可能需要轮询和日志补充。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S08"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S08"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "HTTP重定向",
+    "B": "TCP三次握手",
+    "C": "通知（notification）",
+    "D": "ARP广播"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“HTTP重定向”。本题适用的关系是：通知是代理主动报告事件的机制，但仍可能需要轮询和日志补充。",
+    "B": "错误：该选项断言“TCP三次握手”。本题适用的关系是：通知是代理主动报告事件的机制，但仍可能需要轮询和日志补充。",
+    "C": "通知是代理主动报告事件的机制，但仍可能需要轮询和日志补充。",
+    "D": "错误：该选项断言“ARP广播”。本题适用的关系是：通知是代理主动报告事件的机制，但仍可能需要轮询和日志补充。"
+  }
+}

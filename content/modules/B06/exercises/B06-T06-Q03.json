@@ -1,0 +1,39 @@
+{
+  "id": "B06-T06-Q03",
+  "title": "状态守卫",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T06"
+  ],
+  "unit_id": "B06-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "迁移标注 pay [balance>=amount] / debit。方括号部分表示？",
+  "options": {
+    "A": "守卫条件",
+    "B": "触发事件",
+    "C": "目标状态",
+    "D": "类属性可见性"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "只有守卫为真时该触发可执行迁移。",
+    "B": "pay 是触发事件。",
+    "C": "目标状态在箭头终点。",
+    "D": "可见性属于结构模型。"
+  },
+  "explanation": "正确选项为 A。只有守卫为真时该触发可执行迁移。",
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3
+}

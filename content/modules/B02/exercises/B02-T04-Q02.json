@@ -1,0 +1,39 @@
+{
+  "id": "B02-T04-Q02",
+  "title": "释放空指针",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T04"
+  ],
+  "unit_id": "B02-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "C11 中 `free(NULL)` 的效果是？",
+  "answer": "B",
+  "explanation": "标准规定空指针传给 free 不执行操作。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：标准规定空指针传给 free 不执行操作。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "未定义行为",
+    "B": "无操作",
+    "C": "释放全部堆内存",
+    "D": "编译错误"
+  },
+  "option_explanations": {
+    "A": "标准明确允许空指针参数。",
+    "B": "free(NULL)不执行操作。",
+    "C": "free只处理其参数对应的分配。",
+    "D": "这是合法库函数调用。"
+  }
+}

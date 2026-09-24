@@ -1,0 +1,37 @@
+{
+  "id": "B05-T03-Q02",
+  "title": "DFD基础练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T03"
+  ],
+  "unit_id": "B05-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "父加工输入为A、B，输出为C；子图边界只有A输入和C输出。指出问题。",
+  "answer": "子图缺少父图输入B，违反分层平衡；应让B进入相应子加工，或更正父图及规格。",
+  "explanation": "评分需指出具体缺失流B及修复边界。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：子图缺少父图输入B，违反分层平衡；应让B进入相应子加工，或更正父图及规格。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：子图缺少父图输入B，违反分层平衡；应让B进入相应子加工，或更正父图及规格。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：评分需指出具体缺失流B及修复边界。"
+    }
+  ]
+}

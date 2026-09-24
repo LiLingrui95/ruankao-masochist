@@ -1,0 +1,37 @@
+{
+  "id": "B02-T01-Q06",
+  "title": "未定义行为判断",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T01"
+  ],
+  "unit_id": "B02-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "C11：`int i=1; i=i++;` 是否有标准规定的最终值？说明理由。",
+  "answer": "没有；该完整表达式中对 i 的修改彼此无序，行为未定义。",
+  "explanation": "这不是从多个候选值中择一的未指定行为；程序在此处触发未定义行为。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：这不是从多个候选值中择一的未指定行为；程序在此处触发未定义行为。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "结论为无标准规定的最终值/未定义行为。"
+    },
+    {
+      "id": "r2",
+      "text": "指出同一完整表达式中对i的两次修改彼此无序。"
+    }
+  ]
+}

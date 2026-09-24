@@ -1,0 +1,39 @@
+{
+  "id": "B08-T02-Q08",
+  "title": "统计选择",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T02"
+  ],
+  "unit_id": "B08-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "响应时间有少量超长尾，报告均值外还应报告什么并说明原因。",
+  "answer": "可报告中位数及P95/P99分位数；它们展示典型位置和尾部体验，避免均值掩盖分布。",
+  "explanation": "解题依据与结果：可报告中位数及P95/P99分位数；它们展示典型位置和尾部体验，避免均值掩盖分布。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“可报告中位数及P95/P99分位数”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“它们展示典型位置和尾部体验，避免均值掩盖分布”给出题设对应的计算、文本证据或适用边界，不能只写题名“统计选择”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

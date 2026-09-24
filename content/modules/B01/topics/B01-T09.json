@@ -1,0 +1,41 @@
+{
+  "id": "B01-T09",
+  "module_id": "B01",
+  "unit_id": "B01-U03",
+  "title": "分页、地址转换与置换",
+  "aliases": [
+    "paging",
+    "TLB",
+    "page replacement"
+  ],
+  "objectives": [
+    "拆分 VPN/offset 并完成页表到物理地址转换",
+    "计算 TLB EAT，并模拟 FIFO/LRU 置换轨迹"
+  ],
+  "prerequisite_ids": [
+    "B01-T08"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T09.md",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂：配置 8 道覆盖地址拆分、页表、TLB、缺页、FIFO/LRU和 Belady anomaly。",
+  "question_ids": [
+    "B01-T09-Q01",
+    "B01-T09-Q02",
+    "B01-T09-Q03",
+    "B01-T09-Q04",
+    "B01-T09-Q05",
+    "B01-T09-Q06",
+    "B01-T09-Q07",
+    "B01-T09-Q08"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "B02-T08-Q05",
+  "title": "递归基例",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T08"
+  ],
+  "unit_id": "B02-T08",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "补全阶乘函数的基例：`int fact(int n){ if(____) return 1; return n*fact(n-1); }`，假定 n≥0。",
+  "answer": "n == 0",
+  "explanation": "在给定非负前提下，0! 为1且递归终止。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：在给定非负前提下，0! 为1且递归终止。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "在n≥0前提下填入n==0。"
+    },
+    {
+      "id": "r2",
+      "text": "说明0!=1且该基例使n逐次减1的递归终止。"
+    }
+  ],
+  "code": "补全阶乘函数的基例：`int fact(int n){ if(____) return 1; return n*fact(n-1); }`，假定 n≥0。",
+  "language": "c",
+  "reference_fill": "n == 0"
+}

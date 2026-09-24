@@ -1,0 +1,39 @@
+{
+  "id": "B01-T09-Q01",
+  "title": "分页、地址转换与置换练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T09"
+  ],
+  "unit_id": "B01-T09",
+  "section_index": 0,
+  "prompt": "16 位虚拟地址、页 1 KiB，VPN 和 offset 各多少位？",
+  "explanation": "1 KiB=2^10，低 10 位为 offset；剩余 16-10=6 位为 VPN。",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "answer_source_ids": [
+    "B01-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：1 KiB=2^10，低 10 位为 offset；剩余 16-10=6 位为 VPN。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "VPN 10、offset 6",
+    "B": "VPN 5、offset 11",
+    "C": "VPN 8、offset 8",
+    "D": "VPN 6、offset 10"
+  },
+  "answer": "D",
+  "option_explanations": {
+    "A": "把页号位与偏移位互换。",
+    "B": "把 1 KiB 错当 2 KiB。",
+    "C": "机械平分地址位。",
+    "D": "1 KiB=2^10，剩余 6 位为 VPN。"
+  }
+}

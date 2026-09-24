@@ -1,0 +1,60 @@
+{
+  "id": "B06-T11-Q05",
+  "title": "跨平台部件族",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T11"
+  ],
+  "unit_id": "B06-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "使用抽象工厂。GUIFactory 声明 createButton/createMenu；WindowsFactory 与 LinuxFactory 是具体工厂；Button/Menu 是抽象产品，各平台类是具体产品。Window 只持 GUIFactory& 或构造期传入的共享工厂，并以 unique_ptr<Button/Menu> 独占创建结果。抽象产品具有虚析构。一次注入一个具体工厂保证产品族一致。",
+  "explanation": "使用抽象工厂。GUIFactory 声明 createButton/createMenu；WindowsFactory 与 LinuxFactory 是具体工厂；Button/Menu 是抽象产品，各平台类是具体产品。Window 只持 GUIFactory& 或构造期传入的共享工厂，并以 unique_ptr<Button/Menu> 独占创建结果。抽象产品具有虚析构。一次注入一个具体工厂保证产品族一致。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "抽象工厂、两个具体工厂及两类产品映射完整"
+    },
+    {
+      "id": "r2",
+      "text": "产品返回 unique_ptr 且有虚析构"
+    },
+    {
+      "id": "r3",
+      "text": "说明单一工厂注入保证同族"
+    }
+  ],
+  "source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "应用需要 Windows 与 Linux 两族 Button、Menu，运行时一次选择平台且同一窗口不能混族。",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "选择模式并映射角色。",
+      "points": 5
+    },
+    {
+      "id": "s2",
+      "prompt": "给出返回类型和所有权。",
+      "points": 5
+    }
+  ]
+}

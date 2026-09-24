@@ -1,0 +1,37 @@
+{
+  "id": "B01-T01-Q08",
+  "title": "数制、编码与补码练习 8",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T01"
+  ],
+  "unit_id": "B01-T01",
+  "section_index": 0,
+  "prompt": "8 位下执行 5-12，用补码加法给出结果。",
+  "explanation": "12 的补码负数为 11110100；00000101+11110100=11111001，解释为 249-256=-7。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：12 的补码负数为 11110100；00000101+11110100=11111001，解释为 249-256=-7。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "11111001，即 -7。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：11111001，即 -7。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：12 的补码负数为 11110100；00000101+11110100=11111001，解释为 249-256=-7。"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B06-T01-Q04",
+  "title": "接口隔离",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T01"
+  ],
+  "unit_id": "B06-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "只读客户端被迫实现 Printer 接口中的 scan 和 fax 方法。优先改进是？",
+  "options": {
+    "A": "拆成 Print/Scan/Fax 小接口",
+    "B": "把所有方法设为 virtual",
+    "C": "增加全局开关",
+    "D": "让客户端抛异常"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "客户端只依赖实际使用的能力。",
+    "B": "virtual 不会减少依赖面。",
+    "C": "开关把接口问题转成运行分支。",
+    "D": "空实现或抛异常仍违反客户契约。"
+  },
+  "explanation": "正确选项为 A。客户端只依赖实际使用的能力。",
+  "source_ids": [
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3
+}

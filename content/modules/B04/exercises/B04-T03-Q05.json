@@ -1,0 +1,37 @@
+{
+  "id": "B04-T03-Q05",
+  "title": "左部赘余",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T03"
+  ],
+  "unit_id": "B04-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "F={AB→C,A→B} 中 AB→C 的 B 是否为左部赘余？",
+  "answer": "是。",
+  "explanation": "在 F 下 A⁺ 先由 A→B 得 B，再由 AB→C 得 C，因此 A 单独可推出 C。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：是。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：在 F 下 A⁺ 先由 A→B 得 B，再由 AB→C 得 C，因此 A 单独可推出 C。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：在 F 下 A⁺ 先由 A→B 得 B，再由 AB→C 得 C，因此 A 单独可推出 C。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

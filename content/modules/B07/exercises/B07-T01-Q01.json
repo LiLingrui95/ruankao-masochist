@@ -1,0 +1,39 @@
+{
+  "id": "B07-T01-Q01",
+  "title": "网络分层、介质与交换练习1",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T01"
+  ],
+  "unit_id": "B07-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "在未配置VLAN的普通二层交换网络中，哪项描述正确？",
+  "answer": "A",
+  "explanation": "二层交换按MAC学习和转发；每端口隔离碰撞，广播仍在VLAN内传播。",
+  "source_ids": [
+    "B07-S01"
+  ],
+  "answer_source_ids": [
+    "B07-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "交换机每端口通常独立冲突域，但所有端口仍可属于同一广播域",
+    "B": "所有端口共享同一冲突域",
+    "C": "交换机不学习任何地址",
+    "D": "路由器依据MAC表转发"
+  },
+  "option_explanations": {
+    "A": "二层交换按MAC学习和转发；每端口隔离碰撞，广播仍在VLAN内传播。",
+    "B": "错误：该选项断言“所有端口共享同一冲突域”。本题适用的关系是：二层交换按MAC学习和转发；每端口隔离碰撞，广播仍在VLAN内传播。",
+    "C": "错误：该选项断言“交换机不学习任何地址”。本题适用的关系是：二层交换按MAC学习和转发；每端口隔离碰撞，广播仍在VLAN内传播。",
+    "D": "错误：该选项断言“路由器依据MAC表转发”。本题适用的关系是：二层交换按MAC学习和转发；每端口隔离碰撞，广播仍在VLAN内传播。"
+  }
+}

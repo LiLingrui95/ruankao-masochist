@@ -1,0 +1,39 @@
+{
+  "id": "B01-T03-Q02",
+  "title": "CPU、指令与寻址练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T03"
+  ],
+  "unit_id": "B01-T03",
+  "section_index": 0,
+  "prompt": "基址 1000、变址 24、位移 -8 时有效地址是多少？",
+  "explanation": "按题设 EA=base+index+displacement=1000+24-8=1016。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：按题设 EA=base+index+displacement=1000+24-8=1016。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "976",
+    "B": "1008",
+    "C": "1016",
+    "D": "1032"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "把 index 和 displacement 都误作减项。",
+    "B": "漏加变址寄存器 24。",
+    "C": "1000+24-8=1016。",
+    "D": "把 -8 错当 +8。"
+  }
+}

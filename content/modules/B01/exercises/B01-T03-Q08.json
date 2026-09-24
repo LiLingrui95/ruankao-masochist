@@ -1,0 +1,37 @@
+{
+  "id": "B01-T03-Q08",
+  "title": "CPU、指令与寻址练习 8",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T03"
+  ],
+  "unit_id": "B01-T03",
+  "section_index": 0,
+  "prompt": "地址总线 24 位且按字节编址，最大直接寻址空间是多少？",
+  "explanation": "地址组合数为 2^24，每个地址对应 1 byte；数据总线宽度不改变地址数量。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：地址组合数为 2^24，每个地址对应 1 byte；数据总线宽度不改变地址数量。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "16 MiB。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：16 MiB。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：地址组合数为 2^24，每个地址对应 1 byte；数据总线宽度不改变地址数量。"
+    }
+  ]
+}

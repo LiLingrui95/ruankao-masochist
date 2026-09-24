@@ -1,0 +1,37 @@
+{
+  "id": "B01-T06-Q05",
+  "title": "进程、线程与调度练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T06"
+  ],
+  "unit_id": "B01-T06",
+  "section_index": 0,
+  "prompt": "优先级调度如何缓解低优先级任务 starvation？",
+  "explanation": "只要提升能最终超过新到高优先级任务，就能给出有限等待机会。",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "answer_source_ids": [
+    "B01-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：只要提升能最终超过新到高优先级任务，就能给出有限等待机会。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "采用 aging，随等待时间提高其有效优先级。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：采用 aging，随等待时间提高其有效优先级。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：只要提升能最终超过新到高优先级任务，就能给出有限等待机会。"
+    }
+  ]
+}

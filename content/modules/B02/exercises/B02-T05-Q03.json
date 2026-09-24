@@ -1,0 +1,39 @@
+{
+  "id": "B02-T05-Q03",
+  "title": "最长匹配",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T05"
+  ],
+  "unit_id": "B02-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "字符序列 `a+=1` 中 `+=` 通常识别为？",
+  "answer": "B",
+  "explanation": "词法器采用最长可匹配 token 规则。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：词法器采用最长可匹配 token 规则。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "两个 token + 和 =",
+    "B": "一个 PLUS_ASSIGN token",
+    "C": "标识符的一部分",
+    "D": "词法错误"
+  },
+  "option_explanations": {
+    "A": "最长匹配不会在可形成+=时提前截断。",
+    "B": "+=是语言定义的复合赋值token。",
+    "C": "运算符不能并入标识符。",
+    "D": "序列可以合法分词。"
+  }
+}

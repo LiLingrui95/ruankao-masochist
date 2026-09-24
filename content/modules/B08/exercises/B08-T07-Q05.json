@@ -1,0 +1,37 @@
+{
+  "id": "B08-T07-Q05",
+  "title": "术语语境",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T07"
+  ],
+  "unit_id": "B08-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "在“The cache stores a representation of the resource”中解释representation。",
+  "answer": "指资源在消息中的具体表示数据，而不是“代表人物”；解释依据是cache stores和resource语境。",
+  "explanation": "解题依据与结果：指资源在消息中的具体表示数据，而不是“代表人物”；解释依据是cache stores和resource语境。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“指资源在消息中的具体表示数据，而不是“代表人物””这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“解释依据是cache stores和resource语境”给出题设对应的计算、文本证据或适用边界，不能只写题名“术语语境”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S10"
+  ],
+  "answer_source_ids": [
+    "B08-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

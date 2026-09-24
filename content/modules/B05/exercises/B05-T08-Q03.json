@@ -1,0 +1,39 @@
+{
+  "id": "B05-T08-Q03",
+  "title": "质量度量练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T08"
+  ],
+  "unit_id": "B05-T08",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "测试通过率高能否单独证明高可靠性？",
+  "answer": "C",
+  "explanation": "可靠性需结合运行剖面与失效数据。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "能",
+    "B": "通过率超过90%就能",
+    "C": "不能",
+    "D": "只要无严重缺陷就能"
+  },
+  "option_explanations": {
+    "A": "A 项“能”错误：通过率依赖用例质量和运行剖面，高通过率不能排除未测失效。",
+    "B": "B 项“通过率超过90%就能”错误：90%是任意阈值，不能替代失效强度或MTTF等可靠性证据。",
+    "C": "C 项“不能”正确：可靠性需结合运行剖面与失效数据。",
+    "D": "D 项“只要无严重缺陷就能”错误：无严重缺陷只反映已发现缺陷，不能证明运行中不会失效。"
+  }
+}

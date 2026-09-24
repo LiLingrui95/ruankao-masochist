@@ -1,0 +1,39 @@
+{
+  "id": "B02-T01-Q01",
+  "title": "短路求值",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T01"
+  ],
+  "unit_id": "B02-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "C11 下 `int x=0;`，表达式 `(x != 0) && (10/x > 1)` 的结论是？",
+  "answer": "A",
+  "explanation": "`&&` 左侧为假后不求值右侧，因此结果为 0，除法未执行。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：`&&` 左侧为假后不求值右侧，因此结果为 0，除法未执行。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "值为0且不发生除零",
+    "B": "值为1",
+    "C": "必然发生除零",
+    "D": "结果由实现定义"
+  },
+  "option_explanations": {
+    "A": "左侧为假后右侧不求值，结果为0。",
+    "B": "逻辑合取左侧已为假，不可能为1。",
+    "C": "除法位于未求值的右操作数中。",
+    "D": "短路规则由C11规定，不是实现选择。"
+  }
+}

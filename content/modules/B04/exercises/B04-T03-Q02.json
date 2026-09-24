@@ -1,0 +1,37 @@
+{
+  "id": "B04-T03-Q02",
+  "title": "复合候选键",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T03"
+  ],
+  "unit_id": "B04-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(A,B,C)，F={AB→C}，候选键是什么？",
+  "answer": "AB。",
+  "explanation": "A⁺={A}，B⁺={B}，AB⁺=ABC，删除任一属性都不再覆盖。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：AB。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：A⁺={A}，B⁺={B}，AB⁺=ABC，删除任一属性都不再覆盖。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：A⁺={A}，B⁺={B}，AB⁺=ABC，删除任一属性都不再覆盖。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

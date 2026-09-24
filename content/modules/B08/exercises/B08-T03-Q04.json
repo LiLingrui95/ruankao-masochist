@@ -1,0 +1,37 @@
+{
+  "id": "B08-T03-Q04",
+  "title": "盈亏平衡",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T03"
+  ],
+  "unit_id": "B08-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "固定成本1200，单位售价50，单位变动成本30，盈亏平衡销量？",
+  "answer": "贡献毛利20，1200/20=60件。",
+  "explanation": "解题依据与结果：贡献毛利20，1200/20=60件。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“贡献毛利20”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“1200/20=60件”给出题设对应的计算、文本证据或适用边界，不能只写题名“盈亏平衡”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

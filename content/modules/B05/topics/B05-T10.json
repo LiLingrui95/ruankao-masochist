@@ -1,0 +1,44 @@
+{
+  "id": "B05-T10",
+  "module_id": "B05",
+  "unit_id": "B05-U04",
+  "title": "项目估算、进度与风险",
+  "aliases": [
+    "规模估算",
+    "工作量估算",
+    "PERT",
+    "关键路径",
+    "挣值",
+    "风险暴露"
+  ],
+  "objectives": [
+    "掌握项目估算、进度与风险的核心术语与适用条件",
+    "能用给定材料完成判断、计算或模型校验"
+  ],
+  "prerequisite_ids": [
+    "B05-T09"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：项目估算、进度与风险"
+  ],
+  "body_path": "modules/B05/topics/B05-T10.md",
+  "source_ids": [
+    "B05-S03"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "含计算、模型或综合分析，需多种推理路径覆盖",
+  "question_ids": [
+    "B05-T10-Q01",
+    "B05-T10-Q02",
+    "B05-T10-Q03",
+    "B05-T10-Q04",
+    "B05-T10-Q05",
+    "B05-T10-Q06",
+    "B05-T10-Q07",
+    "B05-T10-Q08"
+  ]
+}
+

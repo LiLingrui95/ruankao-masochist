@@ -1,0 +1,37 @@
+{
+  "id": "B08-T01-Q07",
+  "title": "重复选择",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T01"
+  ],
+  "unit_id": "B08-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "由4种符号组成长度3且允许重复的串有多少个？",
+  "answer": "每位4种，乘法原理得4^3=64。",
+  "explanation": "解题依据与结果：每位4种，乘法原理得4^3=64。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“每位4种”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“乘法原理得4^3=64”给出题设对应的计算、文本证据或适用边界，不能只写题名“重复选择”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S01"
+  ],
+  "answer_source_ids": [
+    "B08-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

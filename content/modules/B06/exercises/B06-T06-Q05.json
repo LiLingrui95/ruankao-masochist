@@ -1,0 +1,41 @@
+{
+  "id": "B06-T06-Q05",
+  "title": "alt 片段设计",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T06"
+  ],
+  "unit_id": "B06-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "支付授权结果有 approved 与 declined 两种。写出顺序图 alt 的两个守卫及各自主消息。",
+  "answer": "alt[approved]：Checkout→Order: markPaid()，随后 Checkout→Customer: showReceipt()；else[declined]：Checkout→Order: markPaymentFailed()，随后 Checkout→Customer: showFailure(). 两个守卫覆盖授权结果且不同时成立。",
+  "explanation": "alt[approved]：Checkout→Order: markPaid()，随后 Checkout→Customer: showReceipt()；else[declined]：Checkout→Order: markPaymentFailed()，随后 Checkout→Customer: showFailure(). 两个守卫覆盖授权结果且不同时成立。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出 approved 守卫与 markPaid"
+    },
+    {
+      "id": "r2",
+      "text": "给出 declined 守卫与失败更新"
+    },
+    {
+      "id": "r3",
+      "text": "说明守卫互斥并覆盖结果"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

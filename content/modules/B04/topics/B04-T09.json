@@ -1,0 +1,44 @@
+{
+  "id": "B04-T09",
+  "module_id": "B04",
+  "unit_id": "B04-U03",
+  "title": "索引、优化与分布式数据库",
+  "aliases": [
+    "B-tree",
+    "EXPLAIN",
+    "分片",
+    "复制"
+  ],
+  "objectives": [
+    "解释并应用索引、优化与分布式数据库的核心条件",
+    "独立推导索引、优化与分布式数据库问题并用反例检查边界"
+  ],
+  "prerequisite_ids": [
+    "B04-T08"
+  ],
+  "syllabus_refs": [
+    "数据库系统知识",
+    "数据库设计与实现"
+  ],
+  "body_path": "modules/B04/topics/B04-T09.md",
+  "source_ids": [
+    "B04-S01",
+    "B04-S05",
+    "B04-S07"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "补齐数据库访问/非关系建模的关键边界，增加三种不同推理任务。",
+  "question_ids": [
+    "B04-T09-Q01",
+    "B04-T09-Q02",
+    "B04-T09-Q03",
+    "B04-T09-Q04",
+    "B04-T09-Q05",
+    "B04-T09-Q06",
+    "B04-T09-Q07",
+    "B04-T09-Q08"
+  ]
+}

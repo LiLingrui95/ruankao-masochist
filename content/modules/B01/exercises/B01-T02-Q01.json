@@ -1,0 +1,39 @@
+{
+  "id": "B01-T02-Q01",
+  "title": "浮点数与误差练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T02"
+  ],
+  "unit_id": "B01-T02",
+  "section_index": 0,
+  "prompt": "将 13.25 写成规格化二进制。",
+  "explanation": "13.25=1101.01₂，小数点左移 3 位得到 1.10101₂×2³。",
+  "source_ids": [
+    "B01-S02"
+  ],
+  "answer_source_ids": [
+    "B01-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：13.25=1101.01₂，小数点左移 3 位得到 1.10101₂×2³。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "1.10101₂×2²",
+    "B": "1.1101₂×2³",
+    "C": "0.110101₂×2⁴",
+    "D": "1.10101₂×2³"
+  },
+  "answer": "D",
+  "option_explanations": {
+    "A": "小数点移动 3 位却把指数写成 2。",
+    "B": "把 13 的二进制 1101 错排为 1110。",
+    "C": "数值相同但不是要求的 1.x 规格化形式。",
+    "D": "1101.01₂ 左移小数点 3 位。"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B08-T02-Q05",
+  "title": "贝叶斯计算",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T02"
+  ],
+  "unit_id": "B08-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "某类占10%，识别真阳性率80%，假阳性率20%，阳性后属于该类的概率？",
+  "answer": "0.1×0.8/(0.1×0.8+0.9×0.2)=4/13≈30.77%。",
+  "explanation": "解题依据与结果：0.1×0.8/(0.1×0.8+0.9×0.2)=4/13≈30.77%。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“0.1×0.8/(0.1×0.8+0.9×0.2)=4/13≈30.77%”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“0.1×0.8/(0.1×0.8+0.9×0.2)=4/13≈30.77%”给出题设对应的计算、文本证据或适用边界，不能只写题名“贝叶斯计算”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

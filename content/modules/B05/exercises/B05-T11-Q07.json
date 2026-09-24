@@ -1,0 +1,37 @@
+{
+  "id": "B05-T11-Q07",
+  "title": "DFD综合练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T11"
+  ],
+  "unit_id": "B05-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为什么子图可新增数据存储但不可新增外部边界流？",
+  "answer": "存储可作为父加工内部实现细节；新增外部流改变父加工接口，破坏父子平衡，须同步修改父图和需求。",
+  "explanation": "必须区分内部实现与外部接口。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：存储可作为父加工内部实现细节；新增外部流改变父加工接口，破坏父子平衡，须同步修改父图和需求。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：存储可作为父加工内部实现细节；新增外部流改变父加工接口，破坏父子平衡，须同步修改父图和需求。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须区分内部实现与外部接口。"
+    }
+  ]
+}

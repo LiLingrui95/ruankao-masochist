@@ -1,0 +1,39 @@
+{
+  "id": "B02-T07-Q02",
+  "title": "语义检查",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T07"
+  ],
+  "unit_id": "B02-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "哪项最典型地属于语义分析？",
+  "answer": "C",
+  "explanation": "调用参数类型是静态语义约束。",
+  "source_ids": [
+    "B02-S04"
+  ],
+  "answer_source_ids": [
+    "B02-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：调用参数类型是静态语义约束。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "识别数字字符",
+    "B": "匹配括号产生式",
+    "C": "检查函数实参与形参类型",
+    "D": "选择机器寄存器"
+  },
+  "option_explanations": {
+    "A": "字符分类属于词法分析。",
+    "B": "括号结构属于语法分析。",
+    "C": "实参与形参类型一致性属于静态语义。",
+    "D": "寄存器选择属于后端。"
+  }
+}

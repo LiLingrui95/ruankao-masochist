@@ -1,0 +1,37 @@
+{
+  "id": "B04-T10-Q05",
+  "title": "历史价格快照",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "商品价格会变化，订单需要保留成交单价。价格放哪里？",
+  "answer": "在 OrderLine 保存成交 unit_price 快照，同时 Product 可保存当前价格。",
+  "explanation": "成交价属于下单事件，不能查询时再取会变化的当前商品价。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：在 OrderLine 保存成交 unit_price 快照，同时 Product 可保存当前价格。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：成交价属于下单事件，不能查询时再取会变化的当前商品价。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：成交价属于下单事件，不能查询时再取会变化的当前商品价。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

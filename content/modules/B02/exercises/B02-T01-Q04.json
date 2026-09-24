@@ -1,0 +1,37 @@
+{
+  "id": "B02-T01-Q04",
+  "title": "控制流追踪",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T01"
+  ],
+  "unit_id": "B02-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "C11：`int s=0; for(int i=1;i<=4;i++){ if(i==3) continue; s+=i; }`。求 `s` 并写出累加项。",
+  "answer": "7",
+  "explanation": "循环累加 1、2、4，`i==3` 时跳过本轮剩余语句，所以 s=7。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：循环累加 1、2、4，`i==3` 时跳过本轮剩余语句，所以 s=7。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "列出实际累加项1、2、4，并指出3因continue跳过。"
+    },
+    {
+      "id": "r2",
+      "text": "正确相加得到s=7。"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B05-T01-Q03",
+  "title": "软件过程练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T01"
+  ],
+  "unit_id": "B05-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "螺旋模型每轮的组织核心是什么？",
+  "answer": "B",
+  "explanation": "螺旋以风险驱动迭代。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "固定文档数量",
+    "B": "风险识别与消减",
+    "C": "禁止迭代",
+    "D": "一次性交付"
+  },
+  "option_explanations": {
+    "A": "A 项“固定文档数量”错误：文档数量是过程产物要求，不是螺旋模型组织每轮活动的驱动力。",
+    "B": "B 项“风险识别与消减”正确：螺旋以风险驱动迭代。",
+    "C": "C 项“禁止迭代”错误：螺旋模型本身按轮次迭代，禁止迭代与其定义相反。",
+    "D": "D 项“一次性交付”错误：一次性交付不能体现逐轮风险分析和原型验证。"
+  }
+}

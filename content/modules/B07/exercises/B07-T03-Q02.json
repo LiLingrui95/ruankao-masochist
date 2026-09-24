@@ -1,0 +1,39 @@
+{
+  "id": "B07-T03-Q02",
+  "title": "IPv4子网与CIDR练习2",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T03"
+  ],
+  "unit_id": "B07-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "普通广播子网需要至少100个可分配主机地址，最小前缀为？",
+  "answer": "D",
+  "explanation": "/25有128个地址，传统可用126；/26仅62。",
+  "source_ids": [
+    "B07-S03"
+  ],
+  "answer_source_ids": [
+    "B07-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "/26",
+    "B": "/27",
+    "C": "/28",
+    "D": "/25"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“/26”。本题适用的关系是：/25有128个地址，传统可用126；/26仅62。",
+    "B": "错误：该选项断言“/27”。本题适用的关系是：/25有128个地址，传统可用126；/26仅62。",
+    "C": "错误：该选项断言“/28”。本题适用的关系是：/25有128个地址，传统可用126；/26仅62。",
+    "D": "/25有128个地址，传统可用126；/26仅62。"
+  }
+}

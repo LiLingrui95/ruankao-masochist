@@ -1,0 +1,55 @@
+{
+  "id": "B06-T10-Q04",
+  "title": "工单状态机",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T10"
+  ],
+  "unit_id": "B06-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "初态→New；New--assign→Assigned；Assigned--start→InProgress；InProgress--resolve→Resolved；Resolved--reopen→InProgress；Resolved--close [accepted]→Closed。未验收时 close 守卫为假，保持 Resolved。",
+  "explanation": "初态→New；New--assign→Assigned；Assigned--start→InProgress；InProgress--resolve→Resolved；Resolved--reopen→InProgress；Resolved--close [accepted]→Closed。未验收时 close 守卫为假，保持 Resolved。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "五条主迁移方向正确"
+    },
+    {
+      "id": "r2",
+      "text": "reopen 回到 InProgress"
+    },
+    {
+      "id": "r3",
+      "text": "close 守卫 accepted 与失败结果明确"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "工单初始 New；assign 后 Assigned；start 后 InProgress；resolve 后 Resolved；reopen 可回 InProgress；close 仅允许 Resolved 且验收通过。",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "列出迁移。",
+      "points": 5
+    },
+    {
+      "id": "s2",
+      "prompt": "写出 close 的守卫。",
+      "points": 5
+    }
+  ],
+  "assets": []
+}

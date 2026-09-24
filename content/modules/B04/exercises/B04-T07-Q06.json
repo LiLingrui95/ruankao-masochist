@@ -1,0 +1,37 @@
+{
+  "id": "B04-T07-Q06",
+  "title": "参数化与注入",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T07"
+  ],
+  "unit_id": "B04-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "查询账户时，为什么应把用户输入作为参数传值，而不是拼接到 SQL？参数化是否同时完成访问授权？",
+  "answer": "参数将输入保留为数据，避免被解释为 SQL 结构；它不完成业务授权。",
+  "explanation": "SQL 解析结构与值绑定分离；仍需依据登录身份验证可访问的账户。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "解释输入作为值而非SQL结构"
+    },
+    {
+      "id": "r2",
+      "text": "明确仍需执行访问授权"
+    }
+  ],
+  "source_ids": [
+    "B04-S06"
+  ],
+  "answer_source_ids": [
+    "B04-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "主任务按接口语法与业务时间语义独立审校；概念题，未声称实际部署运行。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

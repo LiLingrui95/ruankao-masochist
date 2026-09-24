@@ -1,0 +1,44 @@
+{
+  "id": "B06-T03",
+  "module_id": "B06",
+  "unit_id": "B06-U01",
+  "title": "继承、虚函数与多态",
+  "aliases": [
+    "动态绑定",
+    "虚析构",
+    "override",
+    "对象切片"
+  ],
+  "objectives": [
+    "解释继承、虚函数与多态的核心规则与适用条件",
+    "用确定材料完成继承、虚函数与多态的推导与设计判断"
+  ],
+  "prerequisite_ids": [
+    "B06-T02"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：继承、虚函数与多态"
+  ],
+  "body_path": "modules/B06/topics/B06-T03.md",
+  "source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S05"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂综合考点配置 8 道不同推理任务；常规应用配置 5—8 道；稳定概念配置 4 道。",
+  "question_ids": [
+    "B06-T03-Q01",
+    "B06-T03-Q02",
+    "B06-T03-Q03",
+    "B06-T03-Q04",
+    "B06-T03-Q05",
+    "B06-T03-Q06",
+    "B06-T03-Q07",
+    "B06-T03-Q08"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B01-T09-Q05",
+  "title": "分页、地址转换与置换练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T09"
+  ],
+  "unit_id": "B01-T09",
+  "section_index": 0,
+  "prompt": "TLB 10 ns、内存 100 ns、命中率 90%；miss 需页表和数据两次内存，求 EAT。",
+  "explanation": "0.9×(10+100)+0.1×(10+200)=120 ns。",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "answer_source_ids": [
+    "B01-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：0.9×(10+100)+0.1×(10+200)=120 ns。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "single_choice",
+  "options": {
+    "A": "110 ns",
+    "B": "120 ns",
+    "C": "121 ns",
+    "D": "210 ns"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "只计算命中路径。",
+    "B": "0.9×110+0.1×210=120 ns。",
+    "C": "重复加权一次 TLB 查询。",
+    "D": "把每次访问都当成 TLB miss。"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B02-T04-Q01",
+  "title": "结构体填充",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T04"
+  ],
+  "unit_id": "B02-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "已知 char 大小/对齐1，int 大小/对齐4，结构体按最大成员对齐。`struct S{char c; int n;};` 大小是？",
+  "answer": "B",
+  "explanation": "c 后填充3字节，n占4字节，总计8。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：c 后填充3字节，n占4字节，总计8。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "5",
+    "B": "8",
+    "C": "4",
+    "D": "条件仍不足"
+  },
+  "option_explanations": {
+    "A": "5忽略了int对齐要求。",
+    "B": "偏移0放char、填充3、偏移4放int，总计8。",
+    "C": "4容纳不了两个成员。",
+    "D": "题目已给出决定布局所需的大小与对齐条件。"
+  }
+}

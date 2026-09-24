@@ -1,0 +1,39 @@
+{
+  "id": "B02-T01-Q02",
+  "title": "无符号回绕",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T01"
+  ],
+  "unit_id": "B02-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "设 `unsigned int` 为 32 位，`unsigned int u=0; u-1` 的值是？",
+  "answer": "B",
+  "explanation": "无符号算术按 2^32 取模，结果为 2^32-1。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：无符号算术按 2^32 取模，结果为 2^32-1。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "未定义",
+    "B": "4294967295",
+    "C": "-1，类型为int",
+    "D": "实现定义"
+  },
+  "option_explanations": {
+    "A": "无符号减法有模运算定义。",
+    "B": "32位条件下按2^32取模得到4294967295。",
+    "C": "结果类型仍是unsigned int。",
+    "D": "题目已给位宽且标准规定回绕。"
+  }
+}

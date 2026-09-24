@@ -1,0 +1,39 @@
+{
+  "id": "B02-T06-Q03",
+  "title": "优先级文法",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T06"
+  ],
+  "unit_id": "B02-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "文法 `E→E+T|T, T→T*F|F` 如何表达乘法优先？",
+  "answer": "B",
+  "explanation": "层级限制了树结构，使乘法先组成 T。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：层级限制了树结构，使乘法先组成 T。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "`*` 字符更长",
+    "B": "乘法位于更深的T层",
+    "C": "解析器忽略+",
+    "D": "依赖变量类型"
+  },
+  "option_explanations": {
+    "A": "字符长度不决定运算符优先级。",
+    "B": "T层先组合乘法，再作为E的组成参与加法。",
+    "C": "加法仍由E产生式处理。",
+    "D": "优先级由文法结构而非变量类型决定。"
+  }
+}

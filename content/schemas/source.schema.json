@@ -1,0 +1,64 @@
+{
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "url": {
+      "title": "Url",
+      "type": "string"
+    },
+    "author": {
+      "title": "Author",
+      "type": "string"
+    },
+    "accessed_on": {
+      "title": "Accessed On",
+      "type": "string"
+    },
+    "locator": {
+      "title": "Locator",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "kind": {
+      "title": "Kind",
+      "type": "string"
+    },
+    "reuse_policy": {
+      "title": "Reuse Policy",
+      "type": "string"
+    },
+    "query": {
+      "title": "Query",
+      "type": "string"
+    },
+    "selection_reason": {
+      "title": "Selection Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "url",
+    "author",
+    "accessed_on",
+    "locator",
+    "version",
+    "kind",
+    "reuse_policy",
+    "query",
+    "selection_reason"
+  ],
+  "title": "Source",
+  "type": "object"
+}

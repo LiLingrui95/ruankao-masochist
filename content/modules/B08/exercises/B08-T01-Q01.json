@@ -1,0 +1,39 @@
+{
+  "id": "B08-T01-Q01",
+  "title": "蕴含真值",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T01"
+  ],
+  "unit_id": "B08-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "命题 p 为假、q 为假时，p→q 的真值是？",
+  "options": {
+    "A": "真",
+    "B": "假",
+    "C": "无法确定",
+    "D": "与q相反"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "正确。材料蕴含只有前件真、后件假时为假；此前件p为假，所以蕴含为真。",
+    "B": "错误。把p、q都为假误判成蕴含为假；蕴含的唯一假值行是p真、q假。",
+    "C": "错误。p和q的真值均已给出，真值表能唯一确定结果。",
+    "D": "错误。蕴含的真值不是简单取q的否定；本行由前件为假决定为真。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。材料蕴含只有前件真、后件假时为假；此前件p为假，所以蕴含为真。",
+  "source_ids": [
+    "B08-S01"
+  ],
+  "answer_source_ids": [
+    "B08-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

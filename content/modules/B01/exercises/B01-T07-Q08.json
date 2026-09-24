@@ -1,0 +1,37 @@
+{
+  "id": "B01-T07-Q08",
+  "title": "PV同步与互斥练习 8",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T07"
+  ],
+  "unit_id": "B01-T07",
+  "section_index": 0,
+  "prompt": "读者优先算法可能使哪类任务 starvation？如何改善？",
+  "explanation": "持续到达的读者让 reader count 不归零，写者无法取得独占资源。",
+  "source_ids": [
+    "B01-S04"
+  ],
+  "answer_source_ids": [
+    "B01-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：持续到达的读者让 reader count 不归零，写者无法取得独占资源。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "写者可能饥饿；可用公平排队或写者等待时阻止新读者进入。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：写者可能饥饿；可用公平排队或写者等待时阻止新读者进入。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：持续到达的读者让 reader count 不归零，写者无法取得独占资源。"
+    }
+  ]
+}

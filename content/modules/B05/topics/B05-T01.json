@@ -1,0 +1,43 @@
+{
+  "id": "B05-T01",
+  "module_id": "B05",
+  "unit_id": "B05-U01",
+  "title": "软件过程与开发模型",
+  "aliases": [
+    "软件生命周期",
+    "瀑布模型",
+    "迭代与增量",
+    "原型模型",
+    "螺旋模型"
+  ],
+  "objectives": [
+    "掌握软件过程与开发模型的核心术语与适用条件",
+    "能用给定材料完成判断、计算或模型校验"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：软件过程与开发模型"
+  ],
+  "body_path": "modules/B05/topics/B05-T01.md",
+  "source_ids": [
+    "B05-S01",
+    "B05-S07",
+    "B05-S08",
+    "B05-S09"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "扩展范围后以8题覆盖定义、版本边界、情境选择和反例推导",
+  "question_ids": [
+    "B05-T01-Q01",
+    "B05-T01-Q02",
+    "B05-T01-Q03",
+    "B05-T01-Q04",
+    "B05-T01-Q05",
+    "B05-T01-Q06",
+    "B05-T01-Q07",
+    "B05-T01-Q08"
+  ]
+}

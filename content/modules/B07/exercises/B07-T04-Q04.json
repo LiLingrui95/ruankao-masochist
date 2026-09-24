@@ -1,0 +1,43 @@
+{
+  "id": "B07-T04-Q04",
+  "title": "IP路由、IPv6与辅助协议练习4",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T04"
+  ],
+  "unit_id": "B07-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "NAT的能力边界描述正确的是？",
+  "answer": "B",
+  "explanation": "NAT解决地址映射问题，并非密码认证或完整安全策略。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S03",
+    "B07-S04"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S03",
+    "B07-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "替代所有防火墙策略",
+    "B": "可改写地址/端口并维护映射，但不等同于端到端加密",
+    "C": "能证明远端用户身份",
+    "D": "自动修复应用漏洞"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“替代所有防火墙策略”。本题适用的关系是：NAT解决地址映射问题，并非密码认证或完整安全策略。",
+    "B": "NAT解决地址映射问题，并非密码认证或完整安全策略。",
+    "C": "错误：该选项断言“能证明远端用户身份”。本题适用的关系是：NAT解决地址映射问题，并非密码认证或完整安全策略。",
+    "D": "错误：该选项断言“自动修复应用漏洞”。本题适用的关系是：NAT解决地址映射问题，并非密码认证或完整安全策略。"
+  }
+}

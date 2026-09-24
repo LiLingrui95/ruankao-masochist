@@ -1,0 +1,39 @@
+{
+  "id": "B06-T03-Q01",
+  "title": "动态绑定",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T03"
+  ],
+  "unit_id": "B06-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "Base& r 绑定 Derived 对象，f 是 virtual 且 Derived 正确 override。r.f() 调用谁？",
+  "options": {
+    "A": "Derived::f",
+    "B": "Base::f",
+    "C": "两者都调用",
+    "D": "结果未定义"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "经基类引用的虚调用按动态类型选择最终覆盖者。",
+    "B": "只有非虚调用或限定调用才固定到基类。",
+    "C": "一次虚调用只选择一个最终覆盖者。",
+    "D": "该情形由标准明确规定。"
+  },
+  "explanation": "正确选项为 A。经基类引用的虚调用按动态类型选择最终覆盖者。",
+  "source_ids": [
+    "B06-S05"
+  ],
+  "answer_source_ids": [
+    "B06-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B08-T01-Q02",
+  "title": "无序选择",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T01"
+  ],
+  "unit_id": "B08-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "从10人中选2人组成无职务小组，方案数是？",
+  "options": {
+    "A": "20",
+    "B": "45",
+    "C": "90",
+    "D": "100"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "错误。20既不是组合数C(10,2)，也不是有序选择数P(10,2)。",
+    "B": "正确。小组无职务、顺序无关，C(10,2)=10×9/2=45。",
+    "C": "错误。90是P(10,2)，把同一个二人小组按先后重复计算了2次。",
+    "D": "错误。100对应允许两次独立且可重复选择；题目是从10个不同人中选2人。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。小组无职务、顺序无关，C(10,2)=10×9/2=45。",
+  "source_ids": [
+    "B08-S01"
+  ],
+  "answer_source_ids": [
+    "B08-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

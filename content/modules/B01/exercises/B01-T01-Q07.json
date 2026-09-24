@@ -1,0 +1,37 @@
+{
+  "id": "B01-T01-Q07",
+  "title": "数制、编码与补码练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T01"
+  ],
+  "unit_id": "B01-T01",
+  "section_index": 0,
+  "prompt": "为什么 8 位补码的 -128 不能取相反数得到可表示的 +128？",
+  "explanation": "范围不对称：[-128,127]。模 256 下 128 的加法逆元仍是 128，但 signed 解释只能是 -128。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：范围不对称：[-128,127]。模 256 下 128 的加法逆元仍是 128，但 signed 解释只能是 -128。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "8 位补码正数上界是 127；位串 10000000 取反加一仍为自身并产生溢出。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：8 位补码正数上界是 127；位串 10000000 取反加一仍为自身并产生溢出。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：范围不对称：[-128,127]。模 256 下 128 的加法逆元仍是 128，但 signed 解释只能是 -128。"
+    }
+  ]
+}

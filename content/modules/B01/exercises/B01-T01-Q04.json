@@ -1,0 +1,37 @@
+{
+  "id": "B01-T01-Q04",
+  "title": "数制、编码与补码练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T01"
+  ],
+  "unit_id": "B01-T01",
+  "section_index": 0,
+  "prompt": "8 位补码中 70+80 的低 8 位结果及溢出结论是什么？",
+  "explanation": "数学和 150 超过上界 127；两个正数得到符号位 1，满足同号相加异号溢出判据。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：数学和 150 超过上界 127；两个正数得到符号位 1，满足同号相加异号溢出判据。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "10010110（解释为 -106），发生有符号溢出。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：10010110（解释为 -106），发生有符号溢出。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：数学和 150 超过上界 127；两个正数得到符号位 1，满足同号相加异号溢出判据。"
+    }
+  ]
+}

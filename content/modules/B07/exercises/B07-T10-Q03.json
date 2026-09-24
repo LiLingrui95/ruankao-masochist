@@ -1,0 +1,41 @@
+{
+  "id": "B07-T10-Q03",
+  "title": "访问控制、攻击与安全防护练习3",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T10"
+  ],
+  "unit_id": "B07-T10",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "资产价值100万元、暴露因子0.4、年发生率0.25，ALE为？",
+  "answer": "C",
+  "explanation": "SLE=100×0.4=40万元；ALE=40×0.25=10万元/年。",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "25万元/年",
+    "B": "100万元/年",
+    "C": "10万元/年",
+    "D": "40万元/年"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“25万元/年”。本题适用的关系是：SLE=100×0.4=40万元；ALE=40×0.25=10万元/年。",
+    "B": "错误：该选项断言“100万元/年”。本题适用的关系是：SLE=100×0.4=40万元；ALE=40×0.25=10万元/年。",
+    "C": "SLE=100×0.4=40万元；ALE=40×0.25=10万元/年。",
+    "D": "错误：该选项断言“40万元/年”。本题适用的关系是：SLE=100×0.4=40万元；ALE=40×0.25=10万元/年。"
+  }
+}

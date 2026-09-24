@@ -1,0 +1,37 @@
+{
+  "id": "B04-T08-Q02",
+  "title": "无环次序",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T08"
+  ],
+  "unit_id": "B04-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "若优先图只有 T1→T2、T1→T3、T2→T3，串行次序是什么？",
+  "answer": "T1、T2、T3。",
+  "explanation": "图无环，其唯一拓扑序满足所有冲突先后约束。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：T1、T2、T3。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：图无环，其唯一拓扑序满足所有冲突先后约束。"
+    }
+  ],
+  "source_ids": [
+    "B04-S04"
+  ],
+  "answer_source_ids": [
+    "B04-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：图无环，其唯一拓扑序满足所有冲突先后约束。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B05-T03-Q04",
+  "title": "DFD基础练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T03"
+  ],
+  "unit_id": "B05-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "写出“订单=订单号+客户信息+{明细}+[备注]”中符号含义。",
+  "answer": "+表示组成；{明细}表示明细重复；[备注]表示备注可选。",
+  "explanation": "逐一解释+、{}、[]，不得把重复解释为选择。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：+表示组成；{明细}表示明细重复；[备注]表示备注可选。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：+表示组成；{明细}表示明细重复；[备注]表示备注可选。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：逐一解释+、{}、[]，不得把重复解释为选择。"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B05-T03-Q08",
+  "title": "DFD基础练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T03"
+  ],
+  "unit_id": "B05-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "说明DFD为什么不能表示“先校验后扣款”的时序。",
+  "answer": "DFD表达数据变换和流向，不表达控制时序；时序应由加工说明、活动图或状态模型补充。",
+  "explanation": "需明确DFD语义限制并给出补充载体。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：DFD表达数据变换和流向，不表达控制时序；时序应由加工说明、活动图或状态模型补充。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：DFD表达数据变换和流向，不表达控制时序；时序应由加工说明、活动图或状态模型补充。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：需明确DFD语义限制并给出补充载体。"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B01-T01-Q01",
+  "title": "数制、编码与补码练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T01"
+  ],
+  "unit_id": "B01-T01",
+  "section_index": 0,
+  "prompt": "将十六进制 0xB6 转为二进制和无符号十进制。",
+  "explanation": "逐个十六进制位展开：B=1011，6=0110；按位权求和 128+32+16+4+2=182。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：逐个十六进制位展开：B=1011，6=0110；按位权求和 128+32+16+4+2=182。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "10110110₂，182",
+    "B": "10110101₂，181",
+    "C": "11010110₂，214",
+    "D": "10110110₂，172"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "B=1011、6=0110，位权和为 182。",
+    "B": "把十六进制低位 6 错写成 0101。",
+    "C": "把高半字节 B 的位序颠倒。",
+    "D": "二进制展开正确，但把十进制位权和误加为 172。"
+  }
+}

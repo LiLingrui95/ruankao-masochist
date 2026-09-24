@@ -1,0 +1,41 @@
+{
+  "id": "B07-T02-Q01",
+  "title": "以太网与链路层练习1",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T02"
+  ],
+  "unit_id": "B07-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "交换机收到源MAC为C、目的MAC未知的帧时，首先会怎样处理源地址？",
+  "answer": "A",
+  "explanation": "交换机从源MAC学习入端口，再处理目的地址。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S02"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "记录C与入端口的映射",
+    "B": "丢弃C地址",
+    "C": "把C映射到所有端口",
+    "D": "向路由器查询C"
+  },
+  "option_explanations": {
+    "A": "交换机从源MAC学习入端口，再处理目的地址。",
+    "B": "错误：该选项断言“丢弃C地址”。本题适用的关系是：交换机从源MAC学习入端口，再处理目的地址。",
+    "C": "错误：该选项断言“把C映射到所有端口”。本题适用的关系是：交换机从源MAC学习入端口，再处理目的地址。",
+    "D": "错误：该选项断言“向路由器查询C”。本题适用的关系是：交换机从源MAC学习入端口，再处理目的地址。"
+  }
+}

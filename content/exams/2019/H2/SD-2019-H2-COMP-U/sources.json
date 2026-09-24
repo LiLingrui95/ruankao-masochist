@@ -1,0 +1,15 @@
+[
+  {
+    "id": "EXAM-2019-H2-COMPREHENSIVE-S01",
+    "title": "2019年下半年软件设计师综合知识页面或索引",
+    "url": "https://www.cnitpm.com/examst/1853813/",
+    "author": "信管网",
+    "accessed_on": "2026-09-24",
+    "locator": "页面标题/索引项：2019年下半年软件设计师综合知识",
+    "version": "web page accessed 2026-09-24",
+    "kind": "exam_index",
+    "reuse_policy": "link-only; page does not provide a clear licence for redistributing exam text; no question text copied",
+    "query": "2019年 下半年 软件设计师 综合知识 真题",
+    "selection_reason": "用于确认 SD-2019-H2-COMP-U 的页面存在性与来源定位；不据此宣称官方发布或完整原卷。"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "B02-T08-Q04",
+  "title": "两种作用域推导",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T08"
+  ],
+  "unit_id": "B02-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "全局 x=1；f 在全局定义并返回 x；g 内局部 x=2 后调用 f。分别给出词法作用域和动态作用域结果。",
+  "answer": "词法作用域结果1；动态作用域结果2。前者按f定义环境，后者沿调用链先找到g的x。",
+  "explanation": "题目明确两种规则后才有各自唯一答案。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：题目明确两种规则后才有各自唯一答案。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "词法作用域按f定义环境得到全局x=1。"
+    },
+    {
+      "id": "r2",
+      "text": "动态作用域沿调用链先找到g的x=2。"
+    }
+  ]
+}

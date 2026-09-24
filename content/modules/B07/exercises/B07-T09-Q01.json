@@ -1,0 +1,41 @@
+{
+  "id": "B07-T09-Q01",
+  "title": "散列、签名、证书与认证练习1",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T09"
+  ],
+  "unit_id": "B07-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "数字签名通常由谁生成、谁验证？",
+  "answer": "A",
+  "explanation": "签名私钥须由签名者控制，验证使用对应可信公钥。",
+  "source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "签名者私钥生成，公钥验证",
+    "B": "公钥生成，私钥验证",
+    "C": "CA私钥解密正文",
+    "D": "双方共享口令生成且第三方唯一验证"
+  },
+  "option_explanations": {
+    "A": "签名私钥须由签名者控制，验证使用对应可信公钥。",
+    "B": "错误：该选项断言“公钥生成，私钥验证”。本题适用的关系是：签名私钥须由签名者控制，验证使用对应可信公钥。",
+    "C": "错误：该选项断言“CA私钥解密正文”。本题适用的关系是：签名私钥须由签名者控制，验证使用对应可信公钥。",
+    "D": "错误：该选项断言“双方共享口令生成且第三方唯一验证”。本题适用的关系是：签名私钥须由签名者控制，验证使用对应可信公钥。"
+  }
+}

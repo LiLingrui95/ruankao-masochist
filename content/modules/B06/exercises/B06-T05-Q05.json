@@ -1,0 +1,41 @@
+{
+  "id": "B06-T05-Q05",
+  "title": "类图关系辨析",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T05"
+  ],
+  "unit_id": "B06-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "Playlist 可删除但 Song 仍存在并可进入多个列表；PlaylistEntry 随 Playlist 删除。分别给出关系。",
+  "answer": "Playlist 与 Song 是多对多普通关联（通常经 PlaylistEntry 表达）；Playlist 与 PlaylistEntry 是组合，实心菱形在 Playlist 端；PlaylistEntry 到 Song 是普通关联，每个条目指向一个 Song。",
+  "explanation": "Playlist 与 Song 是多对多普通关联（通常经 PlaylistEntry 表达）；Playlist 与 PlaylistEntry 是组合，实心菱形在 Playlist 端；PlaylistEntry 到 Song 是普通关联，每个条目指向一个 Song。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "Playlist—Song 判为可共享普通关联"
+    },
+    {
+      "id": "r2",
+      "text": "Playlist—PlaylistEntry 判为组合且菱形在 Playlist"
+    },
+    {
+      "id": "r3",
+      "text": "写出 Entry—Song 的单一引用关系"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

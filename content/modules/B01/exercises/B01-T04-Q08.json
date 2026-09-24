@@ -1,0 +1,37 @@
+{
+  "id": "B01-T04-Q08",
+  "title": "Cache与存储层次练习 8",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T04"
+  ],
+  "unit_id": "B01-T04",
+  "section_index": 0,
+  "prompt": "为什么增大块大小不保证降低 miss rate？",
+  "explanation": "命中率由访问模式和容量共同决定；单调改善结论缺少条件。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：命中率由访问模式和容量共同决定；单调改善结论缺少条件。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "空间局部性可能改善 compulsory miss，但行数减少会增加冲突/容量 miss，并搬入无用数据。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：空间局部性可能改善 compulsory miss，但行数减少会增加冲突/容量 miss，并搬入无用数据。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：命中率由访问模式和容量共同决定；单调改善结论缺少条件。"
+    }
+  ]
+}

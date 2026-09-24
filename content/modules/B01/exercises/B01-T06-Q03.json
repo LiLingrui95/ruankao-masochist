@@ -1,0 +1,37 @@
+{
+  "id": "B01-T06-Q03",
+  "title": "进程、线程与调度练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T06"
+  ],
+  "unit_id": "B01-T06",
+  "section_index": 0,
+  "prompt": "到达 2、首次运行 6、完成 14、CPU burst 7，求响应、周转、等待时间。",
+  "explanation": "响应=6-2；周转=14-2；无额外模型时等待=12-7。",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "answer_source_ids": [
+    "B01-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：响应=6-2；周转=14-2；无额外模型时等待=12-7。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "响应 4，周转 12，等待 5。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：响应 4，周转 12，等待 5。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：响应=6-2；周转=14-2；无额外模型时等待=12-7。"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B07-T08-Q04",
+  "title": "对称与公钥密码练习4",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T08"
+  ],
+  "unit_id": "B07-T08",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "关于密码散列，哪项正确？",
+  "answer": "B",
+  "explanation": "散列是单向摘要；来源认证需密钥机制。",
+  "source_ids": [
+    "B07-S09"
+  ],
+  "answer_source_ids": [
+    "B07-S09"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "自动认证消息来源",
+    "B": "它不是可用解密密钥恢复明文的加密",
+    "C": "必然无碰撞",
+    "D": "输出长度等于输入长度"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“自动认证消息来源”。本题适用的关系是：散列是单向摘要；来源认证需密钥机制。",
+    "B": "散列是单向摘要；来源认证需密钥机制。",
+    "C": "错误：该选项断言“必然无碰撞”。本题适用的关系是：散列是单向摘要；来源认证需密钥机制。",
+    "D": "错误：该选项断言“输出长度等于输入长度”。本题适用的关系是：散列是单向摘要；来源认证需密钥机制。"
+  }
+}

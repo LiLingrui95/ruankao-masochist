@@ -1,0 +1,37 @@
+{
+  "id": "B01-T09-Q04",
+  "title": "分页、地址转换与置换练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T09"
+  ],
+  "unit_id": "B01-T09",
+  "section_index": 0,
+  "prompt": "32 位虚拟地址、4 KiB 页、每 PTE 4 byte，单级页表多大？",
+  "explanation": "虚拟页数 2^(32-12)=2^20；乘 4 byte 得 2^22 byte=4 MiB。",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "answer_source_ids": [
+    "B01-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：虚拟页数 2^(32-12)=2^20；乘 4 byte 得 2^22 byte=4 MiB。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "4 MiB。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：4 MiB。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：虚拟页数 2^(32-12)=2^20；乘 4 byte 得 2^22 byte=4 MiB。"
+    }
+  ]
+}

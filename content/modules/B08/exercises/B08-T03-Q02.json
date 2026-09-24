@@ -1,0 +1,39 @@
+{
+  "id": "B08-T03-Q02",
+  "title": "浮点边界",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T03"
+  ],
+  "unit_id": "B08-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "货币累计计算更适合优先采用？",
+  "options": {
+    "A": "二进制float且逐步舍入",
+    "B": "定点整数或十进制定点",
+    "C": "字符串拼接",
+    "D": "随机数"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "错误。二进制float不能精确表示多数十进制小数，逐步舍入还会累积误差。",
+    "B": "正确。以最小货币单位存整数或用十进制定点可明确控制精度和舍入。",
+    "C": "错误。字符串拼接不执行可靠的数值加减。",
+    "D": "错误。随机数与精确累计金额无关。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。以最小货币单位存整数或用十进制定点可明确控制精度和舍入。",
+  "source_ids": [
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

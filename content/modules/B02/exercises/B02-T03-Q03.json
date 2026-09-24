@@ -1,0 +1,39 @@
+{
+  "id": "B02-T03-Q03",
+  "title": "遮蔽",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T03"
+  ],
+  "unit_id": "B02-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "外层块有 `int x=1;`，内层块重新声明 `int x=2;`。内层使用 `x` 指谁？",
+  "answer": "B",
+  "explanation": "内层声明遮蔽外层同名标识符。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：内层声明遮蔽外层同名标识符。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "外层对象",
+    "B": "内层对象",
+    "C": "二者相加",
+    "D": "语法错误"
+  },
+  "option_explanations": {
+    "A": "外层名字在内层同名声明范围内被遮蔽。",
+    "B": "最近的内层声明绑定到值2的对象。",
+    "C": "名字解析不会隐式相加。",
+    "D": "嵌套块允许同名遮蔽。"
+  }
+}

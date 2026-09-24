@@ -1,0 +1,37 @@
+{
+  "id": "B02-T03-Q06",
+  "title": "返回局部地址",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T03"
+  ],
+  "unit_id": "B02-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "`int *f(void){int x=3; return &x;}` 的问题是什么？",
+  "answer": "x 在函数返回时结束自动存储期，返回值成为悬空指针，之后解引用行为未定义。",
+  "explanation": "关键不是地址数值是否仍可见，而是所指对象生命周期已结束。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：关键不是地址数值是否仍可见，而是所指对象生命周期已结束。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "指出x的自动存储期在函数返回时结束。"
+    },
+    {
+      "id": "r2",
+      "text": "指出返回指针悬空，随后解引用为未定义行为。"
+    }
+  ]
+}

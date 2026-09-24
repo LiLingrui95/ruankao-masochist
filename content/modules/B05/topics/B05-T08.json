@@ -1,0 +1,44 @@
+{
+  "id": "B05-T08",
+  "module_id": "B05",
+  "unit_id": "B05-U03",
+  "title": "质量、度量与评审",
+  "aliases": [
+    "质量模型",
+    "产品度量",
+    "过程度量",
+    "评审",
+    "缺陷密度",
+    "可靠性"
+  ],
+  "objectives": [
+    "掌握质量、度量与评审的核心术语与适用条件",
+    "能用给定材料完成判断、计算或模型校验"
+  ],
+  "prerequisite_ids": [
+    "B05-T07"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：质量、度量与评审"
+  ],
+  "body_path": "modules/B05/topics/B05-T08.md",
+  "source_ids": [
+    "B05-S01",
+    "B05-S11"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "扩展范围后以8题覆盖定义、版本边界、情境选择和反例推导",
+  "question_ids": [
+    "B05-T08-Q01",
+    "B05-T08-Q02",
+    "B05-T08-Q03",
+    "B05-T08-Q04",
+    "B05-T08-Q05",
+    "B05-T08-Q06",
+    "B05-T08-Q07",
+    "B05-T08-Q08"
+  ]
+}

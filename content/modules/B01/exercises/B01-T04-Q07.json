@@ -1,0 +1,37 @@
+{
+  "id": "B01-T04-Q07",
+  "title": "Cache与存储层次练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T04"
+  ],
+  "unit_id": "B01-T04",
+  "section_index": 0,
+  "prompt": "write-back Cache 中 dirty bit 的作用是什么？",
+  "explanation": "clean 块可直接丢弃；dirty 块不写回会丢失最后修改。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：clean 块可直接丢弃；dirty 块不写回会丢失最后修改。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "标记该块已在 Cache 修改且主存副本陈旧，替换时必须写回。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：标记该块已在 Cache 修改且主存副本陈旧，替换时必须写回。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：clean 块可直接丢弃；dirty 块不写回会丢失最后修改。"
+    }
+  ]
+}

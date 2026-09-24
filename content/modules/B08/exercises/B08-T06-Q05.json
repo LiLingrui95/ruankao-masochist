@@ -1,0 +1,41 @@
+{
+  "id": "B08-T06-Q05",
+  "title": "敏感信息",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T06"
+  ],
+  "unit_id": "B08-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "应用拟做人脸识别，应在上线前完成哪些核心合规分析？",
+  "answer": "证明特定目的和充分必要性，采取严格保护，履行告知与单独同意等规则，并事前做个人信息保护影响评估、留存记录。",
+  "explanation": "解题依据与结果：证明特定目的和充分必要性，采取严格保护，履行告知与单独同意等规则，并事前做个人信息保护影响评估、留存记录。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“证明特定目的和充分必要性”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“采取严格保护，履行告知与单独同意等规则，并事前做个人信息保护影响评估、留存记录”给出题设对应的计算、文本证据或适用边界，不能只写题名“敏感信息”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "answer_source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B08-T03-Q07",
+  "title": "单位换算",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T03"
+  ],
+  "unit_id": "B08-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "10 Mb/s传输25 MB净数据，忽略开销需多久？",
+  "answer": "25 MB=200 Mb，200/10=20秒。",
+  "explanation": "解题依据与结果：25 MB=200 Mb，200/10=20秒。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“25 MB=200 Mb”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“200/10=20秒”给出题设对应的计算、文本证据或适用边界，不能只写题名“单位换算”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

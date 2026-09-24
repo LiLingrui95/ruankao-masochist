@@ -1,0 +1,41 @@
+{
+  "id": "B05-T01-Q08",
+  "title": "补充范围练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T01"
+  ],
+  "unit_id": "B05-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "组织达到较高成熟度等级，能否推出任一产品无缺陷？说明理由。",
+  "answer": "不能。成熟度等级刻画组织过程能力与改进路径，不是单个产品零缺陷证明；产品质量仍需需求、测试、运行度量等直接证据。",
+  "explanation": "按题干对象、版本与约束逐点作答。",
+  "source_ids": [
+    "B05-S08"
+  ],
+  "answer_source_ids": [
+    "B05-S08"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S08核对术语与版本边界，并逐项匹配rubric。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 7,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "评分点：明确不能推出"
+    },
+    {
+      "id": "r2",
+      "text": "区分组织过程与单个产品"
+    },
+    {
+      "id": "r3",
+      "text": "列出至少一种产品质量直接证据。"
+    }
+  ]
+}

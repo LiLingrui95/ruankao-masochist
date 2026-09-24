@@ -1,0 +1,39 @@
+{
+  "id": "B05-T11-Q04",
+  "title": "DFD综合练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T11"
+  ],
+  "unit_id": "B05-T11",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "父图有输入X，子图边界无X，属于？",
+  "answer": "A",
+  "explanation": "父输入必须出现在子图边界。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "分层不平衡",
+    "B": "合法内部细化",
+    "C": "数据字典重复",
+    "D": "结构图扇出"
+  },
+  "option_explanations": {
+    "A": "A 项“分层不平衡”正确：父输入必须出现在子图边界。",
+    "B": "B 项“合法内部细化”错误：内部细化可新增内部流，不能丢失父图边界输入X。",
+    "C": "C 项“数据字典重复”错误：问题是边界输入缺失，不是字典条目重复。",
+    "D": "D 项“结构图扇出”错误：结构图扇出描述模块调用数，与DFD父子平衡无关。"
+  }
+}

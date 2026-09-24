@@ -1,0 +1,37 @@
+{
+  "id": "B01-T06-Q02",
+  "title": "进程、线程与调度练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T06"
+  ],
+  "unit_id": "B01-T06",
+  "section_index": 0,
+  "prompt": "任务同时到达，burst 为 5、2、3，SJF 顺序和平均等待时间是什么？",
+  "explanation": "等待分别 0、2、5，总和 7；这里所有任务同时到达且为非抢占 SJF。",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "answer_source_ids": [
+    "B01-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：等待分别 0、2、5，总和 7；这里所有任务同时到达且为非抢占 SJF。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "short_answer",
+  "answer": "顺序 2,3,5；平均等待 7/3。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：顺序 2,3,5；平均等待 7/3。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：等待分别 0、2、5，总和 7；这里所有任务同时到达且为非抢占 SJF。"
+    }
+  ]
+}

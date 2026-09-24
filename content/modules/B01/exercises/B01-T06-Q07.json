@@ -1,0 +1,39 @@
+{
+  "id": "B01-T06-Q07",
+  "title": "进程、线程与调度练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T06"
+  ],
+  "unit_id": "B01-T06",
+  "section_index": 0,
+  "prompt": "long-term job scheduler 的主要作用是什么？",
+  "explanation": "它工作频率低于 CPU scheduler，接纳决策影响系统中并发驻留的作业数量。",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "answer_source_ids": [
+    "B01-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：它工作频率低于 CPU scheduler，接纳决策影响系统中并发驻留的作业数量。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "single_choice",
+  "options": {
+    "A": "决定接纳哪些作业进入内存/ready 集合",
+    "B": "仅处理 I/O 中断",
+    "C": "把 blocked 进程直接改为 running",
+    "D": "从 ready 队列每毫秒选择下一进程"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "这是 long-term scheduler 的 admission 作用。",
+    "B": "这是中断处理路径而非作业接纳。",
+    "C": "事件完成通常先转为 ready。",
+    "D": "这是 short-term CPU scheduler。"
+  }
+}

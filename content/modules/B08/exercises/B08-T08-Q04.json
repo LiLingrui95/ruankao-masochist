@@ -1,0 +1,39 @@
+{
+  "id": "B08-T08-Q04",
+  "title": "完整阅读二",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T08"
+  ],
+  "unit_id": "B08-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读：A requirement says the report shall load within two seconds under a stated workload. Because the workload is explicit, testers can reproduce the condition. Why is the workload needed?",
+  "answer": "响应时间只有在负载条件下才可验证；明确工作负载使性能要求可重复测试并避免不同环境下的歧义。",
+  "explanation": "解题依据与结果：响应时间只有在负载条件下才可验证；明确工作负载使性能要求可重复测试并避免不同环境下的歧义。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“响应时间只有在负载条件下才可验证”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“明确工作负载使性能要求可重复测试并避免不同环境下的歧义”给出题设对应的计算、文本证据或适用边界，不能只写题名“完整阅读二”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S11",
+    "B08-S03"
+  ],
+  "answer_source_ids": [
+    "B08-S11",
+    "B08-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

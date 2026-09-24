@@ -1,0 +1,37 @@
+{
+  "id": "B08-T01-Q04",
+  "title": "容斥计算",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T01"
+  ],
+  "unit_id": "B08-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "60人中35人会C++，28人会Python，15人都会，至少会一种的有多少人？",
+  "answer": "35+28-15=48人。",
+  "explanation": "解题依据与结果：35+28-15=48人。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“35+28-15=48人”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“35+28-15=48人”给出题设对应的计算、文本证据或适用边界，不能只写题名“容斥计算”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S01"
+  ],
+  "answer_source_ids": [
+    "B08-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

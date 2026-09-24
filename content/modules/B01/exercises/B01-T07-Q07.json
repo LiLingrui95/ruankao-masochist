@@ -1,0 +1,39 @@
+{
+  "id": "B01-T07-Q07",
+  "title": "PV同步与互斥练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T07"
+  ],
+  "unit_id": "B01-T07",
+  "section_index": 0,
+  "prompt": "binary semaphore 初值错误设为 2 能否保证互斥？",
+  "explanation": "互斥所需不变量是临界区许可最多一个，初值 2 破坏该条件。",
+  "source_ids": [
+    "B01-S04"
+  ],
+  "answer_source_ids": [
+    "B01-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：互斥所需不变量是临界区许可最多一个，初值 2 破坏该条件。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "single_choice",
+  "options": {
+    "A": "能，同时最多一线程进入",
+    "B": "能，因为 binary 名称会自动截断为 1",
+    "C": "不能，因为 V 会先执行",
+    "D": "不能，可能两个线程同时通过 P"
+  },
+  "answer": "D",
+  "option_explanations": {
+    "A": "初值 2 提供两个许可。",
+    "B": "实现不会替错误初值自动修正语义。",
+    "C": "问题在初始许可数，与是否先 V 无关。",
+    "D": "两个初始许可允许两个进入者，破坏互斥。"
+  }
+}

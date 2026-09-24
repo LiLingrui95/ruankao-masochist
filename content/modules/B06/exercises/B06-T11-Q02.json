@@ -1,0 +1,60 @@
+{
+  "id": "B06-T11-Q02",
+  "title": "日志装饰器",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T11"
+  ],
+  "unit_id": "B06-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "三空为：① virtual ~IDataSource() = default; ② std::unique_ptr<IDataSource> inner_; ③ return \"E(\" + inner_->write(s) + \")\";。完整结构中 FileSource 是 ConcreteComponent，Wrapper 是 Decorator，Zip 与 Encrypt 是 ConcreteDecorator：\n```cpp\nstruct IDataSource { virtual ~IDataSource() = default; virtual std::string write(std::string)=0; };\nstruct FileSource final : IDataSource { std::string write(std::string s) override { return \"F(\"+s+\")\"; } };\nclass Wrapper : public IDataSource {\nprotected: std::unique_ptr<IDataSource> inner_;\npublic: explicit Wrapper(std::unique_ptr<IDataSource> p):inner_(std::move(p)){}\n};\nstruct Zip final : Wrapper { using Wrapper::Wrapper; std::string write(std::string s) override { return \"Z(\"+inner_->write(s)+\")\"; } };\nstruct Encrypt final : Wrapper { using Wrapper::Wrapper; std::string write(std::string s) override { return \"E(\"+inner_->write(s)+\")\"; } };\n```\n构造 `Encrypt(Zip(FileSource))` 后调用 write(\"x\")：先进入 Encrypt，再进入 Zip，再到 FileSource；返回时依次包装成 `F(x)`、`Z(F(x))`、`E(Z(F(x)))`。最外层 unique_ptr 销毁时，Encrypt→Wrapper 持有的 Zip→其持有的 FileSource 递归释放；IDataSource 的虚析构使每一层动态类型正确销毁。",
+  "explanation": "接口保持不变、包装层可任意叠加职责，故为装饰器。调用沿外到内，结果沿内到外；对象销毁也从最外层所有者开始递归释放。三个空分别保障多态销毁、独占包装链和 Encrypt 的转发增强。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "三空准确写出虚析构、unique_ptr<IDataSource> inner_ 与 Encrypt 转发表达式"
+    },
+    {
+      "id": "r2",
+      "text": "将 IDataSource、FileSource、Wrapper、Zip/Encrypt 映射到装饰器参与者"
+    },
+    {
+      "id": "r3",
+      "text": "完整推出调用顺序和结果 E(Z(F(x)))，并说明递归析构顺序"
+    }
+  ],
+  "source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按 C++17 虚调用与字符串表达式手工推演包装链；verify.py 以独立函数组合模型核对 E(Z(F(x))) 和所有权树后序释放。本机无 C++ 编译器，未声称编译运行。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "文件写入接口需要可选叠加压缩与加密，任一层仍保持相同 write 接口。每个包装对象独占下一层，测试实现用 F、Z、E 标记调用结果。假设每层传入的对象非空。本题的 write 返回调用路径标记，不实现真实压缩或加密。补全三个空，并分析 `Encrypt(Zip(FileSource)).write(\"x\")`。\n```cpp\n#include <memory>\n#include <string>\n#include <utility>\nstruct IDataSource {\n    /* ① */\n    virtual std::string write(std::string s) = 0;\n};\nstruct FileSource : IDataSource {\n    std::string write(std::string s) override { return \"F(\" + s + \")\"; }\n};\nclass Wrapper : public IDataSource {\nprotected:\n    /* ② */\npublic:\n    explicit Wrapper(std::unique_ptr<IDataSource> p) : inner_(std::move(p)) {}\n};\nstruct Zip : Wrapper {\n    using Wrapper::Wrapper;\n    std::string write(std::string s) override { return \"Z(\" + inner_->write(s) + \")\"; }\n};\nstruct Encrypt : Wrapper {\n    using Wrapper::Wrapper;\n    std::string write(std::string s) override { /* ③ */ }\n};\n```",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "填写 ①—③，并映射接口、基础实现、包装基类和两个增强类的模式角色。",
+      "points": 6
+    },
+    {
+      "id": "s2",
+      "prompt": "推出 write(\"x\") 的完整调用/返回顺序、最终字符串和对象销毁过程。",
+      "points": 6
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B05-T09-Q06",
+  "title": "配置与维护练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T09"
+  ],
+  "unit_id": "B05-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "列出变更控制闭环。",
+  "answer": "登记请求、影响分析、批准/拒绝、实施、验证、更新配置状态与基线。",
+  "explanation": "六个具体环节缺一会造成不可追踪。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：登记请求、影响分析、批准/拒绝、实施、验证、更新配置状态与基线。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：登记请求、影响分析、批准/拒绝、实施、验证、更新配置状态与基线。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：六个具体环节缺一会造成不可追踪。"
+    }
+  ]
+}

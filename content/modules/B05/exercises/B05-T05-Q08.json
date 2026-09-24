@@ -1,0 +1,41 @@
+{
+  "id": "B05-T05-Q08",
+  "title": "补充范围练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T05"
+  ],
+  "unit_id": "B05-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "区分MVC与三层架构。",
+  "answer": "MVC主要划分表示交互职责：Model、View、Controller；三层架构通常按表示、业务、数据访问划分逻辑层，且可映射到不同部署。MVC可位于表示层内部，两者不是同一分类，也不必一一对应。",
+  "explanation": "按题干对象、版本与约束逐点作答。",
+  "source_ids": [
+    "B05-S10"
+  ],
+  "answer_source_ids": [
+    "B05-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S10核对术语与版本边界，并逐项匹配rubric。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 7,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "评分点：写出MVC三职责"
+    },
+    {
+      "id": "r2",
+      "text": "写出三层的表示/业务/数据访问"
+    },
+    {
+      "id": "r3",
+      "text": "明确MVC可位于表示层且不存在一一对应。"
+    }
+  ]
+}

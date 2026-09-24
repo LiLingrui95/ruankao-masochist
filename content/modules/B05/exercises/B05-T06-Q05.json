@@ -1,0 +1,39 @@
+{
+  "id": "B05-T06-Q05",
+  "title": "白盒测试练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T06"
+  ],
+  "unit_id": "B05-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "条件覆盖是否必然蕴含分支覆盖？",
+  "answer": "B",
+  "explanation": "复合判定可能各原子条件取过真假，但整体结果只出现一侧。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "必然",
+    "B": "不必然",
+    "C": "只在单条件判定时不蕴含",
+    "D": "与条件数量无关且总蕴含"
+  },
+  "option_explanations": {
+    "A": "A 项“必然”错误：复合判定可让各原子条件取过真假而整体结果只出现一侧。",
+    "B": "B 项“不必然”正确：复合判定可能各原子条件取过真假，但整体结果只出现一侧。",
+    "C": "C 项“只在单条件判定时不蕴含”错误：单原子条件时条件真假通常同时给出判定真假，该项把例外方向说反。",
+    "D": "D 项“与条件数量无关且总蕴含”错误：“总蕴含”被复合条件反例直接否定。"
+  }
+}

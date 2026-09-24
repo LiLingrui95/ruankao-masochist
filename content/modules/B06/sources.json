@@ -1,0 +1,80 @@
+[
+  {
+    "id": "B06-S01",
+    "title": "Unified Modeling Language Specification Version 2.5.1",
+    "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+    "author": "Object Management Group",
+    "accessed_on": "2026-09-24",
+    "locator": "Normative Documents；formal/17-12-05",
+    "version": "2.5.1",
+    "kind": "standard",
+    "reuse_policy": "仅概括规范术语，不复制图表",
+    "query": "OMG UML 2.5.1 normative specification",
+    "selection_reason": "UML 记法和语义的第一方规范索引页，已实际打开并核对版本与规范文件号。"
+  },
+  {
+    "id": "B06-S02",
+    "title": "C++ working draft: Destructors [class.dtor]",
+    "url": "https://eel.is/c++draft/class.dtor",
+    "author": "ISO/IEC JTC1/SC22/WG21",
+    "accessed_on": "2026-09-24",
+    "locator": "[class.dtor]",
+    "version": "living draft accessed 2026-09-24",
+    "kind": "standard-draft",
+    "reuse_policy": "基于公开工作草案独立讲解",
+    "query": "C++ draft class.dtor virtual destructor",
+    "selection_reason": "核验析构顺序、虚析构和删除表达式相关语言规则。"
+  },
+  {
+    "id": "B06-S03",
+    "title": "C++ working draft: Handling an exception [except.handle]",
+    "url": "https://eel.is/c++draft/except.handle",
+    "author": "ISO/IEC JTC1/SC22/WG21",
+    "accessed_on": "2026-09-24",
+    "locator": "[except.handle]",
+    "version": "living draft accessed 2026-09-24",
+    "kind": "standard-draft",
+    "reuse_policy": "基于公开工作草案独立讲解",
+    "query": "C++ draft exception handler matching stack unwinding",
+    "selection_reason": "核验处理器匹配与异常传播术语。"
+  },
+  {
+    "id": "B06-S04",
+    "title": "C++ Core Guidelines",
+    "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
+    "author": "Bjarne Stroustrup, Herb Sutter et al.",
+    "accessed_on": "2026-09-24",
+    "locator": "C: Classes；R: Resource management；E: Error handling；T: Templates",
+    "version": "living document 2026-06-14",
+    "kind": "primary-guideline",
+    "reuse_policy": "MIT-style license；仅作规则依据并独立改写",
+    "query": "C++ Core Guidelines RAII virtual destructor templates exceptions",
+    "selection_reason": "由 C++ 核心专家维护，提供资源安全、类层次和异常设计的工程规则。"
+  },
+  {
+    "id": "B06-S05",
+    "title": "virtual function specifier",
+    "url": "https://en.cppreference.com/w/cpp/language/virtual",
+    "author": "cppreference contributors",
+    "accessed_on": "2026-09-24",
+    "locator": "Virtual destructor；During construction and destruction",
+    "version": "C++17/C++20 reference",
+    "kind": "technical-reference",
+    "reuse_policy": "依许可仅作事实核对，示例均原创",
+    "query": "cppreference virtual destructor construction dispatch",
+    "selection_reason": "用于交叉核对动态分派、覆盖和虚析构边界。"
+  },
+  {
+    "id": "B06-S06",
+    "title": "The Catalog of Design Patterns",
+    "url": "https://refactoring.guru/design-patterns/catalog",
+    "author": "Refactoring.Guru",
+    "accessed_on": "2026-09-24",
+    "locator": "Creational, Structural, Behavioral Patterns",
+    "version": "web edition accessed 2026-09-24",
+    "kind": "secondary-reference",
+    "reuse_policy": "仅引用模式名称与通行意图；案例和代码原创",
+    "query": "design patterns catalog intent participants",
+    "selection_reason": "用于交叉核对模式分类和通行意图；不是标准，也不作为唯一权威。"
+  }
+]

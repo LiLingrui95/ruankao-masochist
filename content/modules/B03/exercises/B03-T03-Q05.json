@@ -1,0 +1,37 @@
+{
+  "id": "B03-T03-Q05",
+  "title": "字符串与模式匹配复杂度审计",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T03"
+  ],
+  "unit_id": "B03-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "分别说明“朴素匹配、前缀函数与 KMP”中主要操作的时间复杂度、额外空间复杂度，以及复杂度成立的前提。",
+  "answer": "朴素算法失配后文本指针回退，最坏 O(nm)。KMP 用模式串自身的最长相等真前后缀信息移动模式，文本指针不回退，预处理 O(m)、匹配 O(n)。 时间界取决于文中所述操作和输入结构；额外空间还需计辅助数组、队列、栈或递归深度。",
+  "explanation": "复杂度必须绑定明确操作和输入模型，不能只写一个孤立的 O 记号。",
+  "source_ids": [
+    "B03-S03"
+  ],
+  "answer_source_ids": [
+    "B03-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "分别写出主要操作的时间复杂度与额外空间复杂度。"
+    },
+    {
+      "id": "r2",
+      "text": "明确复杂度对应的输入规模、数据结构和成立前提。"
+    }
+  ]
+}

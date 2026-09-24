@@ -1,0 +1,39 @@
+{
+  "id": "B08-T02",
+  "module_id": "B08",
+  "unit_id": "B08-U01",
+  "title": "概率统计与数据分析",
+  "aliases": [
+    "条件概率",
+    "期望与方差",
+    "描述统计"
+  ],
+  "objectives": [
+    "掌握概率统计与数据分析的核心概念",
+    "独立完成概率统计与数据分析的典型推导"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "数学与综合基础"
+  ],
+  "body_path": "modules/B08/topics/B08-T02.md",
+  "source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 8,
+  "exercise_rationale": "按复杂度配置混合题型，覆盖概念、计算和边界判断。",
+  "question_ids": [
+    "B08-T02-Q01",
+    "B08-T02-Q02",
+    "B08-T02-Q03",
+    "B08-T02-Q04",
+    "B08-T02-Q05",
+    "B08-T02-Q06",
+    "B08-T02-Q07",
+    "B08-T02-Q08"
+  ]
+}

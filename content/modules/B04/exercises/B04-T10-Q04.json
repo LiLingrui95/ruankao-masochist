@@ -1,0 +1,37 @@
+{
+  "id": "B04-T10-Q04",
+  "title": "需求到约束追踪",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "规则“订单号唯一、每单至少一行、已支付订单不可删除”分别适合哪些机制？",
+  "answer": "订单号用 PRIMARY KEY/UNIQUE；每单至少一行是反向存在约束，需事务化创建或延迟触发器；已支付不可删除可由受控状态转换、触发器/权限与应用服务共同保证。",
+  "explanation": "三条规则作用范围不同：行内唯一可声明式实现，跨表存在与状态流程不能误写成单行 CHECK。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：订单号用 PRIMARY KEY/UNIQUE。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：三条规则作用范围不同：行内唯一可声明式实现，跨表存在与状态流程不能误写成单行 CHECK。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：三条规则作用范围不同：行内唯一可声明式实现，跨表存在与状态流程不能误写成单行 CHECK。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

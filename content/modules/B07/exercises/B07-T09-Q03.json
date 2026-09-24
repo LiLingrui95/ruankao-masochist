@@ -1,0 +1,41 @@
+{
+  "id": "B07-T09-Q03",
+  "title": "散列、签名、证书与认证练习3",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T09"
+  ],
+  "unit_id": "B07-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "两个不同网站密码组合属于哪种认证因子情况？",
+  "answer": "C",
+  "explanation": "多因素要求不同因子类别，而非同类凭据数量。",
+  "source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "属于生物特征",
+    "B": "等于公钥证书链",
+    "C": "仍主要是同一种“所知”因子",
+    "D": "天然构成所知+所有双因素"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“属于生物特征”。本题适用的关系是：多因素要求不同因子类别，而非同类凭据数量。",
+    "B": "错误：该选项断言“等于公钥证书链”。本题适用的关系是：多因素要求不同因子类别，而非同类凭据数量。",
+    "C": "多因素要求不同因子类别，而非同类凭据数量。",
+    "D": "错误：该选项断言“天然构成所知+所有双因素”。本题适用的关系是：多因素要求不同因子类别，而非同类凭据数量。"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "B03-T04-Q06",
+  "title": "Huffman 编码构造",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T04"
+  ],
+  "unit_id": "B03-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "字符 A、B、C、D 的频数分别为 5、7、10、15。构造一棵 Huffman 树，给出各字符码长、带权路径长度，并说明码字为何满足前缀性质。",
+  "answer": "依次合并 5+7=12，10+12=22，15+22=37。码长可取 D:1、C:2、A:3、B:3（左右边取0或1不影响码长）。WPL=15×1+10×2+5×3+7×3=71。字符只放在叶结点，故任一码字都不是另一完整码字的前缀。",
+  "explanation": "每轮选择当前权值最小的两棵树；码长等于叶到根的边数。不同的左右0/1分配可产生不同码字，但码长和WPL相同。",
+  "source_ids": [
+    "B03-S01",
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S01",
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "verify.py 使用最小堆独立重建 Huffman 合并序列并计算 WPL=71。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "写出三次合并：5+7=12、10+12=22、15+22=37。"
+    },
+    {
+      "id": "r2",
+      "text": "给出码长 D=1、C=2、A=B=3，并算得 WPL=71。"
+    },
+    {
+      "id": "r3",
+      "text": "说明字符位于叶结点，因此不存在一码字是另一码字前缀。"
+    }
+  ]
+}

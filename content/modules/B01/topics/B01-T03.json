@@ -1,0 +1,43 @@
+{
+  "id": "B01-T03",
+  "module_id": "B01",
+  "unit_id": "B01-U01",
+  "title": "CPU、指令与寻址",
+  "aliases": [
+    "CPU",
+    "instruction cycle",
+    "addressing mode",
+    "Flynn taxonomy",
+    "bus"
+  ],
+  "objectives": [
+    "依据寻址方式计算有效地址和额外访存次数",
+    "辨认寄存器、Flynn 分类以及地址/数据/控制总线职责"
+  ],
+  "prerequisite_ids": [
+    "B01-T02"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T03.md",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "常规：配置 8 道覆盖寄存器、寻址、体系分类、多处理器和总线。",
+  "question_ids": [
+    "B01-T03-Q01",
+    "B01-T03-Q02",
+    "B01-T03-Q03",
+    "B01-T03-Q04",
+    "B01-T03-Q05",
+    "B01-T03-Q06",
+    "B01-T03-Q07",
+    "B01-T03-Q08"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B03-T11-Q01",
+  "title": "动态规划概念判断1",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T11"
+  ],
+  "unit_id": "B03-T11",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "0/1 背包使用一维 dp 时，每件物品的容量应？",
+  "options": {
+    "A": "从小到大",
+    "B": "从大到小",
+    "C": "随机",
+    "D": "只更新一次容量"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "正序会读到本轮新值，重复同一物品。",
+    "B": "逆序确保 dp[c-w] 仍是上一物品层。",
+    "C": "随机顺序无法维持层依赖。",
+    "D": "每件物品要更新所有可达容量。"
+  },
+  "explanation": "答案 B：逆序确保 dp[c-w] 仍是上一物品层。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按定义逐项代入题干条件排除，并用 verify.py 校验四项齐全、答案落在选项中且每项解析均点明本项文本与正确项。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

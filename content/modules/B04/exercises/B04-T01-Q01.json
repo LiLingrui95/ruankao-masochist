@@ -1,0 +1,37 @@
+{
+  "id": "B04-T01-Q01",
+  "title": "借阅事件的候选键",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T01"
+  ],
+  "unit_id": "B04-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "每次借阅有全局唯一 loan_id；同一读者可多次借同一本书且时间戳不保证唯一。Loan 的候选键应选什么？",
+  "answer": "loan_id。",
+  "explanation": "业务明确 loan_id 全局唯一且最小；(reader_id,book_id) 可重复，时间戳无唯一承诺。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：loan_id。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：业务明确 loan_id 全局唯一且最小。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：业务明确 loan_id 全局唯一且最小；(reader_id,book_id) 可重复，时间戳无唯一承诺。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

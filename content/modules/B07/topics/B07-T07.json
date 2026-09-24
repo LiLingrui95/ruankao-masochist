@@ -1,0 +1,40 @@
+{
+  "id": "B07-T07",
+  "module_id": "B07",
+  "unit_id": "B07-U03",
+  "title": "网络规划与性能",
+  "aliases": [
+    "网络性能",
+    "容量规划",
+    "SNMP"
+  ],
+  "objectives": [
+    "计算传输、传播和排队相关指标",
+    "设计分层网络和冗余边界",
+    "解释SNMP管理站、代理、MIB与通知"
+  ],
+  "prerequisite_ids": [
+    "B07-T06"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T07.md",
+  "source_ids": [
+    "B07-S01",
+    "B07-S08"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 6,
+  "exercise_rationale": "性能与管理需综合设备、服务器和SNMP，6题覆盖计算与规划。",
+  "question_ids": [
+    "B07-T07-Q01",
+    "B07-T07-Q02",
+    "B07-T07-Q03",
+    "B07-T07-Q04",
+    "B07-T07-Q05",
+    "B07-T07-Q06"
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "$defs": {
+    "Asset": {
+      "additionalProperties": true,
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "alt": {
+          "title": "Alt",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "alt"
+      ],
+      "title": "Asset",
+      "type": "object"
+    },
+    "Rubric": {
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "text"
+      ],
+      "title": "Rubric",
+      "type": "object"
+    },
+    "Subquestion": {
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "prompt": {
+          "title": "Prompt",
+          "type": "string"
+        },
+        "points": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Points"
+        }
+      },
+      "required": [
+        "id",
+        "prompt"
+      ],
+      "title": "Subquestion",
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "module_id": {
+      "title": "Module Id",
+      "type": "string"
+    },
+    "topic_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Topic Ids",
+      "type": "array"
+    },
+    "unit_id": {
+      "title": "Unit Id",
+      "type": "string"
+    },
+    "section_index": {
+      "default": 0,
+      "title": "Section Index",
+      "type": "integer"
+    },
+    "type": {
+      "enum": [
+        "single_choice",
+        "short_answer",
+        "code_fill"
+      ],
+      "title": "Type",
+      "type": "string"
+    },
+    "prompt": {
+      "title": "Prompt",
+      "type": "string"
+    },
+    "answer": {
+      "default": "",
+      "title": "Answer",
+      "type": "string"
+    },
+    "explanation": {
+      "default": "",
+      "title": "Explanation",
+      "type": "string"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "answer_source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Answer Source Ids",
+      "type": "array"
+    },
+    "origin_kind": {
+      "enum": [
+        "original",
+        "adapted",
+        "licensed",
+        "past_exam",
+        "recalled"
+      ],
+      "title": "Origin Kind",
+      "type": "string"
+    },
+    "review_status": {
+      "enum": [
+        "reviewed",
+        "pending"
+      ],
+      "title": "Review Status",
+      "type": "string"
+    },
+    "answer_status": {
+      "enum": [
+        "verified",
+        "pending",
+        "disputed"
+      ],
+      "title": "Answer Status",
+      "type": "string"
+    },
+    "verification": {
+      "title": "Verification",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "difficulty": {
+      "enum": [
+        "basic",
+        "applied",
+        "comprehensive"
+      ],
+      "title": "Difficulty",
+      "type": "string"
+    },
+    "minutes": {
+      "maximum": 120,
+      "minimum": 1,
+      "title": "Minutes",
+      "type": "integer"
+    },
+    "options": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Options"
+    },
+    "option_explanations": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Option Explanations"
+    },
+    "rubric": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Rubric"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Rubric"
+    },
+    "code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Code"
+    },
+    "language": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Language"
+    },
+    "reference_fill": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reference Fill"
+    },
+    "case_material": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Case Material"
+    },
+    "subquestions": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Subquestion"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Subquestions"
+    },
+    "assets": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Asset"
+      },
+      "title": "Assets",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "module_id",
+    "topic_ids",
+    "unit_id",
+    "type",
+    "prompt",
+    "source_ids",
+    "answer_source_ids",
+    "origin_kind",
+    "review_status",
+    "answer_status",
+    "verification",
+    "version",
+    "difficulty",
+    "minutes"
+  ],
+  "title": "Question",
+  "type": "object"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B05-T10-Q07",
+  "title": "估算与进度练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T10"
+  ],
+  "unit_id": "B05-T10",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "活动总时差为0通常说明？",
+  "answer": "B",
+  "explanation": "零总时差活动对当前完工期关键。",
+  "source_ids": [
+    "B05-S03"
+  ],
+  "answer_source_ids": [
+    "B05-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "可任意延迟",
+    "B": "位于至少一条关键路径",
+    "C": "无需资源",
+    "D": "已经完成"
+  },
+  "option_explanations": {
+    "A": "A 项“可任意延迟”错误：零时差表示不能在不延误项目的前提下任意延迟。",
+    "B": "B 项“位于至少一条关键路径”正确：零总时差活动对当前完工期关键。",
+    "C": "C 项“无需资源”错误：关键活动仍需要资源，零时差不改变资源需求。",
+    "D": "D 项“已经完成”错误：时差是计划属性，不能证明活动已经完成。"
+  }
+}

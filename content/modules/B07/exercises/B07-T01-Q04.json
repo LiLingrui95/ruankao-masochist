@@ -1,0 +1,39 @@
+{
+  "id": "B07-T01-Q04",
+  "title": "网络分层、介质与交换练习4",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T01"
+  ],
+  "unit_id": "B07-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "下列设备与主要转发依据匹配正确的是？",
+  "answer": "B",
+  "explanation": "路由器依据目的IP和路由表；其余配对混淆了设备层次。",
+  "source_ids": [
+    "B07-S01"
+  ],
+  "answer_source_ids": [
+    "B07-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "DNS服务器—光信号幅度",
+    "B": "路由器—IP前缀",
+    "C": "集线器—目的MAC",
+    "D": "二层交换机—TCP端口"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“DNS服务器—光信号幅度”。本题适用的关系是：路由器依据目的IP和路由表；其余配对混淆了设备层次。",
+    "B": "路由器依据目的IP和路由表；其余配对混淆了设备层次。",
+    "C": "错误：该选项断言“集线器—目的MAC”。本题适用的关系是：路由器依据目的IP和路由表；其余配对混淆了设备层次。",
+    "D": "错误：该选项断言“二层交换机—TCP端口”。本题适用的关系是：路由器依据目的IP和路由表；其余配对混淆了设备层次。"
+  }
+}

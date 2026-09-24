@@ -1,12 +1,12 @@
 # 软件设计师学习台：开发规范与执行入口
 
-版本：1.1 · 2026-09-24 · 状态：前三单元与简要平台已实现，等待用户试用反馈。
+版本：3.0 · 2026-09-24 · 状态：八板块知识库已接入，真题正文收录仍有缺口。
 
-本目录保留总体规划。实际交付范围为三个基础单元、18 道原创题和本机学习平台，尚未生成完整知识库或真题库。启动方式见 [使用说明](../README.md)，证据见 [本次验证记录](../specs/001-study-session/verification.md)。
+当前入口是 [内容生产规范](content-guide/README.md)、[检索规则](content-guide/search-rules.md)、[编写模板](content-guide/templates.md) 和 [实施验收](../specs/003-knowledge-bank/verification.md)。已登记八板块、81 个考点；数量和考纲映射见 [生成报告](../content/generated/coverage.json)。旧专题与学习记录保留。
 
 用户画像：学过 Python、C#，接触少量数据结构与算法，尚未系统学习计算机科学。目标：备考软考中级软件设计师，同时补齐理解考试内容所需的基础。
 
-推荐从小规模内容试点开始，再开发每日学习闭环。先验证课程能否看懂、题目能否检验理解，随后扩展题库与软件功能。
+下表保留前期设计文档。与当前内容规模冲突的旧版数量及阶段目标，以 003 实施记录和内容索引为准。
 
 | 文件 | 用途 |
 | --- | --- |
@@ -17,6 +17,6 @@
 
 建议阅读顺序：先读执行计划，再读首阶段内容样例；开发人员或编码代理再完整阅读开发规范。
 
-CSF-01 至 CSF-03 已制作，应用内容以 `content/pack.json` 与 `content/lessons/` 为准，取代文档中的编辑样稿。当前下一步是用户试用：确认是否太浅、讲解能否理解、练习及记录是否顺手，再决定补齐后续五个基础单元和 P2 功能。
+新增内容唯一维护源为 `content/modules/`、`content/exams/`、`content/curriculum.json` 和 `content/syllabus-map.json`。`scripts/build_content.py` 校验后生成索引，应用按需读取。SE-01 至 SE-03 仍由原 `content/pack.json` 与 `content/lessons/` 提供兼容入口；CSF 系列保留为选读归档。真题目前只有来源元数据，不能把 84 条目录记录计作 84 套已收录试卷。
 
 SDD 在本项目中指 Specification-Driven Development。遵循先规格、后方案、再任务与实现的过程；可以接入 GitHub Spec Kit，但本轮没有安装或初始化该工具。

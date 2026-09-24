@@ -1,0 +1,39 @@
+{
+  "id": "B07-T09-Q08",
+  "title": "散列、签名、证书与认证练习8",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T09"
+  ],
+  "unit_id": "B07-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "说明“验签成功”仍不能单独证明业务行为不可否认的三个原因。",
+  "answer": "可能存在私钥泄露或代签、证书身份审核/绑定错误、终端恶意软件改变待签内容；还可能缺可靠时间戳与审计。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "至少指出私钥控制或终端可信问题"
+    },
+    {
+      "id": "r2",
+      "text": "至少指出身份绑定、时间戳或审计链之一"
+    }
+  ]
+}

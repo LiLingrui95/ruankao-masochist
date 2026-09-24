@@ -1,0 +1,37 @@
+{
+  "id": "B02-T02-Q04",
+  "title": "指针差推导",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T02"
+  ],
+  "unit_id": "B02-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "`int a[6]; int *p=&a[1], *q=&a[5];`，在同一数组条件下 `q-p` 是多少，单位是什么？",
+  "answer": "4，单位是 int 元素个数。",
+  "explanation": "指针差按元素计数，从索引1到索引5相差4。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：指针差按元素计数，从索引1到索引5相差4。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "用下标差5-1计算结果4。"
+    },
+    {
+      "id": "r2",
+      "text": "说明指针差单位为int元素个数而非字节。"
+    }
+  ]
+}

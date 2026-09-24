@@ -1,0 +1,37 @@
+{
+  "id": "B01-T04-Q05",
+  "title": "Cache与存储层次练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T04"
+  ],
+  "unit_id": "B01-T04",
+  "section_index": 0,
+  "prompt": "直接映射 4 行，块号序列 0,4,0,4 的命中次数是多少（初始为空）？",
+  "explanation": "块号对 4 取模都映射行 0，访问交替替换，形成 conflict miss。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：块号对 4 取模都映射行 0，访问交替替换，形成 conflict miss。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "0 次。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：0 次。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：块号对 4 取模都映射行 0，访问交替替换，形成 conflict miss。"
+    }
+  ]
+}

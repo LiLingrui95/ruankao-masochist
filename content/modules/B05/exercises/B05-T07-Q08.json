@@ -1,0 +1,39 @@
+{
+  "id": "B05-T07-Q08",
+  "title": "补充范围练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T07"
+  ],
+  "unit_id": "B05-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "面向对象状态测试最容易遗漏哪一项？",
+  "answer": "D",
+  "explanation": "依据题干限定的模型、版本、职责或业务条件逐项判断。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S02的定位逐项核对四个选项；正确项D与题干条件一致。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 4,
+  "options": {
+    "A": "合法转换后的目标状态",
+    "B": "事件触发的动作",
+    "C": "守卫条件边界",
+    "D": "非法事件发生后对象仍应保持的状态"
+  },
+  "option_explanations": {
+    "A": "合法转换目标状态是基本检查，但题问最容易遗漏的补充维度。",
+    "B": "动作输出应检查，但仍未覆盖非法事件的状态保持。",
+    "C": "守卫边界重要，但题干强调对象状态完整性。",
+    "D": "非法转换不仅要返回错误，还应断言对象未发生非法状态改变。"
+  }
+}

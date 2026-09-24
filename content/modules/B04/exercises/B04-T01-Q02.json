@@ -1,0 +1,37 @@
+{
+  "id": "B04-T01-Q02",
+  "title": "外键是否允许重复",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T01"
+  ],
+  "unit_id": "B04-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "Order(order_id PK, customer_id FK) 中，同一客户可有多个订单。customer_id 是否可重复？",
+  "answer": "可以重复。",
+  "explanation": "外键保证引用值存在，不保证引用列唯一；1:N 正需要 N 端外键重复。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：可以重复。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：外键保证引用值存在，不保证引用列唯一。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：外键保证引用值存在，不保证引用列唯一；1:N 正需要 N 端外键重复。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

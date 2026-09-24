@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q01",
+  "title": "文件、磁盘与设备管理练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "连续、链接、索引分配中，哪种最适合直接随机访问且无需逐块追链？",
+  "explanation": "连续分配可由首块+偏移定位，索引分配查索引项；链接分配的下一块位置在前一块中。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：连续分配可由首块+偏移定位，索引分配查索引项；链接分配的下一块位置在前一块中。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "short_answer",
+  "answer": "连续分配和索引分配；链接分配通常需沿链遍历。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：连续分配和索引分配；链接分配通常需沿链遍历。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：连续分配可由首块+偏移定位，索引分配查索引项；链接分配的下一块位置在前一块中。"
+    }
+  ]
+}

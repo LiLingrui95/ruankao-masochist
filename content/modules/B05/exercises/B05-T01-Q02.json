@@ -1,0 +1,37 @@
+{
+  "id": "B05-T01-Q02",
+  "title": "软件过程练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T01"
+  ],
+  "unit_id": "B05-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "比较抛弃式原型与演化式原型的最终去向。",
+  "answer": "抛弃式原型用于澄清需求后废弃；演化式原型经持续改进进入产品。",
+  "explanation": "关键差别是原型代码是否预期成为交付产品。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：抛弃式原型用于澄清需求后废弃；演化式原型经持续改进进入产品。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：抛弃式原型用于澄清需求后废弃；演化式原型经持续改进进入产品。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：关键差别是原型代码是否预期成为交付产品。"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "B07-T10-Q01",
+  "title": "访问控制、攻击与安全防护练习1",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T10"
+  ],
+  "unit_id": "B07-T10",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "把权限授予岗位角色，再把用户分配到角色，属于？",
+  "answer": "A",
+  "explanation": "基于角色的访问控制通过角色中介用户与权限。",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "RBAC",
+    "B": "CRC",
+    "C": "CIDR",
+    "D": "CSMA/CD"
+  },
+  "option_explanations": {
+    "A": "基于角色的访问控制通过角色中介用户与权限。",
+    "B": "错误：该选项断言“CRC”。本题适用的关系是：基于角色的访问控制通过角色中介用户与权限。",
+    "C": "错误：该选项断言“CIDR”。本题适用的关系是：基于角色的访问控制通过角色中介用户与权限。",
+    "D": "错误：该选项断言“CSMA/CD”。本题适用的关系是：基于角色的访问控制通过角色中介用户与权限。"
+  }
+}

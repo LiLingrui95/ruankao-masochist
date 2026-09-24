@@ -1,0 +1,37 @@
+{
+  "id": "B05-T05-Q02",
+  "title": "软件架构练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T05"
+  ],
+  "unit_id": "B05-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "说明信息隐藏隐藏的是什么。",
+  "answer": "隐藏可能变化的设计决策与内部表示，仅通过稳定接口暴露职责。",
+  "explanation": "答案必须同时含变化决策、内部表示和稳定接口。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：隐藏可能变化的设计决策与内部表示，仅通过稳定接口暴露职责。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：隐藏可能变化的设计决策与内部表示，仅通过稳定接口暴露职责。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：答案必须同时含变化决策、内部表示和稳定接口。"
+    }
+  ]
+}

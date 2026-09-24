@@ -1,0 +1,59 @@
+{
+  "id": "B04-T10-Q01",
+  "title": "社区图书馆设计案例",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享业务材料，完成全部子问题。",
+  "answer": "Book(isbn PK,...); Copy(copy_id PK,isbn NOT NULL FK); Reader(reader_id PK,...); Loan(loan_id PK,reader_id NOT NULL FK,copy_id NOT NULL FK,borrowed_at,due_at,returned_at)。同一读者可重复借同一册，所以(reader_id,copy_id)会重复。PostgreSQL 可建立部分唯一索引 `CREATE UNIQUE INDEX one_open_loan_per_copy ON loan(copy_id) WHERE returned_at IS NULL;`，并在事务中完成归还与再借。",
+  "explanation": "关系粒度和全部键/外键各 1 点；明确历史重复使组合非键 2 点；部分唯一索引谓词及事务边界共 3 点。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "关系粒度和全部键/外键各 1 点"
+    },
+    {
+      "id": "r2",
+      "text": "明确历史重复使组合非键 2 点"
+    },
+    {
+      "id": "r3",
+      "text": "部分唯一索引谓词及事务边界共 3 点。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐条将参考模式、键、基数、约束和事务方案回代共享业务条件；未使用题干未授权的唯一性假设。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 15,
+  "case_material": "社区图书馆管理实体册而非只管理书目。规则：ISBN 标识书目；每册副本有全局唯一 copy_id 并属于一个书目；读者 reader_id 唯一；一次借阅 loan_id 唯一，关联一名读者和一册副本，记录借出、应还、实际归还时间。同一副本任一时刻至多一笔未归还借阅；同一读者可多次借同一册。\n\n| 业务对象 | 示例 | 基数提示 |\n|---|---|---|\n| Book | ISBN=978... | 一本书目有多册副本 |\n| Copy | copy_id=C102 | 每册只属一个书目 |\n| Loan | loan_id=L9001 | 读者与副本的历史事件 |",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "给出关系模式、主键和外键。",
+      "points": 5
+    },
+    {
+      "id": "b",
+      "prompt": "解释为何(reader_id,copy_id)不是 Loan 的键。",
+      "points": 2
+    },
+    {
+      "id": "c",
+      "prompt": "说明如何保证同册至多一笔未归还借阅。",
+      "points": 3
+    }
+  ]
+}

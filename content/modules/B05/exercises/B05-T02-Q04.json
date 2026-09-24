@@ -1,0 +1,37 @@
+{
+  "id": "B05-T02-Q04",
+  "title": "需求工程练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T02"
+  ],
+  "unit_id": "B05-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "需求基线后收到变更，列出控制步骤。",
+  "answer": "登记变更；分析范围、成本、进度和测试影响；审批；更新基线与跟踪关系；实现并验证。",
+  "explanation": "步骤必须包含影响分析、批准、基线更新和验证。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：登记变更；分析范围、成本、进度和测试影响；审批；更新基线与跟踪关系；实现并验证。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：登记变更；分析范围、成本、进度和测试影响；审批；更新基线与跟踪关系；实现并验证。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：步骤必须包含影响分析、批准、基线更新和验证。"
+    }
+  ]
+}

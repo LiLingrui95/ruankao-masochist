@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q12",
+  "title": "文件、磁盘与设备管理练习 12",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "需要客户端按共享目录和文件名访问，及需要主机获得可自行格式化的远程块设备时，应分别选 NAS 还是 SAN？",
+  "explanation": "NAS 提供 file-level 文件共享；SAN 提供 block-level volume，主机可在其上建立文件系统。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：NAS 提供 file-level 文件共享；SAN 提供 block-level volume，主机可在其上建立文件系统。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "前者 NAS，后者 SAN。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：前者 NAS，后者 SAN。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：NAS 提供 file-level 文件共享；SAN 提供 block-level volume，主机可在其上建立文件系统。"
+    }
+  ]
+}

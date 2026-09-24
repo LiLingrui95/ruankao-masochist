@@ -1,0 +1,39 @@
+{
+  "id": "B05-T05-Q01",
+  "title": "软件架构练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T05"
+  ],
+  "unit_id": "B05-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "连续独立数据变换最适合哪种风格？",
+  "answer": "B",
+  "explanation": "独立变换阶段符合管道—过滤器。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "仓库",
+    "B": "管道—过滤器",
+    "C": "事件溯源必选",
+    "D": "单体必选"
+  },
+  "option_explanations": {
+    "A": "A 项“仓库”错误：仓库风格围绕共享数据集成，题干强调的是连续独立变换。",
+    "B": "B 项“管道—过滤器”正确：独立变换阶段符合管道—过滤器。",
+    "C": "C 项“事件溯源必选”错误：事件溯源保存状态变更事件，且“必选”忽略了题干变换特征。",
+    "D": "D 项“单体必选”错误：单体描述部署边界，不能直接表达分阶段独立变换。"
+  }
+}

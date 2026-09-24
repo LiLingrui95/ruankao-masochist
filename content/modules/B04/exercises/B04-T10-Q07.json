@@ -1,0 +1,37 @@
+{
+  "id": "B04-T10-Q07",
+  "title": "模式演化影响",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "若原 Enrollment(student_id,course_id PK) 改为允许重修并保留每学期记录，应如何调整？",
+  "answer": "加入 term_id，使 PK 可为(student_id,course_id,term_id)，或引入 enrollment_id 并对该业务组合 UNIQUE。",
+  "explanation": "原组合不再唯一；必须把区分一次选课事件的属性纳入业务唯一约束。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：加入 term_id，使 PK 可为(student_id,course_id,term_id)，或引入 enrollment_id 并对该业务组合 UNIQUE。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：原组合不再唯一。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：原组合不再唯一；必须把区分一次选课事件的属性纳入业务唯一约束。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

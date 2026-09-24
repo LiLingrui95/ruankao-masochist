@@ -1,0 +1,37 @@
+{
+  "id": "B05-T02-Q02",
+  "title": "需求工程练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T02"
+  ],
+  "unit_id": "B05-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "把“支持很多用户”改写成可验证需求。",
+  "answer": "示例：在1000个并发登录会话、标准数据集下，连续1小时内成功请求比例≥99.9%，P95响应时间≤1秒。",
+  "explanation": "答案须含负载、测量周期、成功口径和阈值。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：示例：在1000个并发登录会话、标准数据集下，连续1小时内成功请求比例≥99.9%，P95响应时间≤1秒。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：示例：在1000个并发登录会话、标准数据集下，连续1小时内成功请求比例≥99.9%，P95响应时间≤1秒。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：答案须含负载、测量周期、成功口径和阈值。"
+    }
+  ]
+}

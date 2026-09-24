@@ -1,0 +1,39 @@
+{
+  "id": "B07-T05-Q05",
+  "title": "TCP、UDP与可靠传输练习5",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T05"
+  ],
+  "unit_id": "B07-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "接收端已连续收到至999，先收到序号1200长度200，再收到序号1000长度200。写出两次累计ACK。",
+  "answer": "第一次仍ACK=1000；第二次填补1000—1199后，缓存的1200—1399也连续，因此ACK=1400。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S05"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "首次识别1000—1199缺口，ACK不前移"
+    },
+    {
+      "id": "r2",
+      "text": "补洞后合并缓存区间，计算下一期望字节1400"
+    }
+  ]
+}

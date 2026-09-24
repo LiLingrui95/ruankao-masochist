@@ -1,0 +1,37 @@
+{
+  "id": "B01-T02-Q04",
+  "title": "浮点数与误差练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T02"
+  ],
+  "unit_id": "B01-T02",
+  "section_index": 0,
+  "prompt": "为何 `0.1+0.2==0.3` 在二进制浮点中可能为 false？",
+  "explanation": "0.1、0.2 的二进制展开无限循环；分别舍入再相加与 0.3 单独舍入不保证相同。",
+  "source_ids": [
+    "B01-S02"
+  ],
+  "answer_source_ids": [
+    "B01-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：0.1、0.2 的二进制展开无限循环；分别舍入再相加与 0.3 单独舍入不保证相同。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "这些十进制小数通常只能近似表示，运算及舍入误差使两边位型不同。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：这些十进制小数通常只能近似表示，运算及舍入误差使两边位型不同。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：0.1、0.2 的二进制展开无限循环；分别舍入再相加与 0.3 单独舍入不保证相同。"
+    }
+  ]
+}

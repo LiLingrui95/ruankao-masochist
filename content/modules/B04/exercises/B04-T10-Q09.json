@@ -1,0 +1,37 @@
+{
+  "id": "B04-T10-Q09",
+  "title": "删除策略推导",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "用户要求注销账户但财务订单必须保留，是否应 ON DELETE CASCADE？",
+  "answer": "不应。应限制物理删除并做匿名化/软删除，订单保留稳定主体标识；具体还需满足合规要求。",
+  "explanation": "级联会破坏法定/业务历史，生命周期不同的实体不能机械级联。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：不应。应限制物理删除并做匿名化/软删除，订单保留稳定主体标识。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：级联会破坏法定/业务历史，生命周期不同的实体不能机械级联。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：级联会破坏法定/业务历史，生命周期不同的实体不能机械级联。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

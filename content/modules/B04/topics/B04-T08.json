@@ -1,0 +1,39 @@
+{
+  "id": "B04-T08",
+  "module_id": "B04",
+  "unit_id": "B04-U03",
+  "title": "事务、并发控制与恢复",
+  "aliases": [
+    "ACID",
+    "可串行化",
+    "WAL"
+  ],
+  "objectives": [
+    "解释并应用事务、并发控制与恢复的核心条件",
+    "独立推导事务、并发控制与恢复问题并用反例检查边界"
+  ],
+  "prerequisite_ids": [
+    "B04-T07"
+  ],
+  "syllabus_refs": [
+    "数据库系统知识",
+    "数据库设计与实现"
+  ],
+  "body_path": "modules/B04/topics/B04-T08.md",
+  "source_ids": [
+    "B04-S01",
+    "B04-S04"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 5,
+  "exercise_rationale": "常规应用：覆盖概念、推导与典型边界，配置 5 道。",
+  "question_ids": [
+    "B04-T08-Q01",
+    "B04-T08-Q02",
+    "B04-T08-Q03",
+    "B04-T08-Q04",
+    "B04-T08-Q05"
+  ]
+}

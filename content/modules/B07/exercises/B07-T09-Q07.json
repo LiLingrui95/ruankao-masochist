@@ -1,0 +1,39 @@
+{
+  "id": "B07-T09-Q07",
+  "title": "散列、签名、证书与认证练习7",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T09"
+  ],
+  "unit_id": "B07-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "某系统要求用户输入密码和第二个不同密码。判断是否为多因素并改进。",
+  "answer": "不是严格多因素，两者都属“所知”；可改为密码加硬件/软件密码学认证器（所有），或在适当场景加入生物特征（所是）。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "判断两个密码仍属同一所知因子"
+    },
+    {
+      "id": "r2",
+      "text": "提出来自另一因子类别的具体改进"
+    }
+  ]
+}

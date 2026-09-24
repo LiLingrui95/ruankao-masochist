@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q05",
+  "title": "文件、磁盘与设备管理练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "SCAN 题为何必须给定初始方向和柱面边界约定？",
+  "explanation": "若只到最远请求就反向是 LOOK，不一定与走到物理边界的 SCAN 同值。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：若只到最远请求就反向是 LOOK，不一定与走到物理边界的 SCAN 同值。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "两者决定先服务哪侧以及是否移动到端点，直接改变顺序和总寻道量。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：两者决定先服务哪侧以及是否移动到端点，直接改变顺序和总寻道量。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：若只到最远请求就反向是 LOOK，不一定与走到物理边界的 SCAN 同值。"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "B04-T10-Q02",
+  "title": "门诊预约设计案例",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享业务材料，完成全部子问题。",
+  "answer": "Patient(patient_id PK); Doctor(doctor_id PK); Appointment(appointment_id PK,patient_id FK,doctor_id FK,starts_at,ends_at,status,CHECK(ends_at>starts_at)); PrescriptionItem(appointment_id FK,seq_no,drug_id,dose,PK(appointment_id,seq_no))，后者是弱实体。患者/医生被历史预约引用时应限制删除或软删除。PostgreSQL 可对 doctor_id 与 `tstzrange(starts_at,ends_at,'[)')` 建带有效状态谓词的 exclusion constraint；若不用该特性，则在事务中锁定医生的预约范围、检查冲突后插入。",
+  "explanation": "模式和弱实体 4 点；时间 CHECK 与保留历史 3 点；排斥约束或等价串行化协议 3 点。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "模式和弱实体 4 点"
+    },
+    {
+      "id": "r2",
+      "text": "时间 CHECK 与保留历史 3 点"
+    },
+    {
+      "id": "r3",
+      "text": "排斥约束或等价串行化协议 3 点。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐条将参考模式、键、基数、约束和事务方案回代共享业务条件；未使用题干未授权的唯一性假设。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 15,
+  "case_material": "患者、医生各有唯一编号。预约 appointment_id 唯一，含 starts_at、ends_at、status；一名患者可预约多名医生。有效状态 BOOKED/ARRIVED 的同一医生时间段不得重叠，取消预约保留历史。一次预约可开多个处方项目，项目按预约内 seq_no 编号。",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "给出关系模式并指出弱实体。",
+      "points": 4
+    },
+    {
+      "id": "b",
+      "prompt": "给出关键 CHECK 与历史删除策略。",
+      "points": 3
+    },
+    {
+      "id": "c",
+      "prompt": "说明并发下如何保证医生时段不重叠。",
+      "points": 3
+    }
+  ]
+}

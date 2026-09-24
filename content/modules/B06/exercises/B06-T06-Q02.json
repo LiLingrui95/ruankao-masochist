@@ -1,0 +1,39 @@
+{
+  "id": "B06-T06-Q02",
+  "title": "顺序图时间",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T06"
+  ],
+  "unit_id": "B06-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "顺序图中消息 m1 画在 m2 上方，同一生命线上通常表示？",
+  "options": {
+    "A": "m1 先于 m2",
+    "B": "m2 必然先于 m1",
+    "C": "二者是类继承",
+    "D": "没有任何次序语义"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "同一交互片段内纵向位置表达发生顺序。",
+    "B": "与自上而下阅读相反。",
+    "C": "顺序图消息不表达泛化。",
+    "D": "顺序图的核心正是交互次序。"
+  },
+  "explanation": "正确选项为 A。同一交互片段内纵向位置表达发生顺序。",
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

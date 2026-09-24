@@ -1,0 +1,41 @@
+{
+  "id": "B07-T06-Q02",
+  "title": "DNS、HTTP与应用协议练习2",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T06"
+  ],
+  "unit_id": "B07-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "关于HTTP方法，哪项正确？",
+  "answer": "D",
+  "explanation": "RFC 9110定义HEAD用于取得与GET类似的元数据而无内容。",
+  "source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "answer_source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "GET按定义必须删除资源",
+    "B": "POST按定义总是幂等",
+    "C": "PUT不能包含内容",
+    "D": "HEAD响应与GET语义相关但不含响应内容"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“GET按定义必须删除资源”。本题适用的关系是：RFC 9110定义HEAD用于取得与GET类似的元数据而无内容。",
+    "B": "错误：该选项断言“POST按定义总是幂等”。本题适用的关系是：RFC 9110定义HEAD用于取得与GET类似的元数据而无内容。",
+    "C": "错误：该选项断言“PUT不能包含内容”。本题适用的关系是：RFC 9110定义HEAD用于取得与GET类似的元数据而无内容。",
+    "D": "RFC 9110定义HEAD用于取得与GET类似的元数据而无内容。"
+  }
+}

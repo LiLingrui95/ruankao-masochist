@@ -1,0 +1,37 @@
+{
+  "id": "B01-T05-Q05",
+  "title": "流水线、性能与可靠性练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T05"
+  ],
+  "unit_id": "B01-T05",
+  "section_index": 0,
+  "prompt": "若 20% 永远不能优化，整体加速上限是多少？",
+  "explanation": "可优化部分趋于零耗时时，新旧时间比仍为 0.2，上限 1/0.2=5。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：可优化部分趋于零耗时时，新旧时间比仍为 0.2，上限 1/0.2=5。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "5 倍。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：5 倍。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：可优化部分趋于零耗时时，新旧时间比仍为 0.2，上限 1/0.2=5。"
+    }
+  ]
+}

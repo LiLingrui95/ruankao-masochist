@@ -1,0 +1,39 @@
+{
+  "id": "B05-T09-Q01",
+  "title": "配置与维护练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T09"
+  ],
+  "unit_id": "B05-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "基线的正确含义是？",
+  "answer": "B",
+  "explanation": "基线可变更，但须受正式控制。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "永不修改",
+    "B": "经同意且后续变更受控",
+    "C": "每日备份",
+    "D": "最新分支"
+  },
+  "option_explanations": {
+    "A": "A 项“永不修改”错误：基线可以变更，只是变更必须经过正式控制并留下记录。",
+    "B": "B 项“经同意且后续变更受控”正确：基线可变更，但须受正式控制。",
+    "C": "C 项“每日备份”错误：备份是恢复副本，不等于经评审同意的配置集合。",
+    "D": "D 项“最新分支”错误：最新分支可能未经评审和批准，不能自动成为基线。"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B05-T03-Q06",
+  "title": "DFD基础练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T03"
+  ],
+  "unit_id": "B05-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "加工只有输出“批准单”而无任何输入，应如何判断？",
+  "answer": "属于无输入生输出的加工缺陷；需补充产生批准单所依据的申请和审批规则输入。",
+  "explanation": "必须点名无输入生输出并给出申请/审批依据。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：属于无输入生输出的加工缺陷；需补充产生批准单所依据的申请和审批规则输入。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：属于无输入生输出的加工缺陷；需补充产生批准单所依据的申请和审批规则输入。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须点名无输入生输出并给出申请/审批依据。"
+    }
+  ]
+}

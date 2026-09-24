@@ -1,0 +1,39 @@
+{
+  "id": "B05-T07-Q05",
+  "title": "黑盒测试练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T07"
+  ],
+  "unit_id": "B05-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "验证修复未破坏其他功能称为？",
+  "answer": "D",
+  "explanation": "回归测试检查变更副作用。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：D",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "确认测试",
+    "B": "静态评审",
+    "C": "单元划分",
+    "D": "回归测试"
+  },
+  "option_explanations": {
+    "A": "A 项“确认测试”错误：确认测试只验证指定缺陷修复是否成功，范围小于检查其他功能。",
+    "B": "B 项“静态评审”错误：静态评审不执行软件，不能替代变更后的动态回归。",
+    "C": "C 项“单元划分”错误：单元划分是测试组织范围，不是变更后重测的名称。",
+    "D": "D 项“回归测试”正确：回归测试检查变更副作用。"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B05-T07-Q01",
+  "title": "黑盒测试练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T07"
+  ],
+  "unit_id": "B05-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "输入范围1到100含端点，哪个是有效边界值？",
+  "answer": "B",
+  "explanation": "1是有效域下边界。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "0",
+    "B": "1",
+    "C": "101",
+    "D": "任意字符串"
+  },
+  "option_explanations": {
+    "A": "A 项“0”错误：0位于有效区间下界之外，是无效边界邻值。",
+    "B": "B 项“1”正确：1是有效域下边界。",
+    "C": "C 项“101”错误：101位于上界之外，也是无效边界邻值。",
+    "D": "D 项“任意字符串”错误：任意字符串属于类型无效输入，不是数值区间的有效边界。"
+  }
+}

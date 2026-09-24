@@ -1,0 +1,37 @@
+{
+  "id": "B01-T01-Q05",
+  "title": "数制、编码与补码练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T01"
+  ],
+  "unit_id": "B01-T01",
+  "section_index": 0,
+  "prompt": "8 位无符号数 250+10 的结果位串与进位如何？",
+  "explanation": "260 mod 256=4，商 1 对应被丢弃的第 9 位进位。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：260 mod 256=4，商 1 对应被丢弃的第 9 位进位。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "低 8 位 00000100，有第 9 位进位，发生无符号溢出。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：低 8 位 00000100，有第 9 位进位，发生无符号溢出。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：260 mod 256=4，商 1 对应被丢弃的第 9 位进位。"
+    }
+  ]
+}

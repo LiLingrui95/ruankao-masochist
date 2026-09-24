@@ -1,0 +1,39 @@
+{
+  "id": "B08-T02-Q04",
+  "title": "方差计算",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T02"
+  ],
+  "unit_id": "B08-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "X以相同概率取1和3，求方差。",
+  "answer": "E(X)=2，E(X²)=5，Var(X)=5-4=1。",
+  "explanation": "解题依据与结果：E(X)=2，E(X²)=5，Var(X)=5-4=1。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“E(X)=2”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“E(X²)=5，Var(X)=5-4=1”给出题设对应的计算、文本证据或适用边界，不能只写题名“方差计算”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S01",
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

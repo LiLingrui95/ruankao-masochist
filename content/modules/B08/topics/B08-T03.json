@@ -1,0 +1,38 @@
+{
+  "id": "B08-T03",
+  "module_id": "B08",
+  "unit_id": "B08-U01",
+  "title": "运筹、决策与工程计算",
+  "aliases": [
+    "线性规划",
+    "决策树",
+    "数值误差"
+  ],
+  "objectives": [
+    "掌握运筹、决策与工程计算的核心概念",
+    "独立完成运筹、决策与工程计算的典型推导"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "数学与综合基础"
+  ],
+  "body_path": "modules/B08/topics/B08-T03.md",
+  "source_ids": [
+    "B08-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 8,
+  "exercise_rationale": "按复杂度配置混合题型，覆盖概念、计算和边界判断。",
+  "question_ids": [
+    "B08-T03-Q01",
+    "B08-T03-Q02",
+    "B08-T03-Q03",
+    "B08-T03-Q04",
+    "B08-T03-Q05",
+    "B08-T03-Q06",
+    "B08-T03-Q07",
+    "B08-T03-Q08"
+  ]
+}

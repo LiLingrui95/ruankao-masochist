@@ -1,0 +1,45 @@
+{
+  "id": "B05-T07-Q07",
+  "title": "补充范围练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T07"
+  ],
+  "unit_id": "B05-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "订单状态为Created、Paid、Cancelled、Shipped；事件pay只能从Created到Paid，ship只能从Paid到Shipped。给出合法和非法状态测试。",
+  "answer": "合法：Created执行pay后为Paid；Paid执行ship后为Shipped。非法：Paid再次pay应报错且仍为Paid；Cancelled执行ship应报错且仍为Cancelled。",
+  "explanation": "按题干对象、版本与约束逐点作答。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S02核对术语与版本边界，并逐项匹配rubric。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 7,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "评分点：验证Created-pay-Paid"
+    },
+    {
+      "id": "r2",
+      "text": "验证Paid-ship-Shipped"
+    },
+    {
+      "id": "r3",
+      "text": "验证Paid重复pay状态不变"
+    },
+    {
+      "id": "r4",
+      "text": "验证Cancelled非法ship状态不变。"
+    }
+  ]
+}

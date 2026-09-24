@@ -1,0 +1,39 @@
+{
+  "id": "B05-T09-Q03",
+  "title": "配置与维护练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T09"
+  ],
+  "unit_id": "B05-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "因新法规修改税率属于？",
+  "answer": "C",
+  "explanation": "环境法规变化触发适应。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "纠错维护",
+    "B": "完善维护",
+    "C": "适应性维护",
+    "D": "预防维护"
+  },
+  "option_explanations": {
+    "A": "A 项“纠错维护”错误：纠错维护修复既有实现错误，题干是外部法规变化。",
+    "B": "B 项“完善维护”错误：完善维护增加或改进用户能力，不是适应法规环境。",
+    "C": "C 项“适应性维护”正确：环境法规变化触发适应。",
+    "D": "D 项“预防维护”错误：预防维护降低未来故障风险，不以外部法规变化为触发。"
+  }
+}

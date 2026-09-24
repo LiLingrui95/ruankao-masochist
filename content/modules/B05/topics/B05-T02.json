@@ -1,0 +1,41 @@
+{
+  "id": "B05-T02",
+  "module_id": "B05",
+  "unit_id": "B05-U01",
+  "title": "需求工程与可行性分析",
+  "aliases": [
+    "需求获取",
+    "功能与非功能需求",
+    "可验证性",
+    "可行性",
+    "需求跟踪"
+  ],
+  "objectives": [
+    "掌握需求工程与可行性分析的核心术语与适用条件",
+    "能用给定材料完成判断、计算或模型校验"
+  ],
+  "prerequisite_ids": [
+    "B05-T01"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：需求工程与可行性分析"
+  ],
+  "body_path": "modules/B05/topics/B05-T02.md",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 6,
+  "exercise_rationale": "常规应用考点，覆盖概念、边界与情境判断",
+  "question_ids": [
+    "B05-T02-Q01",
+    "B05-T02-Q02",
+    "B05-T02-Q03",
+    "B05-T02-Q04",
+    "B05-T02-Q05",
+    "B05-T02-Q06"
+  ]
+}
+

@@ -1,0 +1,37 @@
+{
+  "id": "B02-T07-Q06",
+  "title": "副作用边界",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T07"
+  ],
+  "unit_id": "B02-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为何不能仅因返回值未使用就删除 `printf(\"x\")` 调用？",
+  "answer": "调用具有可观察的 I/O 副作用；删除会改变程序输出，不满足语义保持。",
+  "explanation": "死结果不等于死调用，需证明调用无可观察副作用。",
+  "source_ids": [
+    "B02-S04"
+  ],
+  "answer_source_ids": [
+    "B02-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：死结果不等于死调用，需证明调用无可观察副作用。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "指出printf产生可观察I/O副作用。"
+    },
+    {
+      "id": "r2",
+      "text": "说明删除调用会改变输出，故返回值未用不足以证明可删。"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B08-T04-Q05",
+  "title": "视频码率",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T04"
+  ],
+  "unit_id": "B08-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "1280×720、24 bit/像素、30帧/秒未压缩视频码率是多少bit/s？",
+  "answer": "1280×720×24×30=663,552,000 bit/s。",
+  "explanation": "解题依据与结果：1280×720×24×30=663,552,000 bit/s。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“1280×720×24×30=663,552,000 bit/s”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“1280×720×24×30=663,552,000 bit/s”给出题设对应的计算、文本证据或适用边界，不能只写题名“视频码率”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S03"
+  ],
+  "answer_source_ids": [
+    "B08-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B01-T02-Q02",
+  "title": "浮点数与误差练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T02"
+  ],
+  "unit_id": "B01-T02",
+  "section_index": 0,
+  "prompt": "将 1.01₂×2² 与 1.10₂×2⁰ 对阶相加。",
+  "explanation": "第二项写为 0.0110₂×2²，与 1.0100₂ 相加为 1.1010₂×2²=6。",
+  "source_ids": [
+    "B01-S02"
+  ],
+  "answer_source_ids": [
+    "B01-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：第二项写为 0.0110₂×2²，与 1.0100₂ 相加为 1.1010₂×2²=6。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "short_answer",
+  "answer": "1.1₂×2²，即 6。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：1.1₂×2²，即 6。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：第二项写为 0.0110₂×2²，与 1.0100₂ 相加为 1.1010₂×2²=6。"
+    }
+  ]
+}

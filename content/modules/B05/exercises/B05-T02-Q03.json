@@ -1,0 +1,39 @@
+{
+  "id": "B05-T02-Q03",
+  "title": "需求工程练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T02"
+  ],
+  "unit_id": "B05-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "法规要求数据保存十年属于什么？",
+  "answer": "B",
+  "explanation": "法规约束限制系统及项目方案。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "界面功能",
+    "B": "约束/合规需求",
+    "C": "算法实现",
+    "D": "测试脚本"
+  },
+  "option_explanations": {
+    "A": "A 项“界面功能”错误：保存年限约束数据生命周期，不是界面向用户提供的操作。",
+    "B": "B 项“约束/合规需求”正确：法规约束限制系统及项目方案。",
+    "C": "C 项“算法实现”错误：算法实现是满足需求的内部方案，法规条款本身是外部约束。",
+    "D": "D 项“测试脚本”错误：测试脚本用于验证需求，不是法规需求的类别。"
+  }
+}

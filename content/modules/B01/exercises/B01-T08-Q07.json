@@ -1,0 +1,37 @@
+{
+  "id": "B01-T08-Q07",
+  "title": "死锁与资源分配练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T08"
+  ],
+  "unit_id": "B01-T08",
+  "section_index": 0,
+  "prompt": "按全局递增顺序申请锁破坏了哪个必要条件？",
+  "explanation": "若所有等待边都从小编号锁指向大编号锁，就不可能沿边回到较小编号形成环。",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "answer_source_ids": [
+    "B01-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：若所有等待边都从小编号锁指向大编号锁，就不可能沿边回到较小编号形成环。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "循环等待。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：循环等待。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：若所有等待边都从小编号锁指向大编号锁，就不可能沿边回到较小编号形成环。"
+    }
+  ]
+}

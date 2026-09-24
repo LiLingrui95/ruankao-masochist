@@ -1,0 +1,37 @@
+{
+  "id": "B04-T04-Q03",
+  "title": "3NF非BCNF",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T04"
+  ],
+  "unit_id": "B04-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(A,B,C)，F={AB→C,C→B}，候选键 AB、AC。最高范式？",
+  "answer": "3NF，但非 BCNF。",
+  "explanation": "C→B 中 C 不是超键，违反 BCNF；B 是主属性，满足 3NF 的右部主属性例外。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：3NF，但非 BCNF。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：C→B 中 C 不是超键，违反 BCNF。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：C→B 中 C 不是超键，违反 BCNF；B 是主属性，满足 3NF 的右部主属性例外。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

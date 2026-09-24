@@ -1,0 +1,39 @@
+{
+  "id": "B01-T04-Q01",
+  "title": "Cache与存储层次练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T04"
+  ],
+  "unit_id": "B01-T04",
+  "section_index": 0,
+  "prompt": "32 位地址、8 KiB Cache、32 B 块、直接映射，求 tag/index/offset 位数。",
+  "explanation": "行数 8192/32=256，index=8；块内 32 byte 要 5 位；tag=32-8-5=19。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：行数 8192/32=256，index=8；块内 32 byte 要 5 位；tag=32-8-5=19。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "20/7/5",
+    "B": "19/9/4",
+    "C": "19/8/5",
+    "D": "18/8/6"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "误把 8 KiB Cache 算成 128 行。",
+    "B": "把 32 B 块的 offset 少算一位。",
+    "C": "256 行需 8 位 index，32 B 需 5 位 offset。",
+    "D": "把块大小错算为 64 B。"
+  }
+}

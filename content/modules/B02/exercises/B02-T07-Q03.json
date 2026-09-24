@@ -1,0 +1,39 @@
+{
+  "id": "B02-T07-Q03",
+  "title": "CSE条件",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T07"
+  ],
+  "unit_id": "B02-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "把第二次 `x+1` 替换为第一次结果，至少需要？",
+  "answer": "B",
+  "explanation": "值编号/CSE 必须证明表达式值仍可复用。",
+  "source_ids": [
+    "B02-S04"
+  ],
+  "answer_source_ids": [
+    "B02-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：值编号/CSE 必须证明表达式值仍可复用。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "两处文本相同即可",
+    "B": "期间x未改变且计算无相关副作用",
+    "C": "使用不同临时变量",
+    "D": "关闭类型检查"
+  },
+  "option_explanations": {
+    "A": "文本相同不能排除操作数被改写。",
+    "B": "未修改且无副作用时值才可安全复用。",
+    "C": "临时变量命名不证明值等价。",
+    "D": "关闭检查不能使变换语义保持。"
+  }
+}

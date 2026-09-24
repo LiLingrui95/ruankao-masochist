@@ -1,0 +1,39 @@
+{
+  "id": "B08-T08-Q03",
+  "title": "完整阅读一",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T08"
+  ],
+  "unit_id": "B08-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读：A transaction debits one account and credits another. If the second update fails, the system rolls back the first so that partial state is not exposed. Explain the purpose of rollback.",
+  "answer": "回滚撤销第一步未提交更新，避免只扣款未入账的部分状态对外可见，从而维护事务原子性。",
+  "explanation": "解题依据与结果：回滚撤销第一步未提交更新，避免只扣款未入账的部分状态对外可见，从而维护事务原子性。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“回滚撤销第一步未提交更新”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“避免只扣款未入账的部分状态对外可见，从而维护事务原子性”给出题设对应的计算、文本证据或适用边界，不能只写题名“完整阅读一”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S11",
+    "B08-S03"
+  ],
+  "answer_source_ids": [
+    "B08-S11",
+    "B08-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B04-T10-Q08",
+  "title": "物理设计依据",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为订单表选择索引前至少要收集哪些工作负载信息？",
+  "answer": "高频查询的过滤列、连接列、排序、范围、返回比例，写入/更新频率与数据分布。",
+  "explanation": "索引应对应访问路径和选择率；只看字段名无法评估收益与写代价。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：高频查询的过滤列、连接列、排序、范围、返回比例，写入/更新频率与数据分布。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：索引应对应访问路径和选择率。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：索引应对应访问路径和选择率；只看字段名无法评估收益与写代价。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

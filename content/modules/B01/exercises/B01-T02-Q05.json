@@ -1,0 +1,39 @@
+{
+  "id": "B01-T02-Q05",
+  "title": "浮点数与误差练习 5",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T02"
+  ],
+  "unit_id": "B01-T02",
+  "section_index": 0,
+  "prompt": "binary32 中指数全 1、fraction 全 0 表示什么？",
+  "explanation": "IEEE 754 保留全 1 指数；fraction 为 0 表示 infinity，非 0 才是 NaN。",
+  "source_ids": [
+    "B01-S02"
+  ],
+  "answer_source_ids": [
+    "B01-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：IEEE 754 保留全 1 指数；fraction 为 0 表示 infinity，非 0 才是 NaN。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "single_choice",
+  "options": {
+    "A": "正或负 infinity",
+    "B": "最大正规数",
+    "C": "subnormal",
+    "D": "NaN"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "指数全 1 且 fraction 全 0；符号位决定正负。",
+    "B": "最大正规数的指数并非全 1。",
+    "C": "subnormal 使用全 0 指数和非 0 fraction。",
+    "D": "NaN 要求 fraction 非 0。"
+  }
+}

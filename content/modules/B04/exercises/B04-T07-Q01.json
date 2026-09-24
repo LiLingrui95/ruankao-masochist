@@ -1,0 +1,37 @@
+{
+  "id": "B04-T07-Q01",
+  "title": "安全反连接",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T07"
+  ],
+  "unit_id": "B04-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "PostgreSQL 18：找没有任何订单的客户。",
+  "answer": "SELECT c.customer_id FROM customer c WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.customer_id=c.customer_id);",
+  "explanation": "相关 NOT EXISTS 对每个客户检查匹配行，不受子查询列中 NULL 污染。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：SELECT c.customer_id FROM customer c WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.customer_id=c.customer_id);。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：相关 NOT EXISTS 对每个客户检查匹配行，不受子查询列中 NULL 污染。"
+    }
+  ],
+  "source_ids": [
+    "B04-S03"
+  ],
+  "answer_source_ids": [
+    "B04-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：相关 NOT EXISTS 对每个客户检查匹配行，不受子查询列中 NULL 污染。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

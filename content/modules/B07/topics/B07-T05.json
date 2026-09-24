@@ -1,0 +1,42 @@
+{
+  "id": "B07-T05",
+  "module_id": "B07",
+  "unit_id": "B07-U02",
+  "title": "TCP、UDP与可靠传输",
+  "aliases": [
+    "传输控制协议",
+    "用户数据报协议",
+    "滑动窗口"
+  ],
+  "objectives": [
+    "按字节序号计算TCP确认号",
+    "解释握手、挥手、流量与拥塞控制",
+    "比较TCP与UDP的服务边界"
+  ],
+  "prerequisite_ids": [
+    "B07-T04"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T05.md",
+  "source_ids": [
+    "B07-S01",
+    "B07-S05"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "TCP序号和状态转换计算密集，8题含确认号、窗口和异常序列。",
+  "question_ids": [
+    "B07-T05-Q01",
+    "B07-T05-Q02",
+    "B07-T05-Q03",
+    "B07-T05-Q04",
+    "B07-T05-Q05",
+    "B07-T05-Q06",
+    "B07-T05-Q07",
+    "B07-T05-Q08"
+  ]
+}

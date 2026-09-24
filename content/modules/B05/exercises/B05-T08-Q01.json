@@ -1,0 +1,39 @@
+{
+  "id": "B05-T08-Q01",
+  "title": "质量度量练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T08"
+  ],
+  "unit_id": "B05-T08",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "评审发现率属于哪类度量？",
+  "answer": "B",
+  "explanation": "它描述评审活动效果。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "产品度量",
+    "B": "过程度量",
+    "C": "硬件度量",
+    "D": "用户画像"
+  },
+  "option_explanations": {
+    "A": "A 项“产品度量”错误：产品度量衡量代码、文档或成品属性；评审发现率衡量评审活动效果。",
+    "B": "B 项“过程度量”正确：它描述评审活动效果。",
+    "C": "C 项“硬件度量”错误：硬件度量描述硬件资源或性能，评审发现率不以硬件为测量对象。",
+    "D": "D 项“用户画像”错误：用户画像描述用户群特征，不衡量评审过程。"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B07-T08",
+  "module_id": "B07",
+  "unit_id": "B07-U03",
+  "title": "对称与公钥密码",
+  "aliases": [
+    "AES",
+    "RSA",
+    "密钥管理"
+  ],
+  "objectives": [
+    "区分对称、公钥密码的用途与代价",
+    "解释混合加密和密钥分发",
+    "判断机密性要求及算法边界"
+  ],
+  "prerequisite_ids": [
+    "B07-T07"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T08.md",
+  "source_ids": [
+    "B07-S09"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 6,
+  "exercise_rationale": "密码体制为常规应用点，6题覆盖性质、混合方案和简单RSA推导。",
+  "question_ids": [
+    "B07-T08-Q01",
+    "B07-T08-Q02",
+    "B07-T08-Q03",
+    "B07-T08-Q04",
+    "B07-T08-Q05",
+    "B07-T08-Q06"
+  ]
+}

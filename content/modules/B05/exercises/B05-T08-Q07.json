@@ -1,0 +1,39 @@
+{
+  "id": "B05-T08-Q07",
+  "title": "补充范围练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T08"
+  ],
+  "unit_id": "B05-T08",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "明确限定ISO/IEC 9126-1历史模型时，下列哪组是六个顶层质量特性？",
+  "answer": "A",
+  "explanation": "依据题干限定的模型、版本、职责或业务条件逐项判断。",
+  "source_ids": [
+    "B05-S11"
+  ],
+  "answer_source_ids": [
+    "B05-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S11的定位逐项核对四个选项；正确项A与题干条件一致。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 4,
+  "options": {
+    "A": "功能性、可靠性、易用性、效率、维护性、可移植性",
+    "B": "安全性、兼容性、可维护性、可移植性、可靠性、性能效率",
+    "C": "功能适合性、性能效率、兼容性、交互能力、可靠性、安全性、维护性、灵活性、安全保障",
+    "D": "正确性、完整性、可审计性、敏捷性、成本、进度"
+  },
+  "option_explanations": {
+    "A": "该组六项对应历史ISO/IEC 9126-1常用中文术语。",
+    "B": "混入后续ISO/IEC 25010的独立特性名称，且遗漏历史功能性、易用性。",
+    "C": "接近ISO/IEC 25010:2023九特性的现代结构，不是历史六特性。",
+    "D": "混合项目管理与质量属性，并非该标准质量模型。"
+  }
+}

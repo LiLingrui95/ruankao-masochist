@@ -1,0 +1,41 @@
+{
+  "id": "B07-T03",
+  "module_id": "B07",
+  "unit_id": "B07-U01",
+  "title": "IPv4子网与CIDR",
+  "aliases": [
+    "子网划分",
+    "无类别域间路由",
+    "VLSM"
+  ],
+  "objectives": [
+    "由前缀计算网络、广播和地址范围",
+    "按需求实施VLSM并验证不重叠",
+    "区分传统可用主机公式与/31、/32例外"
+  ],
+  "prerequisite_ids": [
+    "B07-T01"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T03.md",
+  "source_ids": [
+    "B07-S03"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "CIDR是高频计算点，8题覆盖边界、聚合、VLSM和例外。",
+  "question_ids": [
+    "B07-T03-Q01",
+    "B07-T03-Q02",
+    "B07-T03-Q03",
+    "B07-T03-Q04",
+    "B07-T03-Q05",
+    "B07-T03-Q06",
+    "B07-T03-Q07",
+    "B07-T03-Q08"
+  ]
+}

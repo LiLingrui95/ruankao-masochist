@@ -1,0 +1,41 @@
+{
+  "id": "B06-T06-Q07",
+  "title": "用例边界",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T06"
+  ],
+  "unit_id": "B06-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "电商系统中顾客下单，第三方支付平台完成授权。谁是参与者，哪些行为在系统边界内？",
+  "answer": "顾客与第三方支付平台都是系统外参与者。‘提交订单/发起支付’是电商系统用例；电商系统向支付平台发送授权请求并接收结果属于系统内交互职责，而支付平台内部风控算法不在电商系统边界内。",
+  "explanation": "顾客与第三方支付平台都是系统外参与者。‘提交订单/发起支付’是电商系统用例；电商系统向支付平台发送授权请求并接收结果属于系统内交互职责，而支付平台内部风控算法不在电商系统边界内。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "识别顾客参与者"
+    },
+    {
+      "id": "r2",
+      "text": "识别支付平台为外部参与者"
+    },
+    {
+      "id": "r3",
+      "text": "区分授权交互与平台内部算法边界"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

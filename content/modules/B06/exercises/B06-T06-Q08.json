@@ -1,0 +1,41 @@
+{
+  "id": "B06-T06-Q08",
+  "title": "图型选择",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T06"
+  ],
+  "unit_id": "B06-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "分别为‘对象生命周期迁移’、‘多个对象消息先后’、‘跨部门并行业务流程’选择 UML 图。",
+  "answer": "对象生命周期迁移用状态机图；多个对象消息先后用顺序图；跨部门并行流程用活动图。若还要表达外部角色目标，再补用例图，但它不能替代前三者。",
+  "explanation": "对象生命周期迁移用状态机图；多个对象消息先后用顺序图；跨部门并行流程用活动图。若还要表达外部角色目标，再补用例图，但它不能替代前三者。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "生命周期选择状态机图"
+    },
+    {
+      "id": "r2",
+      "text": "消息先后选择顺序图"
+    },
+    {
+      "id": "r3",
+      "text": "跨部门并行选择活动图"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

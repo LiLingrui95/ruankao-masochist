@@ -1,0 +1,39 @@
+{
+  "id": "B04-T05",
+  "module_id": "B04",
+  "unit_id": "B04-U02",
+  "title": "E-R建模与关系转换",
+  "aliases": [
+    "实体联系图",
+    "基数",
+    "弱实体"
+  ],
+  "objectives": [
+    "解释并应用E-R建模与关系转换的核心条件",
+    "独立推导E-R建模与关系转换问题并用反例检查边界"
+  ],
+  "prerequisite_ids": [
+    "B04-T04"
+  ],
+  "syllabus_refs": [
+    "数据库系统知识",
+    "数据库设计与实现"
+  ],
+  "body_path": "modules/B04/topics/B04-T05.md",
+  "source_ids": [
+    "B04-S01",
+    "B04-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 5,
+  "exercise_rationale": "常规应用：覆盖概念、推导与典型边界，配置 5 道。",
+  "question_ids": [
+    "B04-T05-Q01",
+    "B04-T05-Q02",
+    "B04-T05-Q03",
+    "B04-T05-Q04",
+    "B04-T05-Q05"
+  ]
+}

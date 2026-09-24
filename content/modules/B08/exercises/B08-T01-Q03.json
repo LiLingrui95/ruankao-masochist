@@ -1,0 +1,37 @@
+{
+  "id": "B08-T01-Q03",
+  "title": "编码位数",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T01"
+  ],
+  "unit_id": "B08-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "37种状态至少需要多少二进制位？写出不等式。",
+  "answer": "6位，因为2^5=32<37≤64=2^6。",
+  "explanation": "解题依据与结果：6位，因为2^5=32<37≤64=2^6。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“6位”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“因为2^5=32<37≤64=2^6”给出题设对应的计算、文本证据或适用边界，不能只写题名“编码位数”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S01"
+  ],
+  "answer_source_ids": [
+    "B08-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

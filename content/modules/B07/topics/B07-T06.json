@@ -1,0 +1,40 @@
+{
+  "id": "B07-T06",
+  "module_id": "B07",
+  "unit_id": "B07-U02",
+  "title": "DNS、HTTP与应用协议",
+  "aliases": [
+    "域名系统",
+    "超文本传输协议",
+    "电子邮件与文件传输"
+  ],
+  "objectives": [
+    "跟踪DNS递归与迭代查询",
+    "按HTTP语义判断方法、状态与缓存",
+    "区分常见应用协议及实际服务器组件"
+  ],
+  "prerequisite_ids": [
+    "B07-T05"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T06.md",
+  "source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 6,
+  "exercise_rationale": "应用协议为常规应用点，6题覆盖DNS、HTTP、邮件和服务器。",
+  "question_ids": [
+    "B07-T06-Q01",
+    "B07-T06-Q02",
+    "B07-T06-Q03",
+    "B07-T06-Q04",
+    "B07-T06-Q05",
+    "B07-T06-Q06"
+  ]
+}

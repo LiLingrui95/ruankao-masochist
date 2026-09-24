@@ -1,0 +1,43 @@
+{
+  "id": "B08-T06-Q01",
+  "title": "权利产生",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T06"
+  ],
+  "unit_id": "B08-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "一般而言，软件著作权产生的关键事实是？",
+  "options": {
+    "A": "作品创作完成",
+    "B": "购买电脑",
+    "C": "必须先登记",
+    "D": "首次销售"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "正确。《计算机软件保护条例》第十四条规定软件著作权自软件开发完成之日起产生。",
+    "B": "错误。购买开发设备不产生特定软件的著作权。",
+    "C": "错误。第七条规定可以办理登记，登记证明是初步证明；登记不是权利产生的必要条件。",
+    "D": "错误。首次销售涉及发行事实，不是软件著作权产生时点。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。《计算机软件保护条例》第十四条规定软件著作权自软件开发完成之日起产生。",
+  "source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "answer_source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

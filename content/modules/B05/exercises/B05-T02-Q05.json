@@ -1,0 +1,39 @@
+{
+  "id": "B05-T02-Q05",
+  "title": "需求工程练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T02"
+  ],
+  "unit_id": "B05-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "投资回收期主要属于哪类可行性？",
+  "answer": "A",
+  "explanation": "投资与收益比较属于经济可行性。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "经济可行性",
+    "B": "技术可行性",
+    "C": "运行可行性",
+    "D": "法律可行性"
+  },
+  "option_explanations": {
+    "A": "A 项“经济可行性”正确：投资与收益比较属于经济可行性。",
+    "B": "B 项“技术可行性”错误：技术可行性回答技术和资源能否实现，不直接衡量投资回收。",
+    "C": "C 项“运行可行性”错误：运行可行性关注组织流程和用户能否接受运行方案。",
+    "D": "D 项“法律可行性”错误：法律可行性关注合规许可，不计算投入收益回收。"
+  }
+}

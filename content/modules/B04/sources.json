@@ -1,0 +1,93 @@
+[
+  {
+    "id": "B04-S01",
+    "title": "Database System Concepts, 7th ed. — SQL and relational design slides",
+    "url": "https://www.db-book.com/slides-dir/PDF-dir/ch4.pdf",
+    "author": "Abraham Silberschatz, Henry F. Korth, S. Sudarshan",
+    "accessed_on": "2026-09-24",
+    "locator": "opened PDF; relational algebra, SQL, transactions, integrity constraints and indexes",
+    "version": "7th edition",
+    "kind": "author_material",
+    "reuse_policy": "Facts and notation summarized; exercises are original.",
+    "query": "site:db-book.com Database System Concepts normalization relational algebra transactions",
+    "selection_reason": "教材作者站的一手教学材料，可核对关系理论、约束与事务定义。"
+  },
+  {
+    "id": "B04-S02",
+    "title": "PostgreSQL 18 Documentation — Constraints",
+    "url": "https://www.postgresql.org/docs/18/ddl-constraints.html",
+    "author": "PostgreSQL Global Development Group",
+    "accessed_on": "2026-09-24",
+    "locator": "§5.5, especially primary keys and foreign keys",
+    "version": "18",
+    "kind": "official_documentation",
+    "reuse_policy": "Documentation facts summarized; SQL examples in exercises are original.",
+    "query": "site:postgresql.org/docs current primary key foreign key constraints",
+    "selection_reason": "数据库实现官方文档，核对 PostgreSQL 约束语义与组合主键。"
+  },
+  {
+    "id": "B04-S03",
+    "title": "PostgreSQL 18 Documentation — SQL Tutorial",
+    "url": "https://www.postgresql.org/docs/18/tutorial-sql.html",
+    "author": "PostgreSQL Global Development Group",
+    "accessed_on": "2026-09-24",
+    "locator": "Tutorial chapters 2.5–2.9: queries, joins, aggregates and updates",
+    "version": "18",
+    "kind": "official_documentation",
+    "reuse_policy": "Documentation facts summarized; exercises are original.",
+    "query": "site:postgresql.org/docs 18 tutorial joins aggregate update",
+    "selection_reason": "官方 SQL 教程用于核对连接、聚合和更新的执行语义。"
+  },
+  {
+    "id": "B04-S04",
+    "title": "PostgreSQL 18 Documentation — Transactions",
+    "url": "https://www.postgresql.org/docs/18/tutorial-transactions.html",
+    "author": "PostgreSQL Global Development Group",
+    "accessed_on": "2026-09-24",
+    "locator": "§3.4 Transactions, transaction blocks and savepoints",
+    "version": "18",
+    "kind": "official_documentation",
+    "reuse_policy": "Documentation facts summarized; schedules and questions are original.",
+    "query": "site:postgresql.org/docs/18 tutorial transactions commit rollback savepoint",
+    "selection_reason": "官方资料用于核对事务块、COMMIT、ROLLBACK 与 SAVEPOINT。"
+  },
+  {
+    "id": "B04-S05",
+    "title": "PostgreSQL 18 Documentation — Indexes and EXPLAIN",
+    "url": "https://www.postgresql.org/docs/18/indexes.html",
+    "author": "PostgreSQL Global Development Group",
+    "accessed_on": "2026-09-24",
+    "locator": "Chapter 11 Indexes; §14.1 Using EXPLAIN",
+    "version": "18",
+    "kind": "official_documentation",
+    "reuse_policy": "Documentation facts summarized; plans and exercises are original.",
+    "query": "site:postgresql.org/docs/18 indexes using explain",
+    "selection_reason": "官方资料用于核对索引适用条件、代价选择与执行计划。"
+  },
+  {
+    "id": "B04-S06",
+    "title": "PostgreSQL 18 libpq command execution",
+    "url": "https://www.postgresql.org/docs/18/libpq-exec.html",
+    "author": "PostgreSQL Global Development Group",
+    "accessed_on": "2026-09-24",
+    "locator": "PQexecParams and command/result handling",
+    "version": "18",
+    "kind": "official_documentation",
+    "reuse_policy": "独立归纳接口语义，原创练习",
+    "query": "PostgreSQL libpq PQexecParams",
+    "selection_reason": "实际打开，用于核对参数化访问和数据/命令分离"
+  },
+  {
+    "id": "B04-S07",
+    "title": "MongoDB Data Modeling",
+    "url": "https://www.mongodb.com/docs/manual/data-modeling/",
+    "author": "MongoDB",
+    "accessed_on": "2026-09-24",
+    "locator": "Document model flexibility; embedding and references",
+    "version": "accessed 2026-09-24",
+    "kind": "official_documentation",
+    "reuse_policy": "独立归纳建模权衡，原创练习",
+    "query": "MongoDB data modeling embed references",
+    "selection_reason": "实际打开，补充非关系型数据模型，避免把数据库新技术仅解释为分片"
+  }
+]

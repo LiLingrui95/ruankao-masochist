@@ -1,0 +1,39 @@
+{
+  "id": "B01-T01-Q02",
+  "title": "数制、编码与补码练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T01"
+  ],
+  "unit_id": "B01-T01",
+  "section_index": 0,
+  "prompt": "8 位补码 11110100 表示什么十进制数？",
+  "explanation": "无符号值 244，最高位为 1，按 8 位补码计算 244-256=-12。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：无符号值 244，最高位为 1，按 8 位补码计算 244-256=-12。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "244",
+    "B": "-11",
+    "C": "-12",
+    "D": "-116"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "这是同一位串的 unsigned 解释。",
+    "B": "对 244 减 255，模数应为 256。",
+    "C": "244-256=-12。",
+    "D": "混入了另一题位串 10010110 的值。"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B05-T09-Q05",
+  "title": "配置与维护练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T09"
+  ],
+  "unit_id": "B05-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "核对交付物及版本完整性通常属于？",
+  "answer": "D",
+  "explanation": "物理审计关注组成和版本完整性。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：D",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "功能审计",
+    "B": "代码覆盖",
+    "C": "风险审计",
+    "D": "物理配置审计"
+  },
+  "option_explanations": {
+    "A": "A 项“功能审计”错误：功能审计核对规定功能是否实现，不主要核对交付组成版本。",
+    "B": "B 项“代码覆盖”错误：代码覆盖衡量测试执行结构，不是配置审计类型。",
+    "C": "C 项“风险审计”错误：风险审计不是此处核对配置项完整性的标准分类。",
+    "D": "D 项“物理配置审计”正确：物理审计关注组成和版本完整性。"
+  }
+}

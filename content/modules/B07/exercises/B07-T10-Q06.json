@@ -1,0 +1,39 @@
+{
+  "id": "B07-T10-Q06",
+  "title": "访问控制、攻击与安全防护练习6",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T10"
+  ],
+  "unit_id": "B07-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为Internet→DMZ Web→内网数据库的数据流列出三个信任边界控制。",
+  "answer": "入口仅开放必要HTTPS并在反向代理/WAF终止与检查；DMZ到数据库只允许指定应用身份、主机和端口且双向认证/加密；管理面走独立管理网和强认证，并集中记录审计。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "针对Internet到DMZ给出最小开放和应用层检查"
+    },
+    {
+      "id": "r2",
+      "text": "针对DMZ到内网与管理面给出身份、端口、加密或审计控制"
+    }
+  ]
+}

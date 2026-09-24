@@ -1,0 +1,39 @@
+{
+  "id": "B05-T03-Q07",
+  "title": "DFD基础练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T03"
+  ],
+  "unit_id": "B05-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "哪项最适合描述复杂加工逻辑？",
+  "answer": "A",
+  "explanation": "多条件动作组合适合判定表。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "判定表",
+    "B": "甘特图",
+    "C": "类图",
+    "D": "部署图"
+  },
+  "option_explanations": {
+    "A": "A 项“判定表”正确：多条件动作组合适合判定表。",
+    "B": "B 项“甘特图”错误：甘特图表达任务工期与进度，不表达条件—动作组合。",
+    "C": "C 项“类图”错误：类图表达静态类与关系，不描述加工判定逻辑。",
+    "D": "D 项“部署图”错误：部署图表达软件制品与节点部署，不描述业务规则组合。"
+  }
+}

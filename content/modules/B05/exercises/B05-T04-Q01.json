@@ -1,0 +1,39 @@
+{
+  "id": "B05-T04-Q01",
+  "title": "结构化设计练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T04"
+  ],
+  "unit_id": "B05-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "模块各操作共同完成一个明确功能，属于？",
+  "answer": "A",
+  "explanation": "单一明确功能是功能内聚。",
+  "source_ids": [
+    "B05-S04"
+  ],
+  "answer_source_ids": [
+    "B05-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "功能内聚",
+    "B": "偶然内聚",
+    "C": "逻辑内聚",
+    "D": "时间内聚"
+  },
+  "option_explanations": {
+    "A": "A 项“功能内聚”正确：单一明确功能是功能内聚。",
+    "B": "B 项“偶然内聚”错误：偶然内聚的操作缺少有意义关联，与共同完成明确功能相反。",
+    "C": "C 项“逻辑内聚”错误：逻辑内聚把同类但不同功能由控制标志选择，不是共同完成一个功能。",
+    "D": "D 项“时间内聚”错误：时间内聚只因同一时刻执行而聚合，不要求共同目标。"
+  }
+}

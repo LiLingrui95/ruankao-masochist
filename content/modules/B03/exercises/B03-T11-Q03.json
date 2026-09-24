@@ -1,0 +1,37 @@
+{
+  "id": "B03-T11-Q03",
+  "title": "动态规划过程推导",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T11"
+  ],
+  "unit_id": "B03-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "根据下列主题给出一个最小可复核的逐步推导：0/1 背包容量5，物品(重量,价值)为(2,3),(3,4),(4,5)。令 dp[c] 为已处理物品下容量 c 的最大价值，每件物品按 c 从大到小更新，最终 dp[5]=7。逆序避免同一物品被重复取。",
+  "answer": "0/1 背包容量5，物品(重量,价值)为(2,3),(3,4),(4,5)。令 dp[c] 为已处理物品下容量 c 的最大价值，每件物品按 c 从大到小更新，最终 dp[5]=7。逆序避免同一物品被重复取。",
+  "explanation": "答案需列出中间状态，并由定义得到最终结论；只写结论无法检查边界。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "列出题干例子的关键中间状态，不能只写最终结论。"
+    },
+    {
+      "id": "r2",
+      "text": "由中间状态推出题中给定例子的最终结果，并说明所用规则。"
+    }
+  ]
+}

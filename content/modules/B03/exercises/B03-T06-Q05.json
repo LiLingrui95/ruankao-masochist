@@ -1,0 +1,37 @@
+{
+  "id": "B03-T06-Q05",
+  "title": "图、遍历与拓扑排序复杂度审计",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T06"
+  ],
+  "unit_id": "B03-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "分别说明“图表示、BFS、DFS 与 DAG 拓扑序”中主要操作的时间复杂度、额外空间复杂度，以及复杂度成立的前提。",
+  "answer": "邻接矩阵占 Θ(V²)，邻接表占 Θ(V+E)。BFS 用队列并按边数层次扩展，可求无权图最短边数；DFS 用递归或显式栈。DAG 才有拓扑序。 时间界取决于文中所述操作和输入结构；额外空间还需计辅助数组、队列、栈或递归深度。",
+  "explanation": "复杂度必须绑定明确操作和输入模型，不能只写一个孤立的 O 记号。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "分别写出主要操作的时间复杂度与额外空间复杂度。"
+    },
+    {
+      "id": "r2",
+      "text": "明确复杂度对应的输入规模、数据结构和成立前提。"
+    }
+  ]
+}

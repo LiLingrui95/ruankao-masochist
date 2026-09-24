@@ -1,0 +1,37 @@
+{
+  "id": "B07-T08-Q06",
+  "title": "对称与公钥密码练习6",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T08"
+  ],
+  "unit_id": "B07-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "RSA教学参数p=5、q=11、e=3，求n、φ(n)和私钥指数d。",
+  "answer": "n=55；φ(n)=4×10=40；d=27，因为3×27=81≡1 (mod 40)。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S09"
+  ],
+  "answer_source_ids": [
+    "B07-S09"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "正确计算n=55和φ=40"
+    },
+    {
+      "id": "r2",
+      "text": "求出模逆d=27并验证同余关系"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B04-T08-Q03",
+  "title": "丢失更新",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T08"
+  ],
+  "unit_id": "B04-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "T1、T2 都读余额100，分别写110、120，最终120。发生什么异常？",
+  "answer": "丢失更新，T1 的 +10 被 T2 基于旧值的写覆盖。",
+  "explanation": "两个事务读同一旧版本后写回，最终不等于按任一串行次序得到的130。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：丢失更新，T1 的 +10 被 T2 基于旧值的写覆盖。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：两个事务读同一旧版本后写回，最终不等于按任一串行次序得到的130。"
+    }
+  ],
+  "source_ids": [
+    "B04-S04"
+  ],
+  "answer_source_ids": [
+    "B04-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：两个事务读同一旧版本后写回，最终不等于按任一串行次序得到的130。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

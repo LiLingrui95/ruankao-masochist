@@ -1,0 +1,780 @@
+{
+  "as_of": "2026-09-24",
+  "method": "HTTP GET with redirects; response body was not retained",
+  "unique_urls": 86,
+  "reachable": 85,
+  "checks": [
+    {
+      "url": "https://adg.csdn.net/694cf32e5b9f5f31781aa07c.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://adg.csdn.net/694cf32e5b9f5f31781aa07c.html",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 68422,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://hrss.sz.gov.cn/szksy/zxxx/content/post_12939472.html",
+      "status_code": null,
+      "reachable": false,
+      "error": "SSLError",
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://m.cnitpm.com/exam/ExamST.aspx?sid=13354690&t1=4",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://m.cnitpm.com/exam/ExamST.aspx?sid=13354690&t1=4",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 10164,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://m.cnitpm.com/exam/ExamST.aspx?sid=14505743&t1=4",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://m.cnitpm.com/exam/ExamST.aspx?sid=14505743&t1=4",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 10149,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/Examst/13495484/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/Examst/13495484/",
+      "content_type": "text/html",
+      "content_length": 26226,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1032871/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1032871/",
+      "content_type": "text/html",
+      "content_length": 34059,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1033086/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1033086/",
+      "content_type": "text/html",
+      "content_length": 33883,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1033087/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1033087/",
+      "content_type": "text/html",
+      "content_length": 27558,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1033372/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1033372/",
+      "content_type": "text/html",
+      "content_length": 34107,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1033375/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1033375/",
+      "content_type": "text/html",
+      "content_length": 26987,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1069843/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1069843/",
+      "content_type": "text/html",
+      "content_length": 33087,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1069949/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1069949/",
+      "content_type": "text/html",
+      "content_length": 26735,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/11743124/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/11743124/",
+      "content_type": "text/html",
+      "content_length": 33154,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/13660772/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/13660772/",
+      "content_type": "text/html",
+      "content_length": 29049,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1839935/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1839935/",
+      "content_type": "text/html",
+      "content_length": 33983,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1840455/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1840455/",
+      "content_type": "text/html",
+      "content_length": 27340,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1853813/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1853813/",
+      "content_type": "text/html",
+      "content_length": 34884,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/1854504/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/1854504/",
+      "content_type": "text/html",
+      "content_length": 27529,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/3288931/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/3288931/",
+      "content_type": "text/html",
+      "content_length": 26033,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/3291615/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/3291615/",
+      "content_type": "text/html",
+      "content_length": 34112,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/3714059/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/3714059/",
+      "content_type": "text/html",
+      "content_length": 33576,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/3715290/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/3715290/",
+      "content_type": "text/html",
+      "content_length": 27821,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/4888457/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/4888457/",
+      "content_type": "text/html",
+      "content_length": 33878,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/4888773/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/4888773/",
+      "content_type": "text/html",
+      "content_length": 27531,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535589/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535589/",
+      "content_type": "text/html",
+      "content_length": 28572,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535607/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535607/",
+      "content_type": "text/html",
+      "content_length": 28305,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535632/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535632/",
+      "content_type": "text/html",
+      "content_length": 28111,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535655/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535655/",
+      "content_type": "text/html",
+      "content_length": 28277,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535681/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535681/",
+      "content_type": "text/html",
+      "content_length": 28050,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535706/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535706/",
+      "content_type": "text/html",
+      "content_length": 27895,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535725/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535725/",
+      "content_type": "text/html",
+      "content_length": 27918,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535858/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535858/",
+      "content_type": "text/html",
+      "content_length": 27588,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/535974/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/535974/",
+      "content_type": "text/html",
+      "content_length": 32739,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/536631/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/536631/",
+      "content_type": "text/html",
+      "content_length": 32902,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/536718/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/536718/",
+      "content_type": "text/html",
+      "content_length": 32630,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/538096/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/538096/",
+      "content_type": "text/html",
+      "content_length": 32909,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/538162/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/538162/",
+      "content_type": "text/html",
+      "content_length": 33217,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/538307/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/538307/",
+      "content_type": "text/html",
+      "content_length": 32882,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/538312/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/538312/",
+      "content_type": "text/html",
+      "content_length": 32985,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/541217/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/541217/",
+      "content_type": "text/html",
+      "content_length": 33039,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/541266/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/541266/",
+      "content_type": "text/html",
+      "content_length": 33020,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/545537/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/545537/",
+      "content_type": "text/html",
+      "content_length": 32774,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/599451/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/599451/",
+      "content_type": "text/html",
+      "content_length": 33374,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68693/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68693/",
+      "content_type": "text/html",
+      "content_length": 34214,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68721/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68721/",
+      "content_type": "text/html",
+      "content_length": 33946,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68729/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68729/",
+      "content_type": "text/html",
+      "content_length": 34187,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68737/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68737/",
+      "content_type": "text/html",
+      "content_length": 34149,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68739/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68739/",
+      "content_type": "text/html",
+      "content_length": 33836,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68741/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68741/",
+      "content_type": "text/html",
+      "content_length": 33835,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68745/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68745/",
+      "content_type": "text/html",
+      "content_length": 33996,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68757/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68757/",
+      "content_type": "text/html",
+      "content_length": 33990,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68759/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68759/",
+      "content_type": "text/html",
+      "content_length": 34262,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68797/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68797/",
+      "content_type": "text/html",
+      "content_length": 34063,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68835/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68835/",
+      "content_type": "text/html",
+      "content_length": 33723,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/68886/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/68886/",
+      "content_type": "text/html",
+      "content_length": 34170,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/7811150/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/7811150/",
+      "content_type": "text/html",
+      "content_length": 34262,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/7811469/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/7811469/",
+      "content_type": "text/html",
+      "content_length": 27930,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/809827/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/809827/",
+      "content_type": "text/html",
+      "content_length": 33027,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810655/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810655/",
+      "content_type": "text/html",
+      "content_length": 28194,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810656/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810656/",
+      "content_type": "text/html",
+      "content_length": 27720,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810670/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810670/",
+      "content_type": "text/html",
+      "content_length": 27262,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810673/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810673/",
+      "content_type": "text/html",
+      "content_length": 27176,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810681/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810681/",
+      "content_type": "text/html",
+      "content_length": 27235,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810701/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810701/",
+      "content_type": "text/html",
+      "content_length": 27542,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810710/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810710/",
+      "content_type": "text/html",
+      "content_length": 27581,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810722/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810722/",
+      "content_type": "text/html",
+      "content_length": 27192,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810754/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810754/",
+      "content_type": "text/html",
+      "content_length": 27464,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810951/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810951/",
+      "content_type": "text/html",
+      "content_length": 27768,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810967/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810967/",
+      "content_type": "text/html",
+      "content_length": 27361,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/810977/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/810977/",
+      "content_type": "text/html",
+      "content_length": 27292,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/811020/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/811020/",
+      "content_type": "text/html",
+      "content_length": 27379,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/811030/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/811030/",
+      "content_type": "text/html",
+      "content_length": 27606,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/811240/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/811240/",
+      "content_type": "text/html",
+      "content_length": 27570,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/811421/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/811421/",
+      "content_type": "text/html",
+      "content_length": 27210,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/875399/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/875399/",
+      "content_type": "text/html",
+      "content_length": 28324,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/9465745/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/9465745/",
+      "content_type": "text/html",
+      "content_length": 33844,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/examst/9466124/",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/examst/9466124/",
+      "content_type": "text/html",
+      "content_length": 26976,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/pm1/120502.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/pm1/120502.html",
+      "content_type": "text/html",
+      "content_length": 48298,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/pm1/120503.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/pm1/120503.html",
+      "content_type": "text/html",
+      "content_length": 48798,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/pm1/151270wm79jnz10h.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/pm1/151270wm79jnz10h.html",
+      "content_type": "text/html",
+      "content_length": 53362,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/pm1/1512750xh44khlcr.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/pm1/1512750xh44khlcr.html",
+      "content_type": "text/html",
+      "content_length": 53230,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/pm1/1557722uj5ieet6w.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/pm1/1557722uj5ieet6w.html",
+      "content_type": "text/html",
+      "content_length": 50461,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/pm1/165691mnwaztek44.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/pm1/165691mnwaztek44.html",
+      "content_type": "text/html",
+      "content_length": 59612,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.cnitpm.com/pm1/1656926sw0ycginq.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.cnitpm.com/pm1/1656926sw0ycginq.html",
+      "content_type": "text/html",
+      "content_length": 50092,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.educity.cn/rk/5513242.html",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.educity.cn/rk/5513242.html",
+      "content_type": "text/html;charset=UTF-8",
+      "content_length": 152104,
+      "checked_on": "2026-09-24"
+    },
+    {
+      "url": "https://www.miiteec.org.cn/news_details?code=1002",
+      "status_code": 200,
+      "reachable": true,
+      "final_url": "https://www.miiteec.org.cn/news_details?code=1002",
+      "content_type": "text/html;charset=UTF-8",
+      "content_length": 19826,
+      "checked_on": "2026-09-24"
+    }
+  ]
+}

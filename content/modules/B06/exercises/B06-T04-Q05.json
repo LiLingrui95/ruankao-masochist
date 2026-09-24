@@ -1,0 +1,44 @@
+{
+  "id": "B06-T04-Q05",
+  "title": "泛型求和填空",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T04"
+  ],
+  "unit_id": "B06-T04",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "填入初值写法，使空区间返回 T 的值初始化结果。",
+  "answer": "T{}",
+  "explanation": "T{} 对 T 值初始化，避免基本类型未初始化；模板仍要求 T 支持 +=。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "填入 T{}"
+    },
+    {
+      "id": "r2",
+      "text": "说明避免未初始化"
+    },
+    {
+      "id": "r3",
+      "text": "指出 T 仍需支持 +="
+    }
+  ],
+  "source_ids": [
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按 C++17 标准语义手工推演，并由 verify.py 对参考填空与答案关键词作独立断言；本机 PATH 未发现 C++ 编译器，未声称编译运行。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "code": "template<class T> T sum(const std::vector<T>& xs) { T total = /* blank */; for (const auto& x: xs) total += x; return total; }",
+  "language": "cpp",
+  "reference_fill": "T{}"
+}

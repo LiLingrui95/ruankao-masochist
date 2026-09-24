@@ -1,0 +1,39 @@
+{
+  "id": "B01-T05-Q01",
+  "title": "流水线、性能与可靠性练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T05"
+  ],
+  "unit_id": "B01-T05",
+  "section_index": 0,
+  "prompt": "5 段统一周期 2 ns 的理想流水执行 20 条指令需多久？",
+  "explanation": "总拍数 k+n-1=5+20-1=24，乘 2 ns 得 48 ns。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：总拍数 k+n-1=5+20-1=24，乘 2 ns 得 48 ns。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "48 ns",
+    "B": "50 ns",
+    "C": "200 ns",
+    "D": "40 ns"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "(5+20-1)×2=48 ns。",
+    "B": "把总拍数误写为 k+n。",
+    "C": "这是 20 条各串行经历 5 段的时间。",
+    "D": "只计算 20 个稳态周期，漏掉流水填充。"
+  }
+}

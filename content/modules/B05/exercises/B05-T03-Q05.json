@@ -1,0 +1,39 @@
+{
+  "id": "B05-T03-Q05",
+  "title": "DFD基础练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T03"
+  ],
+  "unit_id": "B05-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "子图新增内部数据存储是否一定破坏平衡？",
+  "answer": "C",
+  "explanation": "平衡约束父子边界输入输出，不禁止内部细化。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "一定",
+    "B": "只要可写就一定",
+    "C": "不一定，边界流保持即可",
+    "D": "上下文图有实体时一定"
+  },
+  "option_explanations": {
+    "A": "A 项“一定”错误：平衡约束跨父子边界的输入输出，不禁止内部存储。",
+    "B": "B 项“只要可写就一定”错误：内部存储可写并不改变父加工的外部接口。",
+    "C": "C 项“不一定，边界流保持即可”正确：平衡约束父子边界输入输出，不禁止内部细化。",
+    "D": "D 项“上下文图有实体时一定”错误：上下文图是否含外部实体与能否细化内部存储无关。"
+  }
+}

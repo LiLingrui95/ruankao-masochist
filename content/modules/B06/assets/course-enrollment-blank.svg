@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">在线课程领域类图待补图</title>
+  <desc id="desc">Course、Chapter、Student、Enrollment 四个类；关系类型和多重性以问号留空供作答</desc>
+  <rect width="1000" height="560" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" fill="#0f172a" stroke="#334155" stroke-width="2">
+    <g transform="translate(80 80)"><rect width="250" height="120" rx="7" fill="#dbeafe"/><line y1="45" x2="250" y2="45"/><text x="125" y="30" text-anchor="middle" stroke="none" font-size="22" font-weight="bold">Course</text><text x="16" y="76" stroke="none" font-size="16">+ title: string</text><text x="16" y="103" stroke="none" font-size="16">+ publish()</text></g>
+    <g transform="translate(670 80)"><rect width="250" height="120" rx="7" fill="#dcfce7"/><line y1="45" x2="250" y2="45"/><text x="125" y="30" text-anchor="middle" stroke="none" font-size="22" font-weight="bold">Chapter</text><text x="16" y="76" stroke="none" font-size="16">+ sequence: int</text><text x="16" y="103" stroke="none" font-size="16">+ content: string</text></g>
+    <g transform="translate(80 360)"><rect width="250" height="120" rx="7" fill="#fef3c7"/><line y1="45" x2="250" y2="45"/><text x="125" y="30" text-anchor="middle" stroke="none" font-size="22" font-weight="bold">Student</text><text x="16" y="76" stroke="none" font-size="16">+ studentId: string</text></g>
+    <g transform="translate(670 360)"><rect width="250" height="120" rx="7" fill="#fae8ff"/><line y1="45" x2="250" y2="45"/><text x="125" y="30" text-anchor="middle" stroke="none" font-size="22" font-weight="bold">Enrollment</text><text x="16" y="76" stroke="none" font-size="16">+ enrolledAt: Date</text><text x="16" y="103" stroke="none" font-size="16">+ grade: optional&lt;Grade&gt;</text></g>
+    <line x1="330" y1="140" x2="670" y2="140"/><text x="500" y="122" text-anchor="middle" stroke="none" font-size="17">关系：____</text><text x="350" y="165" stroke="none" font-size="17">?</text><text x="635" y="165" stroke="none" font-size="17">?</text>
+    <line x1="330" y1="405" x2="670" y2="405"/><text x="500" y="387" text-anchor="middle" stroke="none" font-size="17">关系：____</text><text x="350" y="430" stroke="none" font-size="17">?</text><text x="635" y="430" stroke="none" font-size="17">?</text>
+    <path d="M795 360 C795 275 320 285 205 200" fill="none"/><text x="520" y="268" text-anchor="middle" stroke="none" font-size="17">Enrollment — Course：关系与多重性 ____</text>
+  </g>
+  <text x="500" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#475569">根据题干填写关系类型、菱形位置及各端多重性</text>
+</svg>

@@ -1,0 +1,37 @@
+{
+  "id": "B01-T08-Q06",
+  "title": "死锁与资源分配练习 6",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T08"
+  ],
+  "unit_id": "B01-T08",
+  "section_index": 0,
+  "prompt": "银行家算法试分配前必须检查哪两个上界？",
+  "explanation": "超过 Need 表示声明不一致；超过 Available 表示当前物理上无法立即分配。",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "answer_source_ids": [
+    "B01-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：超过 Need 表示声明不一致；超过 Available 表示当前物理上无法立即分配。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "Request<=Need 且 Request<=Available。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：Request<=Need 且 Request<=Available。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：超过 Need 表示声明不一致；超过 Available 表示当前物理上无法立即分配。"
+    }
+  ]
+}

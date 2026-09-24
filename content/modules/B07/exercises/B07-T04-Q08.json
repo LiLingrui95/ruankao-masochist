@@ -1,0 +1,41 @@
+{
+  "id": "B07-T04-Q08",
+  "title": "IP路由、IPv6与辅助协议练习8",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T04"
+  ],
+  "unit_id": "B07-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "比较ARP、ICMP与DHCP各自解决的问题。",
+  "answer": "ARP在IPv4本地链路解析下一跳链路地址；ICMP报告IP差错并支持诊断；DHCP向主机动态提供地址和网络参数。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S03",
+    "B07-S04"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S03",
+    "B07-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "分别给出三种协议的核心职责"
+    },
+    {
+      "id": "r2",
+      "text": "明确ARP局部链路边界，避免把ICMP说成可靠传输"
+    }
+  ]
+}

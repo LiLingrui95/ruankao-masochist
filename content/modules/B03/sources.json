@@ -1,0 +1,80 @@
+[
+  {
+    "id": "B03-S01",
+    "title": "Dictionary of Algorithms and Data Structures: Unified Index",
+    "url": "https://xlinux.nist.gov/dads/ui.html",
+    "author": "National Institute of Standards and Technology",
+    "accessed_on": "2026-09-24",
+    "locator": "entries for complexity, trees, graphs, sorting, greedy, dynamic programming, backtracking",
+    "version": "HTML formatted 2024-10-30",
+    "kind": "primary_reference",
+    "reuse_policy": "Public U.S. government reference; definitions paraphrased",
+    "query": "site:xlinux.nist.gov/dads algorithm data structure complexity",
+    "selection_reason": "NIST-maintained terminology and cross-references for core algorithms."
+  },
+  {
+    "id": "B03-S02",
+    "title": "Open Data Structures (C++ Edition)",
+    "url": "https://opendatastructures.org/versions/edition-0.1b/ods-cpp-grayscale.pdf",
+    "author": "Pat Morin",
+    "accessed_on": "2026-09-24",
+    "locator": "chapters 2–14; license statement pp. v–vi",
+    "version": "edition 0.1 beta",
+    "kind": "open_textbook",
+    "reuse_policy": "CC BY; explanations independently written with attribution",
+    "query": "Open Data Structures C++ free textbook",
+    "selection_reason": "Open, implementation-oriented treatment of lists, queues, trees, hashing, graphs and sorting."
+  },
+  {
+    "id": "B03-S03",
+    "title": "string matching",
+    "url": "https://xlinux.nist.gov/dads/HTML/stringMatching.html",
+    "author": "Paul E. Black, NIST",
+    "accessed_on": "2026-09-24",
+    "locator": "definition and specialization list; modified 2020-11-02",
+    "version": "HTML formatted 2024-10-30",
+    "kind": "primary_reference",
+    "reuse_policy": "Public U.S. government reference; definitions paraphrased",
+    "query": "site:xlinux.nist.gov/dads string matching KMP",
+    "selection_reason": "Authoritative definition and taxonomy of exact string matching."
+  },
+  {
+    "id": "B03-S04",
+    "title": "DAG shortest paths",
+    "url": "https://xlinux.nist.gov/dads/HTML/dagShortPath.html",
+    "author": "Paul E. Black, NIST",
+    "accessed_on": "2026-09-24",
+    "locator": "definition and relaxation procedure; modified 2004-04-19",
+    "version": "HTML formatted 2024-10-30",
+    "kind": "primary_reference",
+    "reuse_policy": "Public U.S. government reference; algorithm paraphrased",
+    "query": "site:xlinux.nist.gov/dads shortest path topological sort",
+    "selection_reason": "Concise primary reference for topological relaxation in DAGs."
+  },
+  {
+    "id": "B03-S05",
+    "title": "std::unordered_map",
+    "url": "https://en.cppreference.com/w/cpp/container/unordered_map",
+    "author": "cppreference contributors",
+    "accessed_on": "2026-09-24",
+    "locator": "overview, bucket organization, average operation complexity",
+    "version": "page accessed 2026-09-24",
+    "kind": "technical_reference",
+    "reuse_policy": "CC BY-SA 3.0 / GFDL; facts paraphrased",
+    "query": "cppreference unordered_map complexity buckets",
+    "selection_reason": "C++ track reference for hash-container behavior and complexity caveats."
+  },
+  {
+    "id": "B03-S06",
+    "title": "Algorithms, 4th Edition companion site",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "author": "Robert Sedgewick and Kevin Wayne",
+    "accessed_on": "2026-09-24",
+    "locator": "site index and chapter resources",
+    "version": "web companion to 4th edition",
+    "kind": "academic_course",
+    "reuse_policy": "Linked for study; lesson text and exercises are original",
+    "query": "Princeton Algorithms 4th edition companion site",
+    "selection_reason": "University-hosted course materials spanning sorting, searching, graphs and strings."
+  }
+]

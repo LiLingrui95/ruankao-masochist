@@ -1,0 +1,39 @@
+{
+  "id": "B02-T08-Q03",
+  "title": "范型判断",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T08"
+  ],
+  "unit_id": "B02-T08",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "哪项最符合函数式范型的典型特征？",
+  "answer": "B",
+  "explanation": "这些是函数式风格的核心抽象；具体语言可多范型。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：这些是函数式风格的核心抽象；具体语言可多范型。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "以可变状态语句为唯一计算方式",
+    "B": "强调表达式、高阶函数和不可变值",
+    "C": "只允许机器指令",
+    "D": "必须手工释放全部对象"
+  },
+  "option_explanations": {
+    "A": "可变状态语句更典型于命令式范型。",
+    "B": "表达式、高阶函数和不可变值是典型特征。",
+    "C": "函数式语言不局限于机器指令。",
+    "D": "内存释放策略不定义函数式范型。"
+  }
+}

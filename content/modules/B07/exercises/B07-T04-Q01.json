@@ -1,0 +1,43 @@
+{
+  "id": "B07-T04-Q01",
+  "title": "IP路由、IPv6与辅助协议练习1",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T04"
+  ],
+  "unit_id": "B07-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "路由表同时匹配/8、/16和/24，转发时首先选择？",
+  "answer": "A",
+  "explanation": "最长前缀匹配优先，度量用于同前缀候选。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S03",
+    "B07-S04"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S03",
+    "B07-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "最长的/24前缀",
+    "B": "度量最小的任意前缀",
+    "C": "最早配置的/8",
+    "D": "默认路由"
+  },
+  "option_explanations": {
+    "A": "最长前缀匹配优先，度量用于同前缀候选。",
+    "B": "错误：该选项断言“度量最小的任意前缀”。本题适用的关系是：最长前缀匹配优先，度量用于同前缀候选。",
+    "C": "错误：该选项断言“最早配置的/8”。本题适用的关系是：最长前缀匹配优先，度量用于同前缀候选。",
+    "D": "错误：该选项断言“默认路由”。本题适用的关系是：最长前缀匹配优先，度量用于同前缀候选。"
+  }
+}

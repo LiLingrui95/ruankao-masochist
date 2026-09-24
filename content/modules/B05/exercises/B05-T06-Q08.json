@@ -1,0 +1,37 @@
+{
+  "id": "B05-T06-Q08",
+  "title": "白盒测试练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T06"
+  ],
+  "unit_id": "B05-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "说明基本路径测试的四步。",
+  "answer": "画控制流图；计算圈复杂度；选线性独立路径集；设计输入驱动各路径。",
+  "explanation": "四步必须按对象具体写全。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：画控制流图；计算圈复杂度；选线性独立路径集；设计输入驱动各路径。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：画控制流图；计算圈复杂度；选线性独立路径集；设计输入驱动各路径。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：四步必须按对象具体写全。"
+    }
+  ]
+}

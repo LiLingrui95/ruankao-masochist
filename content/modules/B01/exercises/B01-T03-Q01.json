@@ -1,0 +1,37 @@
+{
+  "id": "B01-T03-Q01",
+  "title": "CPU、指令与寻址练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T03"
+  ],
+  "unit_id": "B01-T03",
+  "section_index": 0,
+  "prompt": "PC、IR、MAR、MDR 各保存什么？",
+  "explanation": "四者分别连接指令顺序、译码、地址总线和数据通路，职责不可互换。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：四者分别连接指令顺序、译码、地址总线和数据通路，职责不可互换。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "short_answer",
+  "answer": "PC 保存下一指令地址；IR 保存当前指令；MAR 保存存储访问地址；MDR 保存读写数据。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：PC 保存下一指令地址；IR 保存当前指令；MAR 保存存储访问地址；MDR 保存读写数据。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：四者分别连接指令顺序、译码、地址总线和数据通路，职责不可互换。"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B01-T08-Q03",
+  "title": "死锁与资源分配练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T08"
+  ],
+  "unit_id": "B01-T08",
+  "section_index": 0,
+  "prompt": "多实例资源图出现环能否直接判死锁？",
+  "explanation": "环中某进程可能从环外获得另一实例并完成释放资源。",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "answer_source_ids": [
+    "B01-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：环中某进程可能从环外获得另一实例并完成释放资源。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "single_choice",
+  "options": {
+    "A": "必然无死锁",
+    "B": "不能直接判定，只说明可能死锁",
+    "C": "必然死锁",
+    "D": "只要释放全部 Available 就必然安全"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "有环说明存在风险，不能推出必然安全。",
+    "B": "多实例时环中进程仍可能从其他实例推进。",
+    "C": "只有每类单实例时环才充分。",
+    "D": "Available 不是某进程已持有、可任意释放的资源。"
+  }
+}

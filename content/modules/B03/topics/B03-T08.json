@@ -1,0 +1,41 @@
+{
+  "id": "B03-T08",
+  "module_id": "B03",
+  "unit_id": "B03-U03",
+  "title": "排序算法与稳定性",
+  "aliases": [
+    "比较排序、稳定性、时间与空间权衡"
+  ],
+  "objectives": [
+    "解释比较排序、稳定性、时间与空间权衡",
+    "完成排序算法与稳定性的过程跟踪与复杂度分析"
+  ],
+  "prerequisite_ids": [
+    "B03-T07"
+  ],
+  "syllabus_refs": [
+    "数据结构",
+    "算法设计与分析"
+  ],
+  "body_path": "modules/B03/topics/B03-T08.md",
+  "source_ids": [
+    "B03-S01",
+    "B03-S02",
+    "B03-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "该考点包含概念、过程、边界与复杂度，设置多种推理任务。",
+  "question_ids": [
+    "B03-T08-Q01",
+    "B03-T08-Q02",
+    "B03-T08-Q03",
+    "B03-T08-Q04",
+    "B03-T08-Q05",
+    "B03-T08-Q06",
+    "B03-T08-Q07",
+    "B03-T08-Q08"
+  ]
+}

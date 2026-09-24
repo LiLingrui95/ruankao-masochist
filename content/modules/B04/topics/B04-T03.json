@@ -1,0 +1,41 @@
+{
+  "id": "B04-T03",
+  "module_id": "B04",
+  "unit_id": "B04-U01",
+  "title": "函数依赖与候选键",
+  "aliases": [
+    "属性闭包",
+    "最小覆盖",
+    "Candidate key"
+  ],
+  "objectives": [
+    "解释并应用函数依赖与候选键的核心条件",
+    "独立推导函数依赖与候选键问题并用反例检查边界"
+  ],
+  "prerequisite_ids": [
+    "B04-T02"
+  ],
+  "syllabus_refs": [
+    "数据库系统知识",
+    "数据库设计与实现"
+  ],
+  "body_path": "modules/B04/topics/B04-T03.md",
+  "source_ids": [
+    "B04-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂：需要多步推导与边界验证，配置 8 道。",
+  "question_ids": [
+    "B04-T03-Q01",
+    "B04-T03-Q02",
+    "B04-T03-Q03",
+    "B04-T03-Q04",
+    "B04-T03-Q05",
+    "B04-T03-Q06",
+    "B04-T03-Q07",
+    "B04-T03-Q08"
+  ]
+}

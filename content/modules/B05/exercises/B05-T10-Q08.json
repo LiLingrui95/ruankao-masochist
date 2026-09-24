@@ -1,0 +1,37 @@
+{
+  "id": "B05-T10-Q08",
+  "title": "估算与进度练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T10"
+  ],
+  "unit_id": "B05-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "两条并列最长路径意味着什么管理后果？",
+  "answer": "存在多条关键路径；任一路径上的关键活动延误都可能推迟项目，资源优化不能只盯一条。",
+  "explanation": "必须指出多路径及任一延误影响。",
+  "source_ids": [
+    "B05-S03"
+  ],
+  "answer_source_ids": [
+    "B05-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：存在多条关键路径；任一路径上的关键活动延误都可能推迟项目，资源优化不能只盯一条。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：存在多条关键路径；任一路径上的关键活动延误都可能推迟项目，资源优化不能只盯一条。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须指出多路径及任一延误影响。"
+    }
+  ]
+}

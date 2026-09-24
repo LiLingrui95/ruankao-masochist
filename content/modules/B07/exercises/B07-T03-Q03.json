@@ -1,0 +1,39 @@
+{
+  "id": "B07-T03-Q03",
+  "title": "IPv4子网与CIDR练习3",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T03"
+  ],
+  "unit_id": "B07-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "192.0.2.0/25与192.0.2.128/25恰好聚合为？",
+  "answer": "C",
+  "explanation": "两个连续且对齐的/25共享前24位。",
+  "source_ids": [
+    "B07-S03"
+  ],
+  "answer_source_ids": [
+    "B07-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 2,
+  "options": {
+    "A": "192.0.2.0/26",
+    "B": "192.0.2.128/24",
+    "C": "192.0.2.0/24",
+    "D": "192.0.2.0/23"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“192.0.2.0/26”。本题适用的关系是：两个连续且对齐的/25共享前24位。",
+    "B": "错误：该选项断言“192.0.2.128/24”。本题适用的关系是：两个连续且对齐的/25共享前24位。",
+    "C": "两个连续且对齐的/25共享前24位。",
+    "D": "错误：该选项断言“192.0.2.0/23”。本题适用的关系是：两个连续且对齐的/25共享前24位。"
+  }
+}

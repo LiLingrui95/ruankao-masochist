@@ -1,0 +1,39 @@
+{
+  "id": "B08-T07-Q02",
+  "title": "指代理解",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T07"
+  ],
+  "unit_id": "B08-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "短文中“Reuse can reduce latency, but stale metadata...”的but表达？",
+  "options": {
+    "A": "并列同义",
+    "B": "因果",
+    "C": "转折与限制",
+    "D": "时间顺序"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "错误。but连接的两部分方向不同，不是同义并列。",
+    "B": "错误。元数据陈旧不是降低延迟的结果；句子在补充缓存收益的限制。",
+    "C": "正确。but先承认复用降低延迟，再转折指出陈旧元数据的风险。",
+    "D": "错误。两分句不是先后事件，而是收益与风险的对照。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。but先承认复用降低延迟，再转折指出陈旧元数据的风险。",
+  "source_ids": [
+    "B08-S10"
+  ],
+  "answer_source_ids": [
+    "B08-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

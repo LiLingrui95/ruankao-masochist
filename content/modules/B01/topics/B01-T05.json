@@ -1,0 +1,41 @@
+{
+  "id": "B01-T05",
+  "module_id": "B01",
+  "unit_id": "B01-U02",
+  "title": "流水线、性能与可靠性",
+  "aliases": [
+    "pipeline",
+    "Amdahl's law",
+    "reliability"
+  ],
+  "objectives": [
+    "按统一周期或分段模型计算流水执行时间",
+    "使用 Amdahl 定律、串并联概率和 MTBF/MTTR 计算性能可靠性"
+  ],
+  "prerequisite_ids": [
+    "B01-T04"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T05.md",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂：配置 8 道覆盖流水时序、吞吐、加速比、可靠性组合与单位换算。",
+  "question_ids": [
+    "B01-T05-Q01",
+    "B01-T05-Q02",
+    "B01-T05-Q03",
+    "B01-T05-Q04",
+    "B01-T05-Q05",
+    "B01-T05-Q06",
+    "B01-T05-Q07",
+    "B01-T05-Q08"
+  ]
+}

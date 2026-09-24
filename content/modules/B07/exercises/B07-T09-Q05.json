@@ -1,0 +1,39 @@
+{
+  "id": "B07-T09-Q05",
+  "title": "散列、签名、证书与认证练习5",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T09"
+  ],
+  "unit_id": "B07-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "按顺序写出接收者验证带证书数字签名的关键步骤。",
+  "answer": "先建立证书到受信根的链并检查有效期、用途、名称/身份和撤销状态；取得可信公钥；对收到消息按规定求摘要并执行签名验证；验证结果与业务上下文一起判断。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "证书链、期限、用途和身份绑定检查具体"
+    },
+    {
+      "id": "r2",
+      "text": "使用可信公钥对原消息执行验签且不需要私钥"
+    }
+  ]
+}

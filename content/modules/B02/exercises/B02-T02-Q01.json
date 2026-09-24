@@ -1,0 +1,39 @@
+{
+  "id": "B02-T02-Q01",
+  "title": "数组形参",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T02"
+  ],
+  "unit_id": "B02-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "在 64 位平台指针为 8 字节，`void f(int a[10]){ printf(\"%zu\",sizeof a); }` 中通常输出？",
+  "answer": "C",
+  "explanation": "函数形参数组声明调整为指针，`sizeof a` 是指针大小。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：函数形参数组声明调整为指针，`sizeof a` 是指针大小。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "40",
+    "B": "10",
+    "C": "8",
+    "D": "无法编译"
+  },
+  "option_explanations": {
+    "A": "形参声明调整为指针，不保留十个元素的数组类型。",
+    "B": "10是声明中写出的界限，不是sizeof结果。",
+    "C": "题设指针为8字节，调整后的形参大小为8。",
+    "D": "该形参声明合法。"
+  }
+}

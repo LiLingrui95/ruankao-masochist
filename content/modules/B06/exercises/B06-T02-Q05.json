@@ -1,0 +1,42 @@
+{
+  "id": "B06-T02-Q05",
+  "title": "RAII 填空",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T02"
+  ],
+  "unit_id": "B06-T02",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "填入类型，使资源在异常路径也自动释放。",
+  "answer": "std::unique_ptr<File, CloseFile>",
+  "explanation": "unique_ptr 携带自定义删除器，use 抛异常时局部对象析构并调用 CloseFile。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "写出 std::unique_ptr<File, CloseFile>"
+    },
+    {
+      "id": "r2",
+      "text": "说明异常展开会调用删除器"
+    }
+  ],
+  "source_ids": [
+    "B06-S02",
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按 C++17 标准语义手工推演，并由 verify.py 对参考填空与答案关键词作独立断言；本机 PATH 未发现 C++ 编译器，未声称编译运行。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "code": "std::unique_ptr<File, CloseFile> f(open_file(), CloseFile{});\nuse(f.get());",
+  "language": "cpp",
+  "reference_fill": "std::unique_ptr<File, CloseFile>"
+}

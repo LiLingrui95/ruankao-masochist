@@ -1,0 +1,39 @@
+{
+  "id": "B05-T07-Q03",
+  "title": "黑盒测试练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T07"
+  ],
+  "unit_id": "B05-T07",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "条件组合映射动作最适合？",
+  "answer": "C",
+  "explanation": "判定表系统枚举条件组合。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "状态图",
+    "B": "控制流图",
+    "C": "判定表",
+    "D": "甘特图"
+  },
+  "option_explanations": {
+    "A": "A 项“状态图”错误：状态图适合依赖历史状态的事件转换，不是静态条件组合表。",
+    "B": "B 项“控制流图”错误：控制流图描述程序内部执行路径，不系统列业务条件与动作组合。",
+    "C": "C 项“判定表”正确：判定表系统枚举条件组合。",
+    "D": "D 项“甘特图”错误：甘特图用于项目进度和依赖，不用于业务规则组合。"
+  }
+}

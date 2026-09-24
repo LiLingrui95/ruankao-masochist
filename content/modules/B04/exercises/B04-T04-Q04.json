@@ -1,0 +1,37 @@
+{
+  "id": "B04-T04-Q04",
+  "title": "二元无损判定",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T04"
+  ],
+  "unit_id": "B04-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(A,B,C)，F={A→B}，分解为 AB 与 AC 是否无损？",
+  "answer": "无损。",
+  "explanation": "公共属性 A 能决定 AB 的全部属性，满足二元无损判据。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：无损。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：公共属性 A 能决定 AB 的全部属性，满足二元无损判据。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：公共属性 A 能决定 AB 的全部属性，满足二元无损判据。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

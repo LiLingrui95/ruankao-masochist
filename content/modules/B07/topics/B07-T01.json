@@ -1,0 +1,35 @@
+{
+  "id": "B07-T01",
+  "module_id": "B07",
+  "unit_id": "B07-U01",
+  "title": "网络分层、介质与交换",
+  "aliases": [
+    "网络体系结构",
+    "OSI",
+    "TCP/IP"
+  ],
+  "objectives": [
+    "解释分层封装与对等通信",
+    "区分集线器、二层交换机、路由器及服务器角色",
+    "计算存储转发时延"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T01.md",
+  "source_ids": [
+    "B07-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 4,
+  "exercise_rationale": "分层与交换是稳定概念，4题覆盖识别和一次时延推导。",
+  "question_ids": [
+    "B07-T01-Q01",
+    "B07-T01-Q02",
+    "B07-T01-Q03",
+    "B07-T01-Q04"
+  ]
+}

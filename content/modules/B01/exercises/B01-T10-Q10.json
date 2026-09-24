@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q10",
+  "title": "文件、磁盘与设备管理练习 10",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "6 块 2 TB 等容量磁盘组成 RAID 6，理论可用容量和任意磁盘容错数是多少？",
+  "explanation": "RAID 6 容量为 (n-2)S=(6-2)×2=8 TB，双 parity 支持任意两盘失效。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：RAID 6 容量为 (n-2)S=(6-2)×2=8 TB，双 parity 支持任意两盘失效。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "8 TB，可容忍任意 2 块磁盘失效。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：8 TB，可容忍任意 2 块磁盘失效。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：RAID 6 容量为 (n-2)S=(6-2)×2=8 TB，双 parity 支持任意两盘失效。"
+    }
+  ]
+}

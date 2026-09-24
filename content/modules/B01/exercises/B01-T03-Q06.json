@@ -1,0 +1,37 @@
+{
+  "id": "B01-T03-Q06",
+  "title": "CPU、指令与寻址练习 6",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T03"
+  ],
+  "unit_id": "B01-T03",
+  "section_index": 0,
+  "prompt": "为什么不能仅凭‘CISC 指令更复杂’断定程序更慢？",
+  "explanation": "CPU 时间常抽象为 instruction count×CPI×cycle time；单一标签不足以确定三个因子。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：CPU 时间常抽象为 instruction count×CPI×cycle time；单一标签不足以确定三个因子。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "性能还取决于指令数、CPI、时钟周期、流水实现和编译结果。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：性能还取决于指令数、CPI、时钟周期、流水实现和编译结果。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：CPU 时间常抽象为 instruction count×CPI×cycle time；单一标签不足以确定三个因子。"
+    }
+  ]
+}

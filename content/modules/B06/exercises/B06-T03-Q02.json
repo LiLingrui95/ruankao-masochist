@@ -1,0 +1,39 @@
+{
+  "id": "B06-T03-Q02",
+  "title": "虚析构",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T03"
+  ],
+  "unit_id": "B06-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "对象以 Base* 指向 new Derived，并由该指针 delete。要使删除有定义，Base 应如何设计？",
+  "options": {
+    "A": "public virtual ~Base()",
+    "B": "private 非虚析构且仍 delete",
+    "C": "只让 Derived 析构 virtual",
+    "D": "把 f 改为 static"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "虚析构保证先销毁 Derived 再销毁 Base。",
+    "B": "不可访问且非虚，不能合法完成该删除。",
+    "C": "基类析构必须虚，派生声明不能补救基类删除。",
+    "D": "静态函数与销毁语义无关。"
+  },
+  "explanation": "正确选项为 A。虚析构保证先销毁 Derived 再销毁 Base。",
+  "source_ids": [
+    "B06-S05"
+  ],
+  "answer_source_ids": [
+    "B06-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

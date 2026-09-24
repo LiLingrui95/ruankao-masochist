@@ -1,0 +1,55 @@
+{
+  "id": "B06-T10-Q06",
+  "title": "图书借阅跨图校验",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T10"
+  ],
+  "unit_id": "B06-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "Member 1—0..* Loan，BookCopy 1—0..* Loan，Loan 各关联恰一个 Member 和一个 BookCopy；Loan 是独立历史记录，不与 BookCopy 组合。顺序为 Boundary→LoanService borrow→BookCopy.isAvailable→LoanRepository.save→BookCopy.checkout；状态为 Available--checkout→OnLoan。一致性要求 checkout 消息仅在可用检查成功后出现。",
+  "explanation": "Member 1—0..* Loan，BookCopy 1—0..* Loan，Loan 各关联恰一个 Member 和一个 BookCopy；Loan 是独立历史记录，不与 BookCopy 组合。顺序为 Boundary→LoanService borrow→BookCopy.isAvailable→LoanRepository.save→BookCopy.checkout；状态为 Available--checkout→OnLoan。一致性要求 checkout 消息仅在可用检查成功后出现。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "两组关联和多重性完整"
+    },
+    {
+      "id": "r2",
+      "text": "明确 Loan 非组合历史记录"
+    },
+    {
+      "id": "r3",
+      "text": "消息顺序与 Available→OnLoan 迁移一致"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "Member 借 BookCopy；Loan 保存借出和归还时间。借出前副本必须 Available，成功后 OnLoan。",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "给出核心类关系。",
+      "points": 5
+    },
+    {
+      "id": "s2",
+      "prompt": "给出借出顺序和状态迁移的一致性检查。",
+      "points": 5
+    }
+  ],
+  "assets": []
+}

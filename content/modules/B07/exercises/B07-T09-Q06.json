@@ -1,0 +1,39 @@
+{
+  "id": "B07-T09-Q06",
+  "title": "散列、签名、证书与认证练习6",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T09"
+  ],
+  "unit_id": "B07-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "比较无密钥散列、MAC与数字签名能提供的核心性质。",
+  "answer": "无密钥散列主要用于变化检测，不能抵抗主动替换；MAC以共享密钥提供完整性和来源认证；签名以私钥生成、公钥验证，可由第三方验证，但证据强度依赖私钥与身份管理。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S10",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "分别说明三者是否使用密钥及认证能力"
+    },
+    {
+      "id": "r2",
+      "text": "指出MAC共享密钥与签名第三方验证/条件边界"
+    }
+  ]
+}

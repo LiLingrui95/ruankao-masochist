@@ -1,0 +1,39 @@
+{
+  "id": "B08-T05-Q03",
+  "title": "文档选择",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T05"
+  ],
+  "unit_id": "B08-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "需求变更后需判断受影响的设计、代码和测试，应维护什么关系？",
+  "answer": "维护需求到设计、实现和测试的双向可追踪关系，并记录版本与变更理由。",
+  "explanation": "解题依据与结果：维护需求到设计、实现和测试的双向可追踪关系，并记录版本与变更理由。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“维护需求到设计、实现和测试的双向可追踪关系”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“并记录版本与变更理由”给出题设对应的计算、文本证据或适用边界，不能只写题名“文档选择”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S03",
+    "B08-S04"
+  ],
+  "answer_source_ids": [
+    "B08-S03",
+    "B08-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

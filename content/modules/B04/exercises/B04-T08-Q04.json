@@ -1,0 +1,37 @@
+{
+  "id": "B04-T08-Q04",
+  "title": "严格两段锁",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T08"
+  ],
+  "unit_id": "B04-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "严格两段锁为何有助于避免级联回滚？",
+  "answer": "事务把写锁持有到提交/回滚，其他事务不能读到其未提交写。",
+  "explanation": "未提交值不被依赖，写者回滚时无需连带回滚读取者。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：事务把写锁持有到提交/回滚，其他事务不能读到其未提交写。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：未提交值不被依赖，写者回滚时无需连带回滚读取者。"
+    }
+  ],
+  "source_ids": [
+    "B04-S04"
+  ],
+  "answer_source_ids": [
+    "B04-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：未提交值不被依赖，写者回滚时无需连带回滚读取者。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

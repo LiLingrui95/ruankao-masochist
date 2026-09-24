@@ -1,0 +1,37 @@
+{
+  "id": "B05-T07-Q04",
+  "title": "黑盒测试练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T07"
+  ],
+  "unit_id": "B05-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "登录三次失败锁定账户，给出状态转换测试要点。",
+  "answer": "状态含正常、失败1次、失败2次、锁定；连续错误驱动迁移，第三次进入锁定；还要测锁定后正确密码不能登录及解锁事件。",
+  "explanation": "必须列状态、第三次锁定、非法/后续转换。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：状态含正常、失败1次、失败2次、锁定；连续错误驱动迁移，第三次进入锁定；还要测锁定后正确密码不能登录及解锁事件。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：状态含正常、失败1次、失败2次、锁定；连续错误驱动迁移，第三次进入锁定；还要测锁定后正确密码不能登录及解锁事件。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须列状态、第三次锁定、非法/后续转换。"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "B06-T05-Q06",
+  "title": "接口实现记法",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T05"
+  ],
+  "unit_id": "B06-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "类 JsonSerializer 实现接口 Serializer，在 UML 类图中写出线型、箭头和方向。",
+  "answer": "使用实现（realization）：从 JsonSerializer 指向 Serializer 的虚线，末端为空心三角，三角位于 Serializer 接口端。",
+  "explanation": "使用实现（realization）：从 JsonSerializer 指向 Serializer 的虚线，末端为空心三角，三角位于 Serializer 接口端。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "写出虚线"
+    },
+    {
+      "id": "r2",
+      "text": "写出空心三角"
+    },
+    {
+      "id": "r3",
+      "text": "方向指向 Serializer"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

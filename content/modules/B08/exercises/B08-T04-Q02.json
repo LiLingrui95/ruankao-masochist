@@ -1,0 +1,39 @@
+{
+  "id": "B08-T04-Q02",
+  "title": "PCM码率",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T04"
+  ],
+  "unit_id": "B08-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "48 kHz、16 bit、双声道PCM码率为？",
+  "options": {
+    "A": "768 kbit/s",
+    "B": "1536 kbit/s",
+    "C": "3072 kbit/s",
+    "D": "48 kbit/s"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "错误。768 kbit/s只计了一个16-bit声道。",
+    "B": "正确。48000×16×2=1536000 bit/s，即1536 kbit/s。",
+    "C": "错误。3072 kbit/s把双声道因素重复乘了两次。",
+    "D": "错误。48 kHz是每秒采样次数，不是包含位深和声道后的码率。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。48000×16×2=1536000 bit/s，即1536 kbit/s。",
+  "source_ids": [
+    "B08-S03"
+  ],
+  "answer_source_ids": [
+    "B08-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

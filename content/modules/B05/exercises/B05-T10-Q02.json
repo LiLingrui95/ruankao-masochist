@@ -1,0 +1,37 @@
+{
+  "id": "B05-T10-Q02",
+  "title": "估算与进度练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T10"
+  ],
+  "unit_id": "B05-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "PERT中o=3,m=6,p=15，计算期望和方差。",
+  "answer": "期望(3+24+15)/6=7；方差((15-3)/6)^2=4。",
+  "explanation": "必须写期望7、方差4及两条公式代入。",
+  "source_ids": [
+    "B05-S03"
+  ],
+  "answer_source_ids": [
+    "B05-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：期望(3+24+15)/6=7；方差((15-3)/6)^2=4。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：期望(3+24+15)/6=7；方差((15-3)/6)^2=4。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须写期望7、方差4及两条公式代入。"
+    }
+  ]
+}

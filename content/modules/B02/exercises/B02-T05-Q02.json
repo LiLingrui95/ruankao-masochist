@@ -1,0 +1,39 @@
+{
+  "id": "B02-T05-Q02",
+  "title": "语义错误",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T05"
+  ],
+  "unit_id": "B02-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "标识符未声明通常由哪一阶段处理？",
+  "answer": "C",
+  "explanation": "名字绑定依赖符号表，属于静态语义检查。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：名字绑定依赖符号表，属于静态语义检查。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "词法分析",
+    "B": "语法分析",
+    "C": "语义分析",
+    "D": "汇编器"
+  },
+  "option_explanations": {
+    "A": "词法器只能识别标识符token。",
+    "B": "解析器可接受标识符所在语法位置。",
+    "C": "符号表绑定检查发现名字未声明。",
+    "D": "问题在生成汇编前已经确定。"
+  }
+}

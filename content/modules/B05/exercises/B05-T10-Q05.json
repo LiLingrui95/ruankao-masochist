@@ -1,0 +1,39 @@
+{
+  "id": "B05-T10-Q05",
+  "title": "估算与进度练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T10"
+  ],
+  "unit_id": "B05-T10",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "风险概率0.2、损失50万元，风险暴露为？",
+  "answer": "D",
+  "explanation": "RE=0.2×50=10万元。",
+  "source_ids": [
+    "B05-S03"
+  ],
+  "answer_source_ids": [
+    "B05-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：D",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "2万元",
+    "B": "5万元",
+    "C": "8万元",
+    "D": "10万元"
+  },
+  "option_explanations": {
+    "A": "A 项“2万元”错误：2万元相当于错误地用0.04乘50。",
+    "B": "B 项“5万元”错误：5万元相当于把概率误作0.1。",
+    "C": "C 项“8万元”错误：8万元不是0.2与50的乘积。",
+    "D": "D 项“10万元”正确：RE=0.2×50=10万元。"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B02-T01",
+  "module_id": "B02",
+  "unit_id": "B02-U01",
+  "title": "C数据类型、表达式与控制流",
+  "aliases": [
+    "整数提升",
+    "短路求值",
+    "控制流"
+  ],
+  "objectives": [
+    "识别 C11 常用标量类型与整数提升",
+    "在条件给定时判断表达式结果或未定义行为",
+    "追踪分支与循环"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "程序语言基础知识",
+    "C 程序设计基础"
+  ],
+  "body_path": "modules/B02/topics/B02-T01.md",
+  "source_ids": [
+    "B02-S01",
+    "B02-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 6,
+  "exercise_target": 6,
+  "exercise_rationale": "该考点包含概念、边界与推导三类能力，配置 6 道不同推理任务覆盖基础、应用和综合层级。",
+  "question_ids": [
+    "B02-T01-Q01",
+    "B02-T01-Q02",
+    "B02-T01-Q03",
+    "B02-T01-Q04",
+    "B02-T01-Q05",
+    "B02-T01-Q06"
+  ]
+}

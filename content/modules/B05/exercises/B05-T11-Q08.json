@@ -1,0 +1,39 @@
+{
+  "id": "B05-T11-Q08",
+  "title": "DFD综合练习8",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T11"
+  ],
+  "unit_id": "B05-T11",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "加工“生成月报”只有日期输入却输出客户交易明细，最可能缺什么？",
+  "answer": "B",
+  "explanation": "输出内容无法仅由日期产生。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：B",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "时钟",
+    "B": "交易数据输入",
+    "C": "外部实体编号",
+    "D": "结构图"
+  },
+  "option_explanations": {
+    "A": "A 项“时钟”错误：时钟只能提供时间，不能产生客户交易明细内容。",
+    "B": "B 项“交易数据输入”正确：输出内容无法仅由日期产生。",
+    "C": "C 项“外部实体编号”错误：外部实体编号不能提供月报所需的交易事实。",
+    "D": "D 项“结构图”错误：结构图是设计表示，不是加工生成月报的数据输入。"
+  }
+}

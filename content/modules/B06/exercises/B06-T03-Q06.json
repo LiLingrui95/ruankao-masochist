@@ -1,0 +1,41 @@
+{
+  "id": "B06-T03-Q06",
+  "title": "构造期虚调用",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T03"
+  ],
+  "unit_id": "B06-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "Base 构造函数调用 virtual f()，Derived 覆盖 f()。构造 Derived 时该调用落到哪里？为什么？",
+  "answer": "调用 Base::f，而不是 Derived::f。执行 Base 构造函数时 Derived 部分尚未开始生命周期，虚分派限制在当前构造层次。",
+  "explanation": "调用 Base::f，而不是 Derived::f。执行 Base 构造函数时 Derived 部分尚未开始生命周期，虚分派限制在当前构造层次。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确调用 Base::f"
+    },
+    {
+      "id": "r2",
+      "text": "说明 Derived 部分尚未构造"
+    },
+    {
+      "id": "r3",
+      "text": "指出这是构造期分派规则"
+    }
+  ],
+  "source_ids": [
+    "B06-S05"
+  ],
+  "answer_source_ids": [
+    "B06-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

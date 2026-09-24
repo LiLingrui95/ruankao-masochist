@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q06",
+  "title": "文件、磁盘与设备管理练习 6",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "DMA 是否意味着 CPU 完全不参与 I/O？",
+  "explanation": "DMA 控制器承担数据块传输，减少而非消除 CPU 的控制工作。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：DMA 控制器承担数据块传输，减少而非消除 CPU 的控制工作。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "否；CPU/驱动通常初始化传输、配置描述符并处理完成中断，只是不逐字节搬运。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：否；CPU/驱动通常初始化传输、配置描述符并处理完成中断，只是不逐字节搬运。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：DMA 控制器承担数据块传输，减少而非消除 CPU 的控制工作。"
+    }
+  ]
+}

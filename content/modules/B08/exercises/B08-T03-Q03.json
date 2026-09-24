@@ -1,0 +1,37 @@
+{
+  "id": "B08-T03-Q03",
+  "title": "顶点法",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T03"
+  ],
+  "unit_id": "B08-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "最大化2x+y，约束x+y≤4、x≤3、x,y≥0，求最优值。",
+  "answer": "顶点(0,0),(3,0),(3,1),(0,4)，目标分别0,6,7,4，最优(3,1)，值7。",
+  "explanation": "解题依据与结果：顶点(0,0),(3,0),(3,1),(0,4)，目标分别0,6,7,4，最优(3,1)，值7。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“顶点(0,0),(3,0),(3,1),(0,4)”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“目标分别0,6,7,4，最优(3,1)，值7”给出题设对应的计算、文本证据或适用边界，不能只写题名“顶点法”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

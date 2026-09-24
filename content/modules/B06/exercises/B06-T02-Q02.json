@@ -1,0 +1,41 @@
+{
+  "id": "B06-T02-Q02",
+  "title": "RAII",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T02"
+  ],
+  "unit_id": "B06-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "函数中获取互斥锁后可能抛异常，哪种写法保证离开作用域解锁？",
+  "options": {
+    "A": "std::lock_guard<std::mutex>",
+    "B": "裸 mutex*",
+    "C": "只在正常 return 前 unlock",
+    "D": "用全局 bool 标记"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "lock_guard 析构时释放锁，覆盖异常展开。",
+    "B": "指针本身不表示加锁所有权。",
+    "C": "异常路径会跳过手工 unlock。",
+    "D": "全局标记不会实际释放互斥量或恢复锁状态。"
+  },
+  "explanation": "正确选项为 A。lock_guard 析构时释放锁，覆盖异常展开。",
+  "source_ids": [
+    "B06-S02",
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

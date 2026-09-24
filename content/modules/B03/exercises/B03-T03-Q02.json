@@ -1,0 +1,39 @@
+{
+  "id": "B03-T03-Q02",
+  "title": "字符串与模式匹配概念判断2",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T03"
+  ],
+  "unit_id": "B03-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "模式串的“最长相等真前后缀”中，真前缀意味着？",
+  "options": {
+    "A": "可等于整个串",
+    "B": "不能为空",
+    "C": "长度严格小于整个串",
+    "D": "必须只含不同字符"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "等于整个串的是前缀但不是真前缀。",
+    "B": "真前缀可以为空。",
+    "C": "真前缀长度严格小于原串。",
+    "D": "字符是否重复与真前缀无关。"
+  },
+  "explanation": "答案 C：真前缀长度严格小于原串。",
+  "source_ids": [
+    "B03-S03"
+  ],
+  "answer_source_ids": [
+    "B03-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按定义逐项代入题干条件排除，并用 verify.py 校验四项齐全、答案落在选项中且每项解析均点明本项文本与正确项。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

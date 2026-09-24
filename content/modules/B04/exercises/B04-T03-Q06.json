@@ -1,0 +1,37 @@
+{
+  "id": "B04-T03-Q06",
+  "title": "冗余依赖",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T03"
+  ],
+  "unit_id": "B04-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "F={A→B,B→C,A→C} 中哪条依赖可删除而闭包不变？",
+  "answer": "A→C。",
+  "explanation": "由 A→B 与 B→C 的传递性已经得到 A→C。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：A→C。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：由 A→B 与 B→C 的传递性已经得到 A→C。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：由 A→B 与 B→C 的传递性已经得到 A→C。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

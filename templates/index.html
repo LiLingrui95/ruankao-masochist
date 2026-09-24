@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#162b3b">
+  <meta name="theme-color" content="#f4f7f2">
   <title>软考虐待狂 · 软件设计师学习台</title>
   <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/binary-search.js" defer></script>
   <script src="/static/app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到内容</a>
-  <aside class="sidebar">
-    <a class="brand" href="#today" aria-label="软考虐待狂首页"><span class="brand-mark">虐</span><span>软考虐待狂<small>软件设计师学习台</small></span></a>
+  <aside class="sidebar" id="site-nav">
+    <a class="brand" href="#today" aria-label="软考虐待狂首页"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 8.5h18v15H7zM11 13h10M11 18h7"/></svg></span><span>软考虐待狂<small>软件设计师学习台</small></span></a>
     <div class="nav-label">我的学习空间</div>
     <nav aria-label="主导航">
-      <a href="#today" data-nav="today"><span class="nav-icon">◷</span>今日学习</a>
-      <a href="#learn" data-nav="learn"><span class="nav-icon">▤</span>知识单元</a>
-      <a href="#practice" data-nav="practice"><span class="nav-icon">✎</span>练习</a>
-      <a href="#review" data-nav="review"><span class="nav-icon">↺</span>学习回顾</a>
+      <a href="#today" data-nav="today"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 6.5h14v13H5zM8 4v5m8-5v5M8 13h3m2 0h3m-8 3h3"/></svg></span><span>今日学习</span></a>
+      <a href="#learn" data-nav="learn"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.5 5.5c3-1 5.5-.4 7.5 1.2v12c-2-1.6-4.5-2.2-7.5-1.2zm15 0c-3-1-5.5-.4-7.5 1.2v12c2-1.6 4.5-2.2 7.5-1.2z"/></svg></span><span>知识库</span></a>
+      <a href="#practice" data-nav="practice"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 17-.5 3 3-.5L18 9l-2.5-2.5zM14 8l2.5 2.5M6 5h6M6 9h4"/></svg></span><span>练习</span></a>
+      <a href="#exams" data-nav="exams"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5h14v15H5zM8 8h8m-8 4h8m-8 4h5"/></svg></span><span>历年真题</span></a>
+      <a href="#review" data-nav="review"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8H3V5m.5 3a8 8 0 1 1 .7 9M8 12h4V8m0 4 3 2"/></svg></span><span>学习回顾</span></a>
     </nav>
-    <div class="sidebar-bottom"><div class="edition">考试专题 <span>01 — 03</span></div><p>计算、算法、建模。向真题要求靠近。</p><button class="feedback-link" id="open-feedback">留下试用反馈 <span>↗</span></button><div class="save-state" id="save-state" role="status">本机记录</div></div>
+    <div class="sidebar-bottom"><div class="edition">知识板块 <span>01 — 08</span></div><p>C++ 主线 · C 算法。知识、练习与真题互相关联。</p><button class="feedback-link" id="open-feedback">留下试用反馈 <span>↗</span></button></div>
   </aside>
   <div class="workspace">
-    <header class="topbar"><span id="breadcrumb">考试专题 / 第一阶段</span><span class="topbar-right">个人学习空间 <span class="avatar">我</span></span></header>
+    <header class="topbar"><button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>菜单</span></button><span id="breadcrumb">考试专题 / 第一阶段</span><span class="topbar-right"><button class="save-state" id="save-state" type="button" aria-live="polite" data-short="已保存">本机记录</button><span class="avatar" aria-label="个人学习空间">我</span></span></header>
     <main id="main" tabindex="-1"><div class="loading">正在打开你的学习空间…</div></main>
-    <footer class="page-footer">软考虐待狂 / 从理解开始 <span>三大专题 · 24 道原创对标练习</span></footer>
+    <footer class="page-footer">软考虐待狂 / 从理解开始 <span>八个知识板块 · 来源可追溯</span></footer>
   </div>
   <div class="toast" id="toast" role="status" hidden></div>
   <dialog id="feedback-dialog">

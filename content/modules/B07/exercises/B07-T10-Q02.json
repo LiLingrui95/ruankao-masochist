@@ -1,0 +1,41 @@
+{
+  "id": "B07-T10-Q02",
+  "title": "访问控制、攻击与安全防护练习2",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T10"
+  ],
+  "unit_id": "B07-T10",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "IDS与IPS的典型差异是？",
+  "answer": "D",
+  "explanation": "两者都有检测能力，IPS通常具在线阻断能力。",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "IDS必然加密流量",
+    "B": "IPS只管理DNS名称",
+    "C": "二者都等同离线备份",
+    "D": "IDS侧重检测告警，IPS位于路径上可主动阻断"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“IDS必然加密流量”。本题适用的关系是：两者都有检测能力，IPS通常具在线阻断能力。",
+    "B": "错误：该选项断言“IPS只管理DNS名称”。本题适用的关系是：两者都有检测能力，IPS通常具在线阻断能力。",
+    "C": "错误：该选项断言“二者都等同离线备份”。本题适用的关系是：两者都有检测能力，IPS通常具在线阻断能力。",
+    "D": "两者都有检测能力，IPS通常具在线阻断能力。"
+  }
+}

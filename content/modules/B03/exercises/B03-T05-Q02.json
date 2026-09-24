@@ -1,0 +1,39 @@
+{
+  "id": "B03-T05-Q02",
+  "title": "平衡树、查找与散列概念判断2",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T05"
+  ],
+  "unit_id": "B03-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "对有序随机访问表进行二分查找，最坏比较次数阶为？",
+  "options": {
+    "A": "O(1)",
+    "B": "O(log n)",
+    "C": "O(n)",
+    "D": "O(n log n)"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "比较区间每次折半而非常数次。",
+    "B": "至多折半约 log₂n 次。",
+    "C": "线性查找才是该界。",
+    "D": "多出的 n 因子不存在。"
+  },
+  "explanation": "答案 B：至多折半约 log₂n 次。",
+  "source_ids": [
+    "B03-S05"
+  ],
+  "answer_source_ids": [
+    "B03-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按定义逐项代入题干条件排除，并用 verify.py 校验四项齐全、答案落在选项中且每项解析均点明本项文本与正确项。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

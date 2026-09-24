@@ -1,0 +1,39 @@
+{
+  "id": "B07-T10-Q08",
+  "title": "访问控制、攻击与安全防护练习8",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T10"
+  ],
+  "unit_id": "B07-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "勒索软件场景中，说明防火墙、EDR和离线/不可变备份分别降低什么风险。",
+  "answer": "防火墙限制不必要入口和横向流；EDR检测/阻断主机恶意行为并协助隔离；离线或不可变备份保留未被同时加密的恢复副本。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "分别说明网络控制与主机检测的不同边界"
+    },
+    {
+      "id": "r2",
+      "text": "说明备份隔离/不可变性如何支持恢复而非阻止全部入侵"
+    }
+  ]
+}

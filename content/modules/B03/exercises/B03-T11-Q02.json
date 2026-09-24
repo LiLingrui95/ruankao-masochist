@@ -1,0 +1,39 @@
+{
+  "id": "B03-T11-Q02",
+  "title": "动态规划概念判断2",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T11"
+  ],
+  "unit_id": "B03-T11",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "动态规划设计的第一项应明确？",
+  "options": {
+    "A": "输出格式",
+    "B": "状态的精确定义",
+    "C": "编程语言",
+    "D": "哈希函数"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "输出不能决定递推正确性。",
+    "B": "状态含义决定转移、初值和答案位置。",
+    "C": "实现语言不改变 DP 模型。",
+    "D": "哈希不是所有 DP 的组成部分。"
+  },
+  "explanation": "答案 B：状态含义决定转移、初值和答案位置。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按定义逐项代入题干条件排除，并用 verify.py 校验四项齐全、答案落在选项中且每项解析均点明本项文本与正确项。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

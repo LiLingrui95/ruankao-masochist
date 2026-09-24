@@ -1,0 +1,37 @@
+{
+  "id": "B02-T04-Q04",
+  "title": "安全 realloc 模式",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T04"
+  ],
+  "unit_id": "B02-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "写出保留原指针的 `realloc` 更新思路。",
+  "answer": "先用临时指针 `tmp=realloc(p,n)`；仅当 tmp 非 NULL 时令 p=tmp，否则继续保留并按需释放 p。",
+  "explanation": "评分关注临时变量和失败分支保留原对象。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：评分关注临时变量和失败分支保留原对象。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "先用tmp保存realloc返回值，不能直接覆盖p。"
+    },
+    {
+      "id": "r2",
+      "text": "仅成功时更新p；失败时保留原p并说明后续处理。"
+    }
+  ]
+}

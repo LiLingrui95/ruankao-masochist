@@ -1,0 +1,39 @@
+{
+  "id": "B01-T02",
+  "module_id": "B01",
+  "unit_id": "B01-U01",
+  "title": "浮点数与误差",
+  "aliases": [
+    "floating-point",
+    "IEEE 754",
+    "rounding"
+  ],
+  "objectives": [
+    "规格化二进制浮点数并完成加法对阶",
+    "区分范围、精度、舍入误差、infinity 与 NaN"
+  ],
+  "prerequisite_ids": [
+    "B01-T01"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T02.md",
+  "source_ids": [
+    "B01-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 7,
+  "exercise_target": 6,
+  "exercise_rationale": "常规：配置 6 道覆盖规格化、对阶、舍入、特殊值和误差传播。",
+  "question_ids": [
+    "B01-T02-Q01",
+    "B01-T02-Q02",
+    "B01-T02-Q03",
+    "B01-T02-Q04",
+    "B01-T02-Q05",
+    "B01-T02-Q06"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B01-T04-Q03",
+  "title": "Cache与存储层次练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T04"
+  ],
+  "unit_id": "B01-T04",
+  "section_index": 0,
+  "prompt": "Cache 访问 2 ns，命中率 96%，miss 后额外主存 50 ns，求 AMAT。",
+  "explanation": "串行查询模型下 2+(1-0.96)×50=4 ns。主存 50 ns 是额外代价。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：串行查询模型下 2+(1-0.96)×50=4 ns。主存 50 ns 是额外代价。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "single_choice",
+  "options": {
+    "A": "2.08 ns",
+    "B": "3.92 ns",
+    "C": "52 ns",
+    "D": "4 ns"
+  },
+  "answer": "D",
+  "option_explanations": {
+    "A": "把 miss 概率 4% 又误除以 100。",
+    "B": "只算命中路径加权，漏掉串行 Cache 查询定义。",
+    "C": "把每次访问都当 miss。",
+    "D": "2+0.04×50=4 ns。"
+  }
+}

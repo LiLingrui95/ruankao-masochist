@@ -1,0 +1,40 @@
+{
+  "id": "B02-T05-Q05",
+  "title": "阶段管线",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T05"
+  ],
+  "unit_id": "B02-T05",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "补全：字符流 → ____ → token流 → 语法分析 → AST。",
+  "answer": "词法分析",
+  "explanation": "词法分析把源字符分组为 token，供解析器使用。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：词法分析把源字符分组为 token，供解析器使用。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "填入词法分析。"
+    },
+    {
+      "id": "r2",
+      "text": "说明该阶段把字符流转换为token流。"
+    }
+  ],
+  "code": "补全：字符流 → ____ → token流 → 语法分析 → AST。",
+  "language": "text",
+  "reference_fill": "词法分析"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B01-T05-Q07",
+  "title": "流水线、性能与可靠性练习 7",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T05"
+  ],
+  "unit_id": "B01-T05",
+  "section_index": 0,
+  "prompt": "两个独立且并联冗余部件可靠度均 0.9，至少一个成功的可靠度是多少？",
+  "explanation": "同时失败概率 0.1²=0.01，取补集得 0.99。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：同时失败概率 0.1²=0.01，取补集得 0.99。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "0.99。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：0.99。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：同时失败概率 0.1²=0.01，取补集得 0.99。"
+    }
+  ]
+}

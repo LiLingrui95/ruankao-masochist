@@ -1,0 +1,15 @@
+[
+  {
+    "id": "EXAM-2012-H2-APPLIED-S01",
+    "title": "2012年下半年软件设计师应用技术页面或索引",
+    "url": "https://www.cnitpm.com/examst/810722/",
+    "author": "信管网",
+    "accessed_on": "2026-09-24",
+    "locator": "页面标题/索引项：2012年下半年软件设计师应用技术",
+    "version": "web page accessed 2026-09-24",
+    "kind": "exam_index",
+    "reuse_policy": "link-only; page does not provide a clear licence for redistributing exam text; no question text copied",
+    "query": "2012年 下半年 软件设计师 应用技术 真题",
+    "selection_reason": "用于确认 SD-2012-H2-APPL-U 的页面存在性与来源定位；不据此宣称官方发布或完整原卷。"
+  }
+]

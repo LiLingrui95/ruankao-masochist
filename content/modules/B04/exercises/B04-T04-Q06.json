@@ -1,0 +1,37 @@
+{
+  "id": "B04-T04-Q06",
+  "title": "依赖保持",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T04"
+  ],
+  "unit_id": "B04-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(A,B,C)，F={A→B,B→C} 分为 AB、BC，依赖是否保持？",
+  "answer": "保持。",
+  "explanation": "A→B 可在 AB 检查，B→C 可在 BC 检查，无需连接。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：保持。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：A→B 可在 AB 检查，B→C 可在 BC 检查，无需连接。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：A→B 可在 AB 检查，B→C 可在 BC 检查，无需连接。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

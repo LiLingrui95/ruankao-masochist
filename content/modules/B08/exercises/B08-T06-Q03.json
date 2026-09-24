@@ -1,0 +1,41 @@
+{
+  "id": "B08-T06-Q03",
+  "title": "版本辨析",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T06"
+  ],
+  "unit_id": "B08-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为什么不能直接用2010年著作权法回答2026年的现行规则？",
+  "answer": "2020年已第三次修正且自2021年6月1日起施行；2010文本是历史版本，应使用现行文本并标注历史差异。",
+  "explanation": "解题依据与结果：2020年已第三次修正且自2021年6月1日起施行；2010文本是历史版本，应使用现行文本并标注历史差异。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“2020年已第三次修正且自2021年6月1日起施行”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“2010文本是历史版本，应使用现行文本并标注历史差异”给出题设对应的计算、文本证据或适用边界，不能只写题名“版本辨析”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "answer_source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

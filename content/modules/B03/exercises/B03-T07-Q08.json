@@ -1,0 +1,59 @@
+{
+  "id": "B03-T07-Q08",
+  "title": "园区线路规划案例",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T07"
+  ],
+  "unit_id": "B03-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料，回答三个子问题。",
+  "answer": "a. 用 Kruskal：按权 1,2,2,3,… 检查，选 CD(1)、AB(2)、DE(2)、BC(3)，已取4条且连通，总造价8。b. 用 Dijkstra：初始 d(A)=0；确定B后 d(C)=5,d(D)=7；确定C后 d(D)=6,d(E)=9；确定D后 d(E)=8。最终 A0、B2、C5、D6、E8；路径分别 A-B、A-B-C、A-B-C-D、A-B-C-D-E。c. Kruskal 排序实现 O(E log E)，并查集 O(V)；邻接表+二叉堆 Dijkstra 为 O((V+E)log V)，空间 O(V+E)。负边破坏 Dijkstra 的确定性，Kruskal 可接受负权。",
+  "explanation": "参考答案按三个子问分别给出算法或状态、不省略的中间结果，以及复杂度和适用边界。共享材料只给输入与约束，不含待求结果。",
+  "source_ids": [
+    "B03-S04"
+  ],
+  "answer_source_ids": [
+    "B03-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "verify.py 对本案例的最终数值、状态表或组合集合运行独立模型复算，并校验共享材料不含答案措辞。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "选 CD、AB、DE、BC 并算总造价8。"
+    },
+    {
+      "id": "r2",
+      "text": "给出距离 A0、B2、C5、D6、E8及可复核路径。"
+    },
+    {
+      "id": "r3",
+      "text": "写出两算法复杂度，并明确负边影响 Dijkstra 而不妨碍 Kruskal。"
+    }
+  ],
+  "case_material": "某园区有顶点 A、B、C、D、E。无向候选线路及造价为 AB=2、AC=6、BC=3、BD=5、CD=1、CE=4、DE=2。另需计算从 A 出发的运输最短距离，所有边双向且权值非负。",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "选择适当算法求最低总建设造价，并列出按顺序选中的边。",
+      "points": 4
+    },
+    {
+      "id": "b",
+      "prompt": "求 A 到各顶点的最短距离及一条对应路径。",
+      "points": 4
+    },
+    {
+      "id": "c",
+      "prompt": "分别给出两个算法的时间、空间复杂度，并说明负边会影响哪一个算法。",
+      "points": 2
+    }
+  ]
+}

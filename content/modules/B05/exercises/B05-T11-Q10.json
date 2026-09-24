@@ -1,0 +1,37 @@
+{
+  "id": "B05-T11-Q10",
+  "title": "DFD综合练习10",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T11"
+  ],
+  "unit_id": "B05-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "父图与子图流数量不同是否必然不平衡？",
+  "answer": "不必然。平衡比较边界数据语义；一条父流可在子图边界拆成若干组成流，只要数据字典证明组合等价，内部流数量也不受限制。",
+  "explanation": "必须指出语义而非数量，并说明字典等价。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：不必然。平衡比较边界数据语义；一条父流可在子图边界拆成若干组成流，只要数据字典证明组合等价，内部流数量也不受限制。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：不必然。平衡比较边界数据语义；一条父流可在子图边界拆成若干组成流，只要数据字典证明组合等价，内部流数量也不受限制。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须指出语义而非数量，并说明字典等价。"
+    }
+  ]
+}

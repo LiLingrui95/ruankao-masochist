@@ -1,0 +1,37 @@
+{
+  "id": "B05-T10-Q06",
+  "title": "估算与进度练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T10"
+  ],
+  "unit_id": "B05-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "解释为什么估算值不是承诺。",
+  "answer": "估算依赖规模、生产率、成本驱动因子与不确定性；假设变化需重新估算并给范围。",
+  "explanation": "必须指出假设、不确定性和重估条件。",
+  "source_ids": [
+    "B05-S03"
+  ],
+  "answer_source_ids": [
+    "B05-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：估算依赖规模、生产率、成本驱动因子与不确定性；假设变化需重新估算并给范围。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：估算依赖规模、生产率、成本驱动因子与不确定性；假设变化需重新估算并给范围。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须指出假设、不确定性和重估条件。"
+    }
+  ]
+}

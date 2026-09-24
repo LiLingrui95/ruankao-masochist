@@ -1,0 +1,37 @@
+{
+  "id": "B04-T09-Q06",
+  "title": "订单地址建模",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T09"
+  ],
+  "unit_id": "B04-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "订单必须保留成交时收货地址；用户随后可修改账户地址。只保存用户ID并实时读取账户地址是否满足要求？给出设计。",
+  "answer": "不满足。订单保存成交时的地址快照，并可保留用户ID作为关联。",
+  "explanation": "订单事实与用户当前属性具有不同时间语义；快照可以是嵌入文档，也可以是关系表中的订单地址列。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "指出实时关联会改变历史订单呈现"
+    },
+    {
+      "id": "r2",
+      "text": "保留订单成交时地址快照"
+    }
+  ],
+  "source_ids": [
+    "B04-S07"
+  ],
+  "answer_source_ids": [
+    "B04-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "主任务按接口语法与业务时间语义独立审校；概念题，未声称实际部署运行。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

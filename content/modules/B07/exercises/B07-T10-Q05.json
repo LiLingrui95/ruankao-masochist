@@ -1,0 +1,39 @@
+{
+  "id": "B07-T10-Q05",
+  "title": "访问控制、攻击与安全防护练习5",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T10"
+  ],
+  "unit_id": "B07-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "资产价值200万元，暴露因子0.25，ARO=0.2；控制年成本4万元并把ARO降至0.05。计算控制前后ALE和年净风险降低。",
+  "answer": "SLE=50万元；原ALE=10万元；残余ALE=2.5万元；风险降低7.5万元，扣成本后净期望收益3.5万元/年。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "依次计算SLE、原ALE和残余ALE，单位为万元/年"
+    },
+    {
+      "id": "r2",
+      "text": "风险差额扣除4万元控制成本得到3.5万元"
+    }
+  ]
+}

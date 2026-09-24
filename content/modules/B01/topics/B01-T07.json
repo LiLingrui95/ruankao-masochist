@@ -1,0 +1,41 @@
+{
+  "id": "B01-T07",
+  "module_id": "B01",
+  "unit_id": "B01-U03",
+  "title": "PV同步与互斥",
+  "aliases": [
+    "semaphore",
+    "P/V",
+    "mutual exclusion"
+  ],
+  "objectives": [
+    "为互斥、前驱约束和 bounded buffer 配置 semaphore 初值与 P/V 次序",
+    "用资源计数不变量识别 race、deadlock 与 starvation"
+  ],
+  "prerequisite_ids": [
+    "B01-T06"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T07.md",
+  "source_ids": [
+    "B01-S04"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂：配置 8 道覆盖信号量语义、生产者消费者、前驱约束、读者写者和错误次序。",
+  "question_ids": [
+    "B01-T07-Q01",
+    "B01-T07-Q02",
+    "B01-T07-Q03",
+    "B01-T07-Q04",
+    "B01-T07-Q05",
+    "B01-T07-Q06",
+    "B01-T07-Q07",
+    "B01-T07-Q08"
+  ]
+}

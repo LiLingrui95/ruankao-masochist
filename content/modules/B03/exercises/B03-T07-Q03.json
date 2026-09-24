@@ -1,0 +1,37 @@
+{
+  "id": "B03-T07-Q03",
+  "title": "最短路径与最小生成树过程推导",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T07"
+  ],
+  "unit_id": "B03-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "根据下列主题给出一个最小可复核的逐步推导：无向边 AB=1、AC=4、BC=2、BD=5、CD=1。Kruskal 依次取 AB、CD、BC，总权 4；Dijkstra 从 A 得 dist(B)=1，继而 dist(C)=3、dist(D)=4。结果权值相同只是本例巧合，目标不同。",
+  "answer": "无向边 AB=1、AC=4、BC=2、BD=5、CD=1。Kruskal 依次取 AB、CD、BC，总权 4；Dijkstra 从 A 得 dist(B)=1，继而 dist(C)=3、dist(D)=4。结果权值相同只是本例巧合，目标不同。",
+  "explanation": "答案需列出中间状态，并由定义得到最终结论；只写结论无法检查边界。",
+  "source_ids": [
+    "B03-S04"
+  ],
+  "answer_source_ids": [
+    "B03-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "列出题干例子的关键中间状态，不能只写最终结论。"
+    },
+    {
+      "id": "r2",
+      "text": "由中间状态推出题中给定例子的最终结果，并说明所用规则。"
+    }
+  ]
+}

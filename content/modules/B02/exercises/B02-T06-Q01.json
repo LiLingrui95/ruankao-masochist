@@ -1,0 +1,39 @@
+{
+  "id": "B02-T06-Q01",
+  "title": "二义性",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T06"
+  ],
+  "unit_id": "B02-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "若同一终结符串存在两棵不同语法树，则该文法？",
+  "answer": "B",
+  "explanation": "二义性的定义就是存在至少一个串有多个不同解析结构。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：二义性的定义就是存在至少一个串有多个不同解析结构。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "正则",
+    "B": "二义",
+    "C": "一定LL(1)",
+    "D": "无左递归"
+  },
+  "option_explanations": {
+    "A": "正则性不能由多棵语法树推出。",
+    "B": "一个串有两棵不同语法树正是二义定义。",
+    "C": "二义文法不可能直接是LL(1)。",
+    "D": "无左递归与是否二义是不同性质。"
+  }
+}

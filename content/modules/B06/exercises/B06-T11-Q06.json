@@ -1,0 +1,60 @@
+{
+  "id": "B06-T11-Q06",
+  "title": "连接状态对象",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T11"
+  ],
+  "unit_id": "B06-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "Connection 是 Context，ConnectionState 是 State，三个状态类是 ConcreteState。send 委托给当前状态；connectSucceeded 令 Context 替换为 ConnectedState。无数据状态可用静态无所有权实例或值语义；若状态对象需持 Context 回指，应使用非拥有指针/引用且生命周期受 Context 调用限定，不能让 Context 与 State 互持 shared_ptr。",
+  "explanation": "Connection 是 Context，ConnectionState 是 State，三个状态类是 ConcreteState。send 委托给当前状态；connectSucceeded 令 Context 替换为 ConnectedState。无数据状态可用静态无所有权实例或值语义；若状态对象需持 Context 回指，应使用非拥有指针/引用且生命周期受 Context 调用限定，不能让 Context 与 State 互持 shared_ptr。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "Context/State/三具体状态映射完整"
+    },
+    {
+      "id": "r2",
+      "text": "给出至少一次事件迁移"
+    },
+    {
+      "id": "r3",
+      "text": "明确非拥有回指并避免 shared_ptr 环"
+    }
+  ],
+  "source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "Connection 在 Disconnected、Connecting、Connected 状态下对 send 行为不同，事件会迁移状态。",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "选择状态模式并确定迁移职责。",
+      "points": 5
+    },
+    {
+      "id": "s2",
+      "prompt": "说明如何避免状态对象引用环。",
+      "points": 5
+    }
+  ]
+}

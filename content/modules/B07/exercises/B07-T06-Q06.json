@@ -1,0 +1,39 @@
+{
+  "id": "B07-T06-Q06",
+  "title": "DNS、HTTP与应用协议练习6",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T06"
+  ],
+  "unit_id": "B07-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "区分SMTP、POP3/IMAP与FTP的主要用途。",
+  "answer": "SMTP用于邮件提交/传递；POP3或IMAP用于用户访问邮箱；FTP用于文件传输且控制与数据连接分离。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "answer_source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "正确区分邮件发送与邮箱访问协议"
+    },
+    {
+      "id": "r2",
+      "text": "指出FTP文件传输职责及双通道特征"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B08-T09-Q06",
+  "title": "新技术评估",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T09"
+  ],
+  "unit_id": "B08-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "列出评估微服务拆分是否合适的三个可验证条件。",
+  "answer": "至少检查领域边界是否清晰、团队能否独立部署、是否具备自动化测试交付与可观测/故障治理；缺失时分布式复杂度可能超过收益。",
+  "explanation": "解题依据与结果：至少检查领域边界是否清晰、团队能否独立部署、是否具备自动化测试交付与可观测/故障治理；缺失时分布式复杂度可能超过收益。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“至少检查领域边界是否清晰、团队能否独立部署、是否具备自动化测试交付与可观测/故障治理”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“缺失时分布式复杂度可能超过收益”给出题设对应的计算、文本证据或适用边界，不能只写题名“新技术评估”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S08",
+    "B08-S09"
+  ],
+  "answer_source_ids": [
+    "B08-S08",
+    "B08-S09"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

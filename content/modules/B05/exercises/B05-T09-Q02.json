@@ -1,0 +1,37 @@
+{
+  "id": "B05-T09-Q02",
+  "title": "配置与维护练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T09"
+  ],
+  "unit_id": "B05-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "发布无法由标签源码重复构建，指出配置缺口。",
+  "answer": "源码标签、依赖锁定、构建脚本或环境配置未形成可审计的一致基线，需核对二进制与配置项版本。",
+  "explanation": "必须指出可重复构建和二进制—配置项对应关系。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：源码标签、依赖锁定、构建脚本或环境配置未形成可审计的一致基线，需核对二进制与配置项版本。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：源码标签、依赖锁定、构建脚本或环境配置未形成可审计的一致基线，需核对二进制与配置项版本。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须指出可重复构建和二进制—配置项对应关系。"
+    }
+  ]
+}

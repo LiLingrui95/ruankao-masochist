@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q03",
+  "title": "文件、磁盘与设备管理练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "磁头 50，请求 10,40,90,55，按 FCFS 总移动量多少？",
+  "explanation": "依次移动 40、30、50、35，总计 155。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：依次移动 40、30、50、35，总计 155。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "155 个柱面。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：155 个柱面。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：依次移动 40、30、50、35，总计 155。"
+    }
+  ]
+}

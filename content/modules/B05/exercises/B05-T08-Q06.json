@@ -1,0 +1,37 @@
+{
+  "id": "B05-T08-Q06",
+  "title": "质量度量练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T08"
+  ],
+  "unit_id": "B05-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为何不能只用缺陷密度跨语言排名？",
+  "answer": "语言表达密度、生成代码比例、测试强度和缺陷严重度不同，规模分母不具可比性。",
+  "explanation": "至少点出语言/规模口径和测试强度两类差异。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：语言表达密度、生成代码比例、测试强度和缺陷严重度不同，规模分母不具可比性。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：语言表达密度、生成代码比例、测试强度和缺陷严重度不同，规模分母不具可比性。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：至少点出语言/规模口径和测试强度两类差异。"
+    }
+  ]
+}

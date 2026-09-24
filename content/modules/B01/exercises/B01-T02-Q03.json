@@ -1,0 +1,37 @@
+{
+  "id": "B01-T02-Q03",
+  "title": "浮点数与误差练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T02"
+  ],
+  "unit_id": "B01-T02",
+  "section_index": 0,
+  "prompt": "总位宽不变时，增加阶码位通常带来什么权衡？",
+  "explanation": "阶码组合数增多覆盖更多数量级；位预算固定使 fraction 位减少，相邻数间距增大。",
+  "source_ids": [
+    "B01-S02"
+  ],
+  "answer_source_ids": [
+    "B01-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：阶码组合数增多覆盖更多数量级；位预算固定使 fraction 位减少，相邻数间距增大。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "扩大可表示范围，但减少有效数位并降低精度。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：扩大可表示范围，但减少有效数位并降低精度。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：阶码组合数增多覆盖更多数量级；位预算固定使 fraction 位减少，相邻数间距增大。"
+    }
+  ]
+}

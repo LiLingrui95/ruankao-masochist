@@ -1,0 +1,60 @@
+{
+  "id": "B06-T11-Q08",
+  "title": "缓存代理与线程边界",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T11"
+  ],
+  "unit_id": "B06-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "使用虚拟代理。IImage 是 Subject，RemoteImage 是 RealSubject，LazyImageProxy 是 Proxy；代理持有 unique_ptr<RemoteImage> 或下载函数和 optional<ImageData>。pixels 在缓存为空时下载到临时值，成功后再 move 到 cache，从而提供强保证；下载异常时 cache 仍为空，下次可重试。若多线程共享代理，需用 mutex 保护检查与写入，或明确类型非线程安全。",
+  "explanation": "使用虚拟代理。IImage 是 Subject，RemoteImage 是 RealSubject，LazyImageProxy 是 Proxy；代理持有 unique_ptr<RemoteImage> 或下载函数和 optional<ImageData>。pixels 在缓存为空时下载到临时值，成功后再 move 到 cache，从而提供强保证；下载异常时 cache 仍为空，下次可重试。若多线程共享代理，需用 mutex 保护检查与写入，或明确类型非线程安全。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "三角色映射完整"
+    },
+    {
+      "id": "r2",
+      "text": "先临时下载成功后提交缓存的强保证明确"
+    },
+    {
+      "id": "r3",
+      "text": "失败可重试，并明确线程安全策略"
+    }
+  ],
+  "source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "IImage::pixels 返回不可变像素；RemoteImage 下载数据；要求首次访问才下载，随后缓存，失败可重试。",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "选择模式和角色。",
+      "points": 5
+    },
+    {
+      "id": "s2",
+      "prompt": "说明缓存状态与异常后的不变式。",
+      "points": 5
+    }
+  ]
+}

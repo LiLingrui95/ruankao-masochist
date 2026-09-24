@@ -1,0 +1,37 @@
+{
+  "id": "B05-T08-Q04",
+  "title": "质量度量练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T08"
+  ],
+  "unit_id": "B05-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "评审发现30个、后测发现10个同类缺陷，计算该阶段移除比例。",
+  "answer": "30/(30+10)=75%，前提是缺陷类别和统计边界一致。",
+  "explanation": "必须写分母40、结果75%及口径前提。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：30/(30+10)=75%，前提是缺陷类别和统计边界一致。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：30/(30+10)=75%，前提是缺陷类别和统计边界一致。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须写分母40、结果75%及口径前提。"
+    }
+  ]
+}

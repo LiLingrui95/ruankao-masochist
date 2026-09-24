@@ -1,0 +1,40 @@
+{
+  "id": "B02-T01-Q05",
+  "title": "安全保护除法",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T01"
+  ],
+  "unit_id": "B02-T01",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "补全条件，使 `d==0` 时不执行 `n/d`：`if (____) puts(\"large\");`",
+  "answer": "d != 0 && n / d > 10",
+  "explanation": "填入短路合取，先检查分母，只有非零时才求商。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：填入短路合取，先检查分母，只有非零时才求商。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "第一条件明确检查d != 0。"
+    },
+    {
+      "id": "r2",
+      "text": "使用&&把除法放在仅当第一条件为真才求值的右侧。"
+    }
+  ],
+  "code": "补全条件，使 `d==0` 时不执行 `n/d`：`if (____) puts(\"large\");`",
+  "language": "c",
+  "reference_fill": "d != 0 && n / d > 10"
+}

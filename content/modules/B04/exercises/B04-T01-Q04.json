@@ -1,0 +1,37 @@
+{
+  "id": "B04-T01-Q04",
+  "title": "删除动作选择",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T01"
+  ],
+  "unit_id": "B04-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "财务凭证必须永久保留且引用客户。客户有凭证时不允许删除客户，应选 CASCADE 还是 RESTRICT/NO ACTION？",
+  "answer": "RESTRICT 或 NO ACTION。",
+  "explanation": "CASCADE 会删除凭证，违反历史保留；拒绝父行删除符合规则。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：RESTRICT 或 NO ACTION。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：CASCADE 会删除凭证，违反历史保留。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：CASCADE 会删除凭证，违反历史保留；拒绝父行删除符合规则。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

@@ -1,0 +1,40 @@
+{
+  "id": "B02-T06",
+  "module_id": "B02",
+  "unit_id": "B02-U02",
+  "title": "文法、语法分析与表达式",
+  "aliases": [
+    "上下文无关文法",
+    "推导与语法树",
+    "LL/LR"
+  ],
+  "objectives": [
+    "按产生式完成推导",
+    "识别二义性与优先级编码",
+    "判断简单 LL(1) 选择"
+  ],
+  "prerequisite_ids": [
+    "B02-T05"
+  ],
+  "syllabus_refs": [
+    "程序语言基础知识",
+    "编译程序基础知识"
+  ],
+  "body_path": "modules/B02/topics/B02-T06.md",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 6,
+  "exercise_rationale": "该考点包含概念、边界与推导三类能力，配置 6 道不同推理任务覆盖基础、应用和综合层级。",
+  "question_ids": [
+    "B02-T06-Q01",
+    "B02-T06-Q02",
+    "B02-T06-Q03",
+    "B02-T06-Q04",
+    "B02-T06-Q05",
+    "B02-T06-Q06"
+  ]
+}

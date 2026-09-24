@@ -1,0 +1,37 @@
+{
+  "id": "B02-T07-Q04",
+  "title": "常量优化",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T07"
+  ],
+  "unit_id": "B02-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "对 `t1=2*3; t2=x+t1` 做常量折叠与传播。",
+  "answer": "先得 `t1=6`，再将使用处化为 `t2=x+6`；若 t1 无其他用途，可随后删除该定义。",
+  "explanation": "折叠计算常量，传播替换使用，删除属于后续死代码消除。",
+  "source_ids": [
+    "B02-S04"
+  ],
+  "answer_source_ids": [
+    "B02-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：折叠计算常量，传播替换使用，删除属于后续死代码消除。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "常量折叠2*3得到t1=6。"
+    },
+    {
+      "id": "r2",
+      "text": "传播常量得到t2=x+6，并把删除t1区分为后续死代码消除。"
+    }
+  ]
+}

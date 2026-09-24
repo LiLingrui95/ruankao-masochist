@@ -1,0 +1,67 @@
+[
+  {
+    "id": "B02-S01",
+    "title": "ISO/IEC 9899:201x Committee Draft N1570",
+    "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+    "author": "ISO/IEC JTC1/SC22/WG14",
+    "accessed_on": "2026-09-24",
+    "locator": "6.2.1 scopes; 6.5 expressions; 6.5.6 additive operators; 6.7.6.3 function declarators; 7.22.3 memory management; Annex J.2 undefined behavior",
+    "version": "N1570, 2011-04-12",
+    "kind": "standard_draft",
+    "reuse_policy": "Quote sparingly; original explanations and exercises",
+    "query": "WG14 N1570 C11 committee draft scope function parameters undefined behavior",
+    "selection_reason": "Primary committee draft defining C semantics, scopes, pointer rules, function parameters and undefined behavior."
+  },
+  {
+    "id": "B02-S02",
+    "title": "C Implementation-Defined Behavior",
+    "url": "https://gcc.gnu.org/onlinedocs/gcc/C-Implementation.html",
+    "author": "GNU Project",
+    "accessed_on": "2026-09-24",
+    "locator": "Chapter 4 and subsections Integers, Arrays and Pointers, Structures",
+    "version": "GCC online documentation, accessed 2026-09-24",
+    "kind": "official_documentation",
+    "reuse_policy": "Facts paraphrased; no exercise copied",
+    "query": "GCC C implementation-defined behavior documentation",
+    "selection_reason": "Official compiler documentation used to distinguish implementation-defined choices from undefined behavior."
+  },
+  {
+    "id": "B02-S03",
+    "title": "CS 4120 Introduction to Compilers Lecture Notes",
+    "url": "https://www.cs.cornell.edu/courses/cs4120/2026sp/notes/",
+    "author": "Andrew Myers, Cornell University",
+    "accessed_on": "2026-09-24",
+    "locator": "Lexical analysis; Context-free grammars; Recursive-descent, LL and LR parsing; semantic analysis",
+    "version": "Spring 2026",
+    "kind": "university_course",
+    "reuse_policy": "Concepts summarized; all exercises original",
+    "query": "Cornell CS 4120 lexical analysis context-free grammars parsing semantic analysis",
+    "selection_reason": "University course notes providing precise compiler-phase and parsing explanations."
+  },
+  {
+    "id": "B02-S04",
+    "title": "Kaleidoscope: Code generation to LLVM IR",
+    "url": "https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl03.html",
+    "author": "LLVM Project",
+    "accessed_on": "2026-09-24",
+    "locator": "Sections 3.1-3.3; AST to LLVM IR; NamedValues symbol table",
+    "version": "LLVM documentation current page, accessed 2026-09-24",
+    "kind": "official_documentation",
+    "reuse_policy": "Concepts and tiny IR patterns paraphrased; exercises original",
+    "query": "LLVM Kaleidoscope AST code generation IR symbol table",
+    "selection_reason": "Official compiler infrastructure tutorial showing AST-to-IR translation and symbol lookup."
+  },
+  {
+    "id": "B02-S05",
+    "title": "Kaleidoscope: Adding JIT and Optimizer Support",
+    "url": "https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl04.html",
+    "author": "LLVM Project",
+    "accessed_on": "2026-09-24",
+    "locator": "Trivial constant folding; optimization passes; reassociation and CSE",
+    "version": "LLVM documentation current page, accessed 2026-09-24",
+    "kind": "official_documentation",
+    "reuse_policy": "Optimization facts paraphrased; exercises original",
+    "query": "LLVM Kaleidoscope constant folding common subexpression elimination passes",
+    "selection_reason": "Official documentation for conditions and limits of local constant folding and optimization passes."
+  }
+]

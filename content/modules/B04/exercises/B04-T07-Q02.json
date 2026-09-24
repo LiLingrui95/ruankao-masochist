@@ -1,0 +1,37 @@
+{
+  "id": "B04-T07-Q02",
+  "title": "NOT IN与NULL",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T07"
+  ],
+  "unit_id": "B04-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "子查询返回 {1,NULL}，表达式 2 NOT IN (subquery) 的三值逻辑结果是什么？",
+  "answer": "UNKNOWN，因此 WHERE 中不会保留该行。",
+  "explanation": "2<>1 为 TRUE，但 2<>NULL 为 UNKNOWN，AND 后为 UNKNOWN。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：UNKNOWN，因此 WHERE 中不会保留该行。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：2<>1 为 TRUE，但 2<>NULL 为 UNKNOWN，AND 后为 UNKNOWN。"
+    }
+  ],
+  "source_ids": [
+    "B04-S03"
+  ],
+  "answer_source_ids": [
+    "B04-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：2<>1 为 TRUE，但 2<>NULL 为 UNKNOWN，AND 后为 UNKNOWN。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

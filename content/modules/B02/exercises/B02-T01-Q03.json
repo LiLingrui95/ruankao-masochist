@@ -1,0 +1,39 @@
+{
+  "id": "B02-T01-Q03",
+  "title": "优先级与求值顺序",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T01"
+  ],
+  "unit_id": "B02-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "关于 C 表达式规则，哪项正确？",
+  "answer": "C",
+  "explanation": "优先级/结合性负责语法分组；求值顺序由另外的语义规则规定。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：优先级/结合性负责语法分组；求值顺序由另外的语义规则规定。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "优先级同时规定操作数求值先后",
+    "B": "结合性保证函数实参从左到右求值",
+    "C": "优先级决定分组，但不普遍决定求值顺序",
+    "D": "所有二元运算符都短路"
+  },
+  "option_explanations": {
+    "A": "优先级只确定语法分组。",
+    "B": "C不保证一般函数实参从左到右求值。",
+    "C": "分组规则与求值顺序是两套规则。",
+    "D": "只有少数运算符有短路语义。"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "B03-T09-Q06",
+  "title": "分治与二分边界检查",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T09"
+  ],
+  "unit_id": "B03-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "针对分治与二分列出至少三个必须测试的边界，并说明各自用于发现什么错误。",
+  "answer": "应包含空输入或最小输入、重复元素/等权情况，以及违反或逼近算法前提的输入；分别检查越界、唯一性误判和适用条件。",
+  "explanation": "边界集合同时覆盖规模边界、数据等价边界与结构前提，能定位三类不同缺陷。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "覆盖空输入或最小规模，并说明可发现的越界/终止错误。"
+    },
+    {
+      "id": "r2",
+      "text": "覆盖重复或等权数据，并说明唯一性或稳定性风险。"
+    },
+    {
+      "id": "r3",
+      "text": "覆盖算法适用前提的临界或反例输入。"
+    }
+  ]
+}

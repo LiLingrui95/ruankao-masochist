@@ -1,0 +1,37 @@
+{
+  "id": "B04-T07-Q07",
+  "title": "参数能否替代表名",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T07"
+  ],
+  "unit_id": "B04-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "PostgreSQL 值参数 $1 能否直接替代任意表名？若允许用户选择报表表，应如何处理？",
+  "answer": "不能把值参数当标识符占位。报表表名从预先允许的映射中选择，再构造确定结构的查询。",
+  "explanation": "值表达式与标识符处在不同语法位置；允许列表限制查询目标，不能直接信任用户提供的表名。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "区分值参数与表名标识符"
+    },
+    {
+      "id": "r2",
+      "text": "用允许的表名映射选择目标"
+    }
+  ],
+  "source_ids": [
+    "B04-S06"
+  ],
+  "answer_source_ids": [
+    "B04-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "主任务按接口语法与业务时间语义独立审校；概念题，未声称实际部署运行。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B01-T09-Q08",
+  "title": "分页、地址转换与置换练习 8",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T09"
+  ],
+  "unit_id": "B01-T09",
+  "section_index": 0,
+  "prompt": "为什么 FIFO 可能出现 Belady anomaly，而 stack property 的 LRU 不会？",
+  "explanation": "缺少包含关系时增加 frame 会改变淘汰顺序并可能增加缺页；LRU 的最近集合随容量嵌套。",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "answer_source_ids": [
+    "B01-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：缺少包含关系时增加 frame 会改变淘汰顺序并可能增加缺页；LRU 的最近集合随容量嵌套。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "FIFO 的 n-frame 内容不保证包含于 n+1-frame 内容；LRU 保持包含关系。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：FIFO 的 n-frame 内容不保证包含于 n+1-frame 内容；LRU 保持包含关系。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：缺少包含关系时增加 frame 会改变淘汰顺序并可能增加缺页；LRU 的最近集合随容量嵌套。"
+    }
+  ]
+}

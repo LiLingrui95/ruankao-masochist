@@ -1,0 +1,37 @@
+{
+  "id": "B08-T07-Q03",
+  "title": "完整阅读一",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T07"
+  ],
+  "unit_id": "B08-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读：A server can reject a request when its representation is too large. This limit protects resources, but it may also reject a legitimate upload. Clients should therefore learn the documented limit before retrying. 概括因果链。",
+  "answer": "大小限制用于保护服务器资源，也可能拒绝合法上传；客户端重试前应了解公开限制，不能仅盲目重复。",
+  "explanation": "解题依据与结果：大小限制用于保护服务器资源，也可能拒绝合法上传；客户端重试前应了解公开限制，不能仅盲目重复。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“大小限制用于保护服务器资源，也可能拒绝合法上传”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“客户端重试前应了解公开限制，不能仅盲目重复”给出题设对应的计算、文本证据或适用边界，不能只写题名“完整阅读一”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S10"
+  ],
+  "answer_source_ids": [
+    "B08-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

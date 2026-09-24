@@ -1,0 +1,60 @@
+{
+  "id": "B06-T11-Q01",
+  "title": "支付策略与工厂",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T11"
+  ],
+  "unit_id": "B06-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "三处填空依次为：① virtual ~IPayMethod() = default; ② std::unique_ptr<IPayMethod> method_; ③ catch (const PaymentError& e)。完整关键实现为：\n```cpp\nstruct PaymentError : std::runtime_error { using std::runtime_error::runtime_error; };\nstruct IPayMethod {\n    virtual ~IPayMethod() = default;\n    virtual std::string pay(int cents) = 0;\n};\nstruct CardPay final : IPayMethod {\n    std::string pay(int cents) override {\n        if (cents > 50000) throw PaymentError(\"limit\");\n        return \"card:\" + std::to_string(cents);\n    }\n};\nstruct WalletPay final : IPayMethod {\n    std::string pay(int cents) override { return \"wallet:\" + std::to_string(cents); }\n};\nclass Checkout {\n    std::unique_ptr<IPayMethod> method_;\npublic:\n    explicit Checkout(std::unique_ptr<IPayMethod> m) : method_(std::move(m)) {}\n    std::string submit(int cents) {\n        try { return method_->pay(cents); }\n        catch (const PaymentError& e) { return std::string(\"failed:\") + e.what(); }\n    }\n};\n```\n该结构是策略模式：Checkout 为 Context，IPayMethod 为 Strategy，两个 Pay 类为 ConcreteStrategy；创建处按配置注入对象。流程一：CardPay、金额 3000，虚调用返回 `card:3000`。流程二：CardPay、金额 60000，抛出 PaymentError；栈展开回 Checkout::submit，由具体异常的 const 引用处理器捕获并返回 `failed:limit`。unique_ptr 表示 Checkout 独占算法对象，虚析构保证经接口指针销毁派生对象。",
+  "explanation": "先由接口把变化的支付算法隔离，再由 Checkout 统一定义提交与错误转换边界。①解决多态销毁；②表达独占所有权；③保留异常动态类型并避免切片。金额 60000 的确定结果不是策略吞错，而是业务边界把 `PaymentError(\"limit\")` 转换成 `failed:limit`。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "三空分别写出虚析构、unique_ptr 成员和 const PaymentError& 处理器"
+    },
+    {
+      "id": "r2",
+      "text": "准确映射 Checkout、IPayMethod、CardPay/WalletPay 四类角色"
+    },
+    {
+      "id": "r3",
+      "text": "写出 3000 返回 card:3000，60000 返回 failed:limit 的完整调用与异常路径"
+    }
+  ],
+  "source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "answer_source_ids": [
+    "B06-S02",
+    "B06-S03",
+    "B06-S04",
+    "B06-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按 C++17 虚调用、unique_ptr 析构与异常处理规则手工逐语句推演；verify.py 用独立支付状态模型核对两条结果路径。本机无 C++ 编译器，未声称编译运行。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "结算程序须在运行时注入一种支付算法。卡支付在金额超过 50000 分时抛出 PaymentError(\"limit\")；钱包支付直接返回结果。算法对象只属于一个 Checkout；Checkout 必须把该异常转换为失败字符串。假设注入对象非空、金额非负；本题只分析 PaymentError，忽略分配失败。补全三个空并分析 3000 分与 60000 分两条路径。\n```cpp\n#include <memory>\n#include <string>\n#include <utility>\n#include <stdexcept>\nstruct PaymentError : std::runtime_error { using std::runtime_error::runtime_error; };\nstruct IPayMethod {\n    /* ① */\n    virtual std::string pay(int cents) = 0;\n};\nstruct CardPay : IPayMethod {\n    std::string pay(int cents) override {\n        if (cents > 50000) throw PaymentError(\"limit\");\n        return \"card:\" + std::to_string(cents);\n    }\n};\nstruct WalletPay : IPayMethod {\n    std::string pay(int cents) override { return \"wallet:\" + std::to_string(cents); }\n};\nclass Checkout {\n    /* ② */\npublic:\n    explicit Checkout(std::unique_ptr<IPayMethod> m) : method_(std::move(m)) {}\n    std::string submit(int cents) {\n        try { return method_->pay(cents); }\n        /* ③ */ { return std::string(\"failed:\") + e.what(); }\n    }\n};\n```",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "填写 ①—③，并说明各空解决的语言或所有权问题。",
+      "points": 6
+    },
+    {
+      "id": "s2",
+      "prompt": "判定设计模式、映射角色，并写出 CardPay 在 3000 与 60000 两次调用的结果和运行流程。",
+      "points": 6
+    }
+  ]
+}

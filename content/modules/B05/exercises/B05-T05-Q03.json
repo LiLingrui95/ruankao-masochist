@@ -1,0 +1,39 @@
+{
+  "id": "B05-T05-Q03",
+  "title": "软件架构练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T05"
+  ],
+  "unit_id": "B05-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "高层策略直接依赖银行SDK主要违反？",
+  "answer": "C",
+  "explanation": "高层应依赖支付抽象。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "边界值原则",
+    "B": "里氏替换",
+    "C": "依赖倒置",
+    "D": "数据平衡"
+  },
+  "option_explanations": {
+    "A": "A 项“边界值原则”错误：边界值是测试技术，与高层依赖具体供应商无关。",
+    "B": "B 项“里氏替换”错误：里氏替换约束子类型可替换性，题干未涉及继承。",
+    "C": "C 项“依赖倒置”正确：高层应依赖支付抽象。",
+    "D": "D 项“数据平衡”错误：数据平衡用于DFD父子边界，不用于架构依赖方向。"
+  }
+}

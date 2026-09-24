@@ -1,0 +1,43 @@
+{
+  "id": "B06-T09-Q04",
+  "title": "状态识别",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T09"
+  ],
+  "unit_id": "B06-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "连接对象在 Disconnected/Connected 下对 send 行为不同。",
+  "answer": "状态",
+  "explanation": "状态",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确答案为状态"
+    },
+    {
+      "id": "r2",
+      "text": "把题干变化点映射到模式意图或 C++ 所有权"
+    },
+    {
+      "id": "r3",
+      "text": "说明至少一个不采用相邻模式的理由"
+    }
+  ],
+  "source_ids": [
+    "B06-S04",
+    "B06-S06"
+  ],
+  "answer_source_ids": [
+    "B06-S04",
+    "B06-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

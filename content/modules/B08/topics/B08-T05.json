@@ -1,0 +1,35 @@
+{
+  "id": "B08-T05",
+  "module_id": "B08",
+  "unit_id": "B08-U02",
+  "title": "标准化与软件文档",
+  "aliases": [
+    "标准层级",
+    "强制与推荐",
+    "文档受众"
+  ],
+  "objectives": [
+    "掌握标准化与软件文档的核心概念",
+    "独立完成标准化与软件文档的典型推导"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "数学与综合基础"
+  ],
+  "body_path": "modules/B08/topics/B08-T05.md",
+  "source_ids": [
+    "B08-S03",
+    "B08-S04"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 10,
+  "exercise_target": 4,
+  "exercise_rationale": "按复杂度配置混合题型，覆盖概念、计算和边界判断。",
+  "question_ids": [
+    "B08-T05-Q01",
+    "B08-T05-Q02",
+    "B08-T05-Q03",
+    "B08-T05-Q04"
+  ]
+}

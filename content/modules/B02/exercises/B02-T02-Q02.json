@@ -1,0 +1,39 @@
+{
+  "id": "B02-T02-Q02",
+  "title": "尾后指针",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T02"
+  ],
+  "unit_id": "B02-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "`int a[3]; int *p=a+3;` 哪项正确？",
+  "answer": "B",
+  "explanation": "数组尾后一位置的指针可合法形成，但不指向元素。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：数组尾后一位置的指针可合法形成，但不指向元素。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "形成 p 就越界未定义",
+    "B": "p 可形成和比较但不可解引用",
+    "C": "`*p` 等于0",
+    "D": "p 可指向任意下一对象"
+  },
+  "option_explanations": {
+    "A": "形成尾后指针本身合法。",
+    "B": "尾后位置不属于元素，故只能形成/比较。",
+    "C": "解引用尾后指针行为未定义。",
+    "D": "合法性仍限于原数组及其尾后位置。"
+  }
+}

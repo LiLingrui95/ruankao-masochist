@@ -1,0 +1,37 @@
+{
+  "id": "B04-T01",
+  "module_id": "B04",
+  "unit_id": "B04-U01",
+  "title": "关系模型、键与完整性",
+  "aliases": [
+    "关系模式",
+    "主键",
+    "外键"
+  ],
+  "objectives": [
+    "解释并应用关系模型、键与完整性的核心条件",
+    "独立推导关系模型、键与完整性问题并用反例检查边界"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "数据库系统知识",
+    "数据库设计与实现"
+  ],
+  "body_path": "modules/B04/topics/B04-T01.md",
+  "source_ids": [
+    "B04-S01",
+    "B04-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 5,
+  "exercise_rationale": "常规应用：覆盖概念、推导与典型边界，配置 5 道。",
+  "question_ids": [
+    "B04-T01-Q01",
+    "B04-T01-Q02",
+    "B04-T01-Q03",
+    "B04-T01-Q04",
+    "B04-T01-Q05"
+  ]
+}

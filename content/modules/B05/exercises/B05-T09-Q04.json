@@ -1,0 +1,37 @@
+{
+  "id": "B05-T09-Q04",
+  "title": "配置与维护练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T09"
+  ],
+  "unit_id": "B05-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "区分逆向工程与重构。",
+  "answer": "逆向工程从实现恢复设计或规格等高层表示；重构在保持外部行为下改善内部结构。",
+  "explanation": "必须分别写恢复表示与保持行为改结构。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：逆向工程从实现恢复设计或规格等高层表示；重构在保持外部行为下改善内部结构。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：逆向工程从实现恢复设计或规格等高层表示；重构在保持外部行为下改善内部结构。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须分别写恢复表示与保持行为改结构。"
+    }
+  ]
+}

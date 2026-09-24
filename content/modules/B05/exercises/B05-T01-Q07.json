@@ -1,0 +1,39 @@
+{
+  "id": "B05-T01-Q07",
+  "title": "补充范围练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T01"
+  ],
+  "unit_id": "B05-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "某组织项目已计划、测量并受控，但尚无组织级统一标准过程。按当前CMMI Institute页面描述，最符合哪一级？",
+  "answer": "B",
+  "explanation": "依据题干限定的模型、版本、职责或业务条件逐项判断。",
+  "source_ids": [
+    "B05-S08"
+  ],
+  "answer_source_ids": [
+    "B05-S08"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S08的定位逐项核对四个选项；正确项B与题干条件一致。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 4,
+  "options": {
+    "A": "Maturity Level 1 Initial",
+    "B": "Maturity Level 2 Managed",
+    "C": "Maturity Level 3 Defined",
+    "D": "Maturity Level 5 Optimizing"
+  },
+  "option_explanations": {
+    "A": "Level 1表现为不可预测和被动响应，不符合已计划、测量和控制。",
+    "B": "Level 2明确描述项目层面已计划、执行、测量和控制。",
+    "C": "Level 3要求组织级标准指导各项目，题干明确尚未具备。",
+    "D": "Level 5强调持续改进，远超题干证据。"
+  }
+}

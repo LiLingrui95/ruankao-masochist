@@ -1,0 +1,95 @@
+{
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "year": {
+      "title": "Year",
+      "type": "integer"
+    },
+    "session": {
+      "title": "Session",
+      "type": "string"
+    },
+    "subject": {
+      "enum": [
+        "comprehensive",
+        "applied"
+      ],
+      "title": "Subject",
+      "type": "string"
+    },
+    "batch": {
+      "title": "Batch",
+      "type": "string"
+    },
+    "origin_kind": {
+      "title": "Origin Kind",
+      "type": "string"
+    },
+    "completeness": {
+      "enum": [
+        "complete",
+        "partial",
+        "index_only",
+        "missing"
+      ],
+      "title": "Completeness",
+      "type": "string"
+    },
+    "answer_status": {
+      "title": "Answer Status",
+      "type": "string"
+    },
+    "question_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Question Ids",
+      "type": "array"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      ],
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "year",
+    "session",
+    "subject",
+    "batch",
+    "origin_kind",
+    "completeness",
+    "answer_status",
+    "question_ids",
+    "source_ids",
+    "notes"
+  ],
+  "title": "Paper",
+  "type": "object"
+}

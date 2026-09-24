@@ -1,0 +1,39 @@
+{
+  "id": "B05-T01-Q05",
+  "title": "补充范围练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T01"
+  ],
+  "unit_id": "B05-T01",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "历史软件CMM v1.1中，建立组织级标准软件过程的是哪一级？",
+  "answer": "C",
+  "explanation": "依据题干限定的模型、版本、职责或业务条件逐项判断。",
+  "source_ids": [
+    "B05-S07"
+  ],
+  "answer_source_ids": [
+    "B05-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S07的定位逐项核对四个选项；正确项C与题干条件一致。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 4,
+  "options": {
+    "A": "初始级",
+    "B": "可重复级",
+    "C": "已定义级",
+    "D": "已管理级"
+  },
+  "option_explanations": {
+    "A": "初始级过程通常临时且不可预测，尚未建立组织标准过程。",
+    "B": "可重复级强调项目层面的基本管理纪律，不等于组织级标准过程。",
+    "C": "已定义级把管理和工程过程文档化、标准化并集成为组织标准过程。",
+    "D": "已管理级在已定义基础上进行定量测量与控制，题干问的是更早的标准化阶段。"
+  }
+}

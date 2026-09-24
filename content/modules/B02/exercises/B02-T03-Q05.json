@@ -1,0 +1,40 @@
+{
+  "id": "B02-T03-Q05",
+  "title": "通过指针更新",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T03"
+  ],
+  "unit_id": "B02-T03",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "补全函数：`void inc(int *p){ ____; }`，使调用 `inc(&x)` 后 x 加1。",
+  "answer": "(*p)++",
+  "explanation": "解引用得到调用者对象，再自增；括号避免写成移动指针。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：解引用得到调用者对象，再自增；括号避免写成移动指针。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "使用*p访问调用者对象。"
+    },
+    {
+      "id": "r2",
+      "text": "对解引用结果加1，给出(*p)++或等价语句。"
+    }
+  ],
+  "code": "补全函数：`void inc(int *p){ ____; }`，使调用 `inc(&x)` 后 x 加1。",
+  "language": "c",
+  "reference_fill": "(*p)++"
+}

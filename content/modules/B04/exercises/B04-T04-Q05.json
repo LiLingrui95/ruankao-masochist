@@ -1,0 +1,37 @@
+{
+  "id": "B04-T04-Q05",
+  "title": "有损反例",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T04"
+  ],
+  "unit_id": "B04-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(A,B,C)，F={AB→C}，分解为 AB 与 BC 是否保证无损？",
+  "answer": "不保证无损。",
+  "explanation": "公共 B 不能决定 AB 或 BC；(1,x,p),(2,x,q) 投影连接产生伪元组。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：不保证无损。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：公共 B 不能决定 AB 或 BC。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：公共 B 不能决定 AB 或 BC；(1,x,p),(2,x,q) 投影连接产生伪元组。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

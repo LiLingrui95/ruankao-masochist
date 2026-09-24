@@ -1,0 +1,16 @@
+{
+  "id": "SD-2005-H1-APPL-U",
+  "title": "2005年上半年软件设计师应用技术",
+  "year": 2005,
+  "session": "H1",
+  "subject": "applied",
+  "batch": "unknown",
+  "origin_kind": "recalled",
+  "completeness": "index_only",
+  "answer_status": "pending",
+  "question_ids": [],
+  "source_ids": [
+    "EXAM-2005-H1-APPLIED-S01"
+  ],
+  "notes": "第三方历史真题索引；未逐题核验完整性、答案与官方性，且无明确正文转载许可，故仅建索引。"
+}

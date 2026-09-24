@@ -1,0 +1,41 @@
+{
+  "id": "B05-T01-Q06",
+  "title": "补充范围练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T01"
+  ],
+  "unit_id": "B05-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "说明为何不能把历史CMM的“可重复级”直接当成所有CMMI版本的正式等级名称。",
+  "answer": "CMM v1.1是1993年的软件过程成熟度模型；CMMI后来整合多个领域且版本持续演进，正式名称和模型结构应按题干指定版本查证。历史CMM的可重复级可用于回答明确限定CMM v1.1的题，不能无版本地移植。",
+  "explanation": "按题干对象、版本与约束逐点作答。",
+  "source_ids": [
+    "B05-S09"
+  ],
+  "answer_source_ids": [
+    "B05-S09"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S09核对术语与版本边界，并逐项匹配rubric。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 7,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "评分点：指出CMM v1.1的历史模型身份"
+    },
+    {
+      "id": "r2",
+      "text": "指出CMMI是后续整合且有版本演进"
+    },
+    {
+      "id": "r3",
+      "text": "给出按题干版本作答的规则。"
+    }
+  ]
+}

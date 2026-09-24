@@ -1,0 +1,39 @@
+{
+  "id": "B05-T03-Q01",
+  "title": "DFD基础练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T03"
+  ],
+  "unit_id": "B05-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "DFD中外部实体能否直接连数据存储？",
+  "answer": "D",
+  "explanation": "DFD要求外部实体与存储之间经过加工。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：D",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "总能",
+    "B": "只读时能",
+    "C": "同名时能",
+    "D": "不能，须经加工"
+  },
+  "option_explanations": {
+    "A": "A 项“总能”错误：外部实体与存储直连绕过了对数据进行处理的加工。",
+    "B": "B 项“只读时能”错误：读取方向不改变端点规则，实体读取存储仍须经过加工。",
+    "C": "C 项“同名时能”错误：名称相同不能改变实体—存储直连非法的语义。",
+    "D": "D 项“不能，须经加工”正确：DFD要求外部实体与存储之间经过加工。"
+  }
+}

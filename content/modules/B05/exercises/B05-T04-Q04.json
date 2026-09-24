@@ -1,0 +1,37 @@
+{
+  "id": "B05-T04-Q04",
+  "title": "结构化设计练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T04"
+  ],
+  "unit_id": "B05-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "解释变换分析的三部分。",
+  "answer": "识别输入流、变换中心和输出流，再据此建立输入、变换、输出控制模块层次。",
+  "explanation": "必须列出输入流、变换中心、输出流。",
+  "source_ids": [
+    "B05-S04"
+  ],
+  "answer_source_ids": [
+    "B05-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：识别输入流、变换中心和输出流，再据此建立输入、变换、输出控制模块层次。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：识别输入流、变换中心和输出流，再据此建立输入、变换、输出控制模块层次。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须列出输入流、变换中心、输出流。"
+    }
+  ]
+}

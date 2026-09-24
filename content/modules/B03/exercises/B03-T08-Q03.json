@@ -1,0 +1,37 @@
+{
+  "id": "B03-T08-Q03",
+  "title": "排序算法与稳定性过程推导",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T08"
+  ],
+  "unit_id": "B03-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "根据下列主题给出一个最小可复核的逐步推导：记录 (2,a),(1,x),(2,b) 按数字升序。稳定结果必须是 (1,x),(2,a),(2,b)。归并时相等键先取左半项即可维持稳定；若先取右半项便破坏稳定性。",
+  "answer": "记录 (2,a),(1,x),(2,b) 按数字升序。稳定结果必须是 (1,x),(2,a),(2,b)。归并时相等键先取左半项即可维持稳定；若先取右半项便破坏稳定性。",
+  "explanation": "答案需列出中间状态，并由定义得到最终结论；只写结论无法检查边界。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "列出题干例子的关键中间状态，不能只写最终结论。"
+    },
+    {
+      "id": "r2",
+      "text": "由中间状态推出题中给定例子的最终结果，并说明所用规则。"
+    }
+  ]
+}

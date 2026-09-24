@@ -1,0 +1,43 @@
+{
+  "id": "B04-T07",
+  "module_id": "B04",
+  "unit_id": "B04-U03",
+  "title": "SQL子查询与数据更新",
+  "aliases": [
+    "EXISTS",
+    "相关子查询",
+    "UPDATE"
+  ],
+  "objectives": [
+    "解释并应用SQL子查询与数据更新的核心条件",
+    "独立推导SQL子查询与数据更新问题并用反例检查边界"
+  ],
+  "prerequisite_ids": [
+    "B04-T06"
+  ],
+  "syllabus_refs": [
+    "数据库系统知识",
+    "数据库设计与实现"
+  ],
+  "body_path": "modules/B04/topics/B04-T07.md",
+  "source_ids": [
+    "B04-S01",
+    "B04-S03",
+    "B04-S06"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "补齐数据库访问/非关系建模的关键边界，增加三种不同推理任务。",
+  "question_ids": [
+    "B04-T07-Q01",
+    "B04-T07-Q02",
+    "B04-T07-Q03",
+    "B04-T07-Q04",
+    "B04-T07-Q05",
+    "B04-T07-Q06",
+    "B04-T07-Q07",
+    "B04-T07-Q08"
+  ]
+}

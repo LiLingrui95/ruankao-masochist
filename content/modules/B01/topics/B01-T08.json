@@ -1,0 +1,41 @@
+{
+  "id": "B01-T08",
+  "module_id": "B01",
+  "unit_id": "B01-U03",
+  "title": "死锁与资源分配",
+  "aliases": [
+    "deadlock",
+    "Banker's algorithm",
+    "safe state"
+  ],
+  "objectives": [
+    "检查死锁四条件并判断资源图含义",
+    "逐轮计算 Need/Work，构造安全序列并验证资源请求"
+  ],
+  "prerequisite_ids": [
+    "B01-T07"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T08.md",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "复杂：配置 8 道覆盖必要条件、资源图、安全序列、银行家算法与恢复。",
+  "question_ids": [
+    "B01-T08-Q01",
+    "B01-T08-Q02",
+    "B01-T08-Q03",
+    "B01-T08-Q04",
+    "B01-T08-Q05",
+    "B01-T08-Q06",
+    "B01-T08-Q07",
+    "B01-T08-Q08"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B02-T08-Q06",
+  "title": "堆与垃圾回收",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T08"
+  ],
+  "unit_id": "B02-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "垃圾回收主要解决什么管理职责？是否保证没有所有形式的泄漏？",
+  "answer": "它自动识别并回收不再可达等满足回收条件的堆对象；不保证消除仍被意外引用的逻辑泄漏或非内存资源泄漏。",
+  "explanation": "需同时说明自动回收范围与可达但无用对象的边界。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：需同时说明自动回收范围与可达但无用对象的边界。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "说明GC回收不再可达等满足条件的堆对象。"
+    },
+    {
+      "id": "r2",
+      "text": "指出仍被意外引用的无用对象或非内存资源仍可能泄漏。"
+    }
+  ]
+}

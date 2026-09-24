@@ -1,0 +1,37 @@
+{
+  "id": "B04-T09-Q01",
+  "title": "复合索引前导列",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T09"
+  ],
+  "unit_id": "B04-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "索引(tenant_id,created_at) 更适合 `tenant_id=? AND created_at>=?` 还是只查 `created_at>=?`？",
+  "answer": "前者。",
+  "explanation": "先约束前导 tenant_id 后可在索引内做时间范围；只按第二列通常不能有效定位起点。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：前者。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：先约束前导 tenant_id 后可在索引内做时间范围。"
+    }
+  ],
+  "source_ids": [
+    "B04-S05"
+  ],
+  "answer_source_ids": [
+    "B04-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：先约束前导 tenant_id 后可在索引内做时间范围；只按第二列通常不能有效定位起点。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

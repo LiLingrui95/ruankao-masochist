@@ -1,0 +1,39 @@
+{
+  "id": "B07-T10-Q07",
+  "title": "访问控制、攻击与安全防护练习7",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T10"
+  ],
+  "unit_id": "B07-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "比较RBAC与ABAC，并各给一个适用场景。",
+  "answer": "RBAC按岗位角色聚合权限，适合组织职责稳定的财务审批；ABAC按主体、资源、动作和环境属性动态决策，适合按项目、数据等级、地点和时间组合授权。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "answer_source_ids": [
+    "B07-S12",
+    "B07-S11"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "准确描述角色中介与属性策略差异"
+    },
+    {
+      "id": "r2",
+      "text": "分别给出与机制相符的具体场景"
+    }
+  ]
+}

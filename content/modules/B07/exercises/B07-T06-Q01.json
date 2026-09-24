@@ -1,0 +1,41 @@
+{
+  "id": "B07-T06-Q01",
+  "title": "DNS、HTTP与应用协议练习1",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T06"
+  ],
+  "unit_id": "B07-T06",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "DNS迭代响应的典型行为是？",
+  "answer": "A",
+  "explanation": "迭代查询由查询方继续跟随转介。",
+  "source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "answer_source_ids": [
+    "B07-S06",
+    "B07-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项对照所列RFC/NIST章节，并人工检查唯一答案和错误选项边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "返回当前所知答案或指向更合适服务器的转介",
+    "B": "必须替客户端完成所有后续查询",
+    "C": "永久禁用缓存",
+    "D": "只允许返回IPv6地址"
+  },
+  "option_explanations": {
+    "A": "迭代查询由查询方继续跟随转介。",
+    "B": "错误：该选项断言“必须替客户端完成所有后续查询”。本题适用的关系是：迭代查询由查询方继续跟随转介。",
+    "C": "错误：该选项断言“永久禁用缓存”。本题适用的关系是：迭代查询由查询方继续跟随转介。",
+    "D": "错误：该选项断言“只允许返回IPv6地址”。本题适用的关系是：迭代查询由查询方继续跟随转介。"
+  }
+}

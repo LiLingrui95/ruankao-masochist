@@ -1,0 +1,39 @@
+{
+  "id": "B02-T03-Q02",
+  "title": "静态局部",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T03"
+  ],
+  "unit_id": "B02-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "函数内 `static int count;` 的作用域和存储期是？",
+  "answer": "B",
+  "explanation": "名字只在声明所在块可见，对象贯穿程序执行期。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：名字只在声明所在块可见，对象贯穿程序执行期。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "文件作用域、自动存储期",
+    "B": "块作用域、静态存储期",
+    "C": "块作用域、动态存储期",
+    "D": "函数原型作用域、静态存储期"
+  },
+  "option_explanations": {
+    "A": "名字不具文件作用域，对象也非自动存储期。",
+    "B": "声明点到块尾可见，对象贯穿程序执行。",
+    "C": "static局部不是动态分配对象。",
+    "D": "函数原型作用域只适用于原型参数名。"
+  }
+}

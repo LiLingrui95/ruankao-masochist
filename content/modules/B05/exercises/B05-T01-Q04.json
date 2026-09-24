@@ -1,0 +1,37 @@
+{
+  "id": "B05-T01-Q04",
+  "title": "软件过程练习4",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T01"
+  ],
+  "unit_id": "B05-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "说明开发生命周期与产品生命周期的边界。",
+  "answer": "开发生命周期侧重把需求转为可交付软件；产品生命周期还包括部署、运行、维护、演化和退役。",
+  "explanation": "列出开发之后的运行至退役即可验证边界。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：开发生命周期侧重把需求转为可交付软件；产品生命周期还包括部署、运行、维护、演化和退役。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：开发生命周期侧重把需求转为可交付软件；产品生命周期还包括部署、运行、维护、演化和退役。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：列出开发之后的运行至退役即可验证边界。"
+    }
+  ]
+}

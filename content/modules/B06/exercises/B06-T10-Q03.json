@@ -1,0 +1,55 @@
+{
+  "id": "B06-T10-Q03",
+  "title": "预约顺序图",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T10"
+  ],
+  "unit_id": "B06-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料并回答各子问题。",
+  "answer": "生命线为 Patient、BookingUI、BookingService、Schedule、AppointmentRepository、Notifier。消息顺序：Patient→UI submit；UI→Service book；Service→Schedule isAvailable。alt[available]：Service→Repository save(Appointment)，Service→Notifier sendConfirmation，返回成功；else[occupied]：Service→UI showConflict，不创建记录也不通知确认。",
+  "explanation": "生命线为 Patient、BookingUI、BookingService、Schedule、AppointmentRepository、Notifier。消息顺序：Patient→UI submit；UI→Service book；Service→Schedule isAvailable。alt[available]：Service→Repository save(Appointment)，Service→Notifier sendConfirmation，返回成功；else[occupied]：Service→UI showConflict，不创建记录也不通知确认。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "至少列出 UI、Service、Schedule、Repository 四条生命线"
+    },
+    {
+      "id": "r2",
+      "text": "查询在创建之前"
+    },
+    {
+      "id": "r3",
+      "text": "两分支守卫和副作用完整"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 18,
+  "case_material": "患者提交时段；BookingService 查询 Schedule；若空闲则创建 Appointment 并通知患者，否则返回冲突。",
+  "subquestions": [
+    {
+      "id": "s1",
+      "prompt": "写出主要生命线和消息顺序。",
+      "points": 5
+    },
+    {
+      "id": "s2",
+      "prompt": "给出 alt 两分支。",
+      "points": 5
+    }
+  ],
+  "assets": []
+}

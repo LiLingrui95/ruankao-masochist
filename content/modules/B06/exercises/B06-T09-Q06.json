@@ -1,0 +1,43 @@
+{
+  "id": "B06-T09-Q06",
+  "title": "观察者生命周期",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T09"
+  ],
+  "unit_id": "B06-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "订阅者先销毁时应如何避免悬空回调？",
+  "answer": "使用可撤销订阅令牌在析构时注销，或由 subject 保存 weak_ptr 并在通知时清理失效项。",
+  "explanation": "使用可撤销订阅令牌在析构时注销，或由 subject 保存 weak_ptr 并在通知时清理失效项。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确答案为使用可撤销订阅令牌在析构时注销，或由 subject 保存 weak_ptr 并在通知时清理失效项。"
+    },
+    {
+      "id": "r2",
+      "text": "把题干变化点映射到模式意图或 C++ 所有权"
+    },
+    {
+      "id": "r3",
+      "text": "说明至少一个不采用相邻模式的理由"
+    }
+  ],
+  "source_ids": [
+    "B06-S04",
+    "B06-S06"
+  ],
+  "answer_source_ids": [
+    "B06-S04",
+    "B06-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

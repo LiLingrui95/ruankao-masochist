@@ -1,0 +1,43 @@
+{
+  "id": "B01-T10-Q02",
+  "title": "文件、磁盘与设备管理练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T10"
+  ],
+  "unit_id": "B01-T10",
+  "section_index": 0,
+  "prompt": "4 KiB 索引块、4 byte 块号、单级直接索引，最多索引多少数据容量？",
+  "explanation": "可存 4096/4=1024 个块号，每块 4096 byte，总计 4,194,304 byte。",
+  "source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "answer_source_ids": [
+    "B01-S07",
+    "B01-S08",
+    "B01-S09",
+    "B01-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：可存 4096/4=1024 个块号，每块 4096 byte，总计 4,194,304 byte。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "short_answer",
+  "answer": "4 MiB。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：4 MiB。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：可存 4096/4=1024 个块号，每块 4096 byte，总计 4,194,304 byte。"
+    }
+  ]
+}

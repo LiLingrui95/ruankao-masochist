@@ -1,0 +1,85 @@
+{
+  "$defs": {
+    "TeachingUnit": {
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "topic_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Topic Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "topic_ids"
+      ],
+      "title": "TeachingUnit",
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "objectives": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Objectives",
+      "type": "array"
+    },
+    "units": {
+      "items": {
+        "$ref": "#/$defs/TeachingUnit"
+      },
+      "title": "Units",
+      "type": "array"
+    },
+    "topic_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Topic Ids",
+      "type": "array"
+    },
+    "search_rules": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Search Rules",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "description",
+    "objectives",
+    "units",
+    "topic_ids",
+    "search_rules"
+  ],
+  "title": "Module",
+  "type": "object"
+}

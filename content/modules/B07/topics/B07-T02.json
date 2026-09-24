@@ -1,0 +1,38 @@
+{
+  "id": "B07-T02",
+  "module_id": "B07",
+  "unit_id": "B07-U01",
+  "title": "以太网与链路层",
+  "aliases": [
+    "Ethernet",
+    "MAC",
+    "VLAN"
+  ],
+  "objectives": [
+    "识别以太网帧与MAC地址职责",
+    "解释交换机学习、广播域及VLAN",
+    "分析冲突域和链路差错检测"
+  ],
+  "prerequisite_ids": [
+    "B07-T01"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）—计算机网络与信息安全知识"
+  ],
+  "body_path": "modules/B07/topics/B07-T02.md",
+  "source_ids": [
+    "B07-S01",
+    "B07-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 4,
+  "exercise_rationale": "链路层以概念辨析为主，4题覆盖帧、转发和VLAN。",
+  "question_ids": [
+    "B07-T02-Q01",
+    "B07-T02-Q02",
+    "B07-T02-Q03",
+    "B07-T02-Q04"
+  ]
+}

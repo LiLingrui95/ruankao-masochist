@@ -1,0 +1,37 @@
+{
+  "id": "B05-T06-Q02",
+  "title": "白盒测试练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T06"
+  ],
+  "unit_id": "B05-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "对if(A&&B)给出达到分支覆盖但不满足每个条件真假覆盖的一组用例。",
+  "answer": "(A=true,B=true)与(A=false,B=true)。整体判定真、假均出现；短路时第二例不求值B，B未取false。",
+  "explanation": "必须给两组具体取值、整体真假及B未取false。",
+  "source_ids": [
+    "B05-S02"
+  ],
+  "answer_source_ids": [
+    "B05-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：(A=true,B=true)与(A=false,B=true)。整体判定真、假均出现；短路时第二例不求值B，B未取false。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：(A=true,B=true)与(A=false,B=true)。整体判定真、假均出现；短路时第二例不求值B，B未取false。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须给两组具体取值、整体真假及B未取false。"
+    }
+  ]
+}

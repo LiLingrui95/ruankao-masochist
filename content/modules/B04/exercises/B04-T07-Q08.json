@@ -1,0 +1,37 @@
+{
+  "id": "B04-T07-Q08",
+  "title": "转账事务边界",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T07"
+  ],
+  "unit_id": "B04-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "扣款已执行，入账执行失败。两条语句应如何组织，连接归还池前应做什么？",
+  "answer": "把两条更新放在同一事务；失败时回滚，清理事务状态后再归还连接。",
+  "explanation": "否则扣款可能独立提交，违背业务原子性；未清理连接会影响后续请求。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "两条更新属于同一事务并失败回滚"
+    },
+    {
+      "id": "r2",
+      "text": "归还连接前清理未完成事务"
+    }
+  ],
+  "source_ids": [
+    "B04-S06"
+  ],
+  "answer_source_ids": [
+    "B04-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "主任务按接口语法与业务时间语义独立审校；概念题，未声称实际部署运行。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

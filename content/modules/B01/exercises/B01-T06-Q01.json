@@ -1,0 +1,39 @@
+{
+  "id": "B01-T06-Q01",
+  "title": "进程、线程与调度练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T06"
+  ],
+  "unit_id": "B01-T06",
+  "section_index": 0,
+  "prompt": "running 进程请求磁盘 I/O 后通常进入什么状态？I/O 完成后呢？",
+  "explanation": "I/O 未完成时不具备运行条件；完成仅使其可运行，是否立刻运行由调度决定。",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "answer_source_ids": [
+    "B01-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：I/O 未完成时不具备运行条件；完成仅使其可运行，是否立刻运行由调度决定。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "ready→running",
+    "B": "blocked→running",
+    "C": "running→ready",
+    "D": "blocked→ready"
+  },
+  "answer": "D",
+  "option_explanations": {
+    "A": "请求 I/O 不会让进程继续可调度。",
+    "B": "I/O 完成后先具备 ready 条件，不保证立即运行。",
+    "C": "请求未完成前进程不是 ready。",
+    "D": "请求后 blocked，完成事件使其回到 ready。"
+  }
+}

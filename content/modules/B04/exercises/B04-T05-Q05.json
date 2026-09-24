@@ -1,0 +1,37 @@
+{
+  "id": "B04-T05-Q05",
+  "title": "三元事实",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T05"
+  ],
+  "unit_id": "B04-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "供应商在特定仓库供应特定零件且记录价格，能否只建三个二元联系？",
+  "answer": "通常不能；应建 Supply(supplier_id,warehouse_id,part_id,price)，键由业务唯一性决定。",
+  "explanation": "价格依赖三者组合，拆成二元联系会丢失哪家供应商在何仓供何零件的共同事实。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：通常不能。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：价格依赖三者组合，拆成二元联系会丢失哪家供应商在何仓供何零件的共同事实。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：价格依赖三者组合，拆成二元联系会丢失哪家供应商在何仓供何零件的共同事实。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

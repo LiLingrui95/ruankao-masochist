@@ -1,0 +1,37 @@
+{
+  "id": "B08-T01-Q06",
+  "title": "逻辑反例",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T01"
+  ],
+  "unit_id": "B08-T01",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "用一个赋值说明p→q不等价于q→p。",
+  "answer": "取p真、q假：p→q为假而q→p为真。",
+  "explanation": "解题依据与结果：取p真、q假：p→q为假而q→p为真。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“取p真、q假：p→q为假而q→p为真”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“取p真、q假：p→q为假而q→p为真”给出题设对应的计算、文本证据或适用边界，不能只写题名“逻辑反例”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S01"
+  ],
+  "answer_source_ids": [
+    "B08-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

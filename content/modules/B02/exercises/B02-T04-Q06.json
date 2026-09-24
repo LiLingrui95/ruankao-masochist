@@ -1,0 +1,37 @@
+{
+  "id": "B02-T04-Q06",
+  "title": "未定义行为分类",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T04"
+  ],
+  "unit_id": "B02-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "分别判断：内存泄漏、释放后解引用、同一非空指针重复 free。",
+  "answer": "泄漏是资源管理错误但不必立即构成未定义行为；释放后解引用和重复 free 都是未定义行为。",
+  "explanation": "三者后果不同，不能笼统称为编译错误。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：三者后果不同，不能笼统称为编译错误。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "将泄漏判为资源管理错误且不必立即触发UB。"
+    },
+    {
+      "id": "r2",
+      "text": "将释放后解引用和重复free都判为未定义行为。"
+    }
+  ]
+}

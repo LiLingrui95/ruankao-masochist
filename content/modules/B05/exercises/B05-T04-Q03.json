@@ -1,0 +1,39 @@
+{
+  "id": "B05-T04-Q03",
+  "title": "结构化设计练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T04"
+  ],
+  "unit_id": "B05-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "两个模块共同读写全局表，属于？",
+  "answer": "C",
+  "explanation": "共享全局数据形成公共耦合。",
+  "source_ids": [
+    "B05-S04"
+  ],
+  "answer_source_ids": [
+    "B05-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "数据耦合",
+    "B": "无耦合",
+    "C": "公共耦合",
+    "D": "标记耦合"
+  },
+  "option_explanations": {
+    "A": "A 项“数据耦合”错误：数据耦合通过参数传递必要简单数据，不涉及共享全局表。",
+    "B": "B 项“无耦合”错误：共同读写全局表形成明确依赖，不可能是无耦合。",
+    "C": "C 项“公共耦合”正确：共享全局数据形成公共耦合。",
+    "D": "D 项“标记耦合”错误：标记耦合传递控制标志决定被调行为，题干没有控制标志。"
+  }
+}

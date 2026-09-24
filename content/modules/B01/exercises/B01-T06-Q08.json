@@ -1,0 +1,37 @@
+{
+  "id": "B01-T06-Q08",
+  "title": "进程、线程与调度练习 8",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T06"
+  ],
+  "unit_id": "B01-T06",
+  "section_index": 0,
+  "prompt": "修改普通服务配置与更换内核驱动的生效方式为何不能一概而论？",
+  "explanation": "配置所属层次不同；不能把 application/service 配置误当作 kernel 构建参数。",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "answer_source_ids": [
+    "B01-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：配置所属层次不同；不能把 application/service 配置误当作 kernel 构建参数。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 7,
+  "type": "short_answer",
+  "answer": "前者常可重载或重启服务，后者可能需重新加载驱动或重启系统，应遵循目标系统文档。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：前者常可重载或重启服务，后者可能需重新加载驱动或重启系统，应遵循目标系统文档。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：配置所属层次不同；不能把 application/service 配置误当作 kernel 构建参数。"
+    }
+  ]
+}

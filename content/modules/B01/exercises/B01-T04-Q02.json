@@ -1,0 +1,39 @@
+{
+  "id": "B01-T04-Q02",
+  "title": "Cache与存储层次练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T04"
+  ],
+  "unit_id": "B01-T04",
+  "section_index": 0,
+  "prompt": "上述 Cache 改成 4 路组相联，求组数和 tag 位数。",
+  "explanation": "总行数仍 256，4 路故 64 组，index=6；tag=32-6-5=21。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：总行数仍 256，4 路故 64 组，index=6；tag=32-6-5=21。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "64 组，21 位 tag",
+    "B": "64 组，20 位 tag",
+    "C": "256 组，19 位 tag",
+    "D": "128 组，20 位 tag"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "256 行/4=64 组，index 6 位，tag 21 位。",
+    "B": "沿用了直接映射的 8 位 index。",
+    "C": "完全忽略 4 路相联。",
+    "D": "只除以 2，误当成 2 路。"
+  }
+}

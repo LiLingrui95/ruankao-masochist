@@ -1,0 +1,41 @@
+{
+  "id": "B06-T04-Q02",
+  "title": "vector 失效",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T04"
+  ],
+  "unit_id": "B06-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "保存 vector 首元素指针后 push_back 导致重新分配。旧指针状态是？",
+  "options": {
+    "A": "失效，不得解引用",
+    "B": "仍永久有效",
+    "C": "自动指向新地址",
+    "D": "变成 shared_ptr"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "重新分配移动元素并使旧地址相关指针、引用和迭代器失效。",
+    "B": "仅未重新分配时部分操作可保持有效。",
+    "C": "裸指针不会自动更新。",
+    "D": "容器操作不改变指针类型。"
+  },
+  "explanation": "正确选项为 A。重新分配移动元素并使旧地址相关指针、引用和迭代器失效。",
+  "source_ids": [
+    "B06-S03",
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S03",
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

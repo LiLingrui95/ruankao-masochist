@@ -1,0 +1,37 @@
+{
+  "id": "B01-T09-Q03",
+  "title": "分页、地址转换与置换练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T09"
+  ],
+  "unit_id": "B01-T09",
+  "section_index": 0,
+  "prompt": "上题 VPN 11 映射 PFN 7，求物理地址。",
+  "explanation": "PFN×页大小+offset=7×1024+58=7226。",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "answer_source_ids": [
+    "B01-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：PFN×页大小+offset=7×1024+58=7226。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "7226。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：7226。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：PFN×页大小+offset=7×1024+58=7226。"
+    }
+  ]
+}

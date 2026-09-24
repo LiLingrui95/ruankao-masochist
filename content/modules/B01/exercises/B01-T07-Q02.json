@@ -1,0 +1,37 @@
+{
+  "id": "B01-T07-Q02",
+  "title": "PV同步与互斥练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T07"
+  ],
+  "unit_id": "B01-T07",
+  "section_index": 0,
+  "prompt": "容量 4，完成 3 次生产和 1 次消费后 empty/full 为何？",
+  "explanation": "净产品数 2；稳定时 empty+full=4，所以二者均为 2。",
+  "source_ids": [
+    "B01-S04"
+  ],
+  "answer_source_ids": [
+    "B01-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：净产品数 2；稳定时 empty+full=4，所以二者均为 2。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "short_answer",
+  "answer": "empty=2，full=2。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：empty=2，full=2。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：净产品数 2；稳定时 empty+full=4，所以二者均为 2。"
+    }
+  ]
+}

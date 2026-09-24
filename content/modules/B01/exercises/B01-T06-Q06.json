@@ -1,0 +1,37 @@
+{
+  "id": "B01-T06-Q06",
+  "title": "进程、线程与调度练习 6",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T06"
+  ],
+  "unit_id": "B01-T06",
+  "section_index": 0,
+  "prompt": "同一进程的线程通常共享与不共享哪些状态？",
+  "explanation": "执行流需要独立调用链和现场；代码、堆和打开文件等属于进程资源。",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "answer_source_ids": [
+    "B01-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：执行流需要独立调用链和现场；代码、堆和打开文件等属于进程资源。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "共享地址空间和进程级资源；各自拥有寄存器上下文、程序计数器和栈。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：共享地址空间和进程级资源；各自拥有寄存器上下文、程序计数器和栈。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：执行流需要独立调用链和现场；代码、堆和打开文件等属于进程资源。"
+    }
+  ]
+}

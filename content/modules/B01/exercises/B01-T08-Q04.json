@@ -1,0 +1,37 @@
+{
+  "id": "B01-T08-Q04",
+  "title": "死锁与资源分配练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T08"
+  ],
+  "unit_id": "B01-T08",
+  "section_index": 0,
+  "prompt": "Available=3；P1 Allocation=3,Max=7，P2=2,4，P3=2,6。给出安全序列。",
+  "explanation": "Need 为 4,2,4；先 P2 后 Work=5，再 P1 后 8，最后 P3。",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "answer_source_ids": [
+    "B01-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：Need 为 4,2,4；先 P2 后 Work=5，再 P1 后 8，最后 P3。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "P2,P1,P3（另有满足条件的序列也可）。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：P2,P1,P3（另有满足条件的序列也可）。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：Need 为 4,2,4；先 P2 后 Work=5，再 P1 后 8，最后 P3。"
+    }
+  ]
+}

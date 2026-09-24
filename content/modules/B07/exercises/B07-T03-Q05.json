@@ -1,0 +1,37 @@
+{
+  "id": "B07-T03-Q05",
+  "title": "IPv4子网与CIDR练习5",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T03"
+  ],
+  "unit_id": "B07-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "计算10.3.14.9/23的网络地址、广播地址和普通广播子网可用范围。",
+  "answer": "网络10.3.14.0/23；广播10.3.15.255；可用10.3.14.1—10.3.15.254。",
+  "explanation": "按协议前提逐步推导；结果、单位与边界必须同时成立。",
+  "source_ids": [
+    "B07-S03"
+  ],
+  "answer_source_ids": [
+    "B07-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "指出/23掩码255.255.254.0，第三字节块大小2"
+    },
+    {
+      "id": "r2",
+      "text": "给出网络、广播与完整可用范围并保持边界一致"
+    }
+  ]
+}

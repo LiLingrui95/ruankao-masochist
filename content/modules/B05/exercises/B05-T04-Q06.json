@@ -1,0 +1,37 @@
+{
+  "id": "B05-T04-Q06",
+  "title": "结构化设计练习6",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T04"
+  ],
+  "unit_id": "B05-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "为何无限拆分模块不是低耦合保证？",
+  "answer": "模块过细会增加接口、调用和协调依赖，整体交互复杂度可能上升。",
+  "explanation": "需指出接口数量和协调依赖增加。",
+  "source_ids": [
+    "B05-S04"
+  ],
+  "answer_source_ids": [
+    "B05-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：模块过细会增加接口、调用和协调依赖，整体交互复杂度可能上升。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：模块过细会增加接口、调用和协调依赖，整体交互复杂度可能上升。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：需指出接口数量和协调依赖增加。"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B04-T04-Q07",
+  "title": "BCNF分解一步",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T04"
+  ],
+  "unit_id": "B04-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(A,B,C)，F={A→B,B→C}，按违反 BCNF 的 B→C 分解。",
+  "answer": "分为 BC 与 AB。",
+  "explanation": "B→C 的 B 不是原关系超键；分解为 B∪C 和 R−(C−B)，即 BC、AB，且公共 B 决定 BC，故无损。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：分为 BC 与 AB。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：B→C 的 B 不是原关系超键。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：B→C 的 B 不是原关系超键；分解为 B∪C 和 R−(C−B)，即 BC、AB，且公共 B 决定 BC，故无损。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

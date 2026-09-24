@@ -1,0 +1,37 @@
+{
+  "id": "B01-T08-Q02",
+  "title": "死锁与资源分配练习 2",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T08"
+  ],
+  "unit_id": "B01-T08",
+  "section_index": 0,
+  "prompt": "每类资源仅一个实例时，资源分配图出现环意味着什么？",
+  "explanation": "单实例使环上每个进程等待下一进程持有的唯一实例，环无法自行解除。",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "answer_source_ids": [
+    "B01-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：单实例使环上每个进程等待下一进程持有的唯一实例，环无法自行解除。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "short_answer",
+  "answer": "存在死锁。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：存在死锁。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：单实例使环上每个进程等待下一进程持有的唯一实例，环无法自行解除。"
+    }
+  ]
+}

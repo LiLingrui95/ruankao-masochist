@@ -1,0 +1,40 @@
+{
+  "id": "B02-T07",
+  "module_id": "B02",
+  "unit_id": "B02-U03",
+  "title": "语义分析、中间代码与优化",
+  "aliases": [
+    "符号表",
+    "三地址码",
+    "数据流优化"
+  ],
+  "objectives": [
+    "区分静态语义检查与解析",
+    "把表达式翻译为三地址码",
+    "判断优化的适用条件与语义保持"
+  ],
+  "prerequisite_ids": [
+    "B02-T06"
+  ],
+  "syllabus_refs": [
+    "程序语言基础知识",
+    "编译程序基础知识"
+  ],
+  "body_path": "modules/B02/topics/B02-T07.md",
+  "source_ids": [
+    "B02-S04"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 7,
+  "exercise_target": 6,
+  "exercise_rationale": "该考点包含概念、边界与推导三类能力，配置 6 道不同推理任务覆盖基础、应用和综合层级。",
+  "question_ids": [
+    "B02-T07-Q01",
+    "B02-T07-Q02",
+    "B02-T07-Q03",
+    "B02-T07-Q04",
+    "B02-T07-Q05",
+    "B02-T07-Q06"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B02-T08-Q01",
+  "title": "静态作用域",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T08"
+  ],
+  "unit_id": "B02-T08",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "静态/词法作用域查找自由变量主要依据？",
+  "answer": "B",
+  "explanation": "词法作用域由定义处的嵌套环境决定。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：词法作用域由定义处的嵌套环境决定。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "运行时调用链",
+    "B": "源代码嵌套结构",
+    "C": "对象地址大小",
+    "D": "垃圾回收顺序"
+  },
+  "option_explanations": {
+    "A": "调用链是动态作用域的查找依据。",
+    "B": "词法作用域按定义处源码嵌套查找。",
+    "C": "地址宽度不参与名字绑定。",
+    "D": "回收顺序不决定自由变量。"
+  }
+}

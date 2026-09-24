@@ -1,0 +1,39 @@
+{
+  "id": "B03-T05-Q01",
+  "title": "平衡树、查找与散列概念判断1",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T05"
+  ],
+  "unit_id": "B03-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "散列表查找复杂度较准确的表述是？",
+  "options": {
+    "A": "始终 O(1)",
+    "B": "平均 O(1)，最坏可 O(n)",
+    "C": "始终 O(log n)",
+    "D": "平均 O(n²)"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "冲突集中时会线性退化。",
+    "B": "均匀散列下平均常数，所有键冲突时最坏线性。",
+    "C": "平衡树常见为对数，不是哈希平均界。",
+    "D": "没有平方级桶扫描。"
+  },
+  "explanation": "答案 B：均匀散列下平均常数，所有键冲突时最坏线性。",
+  "source_ids": [
+    "B03-S05"
+  ],
+  "answer_source_ids": [
+    "B03-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按定义逐项代入题干条件排除，并用 verify.py 校验四项齐全、答案落在选项中且每项解析均点明本项文本与正确项。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

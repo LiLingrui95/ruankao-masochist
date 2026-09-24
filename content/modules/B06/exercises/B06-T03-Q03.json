@@ -1,0 +1,39 @@
+{
+  "id": "B06-T03-Q03",
+  "title": "override 检查",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T03"
+  ],
+  "unit_id": "B06-T03",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "Base 有 virtual void f() const；Derived 写 void f() override。结果是？",
+  "options": {
+    "A": "程序不良构，override 检查失败",
+    "B": "成功覆盖",
+    "C": "运行时随机选择",
+    "D": "自动补 const"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "cv 限定不同，签名不覆盖，override 使错误在编译期暴露。",
+    "B": "缺少 const，不能覆盖。",
+    "C": "这是编译期规则，不到运行期。",
+    "D": "编译器不会改写成员函数限定。"
+  },
+  "explanation": "正确选项为 A。cv 限定不同，签名不覆盖，override 使错误在编译期暴露。",
+  "source_ids": [
+    "B06-S05"
+  ],
+  "answer_source_ids": [
+    "B06-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3
+}

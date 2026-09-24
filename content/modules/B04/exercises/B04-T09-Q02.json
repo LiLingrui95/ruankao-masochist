@@ -1,0 +1,37 @@
+{
+  "id": "B04-T09-Q02",
+  "title": "顺序扫描并非错误",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T09"
+  ],
+  "unit_id": "B04-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "status='PAID' 命中 70% 大表行，优化器选 Seq Scan 是否必然错误？",
+  "answer": "不必然。",
+  "explanation": "高命中率经索引会产生大量随机访问，顺序扫描可能代价更低，应看统计与实测。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：不必然。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：高命中率经索引会产生大量随机访问，顺序扫描可能代价更低，应看统计与实测。"
+    }
+  ],
+  "source_ids": [
+    "B04-S05"
+  ],
+  "answer_source_ids": [
+    "B04-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：高命中率经索引会产生大量随机访问，顺序扫描可能代价更低，应看统计与实测。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

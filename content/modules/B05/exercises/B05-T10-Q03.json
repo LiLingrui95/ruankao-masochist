@@ -1,0 +1,39 @@
+{
+  "id": "B05-T10-Q03",
+  "title": "估算与进度练习3",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T10"
+  ],
+  "unit_id": "B05-T10",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "关键路径是？",
+  "answer": "A",
+  "explanation": "网络中的最长工期路径决定完工期。",
+  "source_ids": [
+    "B05-S03"
+  ],
+  "answer_source_ids": [
+    "B05-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 3,
+  "options": {
+    "A": "决定项目最短完工期的最长依赖路径",
+    "B": "活动数最多路径",
+    "C": "成本最高路径",
+    "D": "风险最多路径"
+  },
+  "option_explanations": {
+    "A": "A 项“决定项目最短完工期的最长依赖路径”正确：网络中的最长工期路径决定完工期。",
+    "B": "B 项“活动数最多路径”错误：活动数量不体现各活动工期，节点多的路径未必最长。",
+    "C": "C 项“成本最高路径”错误：关键路径由持续时间和依赖决定，不由成本最高决定。",
+    "D": "D 项“风险最多路径”错误：风险数量用于风险管理，不决定网络计划工期。"
+  }
+}

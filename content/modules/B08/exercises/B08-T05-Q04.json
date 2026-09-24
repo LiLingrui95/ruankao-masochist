@@ -1,0 +1,39 @@
+{
+  "id": "B08-T05-Q04",
+  "title": "效力辨析",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T05"
+  ],
+  "unit_id": "B08-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "解释“推荐性标准”等于“项目可忽略”为什么错误。",
+  "answer": "推荐性描述法定性质；若法律法规、合同或采购文件引用，可能转化为项目约定义务，仍应查适用范围。",
+  "explanation": "解题依据与结果：推荐性描述法定性质；若法律法规、合同或采购文件引用，可能转化为项目约定义务，仍应查适用范围。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“推荐性描述法定性质”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“若法律法规、合同或采购文件引用，可能转化为项目约定义务，仍应查适用范围”给出题设对应的计算、文本证据或适用边界，不能只写题名“效力辨析”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S03",
+    "B08-S04"
+  ],
+  "answer_source_ids": [
+    "B08-S03",
+    "B08-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

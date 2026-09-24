@@ -1,0 +1,41 @@
+{
+  "id": "B06-T06-Q06",
+  "title": "状态迁移合法性",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T06"
+  ],
+  "unit_id": "B06-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "订单状态为 Draft、Submitted、Paid、Shipped。submit、pay、ship 依次迁移。若 Draft 收到 ship，应如何处理并解释？",
+  "answer": "Draft 没有以 ship 为触发的外出迁移，因此事件不能使其进入 Shipped；模型可选择忽略事件或报告非法操作，但必须由系统契约明确。合法路径是 Draft--submit→Submitted--pay→Paid--ship→Shipped。",
+  "explanation": "Draft 没有以 ship 为触发的外出迁移，因此事件不能使其进入 Shipped；模型可选择忽略事件或报告非法操作，但必须由系统契约明确。合法路径是 Draft--submit→Submitted--pay→Paid--ship→Shipped。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确 Draft 不能直接 ship"
+    },
+    {
+      "id": "r2",
+      "text": "写出完整合法迁移链"
+    },
+    {
+      "id": "r3",
+      "text": "说明忽略或报错需由契约定义"
+    }
+  ],
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

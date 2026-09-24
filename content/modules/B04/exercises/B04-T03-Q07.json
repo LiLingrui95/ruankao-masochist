@@ -1,0 +1,37 @@
+{
+  "id": "B04-T03-Q07",
+  "title": "超键不等于候选键",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T03"
+  ],
+  "unit_id": "B04-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "若 A 是候选键，AB 是什么？",
+  "answer": "AB 是超键，但不是候选键。",
+  "explanation": "AB 能确定全部属性，但删除 B 后 A 仍能确定全部，故不满足最小性。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：AB 是超键，但不是候选键。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：AB 能确定全部属性，但删除 B 后 A 仍能确定全部，故不满足最小性。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：AB 能确定全部属性，但删除 B 后 A 仍能确定全部，故不满足最小性。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

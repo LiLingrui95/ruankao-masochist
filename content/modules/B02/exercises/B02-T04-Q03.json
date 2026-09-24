@@ -1,0 +1,39 @@
+{
+  "id": "B02-T04-Q03",
+  "title": "realloc 失败",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T04"
+  ],
+  "unit_id": "B02-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "`q=realloc(p,n)` 返回 NULL（n非0）时，原来的 p 指向分配如何？",
+  "answer": "B",
+  "explanation": "失败时原对象保持不变；直接覆盖 p 会丢失其地址。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：失败时原对象保持不变；直接覆盖 p 会丢失其地址。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "已被释放",
+    "B": "仍有效且未改变",
+    "C": "内容必清零",
+    "D": "成为数组尾后指针"
+  },
+  "option_explanations": {
+    "A": "n非0且失败时原分配不会释放。",
+    "B": "失败返回NULL，原对象保持不变。",
+    "C": "realloc失败不改写原对象内容。",
+    "D": "返回值不是尾后指针。"
+  }
+}

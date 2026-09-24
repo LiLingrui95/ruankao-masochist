@@ -1,0 +1,41 @@
+{
+  "id": "B06-T04-Q06",
+  "title": "异常传播推演",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T04"
+  ],
+  "unit_id": "B06-T04",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "f 中构造 Guard g 后调用 h；h 抛 runtime_error，f 不捕获，main 以 catch(const exception&) 捕获。说明路径。",
+  "answer": "h 抛出后在 h 中清理已构造自动对象；找不到处理器便展开到 f，析构 g；继续到 main，exception 基类引用处理器匹配 runtime_error 并执行。",
+  "explanation": "h 抛出后在 h 中清理已构造自动对象；找不到处理器便展开到 f，析构 g；继续到 main，exception 基类引用处理器匹配 runtime_error 并执行。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "说明异常从 h 传播到 f 再到 main"
+    },
+    {
+      "id": "r2",
+      "text": "明确 g 在离开 f 时析构"
+    },
+    {
+      "id": "r3",
+      "text": "明确 runtime_error 可被 exception 引用捕获"
+    }
+  ],
+  "source_ids": [
+    "B06-S03"
+  ],
+  "answer_source_ids": [
+    "B06-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

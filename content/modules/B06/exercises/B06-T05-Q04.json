@@ -1,0 +1,39 @@
+{
+  "id": "B06-T05-Q04",
+  "title": "依赖关系",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T05"
+  ],
+  "unit_id": "B06-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "ReportGenerator 仅在一个方法参数中临时接收 Formatter，且不保存引用。应画？",
+  "options": {
+    "A": "ReportGenerator 依赖 Formatter",
+    "B": "Formatter 组合 ReportGenerator",
+    "C": "二者泛化",
+    "D": "ReportGenerator 聚合 Formatter"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "参数中的临时使用典型表达为依赖。",
+    "B": "没有生命周期所有权。",
+    "C": "题干不存在任何子类型或替换关系。",
+    "D": "没有稳定整体—部分语义。"
+  },
+  "explanation": "正确选项为 A。参数中的临时使用典型表达为依赖。",
+  "source_ids": [
+    "B06-S01"
+  ],
+  "answer_source_ids": [
+    "B06-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B04-T02-Q03",
+  "title": "投影是否保留行数",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T02"
+  ],
+  "unit_id": "B04-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R={(1,x),(1,y)}，π_A(R) 的结果和基数是什么？",
+  "answer": "{(1)}，基数 1。",
+  "explanation": "经典关系代数是集合语义，投影产生的重复元组被消除。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：{(1)}，基数 1。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：经典关系代数是集合语义，投影产生的重复元组被消除。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：经典关系代数是集合语义，投影产生的重复元组被消除。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

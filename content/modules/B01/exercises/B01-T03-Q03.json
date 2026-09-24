@@ -1,0 +1,37 @@
+{
+  "id": "B01-T03-Q03",
+  "title": "CPU、指令与寻址练习 3",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T03"
+  ],
+  "unit_id": "B01-T03",
+  "section_index": 0,
+  "prompt": "直接寻址字段 400；M[400]=900。直接与间接寻址的 EA 分别是什么？",
+  "explanation": "直接方式把字段本身作地址；间接方式先读 M[400] 得到最终地址。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：直接方式把字段本身作地址；间接方式先读 M[400] 得到最终地址。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "直接 EA=400；间接 EA=900。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：直接 EA=400；间接 EA=900。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：直接方式把字段本身作地址；间接方式先读 M[400] 得到最终地址。"
+    }
+  ]
+}

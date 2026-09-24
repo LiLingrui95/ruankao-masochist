@@ -1,0 +1,37 @@
+{
+  "id": "B04-T09-Q03",
+  "title": "写代价",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T09"
+  ],
+  "unit_id": "B04-T09",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "给频繁更新列增加索引的主要代价是什么？",
+  "answer": "额外空间，以及 INSERT/UPDATE/DELETE 时维护索引的 CPU、I/O 与并发成本。",
+  "explanation": "索引是需与表同步维护的数据结构，读收益要与写放大权衡。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：额外空间，以及 INSERT/UPDATE/DELETE 时维护索引的 CPU、I/O 与并发成本。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：索引是需与表同步维护的数据结构，读收益要与写放大权衡。"
+    }
+  ],
+  "source_ids": [
+    "B04-S05"
+  ],
+  "answer_source_ids": [
+    "B04-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：索引是需与表同步维护的数据结构，读收益要与写放大权衡。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

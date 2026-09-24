@@ -1,0 +1,37 @@
+{
+  "id": "B05-T08-Q02",
+  "title": "质量度量练习2",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T08"
+  ],
+  "unit_id": "B05-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "系统测试发现12个缺陷、6 KLOC，计算缺陷密度。",
+  "answer": "12/6=2缺陷/KLOC。",
+  "explanation": "必须写12÷6及单位缺陷/KLOC。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：12/6=2缺陷/KLOC。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：12/6=2缺陷/KLOC。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：必须写12÷6及单位缺陷/KLOC。"
+    }
+  ]
+}

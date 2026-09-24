@@ -1,0 +1,39 @@
+{
+  "id": "B02-T05-Q01",
+  "title": "阶段定位",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T05"
+  ],
+  "unit_id": "B02-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "`x + * 3` 中每个词法单元均合法，但排列不符合表达式结构，错误主要在哪一阶段发现？",
+  "answer": "B",
+  "explanation": "token 均可识别，解析器发现 token 序列不符合文法。",
+  "source_ids": [
+    "B02-S03"
+  ],
+  "answer_source_ids": [
+    "B02-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：token 均可识别，解析器发现 token 序列不符合文法。 编译原理题另由verify.py中的词法器或预测分析模型交叉检查（适用时）。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "词法分析",
+    "B": "语法分析",
+    "C": "寄存器分配",
+    "D": "链接"
+  },
+  "option_explanations": {
+    "A": "所有字符均可组成token，词法阶段可通过。",
+    "B": "token排列不符合表达式文法。",
+    "C": "尚未进入后端寄存器分配。",
+    "D": "错误在翻译单元内部且早于链接。"
+  }
+}

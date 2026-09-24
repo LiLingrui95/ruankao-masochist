@@ -1,0 +1,37 @@
+{
+  "id": "B01-T02-Q06",
+  "title": "浮点数与误差练习 6",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T02"
+  ],
+  "unit_id": "B01-T02",
+  "section_index": 0,
+  "prompt": "说明相对误差比固定绝对误差更适合比较大数量级结果的原因。",
+  "explanation": "同样 0.01 的绝对误差对 0.1 很大、对 10^6 极小；相对误差可区分这种影响，但接近 0 时需结合绝对容差。",
+  "source_ids": [
+    "B01-S02"
+  ],
+  "answer_source_ids": [
+    "B01-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：同样 0.01 的绝对误差对 0.1 很大、对 10^6 极小；相对误差可区分这种影响，但接近 0 时需结合绝对容差。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "它按结果尺度归一化，能衡量误差相对真实量级的比例。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：它按结果尺度归一化，能衡量误差相对真实量级的比例。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：同样 0.01 的绝对误差对 0.1 很大、对 10^6 极小；相对误差可区分这种影响，但接近 0 时需结合绝对容差。"
+    }
+  ]
+}

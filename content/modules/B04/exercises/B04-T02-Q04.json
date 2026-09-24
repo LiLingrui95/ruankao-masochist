@@ -1,0 +1,37 @@
+{
+  "id": "B04-T02-Q04",
+  "title": "差运算方向",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T02"
+  ],
+  "unit_id": "B04-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R={1,2,3}, S={2,3,4}，R−S 与 S−R 分别是什么？",
+  "answer": "R−S={1}；S−R={4}。",
+  "explanation": "差运算只保留左关系独有元组，不满足交换律。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：R−S={1}。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：差运算只保留左关系独有元组，不满足交换律。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：差运算只保留左关系独有元组，不满足交换律。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

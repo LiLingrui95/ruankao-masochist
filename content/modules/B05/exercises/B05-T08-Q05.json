@@ -1,0 +1,39 @@
+{
+  "id": "B05-T08-Q05",
+  "title": "质量度量练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T08"
+  ],
+  "unit_id": "B05-T08",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "同行评审的首要目的通常是？",
+  "answer": "A",
+  "explanation": "评审聚焦工作产品质量。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：A",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3,
+  "options": {
+    "A": "发现工作产品缺陷",
+    "B": "评价员工绩效",
+    "C": "替代全部测试",
+    "D": "批准预算"
+  },
+  "option_explanations": {
+    "A": "A 项“发现工作产品缺陷”正确：评审聚焦工作产品质量。",
+    "B": "B 项“评价员工绩效”错误：把评审当员工考核会抑制缺陷暴露，也偏离工作产品改进目的。",
+    "C": "C 项“替代全部测试”错误：评审属于静态技术，不能发现所有运行时缺陷，不能替代测试。",
+    "D": "D 项“批准预算”错误：预算批准是管理决策，不是同行评审的首要质量目标。"
+  }
+}

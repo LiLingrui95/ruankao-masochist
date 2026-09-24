@@ -1,0 +1,39 @@
+{
+  "id": "B05-T05-Q07",
+  "title": "补充范围练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T05"
+  ],
+  "unit_id": "B05-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "MVC Web请求中，通常负责接收路由请求、调用Model并选择View的是？",
+  "answer": "C",
+  "explanation": "依据题干限定的模型、版本、职责或业务条件逐项判断。",
+  "source_ids": [
+    "B05-S10"
+  ],
+  "answer_source_ids": [
+    "B05-S10"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S10的定位逐项核对四个选项；正确项C与题干条件一致。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 4,
+  "options": {
+    "A": "Model",
+    "B": "View",
+    "C": "Controller",
+    "D": "Database"
+  },
+  "option_explanations": {
+    "A": "Model承载领域数据与规则，不负责Web请求路由和选择页面。",
+    "B": "View负责呈现，不应协调业务操作。",
+    "C": "Controller接收请求，与Model协作并选择View。",
+    "D": "Database是持久化设施，不是MVC三种职责之一。"
+  }
+}

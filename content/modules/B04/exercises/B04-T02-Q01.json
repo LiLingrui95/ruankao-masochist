@@ -1,0 +1,37 @@
+{
+  "id": "B04-T02-Q01",
+  "title": "选择与投影次序",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T02"
+  ],
+  "unit_id": "B04-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(A,B,C) 中要输出满足 B>10 的 A。写关系代数。",
+  "answer": "π_A(σ_{B>10}(R))。",
+  "explanation": "先保留满足谓词的元组，再投影 A；反过来会丢失判断所需 B。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：π_A(σ_{B>10}(R))。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：先保留满足谓词的元组，再投影 A。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：先保留满足谓词的元组，再投影 A；反过来会丢失判断所需 B。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

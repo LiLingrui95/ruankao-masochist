@@ -1,0 +1,39 @@
+{
+  "id": "B01-T05-Q04",
+  "title": "流水线、性能与可靠性练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T05"
+  ],
+  "unit_id": "B01-T05",
+  "section_index": 0,
+  "prompt": "原系统 40% 可加速 4 倍，整体加速比是多少？",
+  "explanation": "新旧时间比 0.6+0.4/4=0.7，整体加速为 1/0.7。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：新旧时间比 0.6+0.4/4=0.7，整体加速为 1/0.7。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "single_choice",
+  "options": {
+    "A": "1.25",
+    "B": "1.6",
+    "C": "约 1.429",
+    "D": "4"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "只取可优化比例的倒数。",
+    "B": "误把 40% 优化后直接从总时间减去 40%。",
+    "C": "1/[0.6+0.4/4]=1/0.7。",
+    "D": "把局部加速倍数当整体加速。"
+  }
+}

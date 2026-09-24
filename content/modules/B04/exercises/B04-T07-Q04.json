@@ -1,0 +1,37 @@
+{
+  "id": "B04-T07-Q04",
+  "title": "相关平均值",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T07"
+  ],
+  "unit_id": "B04-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "PostgreSQL 18：找工资高于本部门平均值的员工。",
+  "answer": "SELECT e.* FROM employee e WHERE e.salary > (SELECT AVG(x.salary) FROM employee x WHERE x.dept_id=e.dept_id);",
+  "explanation": "内层按外层当前员工的 dept_id 求本部门平均值，再逐行比较。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：SELECT e.* FROM employee e WHERE e.salary > (SELECT AVG(x.salary) FROM employee x WHERE x.dept_id=e.dept_id);。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：内层按外层当前员工的 dept_id 求本部门平均值，再逐行比较。"
+    }
+  ],
+  "source_ids": [
+    "B04-S03"
+  ],
+  "answer_source_ids": [
+    "B04-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：内层按外层当前员工的 dept_id 求本部门平均值，再逐行比较。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

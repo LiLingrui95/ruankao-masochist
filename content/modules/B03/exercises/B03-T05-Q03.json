@@ -1,0 +1,37 @@
+{
+  "id": "B03-T05-Q03",
+  "title": "平衡树、查找与散列过程推导",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T05"
+  ],
+  "unit_id": "B03-T05",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "根据下列主题给出一个最小可复核的逐步推导：有序表 [3,8,12,17,21,30] 查找 17，取闭区间 [0,5]：mid=2 得 12，转 [3,5]；mid=4 得21，转 [3,3]；找到17。共比较3次。",
+  "answer": "有序表 [3,8,12,17,21,30] 查找 17，取闭区间 [0,5]：mid=2 得 12，转 [3,5]；mid=4 得21，转 [3,3]；找到17。共比较3次。",
+  "explanation": "答案需列出中间状态，并由定义得到最终结论；只写结论无法检查边界。",
+  "source_ids": [
+    "B03-S05"
+  ],
+  "answer_source_ids": [
+    "B03-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "列出题干例子的关键中间状态，不能只写最终结论。"
+    },
+    {
+      "id": "r2",
+      "text": "由中间状态推出题中给定例子的最终结果，并说明所用规则。"
+    }
+  ]
+}

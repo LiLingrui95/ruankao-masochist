@@ -1,0 +1,37 @@
+{
+  "id": "B04-T08-Q05",
+  "title": "WAL顺序",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T08"
+  ],
+  "unit_id": "B04-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "数据页能否在对应日志记录稳定写盘前先写盘？",
+  "answer": "不能。",
+  "explanation": "WAL 要求日志先行；否则崩溃后可能看到无法用日志解释或撤销的数据修改。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：不能。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：WAL 要求日志先行。"
+    }
+  ],
+  "source_ids": [
+    "B04-S04"
+  ],
+  "answer_source_ids": [
+    "B04-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：WAL 要求日志先行；否则崩溃后可能看到无法用日志解释或撤销的数据修改。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

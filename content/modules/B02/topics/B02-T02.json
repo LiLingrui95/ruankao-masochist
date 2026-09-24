@@ -1,0 +1,41 @@
+{
+  "id": "B02-T02",
+  "module_id": "B02",
+  "unit_id": "B02-U01",
+  "title": "数组、指针与字符串",
+  "aliases": [
+    "数组退化",
+    "指针运算",
+    "空字符"
+  ],
+  "objectives": [
+    "区分数组对象与指针值",
+    "限定指针算术的合法范围",
+    "按容量推导 C 字符串操作"
+  ],
+  "prerequisite_ids": [
+    "B02-T01"
+  ],
+  "syllabus_refs": [
+    "程序语言基础知识",
+    "C 程序设计基础"
+  ],
+  "body_path": "modules/B02/topics/B02-T02.md",
+  "source_ids": [
+    "B02-S01",
+    "B02-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 7,
+  "exercise_target": 6,
+  "exercise_rationale": "该考点包含概念、边界与推导三类能力，配置 6 道不同推理任务覆盖基础、应用和综合层级。",
+  "question_ids": [
+    "B02-T02-Q01",
+    "B02-T02-Q02",
+    "B02-T02-Q03",
+    "B02-T02-Q04",
+    "B02-T02-Q05",
+    "B02-T02-Q06"
+  ]
+}

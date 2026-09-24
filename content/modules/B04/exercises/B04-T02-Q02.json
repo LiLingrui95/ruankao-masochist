@@ -1,0 +1,37 @@
+{
+  "id": "B04-T02-Q02",
+  "title": "自然连接的风险",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T02"
+  ],
+  "unit_id": "B04-T02",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "R(id,status) 与 S(id,status) 自然连接会使用哪些属性？",
+  "answer": "同时使用 id 和 status。",
+  "explanation": "自然连接对全部同名属性作等值条件；若 status 含义不同会意外过滤。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：同时使用 id 和 status。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：自然连接对全部同名属性作等值条件。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：自然连接对全部同名属性作等值条件；若 status 含义不同会意外过滤。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 5
+}

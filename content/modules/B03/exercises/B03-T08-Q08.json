@@ -1,0 +1,59 @@
+{
+  "id": "B03-T08-Q08",
+  "title": "订单稳定排序案例",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T08"
+  ],
+  "unit_id": "B03-T08",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "阅读共享材料，回答三个子问题。",
+  "answer": "a. 选稳定归并排序：最坏 O(n log n)，辅助数组 O(n)。b. 左段 (2,A),(1,B) 合为 (1,B),(2,A)；右段 (2,C),(1,D),(3,E) 先合为 (1,D),(2,C),(3,E)；最终合并时相等键先取左段，得 (1,B),(1,D),(2,A),(2,C),(3,E)。c. 时间 O(n log n)，额外空间 O(n)；相等先右会把 D 放到B前、C放到A前，破坏稳定性。",
+  "explanation": "参考答案按三个子问分别给出算法或状态、不省略的中间结果，以及复杂度和适用边界。共享材料只给输入与约束，不含待求结果。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "verify.py 对本案例的最终数值、状态表或组合集合运行独立模型复算，并校验共享材料不含答案措辞。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "选择归并排序并同时对应稳定性与最坏 O(n log n) 约束。"
+    },
+    {
+      "id": "r2",
+      "text": "最终序列为 B,D,A,C,E，且明确相等键先取左段。"
+    },
+    {
+      "id": "r3",
+      "text": "给出 O(n log n)/O(n)，并指出先右会颠倒等键原次序。"
+    }
+  ],
+  "case_material": "订单记录按当前顺序为 (优先级2,A)、(1,B)、(2,C)、(1,D)、(3,E)。要求按优先级升序，且同优先级保持原到达次序。内存允许一个等长辅助数组；还要求最坏时间不超过 O(n log n)。",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "选择排序算法并说明为何满足两个约束。",
+      "points": 3
+    },
+    {
+      "id": "b",
+      "prompt": "画出一次完整分治与合并结果，标明相等键的取舍。",
+      "points": 5
+    },
+    {
+      "id": "c",
+      "prompt": "给出时间、额外空间复杂度；若相等时先取右段会怎样？",
+      "points": 2
+    }
+  ]
+}

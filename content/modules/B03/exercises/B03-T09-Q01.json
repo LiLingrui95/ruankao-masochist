@@ -1,0 +1,39 @@
+{
+  "id": "B03-T09-Q01",
+  "title": "分治与二分概念判断1",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T09"
+  ],
+  "unit_id": "B03-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "对“答案”做二分的必要结构是？",
+  "options": {
+    "A": "输入随机",
+    "B": "判定谓词随候选值单调",
+    "C": "必须递归实现",
+    "D": "只能处理浮点数"
+  },
+  "answer": "B",
+  "option_explanations": {
+    "A": "随机性不产生单调边界。",
+    "B": "真假只发生一次转换才能排除半个答案域。",
+    "C": "递归与迭代均可。",
+    "D": "整数和实数答案都可二分。"
+  },
+  "explanation": "答案 B：真假只发生一次转换才能排除半个答案域。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按定义逐项代入题干条件排除，并用 verify.py 校验四项齐全、答案落在选项中且每项解析均点明本项文本与正确项。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3
+}

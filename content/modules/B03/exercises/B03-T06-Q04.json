@@ -1,0 +1,37 @@
+{
+  "id": "B03-T06-Q04",
+  "title": "图、遍历与拓扑排序反例分析",
+  "module_id": "B03",
+  "topic_ids": [
+    "B03-T06"
+  ],
+  "unit_id": "B03-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "解释下列提醒为何成立，并给出触发错误的具体输入：遍历序受邻接点顺序影响，通常不唯一。无向图每条边在邻接表出现两次；计算度数和复杂度时不要重复误判。BFS 不能直接处理带权最短路。",
+  "answer": "遍历序受邻接点顺序影响，通常不唯一。无向图每条边在邻接表出现两次；计算度数和复杂度时不要重复误判。BFS 不能直接处理带权最短路。",
+  "explanation": "反例必须违反被误用算法的关键前提，同时说明错误输出或错误复杂度从何产生。",
+  "source_ids": [
+    "B03-S02"
+  ],
+  "answer_source_ids": [
+    "B03-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "由逐步手算复核题内结论；涉及数值的代表案例另由 verify.py 的二分、MST、背包、循环队列或枚举模型复算。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出一个满足题干限制的具体最小输入。"
+    },
+    {
+      "id": "r2",
+      "text": "指出该输入违反的前提，并说明错误结果或复杂度如何产生。"
+    }
+  ]
+}

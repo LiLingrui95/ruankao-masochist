@@ -1,0 +1,41 @@
+{
+  "id": "B08-T06-Q04",
+  "title": "职务软件",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T06"
+  ],
+  "unit_id": "B08-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "判断职务开发软件归属至少要核对哪三类事实？",
+  "answer": "核对开发是否属于本职或单位任务、是否主要使用单位资源、合同或规章是否另有约定，再适用条例。",
+  "explanation": "解题依据与结果：核对开发是否属于本职或单位任务、是否主要使用单位资源、合同或规章是否另有约定，再适用条例。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“核对开发是否属于本职或单位任务、是否主要使用单位资源、合同或规章是否另有约定”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“再适用条例”给出题设对应的计算、文本证据或适用边界，不能只写题名“职务软件”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "answer_source_ids": [
+    "B08-S05",
+    "B08-S06",
+    "B08-S07"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

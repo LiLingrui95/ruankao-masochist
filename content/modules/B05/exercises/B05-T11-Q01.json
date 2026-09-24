@@ -1,0 +1,55 @@
+{
+  "id": "B05-T11-Q01",
+  "title": "DFD综合练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T11"
+  ],
+  "unit_id": "B05-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "补出缺失边并说明平衡依据。",
+  "answer": "补“馆员→2登记借阅：审批结果”和“2登记借阅→读者：借阅回执”。两条分别保持父图输入审批结果与父图输出借阅回执；其余新增D1/D2流为内部细化。",
+  "explanation": "先列父图边界输入输出，再检查子图边界、非法直连和加工数据守恒。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：补“馆员→2登记借阅：审批结果”和“2登记借阅→读者：借阅回执”。两条分别保持父图输入审批结果与父图输出借阅回执；其余新增D1/D2流为内部细化。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 15,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确补出馆员→2的审批结果"
+    },
+    {
+      "id": "r2",
+      "text": "明确补出2→读者的借阅回执"
+    },
+    {
+      "id": "r3",
+      "text": "说明父子边界三条流守恒"
+    }
+  ],
+  "case_material": "上下文图：读者→系统“借阅申请”；馆员→系统“审批结果”；系统→读者“借阅回执”。0层已有：读者→1校验读者“借阅申请”；1↔D1读者库“查询/读者资料”；1→2登记借阅“合格申请”；2→D2借阅库“借阅记录”。",
+  "subquestions": [
+    {
+      "id": "a",
+      "prompt": "补出缺失边并说明平衡依据。",
+      "points": 6
+    },
+    {
+      "id": "b",
+      "prompt": "说明每项修改对应的DFD规则。",
+      "points": 4
+    }
+  ]
+}
+

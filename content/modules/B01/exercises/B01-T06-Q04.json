@@ -1,0 +1,37 @@
+{
+  "id": "B01-T06-Q04",
+  "title": "进程、线程与调度练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T06"
+  ],
+  "unit_id": "B01-T06",
+  "section_index": 0,
+  "prompt": "Round Robin 时间片过小的主要代价是什么？",
+  "explanation": "时间片改善响应的同时，每次切换要保存恢复状态，过小会让非工作时间累积。",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "answer_source_ids": [
+    "B01-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：时间片改善响应的同时，每次切换要保存恢复状态，过小会让非工作时间累积。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "上下文切换频繁，调度开销占比上升并损害吞吐。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：上下文切换频繁，调度开销占比上升并损害吞吐。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：时间片改善响应的同时，每次切换要保存恢复状态，过小会让非工作时间累积。"
+    }
+  ]
+}

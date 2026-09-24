@@ -1,0 +1,37 @@
+{
+  "id": "B04-T03-Q08",
+  "title": "样本唯一性",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T03"
+  ],
+  "unit_id": "B04-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "当前 Employee 表中 email 恰好无重复，能否据此断言 employee_id→email 或 email 为键？",
+  "answer": "不能。",
+  "explanation": "函数依赖来自所有合法状态的业务约束；单个样本无重复只是偶然证据。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：不能。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：函数依赖来自所有合法状态的业务约束。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：函数依赖来自所有合法状态的业务约束；单个样本无重复只是偶然证据。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

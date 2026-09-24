@@ -1,0 +1,41 @@
+{
+  "id": "B06-T03-Q08",
+  "title": "确定输出推演",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T03"
+  ],
+  "unit_id": "B06-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "Base::name 是 virtual 返回 B，Derived::name 返回 D。Base& r=d；依次输出 r.name() 和 r.Base::name()。输出是什么？",
+  "answer": "输出依次为 D 和 B（若无分隔则 DB）。第一调用是虚调用，按动态类型到 Derived；第二调用用限定名显式抑制虚分派。",
+  "explanation": "输出依次为 D 和 B（若无分隔则 DB）。第一调用是虚调用，按动态类型到 Derived；第二调用用限定名显式抑制虚分派。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "第一项为 D"
+    },
+    {
+      "id": "r2",
+      "text": "第二项为 B"
+    },
+    {
+      "id": "r3",
+      "text": "说明限定名抑制虚调用"
+    }
+  ],
+  "source_ids": [
+    "B06-S05"
+  ],
+  "answer_source_ids": [
+    "B06-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "依据明确规则逐步推演；verify.py 独立检查案例材料不泄露答案、评分点具体且字段完整。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 8
+}

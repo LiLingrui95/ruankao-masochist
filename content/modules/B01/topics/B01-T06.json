@@ -1,0 +1,43 @@
+{
+  "id": "B01-T06",
+  "module_id": "B01",
+  "unit_id": "B01-U02",
+  "title": "进程、线程与调度",
+  "aliases": [
+    "process",
+    "thread",
+    "scheduling",
+    "job scheduling",
+    "OS configuration"
+  ],
+  "objectives": [
+    "绘制调度时间线并计算响应、等待和周转时间",
+    "区分进程状态、调度层次以及服务与内核配置的生效边界"
+  ],
+  "prerequisite_ids": [
+    "B01-T05"
+  ],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T06.md",
+  "source_ids": [
+    "B01-S03"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 8,
+  "exercise_rationale": "常规：配置 8 道覆盖进程状态、CPU/作业调度指标和操作系统配置基础。",
+  "question_ids": [
+    "B01-T06-Q01",
+    "B01-T06-Q02",
+    "B01-T06-Q03",
+    "B01-T06-Q04",
+    "B01-T06-Q05",
+    "B01-T06-Q06",
+    "B01-T06-Q07",
+    "B01-T06-Q08"
+  ]
+}

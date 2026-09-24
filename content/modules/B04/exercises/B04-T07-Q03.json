@@ -1,0 +1,37 @@
+{
+  "id": "B04-T07-Q03",
+  "title": "标量子查询边界",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T07"
+  ],
+  "unit_id": "B04-T07",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "`salary = (SELECT salary FROM employee WHERE dept_id=10)` 在何时会失败？",
+  "answer": "子查询返回超过一行时。",
+  "explanation": "标量子查询必须至多一个值；需聚合、唯一约束或改用集合比较。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：子查询返回超过一行时。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：标量子查询必须至多一个值。"
+    }
+  ],
+  "source_ids": [
+    "B04-S03"
+  ],
+  "answer_source_ids": [
+    "B04-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：标量子查询必须至多一个值；需聚合、唯一约束或改用集合比较。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

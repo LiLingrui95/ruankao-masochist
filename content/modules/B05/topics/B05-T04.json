@@ -1,0 +1,41 @@
+{
+  "id": "B05-T04",
+  "module_id": "B05",
+  "unit_id": "B05-U02",
+  "title": "结构化设计、内聚与耦合",
+  "aliases": [
+    "结构图",
+    "变换分析",
+    "事务分析",
+    "内聚",
+    "耦合"
+  ],
+  "objectives": [
+    "掌握结构化设计、内聚与耦合的核心术语与适用条件",
+    "能用给定材料完成判断、计算或模型校验"
+  ],
+  "prerequisite_ids": [
+    "B05-T03"
+  ],
+  "syllabus_refs": [
+    "软件设计师考试大纲（2018）相关章节：结构化设计、内聚与耦合"
+  ],
+  "body_path": "modules/B05/topics/B05-T04.md",
+  "source_ids": [
+    "B05-S04"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 6,
+  "exercise_rationale": "常规应用考点，覆盖概念、边界与情境判断",
+  "question_ids": [
+    "B05-T04-Q01",
+    "B05-T04-Q02",
+    "B05-T04-Q03",
+    "B05-T04-Q04",
+    "B05-T04-Q05",
+    "B05-T04-Q06"
+  ]
+}
+

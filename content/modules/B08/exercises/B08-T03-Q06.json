@@ -1,0 +1,37 @@
+{
+  "id": "B08-T03-Q06",
+  "title": "相对误差",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T03"
+  ],
+  "unit_id": "B08-T03",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "真值50、近似值49，求绝对和相对误差。",
+  "answer": "绝对误差1，相对误差1/50=2%。",
+  "explanation": "解题依据与结果：绝对误差1，相对误差1/50=2%。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "明确写出“绝对误差1”这一核心结论。"
+    },
+    {
+      "id": "r2",
+      "text": "围绕“相对误差1/50=2%”给出题设对应的计算、文本证据或适用边界，不能只写题名“相对误差”。"
+    }
+  ],
+  "source_ids": [
+    "B08-S02"
+  ],
+  "answer_source_ids": [
+    "B08-S02"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "参考答案按题设条件重新推导；rubric分别检查核心结论与该题特有的计算、证据或边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

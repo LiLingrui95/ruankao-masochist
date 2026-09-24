@@ -1,0 +1,40 @@
+{
+  "id": "B02-T04-Q05",
+  "title": "匹配元素类型分配",
+  "module_id": "B02",
+  "topic_ids": [
+    "B02-T04"
+  ],
+  "unit_id": "B02-T04",
+  "section_index": 0,
+  "type": "code_fill",
+  "prompt": "补全：`int *p = malloc(10 * ____);`，不重复书写类型名。",
+  "answer": "sizeof *p",
+  "explanation": "`sizeof *p` 随 p 的目标类型变化，分配10个元素所需字节。",
+  "source_ids": [
+    "B02-S01"
+  ],
+  "answer_source_ids": [
+    "B02-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "手工复核：`sizeof *p` 随 p 的目标类型变化，分配10个元素所需字节。 未调用C编译器；按N1570规则检查题干前提与边界。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "填入sizeof *p，使乘积表示10个目标元素。"
+    },
+    {
+      "id": "r2",
+      "text": "说明该写法自动跟随p的目标类型。"
+    }
+  ],
+  "code": "补全：`int *p = malloc(10 * ____);`，不重复书写类型名。",
+  "language": "c",
+  "reference_fill": "sizeof *p"
+}

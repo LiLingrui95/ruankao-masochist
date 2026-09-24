@@ -1,0 +1,39 @@
+{
+  "id": "B08-T04-Q01",
+  "title": "图像容量",
+  "module_id": "B08",
+  "topic_ids": [
+    "B08-T04"
+  ],
+  "unit_id": "B08-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "100×100像素、每像素24 bit的未压缩图像净数据为？",
+  "options": {
+    "A": "30000 byte",
+    "B": "240000 byte",
+    "C": "10000 byte",
+    "D": "300000 bit每通道"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "正确。100×100×24/8=30000 byte。",
+    "B": "错误。240000是bit数，题目选项单位是byte，尚未除以8。",
+    "C": "错误。10000只计算像素个数，漏乘每像素3 byte。",
+    "D": "错误。总量虽为240000 bit，但不是“每通道”；每个8-bit通道各为80000 bit。"
+  },
+  "explanation": "逐项代入题设定义或公式后，正确。100×100×24/8=30000 byte。",
+  "source_ids": [
+    "B08-S03"
+  ],
+  "answer_source_ids": [
+    "B08-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "逐项核对四个选项；正确项按正文定义或公式复算，三个错项均记录具体误读或算术差异。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2
+}

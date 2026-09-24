@@ -1,0 +1,15 @@
+[
+  {
+    "id": "EXAM-2014-H1-COMPREHENSIVE-S01",
+    "title": "2014年上半年软件设计师综合知识页面或索引",
+    "url": "https://www.cnitpm.com/examst/809827/",
+    "author": "信管网",
+    "accessed_on": "2026-09-24",
+    "locator": "页面标题/索引项：2014年上半年软件设计师综合知识",
+    "version": "web page accessed 2026-09-24",
+    "kind": "exam_index",
+    "reuse_policy": "link-only; page does not provide a clear licence for redistributing exam text; no question text copied",
+    "query": "2014年 上半年 软件设计师 综合知识 真题",
+    "selection_reason": "用于确认 SD-2014-H1-COMP-U 的页面存在性与来源定位；不据此宣称官方发布或完整原卷。"
+  }
+]

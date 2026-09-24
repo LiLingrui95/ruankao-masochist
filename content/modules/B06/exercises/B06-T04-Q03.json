@@ -1,0 +1,41 @@
+{
+  "id": "B06-T04-Q03",
+  "title": "模板约束",
+  "module_id": "B06",
+  "topic_ids": [
+    "B06-T04"
+  ],
+  "unit_id": "B06-T04",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "模板 min_value 内使用 a < b。实例化类型必须至少提供什么？",
+  "options": {
+    "A": "可用于该表达式且结果可转为 bool 的 <",
+    "B": "必须继承 int",
+    "C": "必须有虚析构",
+    "D": "必须可哈希"
+  },
+  "answer": "A",
+  "option_explanations": {
+    "A": "模板体实际表达式决定所需操作。",
+    "B": "泛型不要求继承内置类型。",
+    "C": "比较与多态销毁无关。",
+    "D": "模板代码没有使用散列或哈希容器。"
+  },
+  "explanation": "正确选项为 A。模板体实际表达式决定所需操作。",
+  "source_ids": [
+    "B06-S03",
+    "B06-S04"
+  ],
+  "answer_source_ids": [
+    "B06-S03",
+    "B06-S04"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "按所列标准/技术资料逐项核对四个选项，并由 verify.py 检查答案键和逐项解析完整性。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 3
+}

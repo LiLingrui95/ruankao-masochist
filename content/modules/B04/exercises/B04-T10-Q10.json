@@ -1,0 +1,37 @@
+{
+  "id": "B04-T10-Q10",
+  "title": "设计验收清单",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T10"
+  ],
+  "unit_id": "B04-T10",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "给出逻辑设计最少四类可验证产物。",
+  "answer": "关系模式及每表行粒度；主键/候选键/外键；函数依赖与范式说明；可空性、CHECK、删除动作和跨行约束实现；关键查询与索引依据。",
+  "explanation": "产物覆盖身份、参照、域、规范化和工作负载，可逐条回溯业务规则。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：关系模式及每表行粒度。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：产物覆盖身份、参照、域、规范化和工作负载，可逐条回溯业务规则。"
+    }
+  ],
+  "source_ids": [
+    "B04-S01"
+  ],
+  "answer_source_ids": [
+    "B04-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：产物覆盖身份、参照、域、规范化和工作负载，可逐条回溯业务规则。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 5
+}

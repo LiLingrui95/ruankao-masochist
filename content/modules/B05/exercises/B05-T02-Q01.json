@@ -1,0 +1,39 @@
+{
+  "id": "B05-T02-Q01",
+  "title": "需求工程练习1",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T02"
+  ],
+  "unit_id": "B05-T02",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "“页面应快速响应”的主要问题是？",
+  "answer": "C",
+  "explanation": "未给负载、端点、统计口径和阈值。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：C",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "options": {
+    "A": "不是功能需求",
+    "B": "必然不可实现",
+    "C": "缺少可测条件和阈值",
+    "D": "只能用原型验证"
+  },
+  "option_explanations": {
+    "A": "A 项“不是功能需求”错误：该句可表达质量需求意图，问题在于不可测，不在于是否为功能需求。",
+    "B": "B 项“必然不可实现”错误：缺少阈值不能推出技术上必然不可实现。",
+    "C": "C 项“缺少可测条件和阈值”正确：未给负载、端点、统计口径和阈值。",
+    "D": "D 项“只能用原型验证”错误：原型只是确认手段之一，压测和验收指标也可验证响应性能。"
+  }
+}

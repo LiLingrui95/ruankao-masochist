@@ -1,0 +1,37 @@
+{
+  "id": "B01-T03-Q04",
+  "title": "CPU、指令与寻址练习 4",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T03"
+  ],
+  "unit_id": "B01-T03",
+  "section_index": 0,
+  "prompt": "立即寻址与寄存器寻址取操作数时是否必须访问数据主存？",
+  "explanation": "取指本身仍可能访问存储层次；题目问的是取数据操作数的额外主存访问。",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "answer_source_ids": [
+    "B01-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：取指本身仍可能访问存储层次；题目问的是取数据操作数的额外主存访问。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "通常都不必；立即数在指令中，寄存器操作数在寄存器中。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：通常都不必；立即数在指令中，寄存器操作数在寄存器中。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：取指本身仍可能访问存储层次；题目问的是取数据操作数的额外主存访问。"
+    }
+  ]
+}

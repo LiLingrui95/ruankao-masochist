@@ -1,0 +1,41 @@
+{
+  "id": "B07-T05-Q02",
+  "title": "TCP、UDP与可靠传输练习2",
+  "module_id": "B07",
+  "topic_ids": [
+    "B07-T05"
+  ],
+  "unit_id": "B07-T05",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "发送方发出SYN，序号为500；接收方对该SYN的确认号应为？",
+  "answer": "D",
+  "explanation": "SYN占用一个序号空间。",
+  "source_ids": [
+    "B07-S01",
+    "B07-S05"
+  ],
+  "answer_source_ids": [
+    "B07-S01",
+    "B07-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "使用Python ipaddress/整数模运算或显式算式复核，并按对应RFC边界人工审查。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 2,
+  "options": {
+    "A": "500",
+    "B": "499",
+    "C": "502",
+    "D": "501"
+  },
+  "option_explanations": {
+    "A": "错误：该选项断言“500”。本题适用的关系是：SYN占用一个序号空间。",
+    "B": "错误：该选项断言“499”。本题适用的关系是：SYN占用一个序号空间。",
+    "C": "错误：该选项断言“502”。本题适用的关系是：SYN占用一个序号空间。",
+    "D": "SYN占用一个序号空间。"
+  }
+}

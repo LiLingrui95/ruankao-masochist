@@ -1,0 +1,39 @@
+{
+  "id": "B05-T09-Q07",
+  "title": "补充范围练习7",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T09"
+  ],
+  "unit_id": "B05-T09",
+  "section_index": 0,
+  "type": "single_choice",
+  "prompt": "核心账务系统要求可快速回退并能逐日核对新旧输出，最适合的转换策略是？",
+  "answer": "B",
+  "explanation": "依据题干限定的模型、版本、职责或业务条件逐项判断。",
+  "source_ids": [
+    "B05-S12"
+  ],
+  "answer_source_ids": [
+    "B05-S12"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "根据B05-S12的定位逐项核对四个选项；正确项B与题干条件一致。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 4,
+  "options": {
+    "A": "直接转换",
+    "B": "并行转换",
+    "C": "不迁移数据",
+    "D": "只做逆向工程"
+  },
+  "option_explanations": {
+    "A": "直接转换停旧启新，缺少题干要求的持续回退和输出对照。",
+    "B": "并行转换让新旧系统同时运行，可比较输出并保留旧系统回退。",
+    "C": "账务系统仍需迁移或同步业务数据，不能回避数据转换。",
+    "D": "逆向工程恢复高层表示，不是生产切换策略。"
+  }
+}

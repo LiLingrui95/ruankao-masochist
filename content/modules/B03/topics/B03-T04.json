@@ -1,0 +1,39 @@
+{
+  "id": "B03-T04",
+  "module_id": "B03",
+  "unit_id": "B03-U02",
+  "title": "树、二叉树与遍历",
+  "aliases": [
+    "树的度、高度、二叉树性质与遍历重建"
+  ],
+  "objectives": [
+    "解释树的度、高度、二叉树性质与遍历重建",
+    "完成树、二叉树与遍历的过程跟踪与复杂度分析"
+  ],
+  "prerequisite_ids": [
+    "B03-T03"
+  ],
+  "syllabus_refs": [
+    "数据结构",
+    "算法设计与分析"
+  ],
+  "body_path": "modules/B03/topics/B03-T04.md",
+  "source_ids": [
+    "B03-S01",
+    "B03-S02",
+    "B03-S02"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 6,
+  "exercise_rationale": "该考点包含概念、过程、边界与复杂度，设置多种推理任务。",
+  "question_ids": [
+    "B03-T04-Q01",
+    "B03-T04-Q02",
+    "B03-T04-Q03",
+    "B03-T04-Q04",
+    "B03-T04-Q05",
+    "B03-T04-Q06"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "B05-T11-Q05",
+  "title": "DFD综合练习5",
+  "module_id": "B05",
+  "topic_ids": [
+    "B05-T11"
+  ],
+  "unit_id": "B05-T11",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "列出DFD综合检查的四步。",
+  "answer": "列父图边界清单；核对子图边界平衡；检查实体/存储直连及加工输入输出；用数据字典和加工说明核对流结构与业务规则。",
+  "explanation": "四步分别对应边界、端点、加工守恒和语义。",
+  "source_ids": [
+    "B05-S01"
+  ],
+  "answer_source_ids": [
+    "B05-S01"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题定义、边界与结论：列父图边界清单；核对子图边界平衡；检查实体/存储直连及加工输入输出；用数据字典和加工说明核对流结构与业务规则。",
+  "version": "1.0.0",
+  "difficulty": "comprehensive",
+  "minutes": 6,
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "完整写出本题结论：列父图边界清单；核对子图边界平衡；检查实体/存储直连及加工输入输出；用数据字典和加工说明核对流结构与业务规则。"
+    },
+    {
+      "id": "r2",
+      "text": "结合题干说明判据或计算：四步分别对应边界、端点、加工守恒和语义。"
+    }
+  ]
+}

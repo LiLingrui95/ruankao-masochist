@@ -1,0 +1,41 @@
+{
+  "id": "B01-T01",
+  "module_id": "B01",
+  "unit_id": "B01-U01",
+  "title": "数制、编码与补码",
+  "aliases": [
+    "数制转换",
+    "Two's complement",
+    "overflow",
+    "Hamming distance"
+  ],
+  "objectives": [
+    "在给定位宽下转换进制并解释补码位串",
+    "判定 signed/unsigned overflow，并由最小码距计算检错纠错能力"
+  ],
+  "prerequisite_ids": [],
+  "syllabus_refs": [
+    "计算机系统基础",
+    "操作系统知识"
+  ],
+  "body_path": "modules/B01/topics/B01-T01.md",
+  "source_ids": [
+    "B01-S01"
+  ],
+  "version": "1.0.0",
+  "review_status": "reviewed",
+  "minutes": 8,
+  "exercise_target": 9,
+  "exercise_rationale": "复杂：配置 9 道覆盖转换、补码、溢出与检错纠错距离。",
+  "question_ids": [
+    "B01-T01-Q01",
+    "B01-T01-Q02",
+    "B01-T01-Q03",
+    "B01-T01-Q04",
+    "B01-T01-Q05",
+    "B01-T01-Q06",
+    "B01-T01-Q07",
+    "B01-T01-Q08",
+    "B01-T01-Q09"
+  ]
+}

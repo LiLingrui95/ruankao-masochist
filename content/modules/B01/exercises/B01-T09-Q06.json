@@ -1,0 +1,37 @@
+{
+  "id": "B01-T09-Q06",
+  "title": "分页、地址转换与置换练习 6",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T09"
+  ],
+  "unit_id": "B01-T09",
+  "section_index": 0,
+  "prompt": "解释 TLB miss 与 page fault 的区别。",
+  "explanation": "前者通常查页表即可，后者可能触发磁盘 I/O，代价量级不同。",
+  "source_ids": [
+    "B01-S06"
+  ],
+  "answer_source_ids": [
+    "B01-S06"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：前者通常查页表即可，后者可能触发磁盘 I/O，代价量级不同。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5,
+  "type": "short_answer",
+  "answer": "TLB miss 是转换缓存未命中，页表项仍可能有效；page fault 是页不在主存或访问无效，需要 OS 处理。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出本题结论：TLB miss 是转换缓存未命中，页表项仍可能有效；page fault 是页不在主存或访问无效，需要 OS 处理。"
+    },
+    {
+      "id": "r2",
+      "text": "说明本题依据：前者通常查页表即可，后者可能触发磁盘 I/O，代价量级不同。"
+    }
+  ]
+}

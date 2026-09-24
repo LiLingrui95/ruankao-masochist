@@ -1,0 +1,37 @@
+{
+  "id": "B04-T06-Q04",
+  "title": "外连接条件位置",
+  "module_id": "B04",
+  "topic_ids": [
+    "B04-T06"
+  ],
+  "unit_id": "B04-T06",
+  "section_index": 0,
+  "type": "short_answer",
+  "prompt": "要保留所有课程，只把分数≥60的选课参与连接，条件放 ON 还是 WHERE？",
+  "answer": "放 ON。",
+  "explanation": "放 WHERE 会过滤右侧为 NULL 的补行，使无及格记录的课程消失。",
+  "rubric": [
+    {
+      "id": "r1",
+      "text": "给出核心结论：放 ON。"
+    },
+    {
+      "id": "r2",
+      "text": "说明判定依据：放 WHERE 会过滤右侧为 NULL 的补行，使无及格记录的课程消失。"
+    }
+  ],
+  "source_ids": [
+    "B04-S03"
+  ],
+  "answer_source_ids": [
+    "B04-S03"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核：放 WHERE 会过滤右侧为 NULL 的补行，使无及格记录的课程消失。",
+  "version": "1.0.0",
+  "difficulty": "applied",
+  "minutes": 5
+}

@@ -1,0 +1,39 @@
+{
+  "id": "B01-T08-Q01",
+  "title": "死锁与资源分配练习 1",
+  "module_id": "B01",
+  "topic_ids": [
+    "B01-T08"
+  ],
+  "unit_id": "B01-T08",
+  "section_index": 0,
+  "prompt": "列出死锁四个必要条件。",
+  "explanation": "四者必须同时成立；预防策略只需系统性破坏其中一项。",
+  "source_ids": [
+    "B01-S05"
+  ],
+  "answer_source_ids": [
+    "B01-S05"
+  ],
+  "origin_kind": "original",
+  "review_status": "reviewed",
+  "answer_status": "verified",
+  "verification": "独立复核本题条件与运算：四者必须同时成立；预防策略只需系统性破坏其中一项。",
+  "version": "1.0.0",
+  "difficulty": "basic",
+  "minutes": 3,
+  "type": "single_choice",
+  "options": {
+    "A": "互斥、抢占、循环等待、优先级反转",
+    "B": "占有且等待、忙等、不可抢占、循环等待",
+    "C": "互斥、占有且等待、不可抢占、循环等待",
+    "D": "互斥、占有且等待、可抢占、循环等待"
+  },
+  "answer": "C",
+  "option_explanations": {
+    "A": "必要条件是不可抢占；优先级反转不是死锁必要条件。",
+    "B": "忙等不是必要条件，且漏掉互斥。",
+    "C": "四个 Coffman 必要条件完整。",
+    "D": "可抢占会破坏 no-preemption 条件。"
+  }
+}
